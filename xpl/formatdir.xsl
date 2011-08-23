@@ -6,7 +6,7 @@
                 version="2.0">
 
 <xsl:template match="/c:directory" priority="10">
-  <dl>
+  <dl class="dirlist">
     <xsl:apply-templates/>
   </dl>
 </xsl:template>
@@ -18,7 +18,20 @@
   </dt>
   <dd>
     <dl>
-      <xsl:apply-templates/>
+      <xsl:for-each select="c:directory">
+        <xsl:sort select="@name"/>
+        <xsl:apply-templates select="."/>
+      </xsl:for-each>
+
+      <xsl:for-each select="c:file[matches(@name, '^[0-9]+\..*$')]">
+        <xsl:sort select="substring-before(@name, '.')" data-type="number"/>
+        <xsl:apply-templates select="."/>
+      </xsl:for-each>
+
+      <xsl:for-each select="c:file[not(matches(@name, '^[0-9]+\..*$'))]">
+        <xsl:sort select="@name"/>
+        <xsl:apply-templates select="."/>
+      </xsl:for-each>
     </dl>
   </dd>
 </xsl:template>
