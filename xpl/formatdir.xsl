@@ -7,7 +7,9 @@
 
 <xsl:template match="/c:directory" priority="10">
   <dl class="dirlist">
-    <xsl:apply-templates/>
+    <xsl:apply-templates select="c:directory[@name='release']"/>
+    <xsl:apply-templates select="c:directory[@name!='release']"/>
+    <xsl:apply-templates select="c:file"/>
   </dl>
 </xsl:template>
 
@@ -18,20 +20,60 @@
   </dt>
   <dd>
     <dl>
-      <xsl:for-each select="c:directory">
-        <xsl:sort select="@name"/>
-        <xsl:apply-templates select="."/>
-      </xsl:for-each>
+      <xsl:choose>
+        <xsl:when test="@name = 'release'">
+          <xsl:for-each select="c:directory">
+            <xsl:sort select="@name" order="descending"/>
+            <xsl:apply-templates select="."/>
+          </xsl:for-each>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:for-each select="c:directory">
+            <xsl:sort select="@name"/>
+            <xsl:apply-templates select="."/>
+          </xsl:for-each>
+        </xsl:otherwise>
+      </xsl:choose>
 
-      <xsl:for-each select="c:file[matches(@name, '^[0-9]+\..*$')]">
-        <xsl:sort select="substring-before(@name, '.')" data-type="number"/>
-        <xsl:apply-templates select="."/>
-      </xsl:for-each>
+      <xsl:variable name="sorted">
+        <xsl:for-each select="c:file[matches(@name, '^[0-9]+\..*$')]">
+          <xsl:sort select="substring-before(@name, '.')" data-type="number"/>
+          <c:file xml:base="{base-uri(.)}">
+            <xsl:copy-of select="@*"/>
+          </c:file>
+        </xsl:for-each>
 
-      <xsl:for-each select="c:file[not(matches(@name, '^[0-9]+\..*$'))]">
-        <xsl:sort select="@name"/>
-        <xsl:apply-templates select="."/>
-      </xsl:for-each>
+        <xsl:for-each select="c:file[not(matches(@name, '^[0-9]+\..*$'))]">
+          <xsl:sort select="@name"/>
+          <c:file xml:base="{base-uri(.)}">
+            <xsl:copy-of select="@*"/>
+          </c:file>
+        </xsl:for-each>
+      </xsl:variable>
+
+      <xsl:for-each-group select="$sorted/c:file" group-by="replace(@name,'^(.*)\.[^\.]+$','$1')">
+        <dt>
+          <xsl:choose>
+            <xsl:when test="count(current-group()) = 1">
+              <xsl:variable name="file" select="current-group()"/>
+              <a href="{substring-after(base-uri($file), 'github.com/')}{$file/@name}">
+                <xsl:value-of select="@name"/>
+              </a>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="current-grouping-key()"/>
+              <xsl:for-each select="current-group()">
+                <xsl:sort select="@name"/>
+                <xsl:if test="position()&gt;1">, </xsl:if>
+                <xsl:text>.</xsl:text>
+                <a href="{substring-after(base-uri(.), 'github.com/')}{@name}">
+                  <xsl:value-of select="replace(@name,'^.*\.([^\.]+)$','$1')"/>
+                </a>
+              </xsl:for-each>
+            </xsl:otherwise>
+          </xsl:choose>
+        </dt>
+      </xsl:for-each-group>
     </dl>
   </dd>
 </xsl:template>
