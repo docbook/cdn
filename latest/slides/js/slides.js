@@ -199,7 +199,6 @@ function navigate(code) {
 function reveal_next(curSlide, fade, gotoNext) {
     var slide = $($(".foil")[curSlide - 1]);
     var revealed = false;
-    var progressive = false;
     var last1 = null;
 
     if (multipage) {
@@ -207,15 +206,12 @@ function reveal_next(curSlide, fade, gotoNext) {
     }
 
     slide.find(".reveal").each(function() {
-        progressive = true;
         if (!revealed) {
             if ($(this).hasClass("revealed")) {
-                last1 = null;
                 if ($(this).hasClass("reveal1")) {
                     last1 = $(this);
                 }
-            }
-            if (!$(this).hasClass("revealed")) {
+            } else {
                 revealed = true;
                 if ($(this).hasClass("reveal1") && last1 != null) {
                     last1.css("display", "none")
@@ -227,6 +223,9 @@ function reveal_next(curSlide, fade, gotoNext) {
                 $(this).find(".dstrike").each(function(){
                     strikeOut(this);
                 });
+                if ($(this).hasClass("revealnext")) {
+                    revealed = false;
+                }
             }
         }
     });
