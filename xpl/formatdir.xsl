@@ -9,7 +9,7 @@
   <dl class="dirlist">
     <xsl:apply-templates select="c:directory[@name='release']"/>
     <xsl:apply-templates select="c:directory[@name!='release']"/>
-    <xsl:apply-templates select="c:file"/>
+    <xsl:apply-templates select="c:file[@name!='README.md']"/>
   </dl>
 </xsl:template>
 
