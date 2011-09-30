@@ -14,11 +14,13 @@
 </xsl:template>
 
 <xsl:template match="c:directory">
-  <dt>
+  <xsl:variable name="class"
+                select="if (count(ancestor::c:directory) &gt; 2) then 'toggleClosed' else 'toggleOpen'"/>
+  <dt class="dir {$class}" id="{generate-id(.)}">
     <xsl:value-of select="@name"/>
     <xsl:text>/</xsl:text>
   </dt>
-  <dd>
+  <dd class="dir {$class}" id="dd-{generate-id(.)}">
     <dl>
       <xsl:choose>
         <xsl:when test="@name = 'release'">
