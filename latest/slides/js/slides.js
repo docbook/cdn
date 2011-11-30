@@ -27,6 +27,8 @@ var KEY_ctrl = 17;
 var KEY_shift = 16;
 
 // A slide deck consists of
+
+
 // - a title slide (nofragid or #title)
 // - a toc slide (#toc)
 // - one or more slides (#1, #2, #3, ...)
