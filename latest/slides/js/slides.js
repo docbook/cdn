@@ -21,14 +21,13 @@ var KEY_n = 78;
 var KEY_u = 85;
 var KEY_d = 68;
 var KEY_r = 82;
+var KEY_s = 83;
 var KEY_alt = 18;
 var KEY_cmd = 224;
 var KEY_ctrl = 17;
 var KEY_shift = 16;
 
 // A slide deck consists of
-
-
 // - a title slide (nofragid or #title)
 // - a toc slide (#toc)
 // - one or more slides (#1, #2, #3, ...)
@@ -40,11 +39,15 @@ var ignoreHashChange = false;
 var helpDialog = undefined;
 var localKey = null;
 
-var timer = false
+var timer = false;
+var timersecs = false;
+var timerpaused = false;
+var timerofs = 0;
 var advance = -1
 var countdown = -1;
 var startDT = new Date();
 var slideDT = new Date();
+var pauseDT = new Date();
 var warnTime = 0;
 
 $(document).ready(function(){
@@ -113,6 +116,11 @@ function setupSinglepage() {
         timer = $($("meta[name='slides.timer']").get(0)).attr("content") === "true";
         timerDiv = $("<div class='timer'></div>");
         $("body").append(timerDiv);
+        $(".timer").click(function() { toggleTimer(); });
+    }
+
+    if ($("meta[name='slides.timersecs']").size() > 0) {
+        timersecs = $($("meta[name='slides.timersecs']").get(0)).attr("content") === "true";
     }
 
     if ($("meta[name='slides.countdown']").size() > 0) {
@@ -147,11 +155,17 @@ function setupSinglepage() {
 function checkTime(i) {
     var nowDT = new Date();
     var advleft = 0;
+    var hour, min, sec, prefix, secs, timestr;
 
     // Is the .timer div in the right place?
     var slide = $($(".foil")[curSlide - 1]);
     var footer = $(slide).find(".footer");
     var timer = $(footer).find(".timer");
+
+    if (timerpaused) {
+        return;
+    }
+
     if ($(timer).size() == 0) {
         // If not, move it
         timer = $(".timer").detach();
@@ -159,7 +173,7 @@ function checkTime(i) {
     }
 
     if (advance > 0 && curSlide < totSlides) {
-        var secs = Math.floor((nowDT.getTime() - slideDT.getTime()) / 1000);
+        secs = Math.floor((nowDT.getTime() - slideDT.getTime()) / 1000);
         if (secs >= advance) {
             goto(curSlide + 1);
             slideDT = nowDT;
@@ -169,10 +183,16 @@ function checkTime(i) {
     }
 
     if (timer) {
-        var prefix = "";
-        var secs = Math.floor((nowDT.getTime() - startDT.getTime()) / 1000);
+        prefix = "";
+        secs = Math.floor((nowDT.getTime() - startDT.getTime()) / 1000) - timerofs;
+
         if (countdown > 0) {
             secs = countdown - secs;
+
+            if (!timersecs) {
+                secs += 59;
+            }
+
             if (secs > 0 && secs < warnTime) {
                 $(".timer").addClass("lowtime");
             }
@@ -184,23 +204,31 @@ function checkTime(i) {
             }
         }
 
-        var min = Math.floor(secs / 60);
-        var sec = secs - (min * 60);
+        min = Math.floor(secs / 60);
+        sec = secs - (min * 60);
         if (min > 59) {
-            var hours = Math.floor(min / 60);
+            hour = Math.floor(min / 60);
             min = min - (hours * 60);
             prefix = prefix + hours + ":";
+        } else {
+            hour = 0;
+            prefix = prefix + "0:";
         }
 
-        var time = prefix + min + ":";
-        if (sec < 10) { time += "0"; }
-        time += sec;
+        if (min < 10) { prefix += "0"; }
+        timestr = prefix + min
+
+        if (timersecs) {
+            timestr += ":";
+            if (sec < 10) { timestr += "0"; }
+            timestr += sec;
+        }
 
         if (advleft > 0) {
-            time += "/" + advleft;
+            timestr += "/" + advleft;
         }
 
-        $(".timer").html(time);
+        $(".timer").html(timestr);
     }
 }
 
@@ -248,6 +276,9 @@ function setupHelpDialog() {
         div += "    <dt>[a]</dt>"
             +"    <dd>Reveal all slides. Useful for printing</dd>";
     }
+
+    div += "    <dt>[s]</dt>"
+        +"    <dd>Toggle slide notes</dd>";
 
     div += "  </dl>"
         +"</div>";
@@ -323,6 +354,10 @@ function navigate(code) {
 
     if (code == KEY_a) {
         show_all();
+    }
+
+    if (code == KEY_s) {
+        toggle_notes();
     }
 
     if (code == KEY_F1) {
@@ -496,10 +531,41 @@ function show_all(slide) {
     });
 }
 
+function toggle_notes(slide) {
+    if ($($(".foil-notes")[1]).css("display") == "none") {
+        $(".foil-notes").each(function(snum) { $(this).css("display", "block") });
+        $(".foil-body").each(function(snum) { $(this).css("display", "none") });
+        $(".timer").each(function(snum) { $(this).css("display", "block") });
+    } else {
+        $(".foil-notes").each(function(snum) { $(this).css("display", "none") });
+        $(".foil-body").each(function(snum) { $(this).css("display", "block") });
+        $(".timer").each(function(snum) { $(this).css("display", "none") });
+    }
+}
+
 function clicknav(dir) {
     if (dir == 'next') {
         navigate(ARR_R);
     } else {
         navigate(ARR_L);
     }
+}
+
+function toggleTimer() {
+    var secs, nowDT;
+
+    if (advance >= 0) {
+        return;
+    }
+
+    if (timerpaused) {
+        nowDT = new Date();
+        secs = Math.floor((nowDT.getTime() - pauseDT.getTime()) / 1000);
+        timerofs += secs;
+    } else {
+        pauseDT = new Date();
+        $(".timer").html("PAUSED");
+    }
+
+    timerpaused = !timerpaused;
 }
