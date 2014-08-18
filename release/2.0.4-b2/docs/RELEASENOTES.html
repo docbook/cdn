@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Release Notes</title><meta charset="utf-8" /><meta name="generator" content="DocBook XSL 2.0 Stylesheets V2.0.4-b2" /><link rel="stylesheet" type="text/css" href="http://docbook.github.com/latest/css/default.css" /><script type="text/javascript" src="http://docbook.github.com/latest/js/dbmodnizr.js"></script><link href="http://docbook.github.com/latest/css/prism.css" rel="stylesheet" /><link href="http://docbook.github.com/latest/css/db-prism.css" rel="stylesheet" /></head><body><article id="R.1" class="article"><header class="article-titlepage"><h2>Release Notes</h2></header><div class="toc"><p><b>Table of Contents</b></p><ul class="toc"><li><span><a href="#R.1.4">1. Changes since 2.0.4-b1</a></span></li><li><span><a href="#R.1.5">2. Changes since 2.0.3</a></span></li></ul></div><p>This document summarizes the significant changes since the 2.0.3
+release. It's been a long time since I did a release, no doubt I've
+tinkered with things that aren't well documented. Mea culpa.</p><p>There are a series of betas leading up to 2.0.4.</p><section id="R.1.4" class="section"><div class="section-titlepage"><h3>1. Changes since 2.0.4-b1</h3></div><p>There's nothing significant about the order in which the changes
+are listed.</p><div class="orderedlist"><ol style="list-style: decimal;"><li><p><a href="https://github.com/ndw/xmlcalabash1/commit/48ac7109c435cee8519a7c71b32b19583556192d">Merged</a>
+pull request <a href="https://github.com/ndw/xmlcalabash1/issues/16">#16</a> to create a separate resource root parameter for slide resources.
+</p></li><li><p><a href="https://github.com/ndw/xmlcalabash1/commit/c7cd3d90209d86024e3145d09ac71becfaa37cff">Merged</a>:
+pull request <a href="https://github.com/ndw/xmlcalabash1/issues/29">#29</a> to move generated <code class="tag-attribute">xml:id</code> attributes out
+of AVTs and into <code class="tag-element">xsl:attribute</code> syntax (to make ExistDB happy).
+</p></li><li><p><a href="https://github.com/ndw/xmlcalabash1/commit/ffc5e4b53269b6a68f401b1781b61157e362f842">Merged</a>:
+pull request <a href="https://github.com/ndw/xmlcalabash1/issues/31">#31</a> fixing a catastrophic bug in the handling of CALS tables.
+</p></li><li><p><a href="https://github.com/ndw/xmlcalabash1/commit/d97c507af7e449ca864af781c2d7ddc4e23c6fed">Improved</a> the
+DocBook XProc pipeline.
+</p></li></ol></div></section><section id="R.1.5" class="section"><div class="section-titlepage"><h3>2. Changes since 2.0.3</h3></div><p>This section summarizes the significant changes since the 2.0.3
+release. It's been a long time since I did a release, no doubt I've
+tinkered with things that aren't well documented. Mea culpa. There's
+nothing significant about the order in which the changes are listed.</p><p>That said: the big ones are first.</p><div class="orderedlist"><ol style="list-style: decimal;"><li><p>DocBook processing has for some time now been a multi-stage process.
+I've decided to break these stages out separately for ease of maintenance
+and configurability.</p><p>There's an XProc pipeline in the
+<code class="filename">/pipelines/</code> directory that runs
+them all. For convenience, I've also provided an Ant build script and
+a MarkLogic query module to perform the pipelining.</p></li><li><p>I've (largely) abandoned attempts to do “server side” pretty printing
+of verbatim environments. I was more-or-less happy with Pygments, but as
+Jython development hasn't kept up with Python development (AFAICT) it's
+become too difficult to make it work. Also, the effort expended by the stylesheets
+to do the pretty printing was significant and could be quite slow.</p><p>Modern sites seem to rely on client-side pretty printing, so I'm going
+to give that a try. Some of the “server side” work will be preserved for
+the “XHTML for print” stylesheets, but I don't know how that's going to
+shake out.</p><p>In the short term, I've selected
+<em class="citetitle"><a href="http://prismjs.com/">Prism</a></em> for the
+rendering. It's small, efficient, and seems well supported. I was able to
+make <code class="tag-element">programlistingco</code> elements perform both line and line range
+highlighting with it, which I thought was a nice touch.</p><p>There's a small Prism configuration in the DocBook github “CDN”.
+You're encouraged to customize the stylesheets to use your own configuration.
+</p><p>If you've got a strong preference for some other client-side
+pretty printer, let me know. I'm willing to attempt to make the stylesheets
+support more than one, if there's sufficient interest.</p></li><li><p>I've (provisionally, perhaps) decided to abandon development of
+the XSL FO stylesheets. Honestly, they were never very good in the
+XSLT 2.0 stylesheets anyway. If you still want to use FO, your best
+bet is probably the XSLT 1.0 stylesheets.</p><p>With the <em class="citetitle"><a href="http://www.w3.org/XML/XPPL/">XML
+Print and Page Layout Working Group</a></em> shuttered, it seems unlikely
+that there will be significant further developments in XSL FO.
+</p><p>Attention now seems to be focused (I observe without comment) on
+development of CSS facilities for doing paged layout. I will be working on
+“XHTML for print” stylesheets that can take advantage of those facilities.
+</p></li><li><p><a href="https://github.com/ndw/xmlcalabash1/commit/6eab30a2aa70e6495b820774557f17ff837e6fc5">Fixed</a>
+processing of HTML attributes in some environments.
+</p></li><li><p><a href="https://github.com/ndw/xmlcalabash1/commit/166cf1c55550b2076b309a7d219b92a062285346">Fixed</a>
+a bug in <code class="function">f:resolve-path</code>
+</p></li><li><p><a href="https://github.com/ndw/xmlcalabash1/commit/234d2a87fae4073a0c57be57a5e2481a5c80fa7d">Upgraded</a>
+to xspec-0.3.0; removed saxon9-ant.jar as it just didn't work anymore;
+fixed some build paths; updated to saxon 9.5.1.1.</p><div class="important admonition"><h3>Important</h3><p>The XSpec unit tests aren't really working at the moment due to
+the change over to a pipelined architecture. I'll be working on fixing
+that in due course.</p></div></li><li><p><a href="https://github.com/ndw/xmlcalabash1/commit/b5858a5d48d5a13aaed99e401c3a2af0aa82dfe8">Removed</a>
+'ext'. It now lives in the
+<a href="https://github.com/docbook/xslt20-java">https://github.com/docbook/xslt20-java</a> repository
+</p></li></ol></div></section></article><script src="http://docbook.github.com/latest/js/prism.js"></script></body></html>
