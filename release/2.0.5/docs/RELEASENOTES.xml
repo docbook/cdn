@@ -1,0 +1,39 @@
+<article xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5.0">
+<title>Release Notes</title>
+
+<para>This document summarizes the significant changes since the 2.0.4
+release.</para>
+
+<para>There's nothing significant about the order in which the changes
+are listed except that I usually try to put the big ones near
+the top..</para>
+
+<itemizedlist>
+<listitem>
+<para><link xlink:href="https://github.com/ndw/xmlcalabash1/commit/942c9877290099db48b50a7288846af3edb5d73d">Fixed</link> bug where
+QNames were compared incorrectly in the schema extension preprocessor.
+</para>
+</listitem>
+
+<listitem>
+<para><link xlink:href="https://github.com/ndw/xmlcalabash1/commit/4799b2e1bff42fc259ac4a95e91097c5659c91ff">Added</link>
+<parameter>$syntax.highlight.map</parameter> parameter to map verbatim
+language values.</para>
+</listitem>
+
+<listitem>
+<para><link xlink:href="https://github.com/ndw/xmlcalabash1/commit/c41a4ecc7b676993f23839b91433278a9a1b5897">Fixed</link> bug where a
+customized locale was assumed to override everything in the locale.
+</para>
+</listitem>
+
+<listitem>
+<para><link xlink:href="https://github.com/ndw/xmlcalabash1/commit/49c9af8ea170a3062683fe6045ce6b368140e5af">Use</link>
+<parameter>$resource.slide</parameter> in the
+<filename>plain-notes.xsl</filename> slides module (parallel to
+<filename>plain.xsl</filename>).</para>
+</listitem>
+</itemizedlist>
+</article>
