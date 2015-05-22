@@ -40,14 +40,16 @@
       <xsl:variable name="sorted">
         <xsl:for-each select="c:file[matches(@name, '^[0-9]+\..*$')]">
           <xsl:sort select="substring-before(@name, '.')" data-type="number"/>
-          <c:file xml:base="{base-uri(.)}">
+          <c:file>
+            <xsl:attribute name="xml:base" select="base-uri(.)"/>
             <xsl:copy-of select="@*"/>
           </c:file>
         </xsl:for-each>
 
         <xsl:for-each select="c:file[not(matches(@name, '^[0-9]+\..*$'))]">
           <xsl:sort select="@name"/>
-          <c:file xml:base="{base-uri(.)}">
+          <c:file>
+            <xsl:attribute name="xml:base" select="base-uri(.)"/>
             <xsl:copy-of select="@*"/>
           </c:file>
         </xsl:for-each>
