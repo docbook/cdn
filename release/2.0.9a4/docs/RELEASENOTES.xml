@@ -1,0 +1,34 @@
+<article xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         version="5.0">
+<title>Release Notes</title>
+
+<para>This document summarizes the significant changes since the 2.0.6
+release.</para>
+
+<para>There's nothing significant about the order in which the changes
+are listed except that I usually try to put the big ones near
+the top..</para>
+
+<itemizedlist>
+<listitem>
+<para><link xlink:href="https://github.com/ndw/xmlcalabash1/commit/70b3d2f15f367b3897e1b712e91864915b98ebc3">Made</link>
+missing links stand out better
+</para>
+</listitem>
+
+<listitem>
+<para><link xlink:href="https://github.com/ndw/xmlcalabash1/commit/5c1803e0a248f14a9742b6beccc1e9ccd351c474">Allow</link>
+broken links to flow through the preprocessing step in the pipeline.
+It's possible that downstream stylesheets will know what to do with them.
+</para>
+</listitem>
+
+<listitem>
+<para><link xlink:href="https://github.com/ndw/xmlcalabash1/commit/09425bf42213608e20475dcfe53c9a9ed293bcef">Support</link>
+XLink simple links on <tag>tag</tag> elements.
+</para>
+</listitem>
+
+</itemizedlist>
+</article>
