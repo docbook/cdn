@@ -25,7 +25,12 @@
       <xsl:choose>
         <xsl:when test="@name = 'release'">
           <xsl:for-each select="c:directory">
-            <xsl:sort select="@name" order="descending"/>
+            <xsl:sort select="tokenize(@name,'\.')[1]" order="descending"
+                      data-type="number"/>
+            <xsl:sort select="tokenize(@name,'\.')[2]" order="descending"
+                      data-type="number"/>
+            <xsl:sort select="tokenize(@name,'\.')[3]" order="descending"
+                      data-type="number"/>
             <xsl:apply-templates select="."/>
           </xsl:for-each>
         </xsl:when>

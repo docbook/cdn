@@ -2,7 +2,8 @@
                 xmlns:c="http://www.w3.org/ns/xproc-step"
 		xmlns:cx="http://xmlcalabash.com/ns/extensions">
   <p:output port="result" />
-  <p:serialization port="result" method="xhtml" indent="false" encoding="utf-8"/>
+  <p:serialization port="result" method="html" indent="false" encoding="utf-8"
+                   version="5"/>
 
   <p:import href="recursive.xpl"/>
 
