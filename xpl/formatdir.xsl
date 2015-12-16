@@ -65,7 +65,7 @@
           <xsl:choose>
             <xsl:when test="count(current-group()) = 1">
               <xsl:variable name="file" select="current-group()"/>
-              <a href="{substring-after(base-uri($file), 'github.com/')}{$file/@name}">
+              <a href="{substring-after(base-uri($file), 'github.io/')}{$file/@name}">
                 <xsl:value-of select="@name"/>
               </a>
             </xsl:when>
@@ -75,7 +75,7 @@
                 <xsl:sort select="@name"/>
                 <xsl:if test="position()&gt;1">, </xsl:if>
                 <xsl:text>.</xsl:text>
-                <a href="{substring-after(base-uri(.), 'github.com/')}{@name}">
+                <a href="{substring-after(base-uri(.), 'github.io/')}{@name}">
                   <xsl:value-of select="replace(@name,'^.*\.([^\.]+)$','$1')"/>
                 </a>
               </xsl:for-each>
@@ -89,7 +89,7 @@
 
 <xsl:template match="c:file">
   <dt>
-    <a href="{substring-after(base-uri(.), 'github.com/')}/{@name}">
+    <a href="{substring-after(base-uri(.), 'github.io/')}/{@name}">
       <xsl:value-of select="@name"/>
     </a>
   </dt>
