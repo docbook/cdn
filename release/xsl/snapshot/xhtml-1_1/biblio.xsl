@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="ASCII"?><!--This file was created automatically by html2xhtml--><!--from the HTML stylesheets.--><xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+<?xml version="1.0" encoding="ASCII"?>
+<!--This file was created automatically by html2xhtml-->
+<!--from the HTML stylesheets.-->
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
 
 <!-- ********************************************************************
 
      This file is part of the XSL DocBook Stylesheet distribution.
-     See ../README or http://docbook.sf.net/release/xsl/current/ for
+     See ../README or http://cdn.docbook.org/release/xsl/current/ for
      copyright and other information.
 
      ******************************************************************** -->
@@ -401,7 +404,7 @@
       <xsl:call-template name="gentext.endquote"/>
     </xsl:when>
     <xsl:otherwise>
-      <em><xsl:apply-templates/></em>
+      <em xmlns:xslo="http://www.w3.org/1999/XSL/Transform"><xsl:apply-templates/></em>
     </xsl:otherwise>
   </xsl:choose>
   <xsl:copy-of select="$biblioentry.item.separator"/>
@@ -834,7 +837,7 @@
   <span>
     <xsl:call-template name="common.html.attributes"/>
     <xsl:call-template name="id.attribute"/>
-    <em><xsl:apply-templates mode="bibliography.mode"/></em>
+    <em xmlns:xslo="http://www.w3.org/1999/XSL/Transform"><xsl:apply-templates mode="bibliography.mode"/></em>
     <xsl:copy-of select="$biblioentry.item.separator"/>
   </span>
 </xsl:template>
@@ -1001,7 +1004,7 @@
       <xsl:call-template name="gentext.endquote"/>
     </xsl:when>
     <xsl:otherwise>
-      <em><xsl:apply-templates/></em>
+      <em xmlns:xslo="http://www.w3.org/1999/XSL/Transform"><xsl:apply-templates/></em>
     </xsl:otherwise>
   </xsl:choose>
 </xsl:template>

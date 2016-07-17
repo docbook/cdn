@@ -5,7 +5,7 @@
 <!-- ********************************************************************
 
      This file is part of the XSL DocBook Stylesheet distribution.
-     See ../README or http://docbook.sf.net/release/xsl/current/ for
+     See ../README or http://cdn.docbook.org/release/xsl/current/ for
      copyright and other information.
 
      ******************************************************************** -->
@@ -66,7 +66,7 @@
   <xsl:attribute name="start-indent">0.5in</xsl:attribute>
   <xsl:attribute name="text-indent">-0.5in</xsl:attribute>
 </xsl:attribute-set>
-<xsl:param name="bibliography.collection">http://docbook.sourceforge.net/release/bibliography/bibliography.xml</xsl:param>
+<xsl:param name="bibliography.collection">http://cdn.docbook.org/release/xsl/bibliography/bibliography.xml</xsl:param>
 
 <xsl:param name="bibliography.numbered" select="0"/>
 <xsl:param name="bibliography.style">normal</xsl:param>

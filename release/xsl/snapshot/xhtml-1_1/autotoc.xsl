@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="ASCII"?><!--This file was created automatically by html2xhtml--><!--from the HTML stylesheets.--><xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+<?xml version="1.0" encoding="ASCII"?>
+<!--This file was created automatically by html2xhtml-->
+<!--from the HTML stylesheets.-->
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
 
 <!-- ********************************************************************
 
      This file is part of the XSL DocBook Stylesheet distribution.
-     See ../README or http://docbook.sf.net/release/xsl/current/ for
+     See ../README or http://cdn.docbook.org/release/xsl/current/ for
      copyright and other information.
 
      ******************************************************************** -->
@@ -42,7 +45,7 @@
         </xsl:when>
         <xsl:otherwise>
           <p>
-            <strong>
+            <strong xmlns:xslo="http://www.w3.org/1999/XSL/Transform">
               <xsl:call-template name="gentext">
                 <xsl:with-param name="key">TableofContents</xsl:with-param>
               </xsl:call-template>
@@ -643,7 +646,7 @@
         </xsl:when>
         <xsl:otherwise>
           <p>
-            <strong>
+            <strong xmlns:xslo="http://www.w3.org/1999/XSL/Transform">
               <xsl:call-template name="gentext">
                 <xsl:with-param name="key">
                   <xsl:choose>

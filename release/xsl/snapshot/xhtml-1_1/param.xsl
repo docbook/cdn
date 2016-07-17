@@ -3,7 +3,7 @@
 <!-- ********************************************************************
 
      This file is part of the XSL DocBook Stylesheet distribution.
-     See ../README or http://docbook.sf.net/release/xsl/current/ for
+     See ../README or http://cdn.docbook.org/release/xsl/current/ for
      copyright and other information.
 
      ******************************************************************** -->
@@ -62,11 +62,11 @@ div.annotation-close { position: absolute;
                      }
 </xsl:param>
 <xsl:param name="annotation.graphic.close">
-http://docbook.sourceforge.net/release/images/annot-close.png</xsl:param>
-<xsl:param name="annotation.graphic.open">http://docbook.sourceforge.net/release/images/annot-open.png</xsl:param>
+http://cdn.docbook.org/release/xsl/images/annot-close.png</xsl:param>
+<xsl:param name="annotation.graphic.open">http://cdn.docbook.org/release/xsl/images/annot-open.png</xsl:param>
 
 <xsl:param name="annotation.js">
-<xsl:text>http://docbook.sourceforge.net/release/script/AnchorPosition.js http://docbook.sourceforge.net/release/script/PopupWindow.js</xsl:text></xsl:param>
+<xsl:text>http://cdn.docbook.org/release/xsl/script/AnchorPosition.js http://cdn.docbook.org/release/xsl/script/PopupWindow.js</xsl:text></xsl:param>
 
 <xsl:param name="annotation.support" select="0"/>
 <xsl:param name="appendix.autolabel">A</xsl:param>
@@ -76,7 +76,7 @@ http://docbook.sourceforge.net/release/images/annot-close.png</xsl:param>
 <xsl:param name="autolink.index.see" select="1"/>
 <xsl:param name="base.dir"/>
 <xsl:param name="biblioentry.item.separator">. </xsl:param>
-<xsl:param name="bibliography.collection">http://docbook.sourceforge.net/release/bibliography/bibliography.xml</xsl:param>
+<xsl:param name="bibliography.collection">http://cdn.docbook.org/release/xsl/bibliography/bibliography.xml</xsl:param>
 
 <xsl:param name="bibliography.numbered" select="0"/>
 <xsl:param name="bibliography.style">normal</xsl:param>

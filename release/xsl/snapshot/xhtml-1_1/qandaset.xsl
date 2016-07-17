@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="ASCII"?><!--This file was created automatically by html2xhtml--><!--from the HTML stylesheets.--><xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:doc="http://nwalsh.com/xsl/documentation/1.0" xmlns="http://www.w3.org/1999/xhtml" exclude-result-prefixes="doc" version="1.0">
+<?xml version="1.0" encoding="ASCII"?>
+<!--This file was created automatically by html2xhtml-->
+<!--from the HTML stylesheets.-->
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:doc="http://nwalsh.com/xsl/documentation/1.0" xmlns="http://www.w3.org/1999/xhtml" exclude-result-prefixes="doc" version="1.0">
 
 <!-- ********************************************************************
 
      This file is part of the XSL DocBook Stylesheet distribution.
-     See ../README or http://docbook.sf.net/release/xsl/current/ for
+     See ../README or http://cdn.docbook.org/release/xsl/current/ for
      copyright and other information.
 
      ******************************************************************** -->
@@ -158,7 +161,7 @@
       </xsl:variable>
 
       <xsl:if test="string-length($label.content) &gt; 0">
-        <p><strong>
+        <p><strong xmlns:xslo="http://www.w3.org/1999/XSL/Transform">
           <xsl:copy-of select="$label.content"/>
         </strong></p>
       </xsl:if>
@@ -166,7 +169,7 @@
     <td align="{$direction.align.start}" valign="top">
       <xsl:choose>
         <xsl:when test="$deflabel = 'none' and not(label)">
-          <strong><xsl:apply-templates select="*[local-name(.) != 'label']"/></strong>
+          <strong xmlns:xslo="http://www.w3.org/1999/XSL/Transform"><xsl:apply-templates select="*[local-name(.) != 'label']"/></strong>
         </xsl:when>
         <xsl:otherwise>
           <xsl:apply-templates select="*[local-name(.) != 'label']"/>
@@ -211,7 +214,7 @@
         <xsl:apply-templates select="." mode="label.markup"/>
       </xsl:variable>
       <xsl:if test="string-length($answer.label) &gt; 0">
-        <p><strong>
+        <p><strong xmlns:xslo="http://www.w3.org/1999/XSL/Transform">
           <xsl:copy-of select="$answer.label"/>
         </strong></p>
       </xsl:if>
