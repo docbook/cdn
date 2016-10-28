@@ -1,51 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:exsl="http://exslt.org/common" xmlns:dbs="http://docbook.org/ns/docbook-slides" xmlns:fo="http://www.w3.org/1999/XSL/Format" version="1.0" exclude-result-prefixes="exsl">
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:d="http://docbook.org/ns/docbook" xmlns:exsl="http://exslt.org/common" xmlns:dbs="http://docbook.org/ns/docbook-slides" xmlns:fo="http://www.w3.org/1999/XSL/Format" version="1.0" exclude-result-prefixes="exsl d">
 
 <!-- This stylesheet was created by template/titlepage.xsl-->
 
 <xsl:template name="slides.titlepage.recto">
   <xsl:choose>
-    <xsl:when test="slidesinfo/title">
-      <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="slidesinfo/title"/>
+    <xsl:when test="d:slidesinfo/d:title">
+      <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:slidesinfo/d:title"/>
     </xsl:when>
-    <xsl:when test="docinfo/title">
-      <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="docinfo/title"/>
+    <xsl:when test="d:docinfo/d:title">
+      <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:docinfo/d:title"/>
     </xsl:when>
-    <xsl:when test="info/title">
-      <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="info/title"/>
+    <xsl:when test="d:info/d:title">
+      <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:info/d:title"/>
     </xsl:when>
-    <xsl:when test="title">
-      <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="title"/>
+    <xsl:when test="d:title">
+      <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:title"/>
     </xsl:when>
   </xsl:choose>
 
   <xsl:choose>
-    <xsl:when test="slidesinfo/subtitle">
-      <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="slidesinfo/subtitle"/>
+    <xsl:when test="d:slidesinfo/d:subtitle">
+      <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:slidesinfo/d:subtitle"/>
     </xsl:when>
-    <xsl:when test="docinfo/subtitle">
-      <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="docinfo/subtitle"/>
+    <xsl:when test="d:docinfo/d:subtitle">
+      <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:docinfo/d:subtitle"/>
     </xsl:when>
-    <xsl:when test="info/subtitle">
-      <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="info/subtitle"/>
+    <xsl:when test="d:info/d:subtitle">
+      <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:info/d:subtitle"/>
     </xsl:when>
-    <xsl:when test="subtitle">
-      <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="subtitle"/>
+    <xsl:when test="d:subtitle">
+      <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:subtitle"/>
     </xsl:when>
   </xsl:choose>
 
-  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="slidesinfo/corpauthor"/>
-  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="docinfo/corpauthor"/>
-  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="info/corpauthor"/>
-  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="slidesinfo/authorgroup"/>
-  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="docinfo/authorgroup"/>
-  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="info/authorgroup"/>
-  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="slidesinfo/author"/>
-  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="docinfo/author"/>
-  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="info/author"/>
-  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="slidesinfo/pubdate"/>
-  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="docinfo/pubdate"/>
-  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="info/pubdate"/>
+  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:slidesinfo/d:corpauthor"/>
+  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:docinfo/d:corpauthor"/>
+  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:info/d:corpauthor"/>
+  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:slidesinfo/d:authorgroup"/>
+  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:docinfo/d:authorgroup"/>
+  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:info/d:authorgroup"/>
+  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:slidesinfo/d:author"/>
+  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:docinfo/d:author"/>
+  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:info/d:author"/>
+  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:slidesinfo/d:pubdate"/>
+  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:docinfo/d:pubdate"/>
+  <xsl:apply-templates mode="slides.titlepage.recto.auto.mode" select="d:info/d:pubdate"/>
 </xsl:template>
 
 <xsl:template name="slides.titlepage.verso">
@@ -108,38 +108,38 @@
   <xsl:apply-templates select="." mode="titlepage.mode"/>
 </xsl:template>
 
-<xsl:template match="title" mode="slides.titlepage.recto.auto.mode">
+<xsl:template match="d:title" mode="slides.titlepage.recto.auto.mode">
 <fo:block xsl:use-attribute-sets="slides.titlepage.title.properties">
 <xsl:call-template name="presentation.title">
 </xsl:call-template>
 </fo:block>
 </xsl:template>
 
-<xsl:template match="subtitle" mode="slides.titlepage.recto.auto.mode">
+<xsl:template match="d:subtitle" mode="slides.titlepage.recto.auto.mode">
 <fo:block xsl:use-attribute-sets="slides.titlepage.subtitle.properties">
 <xsl:apply-templates select="." mode="slides.titlepage.recto.mode"/>
 </fo:block>
 </xsl:template>
 
-<xsl:template match="corpauthor" mode="slides.titlepage.recto.auto.mode">
+<xsl:template match="d:corpauthor" mode="slides.titlepage.recto.auto.mode">
 <fo:block xsl:use-attribute-sets="slides.titlepage.corpauthor.properties">
 <xsl:apply-templates select="." mode="slides.titlepage.recto.mode"/>
 </fo:block>
 </xsl:template>
 
-<xsl:template match="authorgroup" mode="slides.titlepage.recto.auto.mode">
+<xsl:template match="d:authorgroup" mode="slides.titlepage.recto.auto.mode">
 <fo:block xsl:use-attribute-sets="slides.titlepage.authorgroup.properties">
 <xsl:apply-templates select="." mode="slides.titlepage.recto.mode"/>
 </fo:block>
 </xsl:template>
 
-<xsl:template match="author" mode="slides.titlepage.recto.auto.mode">
+<xsl:template match="d:author" mode="slides.titlepage.recto.auto.mode">
 <fo:block xsl:use-attribute-sets="slides.titlepage.author.properties">
 <xsl:apply-templates select="." mode="slides.titlepage.recto.mode"/>
 </fo:block>
 </xsl:template>
 
-<xsl:template match="pubdate" mode="slides.titlepage.recto.auto.mode">
+<xsl:template match="d:pubdate" mode="slides.titlepage.recto.auto.mode">
 <fo:block xsl:use-attribute-sets="slides.titlepage.pubdate.properties">
 <xsl:apply-templates select="." mode="slides.titlepage.recto.mode"/>
 </fo:block>

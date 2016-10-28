@@ -34023,7 +34023,7 @@ Defaults to the context node.</para>
 </refnamediv>
 <refsynopsisdiv>
 <synopsis>&lt;xsl:template name="select.mediaobject"&gt;
-&lt;xsl:param name="olist" select="imageobject|imageobjectco                      |videoobject|audioobject|textobject"/&gt;
+&lt;xsl:param name="olist" select="d:imageobject|d:imageobjectco                      |d:videoobject|d:audioobject|d:textobject"/&gt;
   ...
 &lt;/xsl:template&gt;</synopsis>
 </refsynopsisdiv>
@@ -34068,7 +34068,7 @@ in the list is appropriate.</para>
 </refnamediv>
 <refsynopsisdiv>
 <synopsis>&lt;xsl:template name="select.mediaobject.index"&gt;
-&lt;xsl:param name="olist" select="imageobject|imageobjectco                      |videoobject|audioobject|textobject"/&gt;
+&lt;xsl:param name="olist" select="d:imageobject|d:imageobjectco                      |d:videoobject|d:audioobject|d:textobject"/&gt;
 &lt;xsl:param name="count"&gt;1&lt;/xsl:param&gt;
   ...
 &lt;/xsl:template&gt;</synopsis>

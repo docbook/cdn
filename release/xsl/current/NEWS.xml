@@ -37,6 +37,9 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
+<para><literal>Stefan Seefeld: xsl/autoidx-kimber.xsl; xsl/autoidx-kosek.xsl; xsl/charmap.xsl; xsl/common⋯</literal></para><screen><phrase role="commit-message">Convert stylesheets to be namespace-aware.</phrase></screen>
+</listitem>
+<listitem>
 <para><literal>Stefan Seefeld: xsl/autoidx-kimber.xsl; xsl/autoidx-kosek.xsl; xsl/charmap.xsl; xsl/common⋯</literal></para><screen><phrase role="commit-message">Adjust URLs to refer to new CDN.</phrase></screen>
 </listitem>
 <listitem>
@@ -54,6 +57,9 @@
             <filename>fo</filename> code
             since the 1.79.1 release.</para>
 <itemizedlist>
+<listitem>
+<para><literal>Stefan Seefeld: xsl/admon.xsl; xsl/annotations.xsl; xsl/autoidx-kimber.xsl; xsl/autoidx-ko⋯</literal></para><screen><phrase role="commit-message">Convert stylesheets to be namespace-aware.</phrase></screen>
+</listitem>
 <listitem>
 <para><literal>Stefan Seefeld: xsl/admon.xsl; xsl/annotations.xsl; xsl/autoidx-kimber.xsl; xsl/autoidx-ko⋯</literal></para><screen><phrase role="commit-message">Adjust URLs to refer to new CDN.</phrase></screen>
 </listitem>
@@ -76,6 +82,9 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
+<para><literal>Stefan Seefeld: xsl/admon.xsl; xsl/annotations.xsl; xsl/autoidx-kimber.xsl; xsl/autoidx-ko⋯</literal></para><screen><phrase role="commit-message">Convert stylesheets to be namespace-aware.</phrase></screen>
+</listitem>
+<listitem>
 <para><literal>Stefan Seefeld: xsl/admon.xsl; xsl/autoidx-kimber.xsl; xsl/autoidx-kosek.xsl; xsl/autoidx-⋯</literal></para><screen><phrase role="commit-message">Adjust URLs to refer to new CDN.</phrase></screen>
 </listitem>
 <listitem>
@@ -97,6 +106,9 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
+<para><literal>Stefan Seefeld: xsl/block.xsl; xsl/charmap.groff.xsl; xsl/docbook.xsl; xsl/endnotes.xsl; x⋯</literal></para><screen><phrase role="commit-message">Convert stylesheets to be namespace-aware.</phrase></screen>
+</listitem>
+<listitem>
 <para><literal>Stefan Seefeld: xsl/block.xsl; xsl/charmap.groff.xsl; xsl/docbook.xsl; xsl/endnotes.xsl; x⋯</literal></para><screen><phrase role="commit-message">Adjust URLs to refer to new CDN.</phrase></screen>
 </listitem>
 <listitem>
@@ -115,6 +127,9 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
+<para><literal>Stefan Seefeld: xsl/bin/spec/files/test_cust.xsl; xsl/bin/spec/tools/obfuscate_regression_⋯</literal></para><screen><phrase role="commit-message">Convert stylesheets to be namespace-aware.</phrase></screen>
+</listitem>
+<listitem>
 <para><literal>Stefan Seefeld: xsl/bin/spec/files/dupedgraphics.xml; xsl/bin/spec/files/manygraphics.xml;⋯</literal></para><screen><phrase role="commit-message">Clean up build and <tag>revision</tag> control logic.</phrase></screen>
 </listitem>
 <listitem>
@@ -130,6 +145,9 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
+<para><literal>Stefan Seefeld: xsl/htmlhelp-common.xsl; xsl/htmlhelp.xsl; xsl/profile-htmlhelp.xsl</literal></para><screen><phrase role="commit-message">Convert stylesheets to be namespace-aware.</phrase></screen>
+</listitem>
+<listitem>
 <para><literal>Stefan Seefeld: xsl/htmlhelp-common.xsl; xsl/htmlhelp.xsl; xsl/profile-htmlhelp.xsl</literal></para><screen><phrase role="commit-message">Clean up build and <tag>revision</tag> control logic.</phrase></screen>
 </listitem>
 <listitem>
@@ -144,6 +162,9 @@
             <filename>eclipse</filename> code
             since the 1.79.1 release.</para>
 <itemizedlist>
+<listitem>
+<para><literal>Stefan Seefeld: xsl/eclipse.xsl; xsl/eclipse3.xsl</literal></para><screen><phrase role="commit-message">Convert stylesheets to be namespace-aware.</phrase></screen>
+</listitem>
 <listitem>
 <para><literal>Stefan Seefeld: xsl/eclipse.xsl; xsl/eclipse3.xsl</literal></para><screen><phrase role="commit-message">Adjust URLs to refer to new CDN.</phrase></screen>
 </listitem>
@@ -163,6 +184,9 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
+<para><literal>Stefan Seefeld: xsl/javahelp.xsl</literal></para><screen><phrase role="commit-message">Convert stylesheets to be namespace-aware.</phrase></screen>
+</listitem>
+<listitem>
 <para><literal>Stefan Seefeld: xsl/javahelp.xsl</literal></para><screen><phrase role="commit-message">Adjust URLs to refer to new CDN.</phrase></screen>
 </listitem>
 <listitem>
@@ -180,6 +204,9 @@
             <filename>roundtrip</filename> code
             since the 1.79.1 release.</para>
 <itemizedlist>
+<listitem>
+<para><literal>Stefan Seefeld: xsl/blocks2dbk.xsl; xsl/dbk2ooo.xsl; xsl/dbk2pages.xsl; xsl/dbk2wordml.xsl⋯</literal></para><screen><phrase role="commit-message">Convert stylesheets to be namespace-aware.</phrase></screen>
+</listitem>
 <listitem>
 <para><literal>Stefan Seefeld: xsl/dbk2ooo.xsl; xsl/dbk2pages.xsl; xsl/dbk2wordml.xsl; xsl/dbk2wp.xsl; xs⋯</literal></para><screen><phrase role="commit-message">Adjust URLs to refer to new CDN.</phrase></screen>
 </listitem>
@@ -207,6 +234,9 @@
 <listitem>
 <para><literal>Stefan Seefeld: xsl/images/callouts/gen.sh; xsl/schema/relaxng/slides.rnc</literal></para><screen><phrase role="commit-message">Fix slides build.</phrase></screen>
 </listitem>
+<listitem>
+<para><literal>Norman Walsh: COPYING</literal></para><screen><phrase role="commit-message">Attempt to rationalize the license to MIT</phrase></screen>
+</listitem>
 </itemizedlist>
 </section><!--end of Slides changes for snapshot-->
 
@@ -225,6 +255,9 @@
 <listitem>
 <para><literal>Stefan Seefeld: xsl/Makefile</literal></para><screen><phrase role="commit-message">Remove use of `svn`.</phrase></screen>
 </listitem>
+<listitem>
+<para><literal>Norman Walsh: COPYING</literal></para><screen><phrase role="commit-message">Attempt to rationalize the license to MIT</phrase></screen>
+</listitem>
 </itemizedlist>
 </section><!--end of Website changes for snapshot-->
 
@@ -234,6 +267,9 @@
             <filename>webhelp</filename> code
             since the 1.79.1 release.</para>
 <itemizedlist>
+<listitem>
+<para><literal>Stefan Seefeld: xsl/xsl/titlepage.templates.xsl; xsl/xsl/webhelp-common.xsl; xsl/xsl/webhe⋯</literal></para><screen><phrase role="commit-message">Convert stylesheets to be namespace-aware.</phrase></screen>
+</listitem>
 <listitem>
 <para><literal>Stefan Seefeld: xsl/docsrc/readme.xml</literal></para><screen><phrase role="commit-message">Adjust URLs to refer to new CDN.</phrase></screen>
 </listitem>
@@ -268,6 +304,9 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
+<para><literal>Stefan Seefeld: xsl/common.xsl</literal></para><screen><phrase role="commit-message">Convert stylesheets to be namespace-aware.</phrase></screen>
+</listitem>
+<listitem>
 <para><literal>Stefan Seefeld: xsl/common.xsl</literal></para><screen><phrase role="commit-message">Adjust URLs to refer to new CDN.</phrase></screen>
 </listitem>
 <listitem>
@@ -275,6 +314,18 @@
 </listitem>
 </itemizedlist>
 </section><!--end of Highlighting changes for snapshot-->
+
+<section xml:id="Vsnapshot_Profiling">
+<title>Profiling</title>
+<para>The following changes have been made to the
+            <filename>profiling</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Stefan Seefeld: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/strip-attributes.xsl; xsl/xsl2p⋯</literal></para><screen><phrase role="commit-message">Convert stylesheets to be namespace-aware.</phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of Profiling changes for snapshot-->
 
 <section xml:id="Vsnapshot_Lib">
 <title>Lib</title>
@@ -319,6 +370,9 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
+<para><literal>Stefan Seefeld: xsl/titlepage.xsl</literal></para><screen><phrase role="commit-message">Convert stylesheets to be namespace-aware.</phrase></screen>
+</listitem>
+<listitem>
 <para><literal>Stefan Seefeld: xsl/titlepage.xsl</literal></para><screen><phrase role="commit-message">Adjust URLs to refer to new CDN.</phrase></screen>
 </listitem>
 <listitem>
@@ -358,6 +412,9 @@
 <para><literal>Stefan Seefeld: Makefile; build.xml</literal></para><screen><phrase role="commit-message">Fix extension builds.</phrase></screen>
 </listitem>
 <listitem>
+<para><literal>Norman Walsh: COPYING</literal></para><screen><phrase role="commit-message">Attempt to rationalize the license to MIT</phrase></screen>
+</listitem>
+<listitem>
 <para><literal>Norman Walsh: build.xml; nbproject/build-impl.xml; nbproject/genfiles.properties; nbprojec⋯</literal></para><screen><phrase role="commit-message">Fix xsl-saxon build.xml to work without NetBeans</phrase></screen>
 </listitem>
 </itemizedlist>
@@ -374,6 +431,9 @@
 </listitem>
 <listitem>
 <para><literal>Stefan Seefeld: Makefile; build.xml</literal></para><screen><phrase role="commit-message">Fix extension builds.</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: COPYING</literal></para><screen><phrase role="commit-message">Attempt to rationalize the license to MIT</phrase></screen>
 </listitem>
 <listitem>
 <para><literal>Norman Walsh: build.xml; nbproject/.gitignore; nbproject/build-impl.xml; nbproject/genfile⋯</literal></para><screen><phrase role="commit-message">Fix the xsl-xalan build too</phrase></screen>

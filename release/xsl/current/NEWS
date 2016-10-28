@@ -23,6 +23,7 @@ Release Notes: snapshot
     Webhelp
     Params
     Highlighting
+    Profiling
     Lib
     Tools
     Template
@@ -61,6 +62,11 @@ release.
   • Stefan Seefeld: xsl/autoidx-kimber.xsl; xsl/autoidx-kosek.xsl; xsl/
     charmap.xsl; xsl/common⋯
 
+    Convert stylesheets to be namespace-aware.
+
+  • Stefan Seefeld: xsl/autoidx-kimber.xsl; xsl/autoidx-kosek.xsl; xsl/
+    charmap.xsl; xsl/common⋯
+
     Adjust URLs to refer to new CDN.
 
   • Stefan Seefeld: xsl/autoidx-kimber.xsl; xsl/autoidx-kosek.xsl; xsl/
@@ -75,6 +81,11 @@ release.
 FO
 
 The following changes have been made to the fo code since the 1.79.1 release.
+
+  • Stefan Seefeld: xsl/admon.xsl; xsl/annotations.xsl; xsl/autoidx-kimber.xsl;
+    xsl/autoidx-ko⋯
+
+    Convert stylesheets to be namespace-aware.
 
   • Stefan Seefeld: xsl/admon.xsl; xsl/annotations.xsl; xsl/autoidx-kimber.xsl;
     xsl/autoidx-ko⋯
@@ -98,6 +109,11 @@ The following changes have been made to the fo code since the 1.79.1 release.
 HTML
 
 The following changes have been made to the html code since the 1.79.1 release.
+
+  • Stefan Seefeld: xsl/admon.xsl; xsl/annotations.xsl; xsl/autoidx-kimber.xsl;
+    xsl/autoidx-ko⋯
+
+    Convert stylesheets to be namespace-aware.
 
   • Stefan Seefeld: xsl/admon.xsl; xsl/autoidx-kimber.xsl; xsl/
     autoidx-kosek.xsl; xsl/autoidx-⋯
@@ -126,6 +142,11 @@ release.
   • Stefan Seefeld: xsl/block.xsl; xsl/charmap.groff.xsl; xsl/docbook.xsl; xsl/
     endnotes.xsl; x⋯
 
+    Convert stylesheets to be namespace-aware.
+
+  • Stefan Seefeld: xsl/block.xsl; xsl/charmap.groff.xsl; xsl/docbook.xsl; xsl/
+    endnotes.xsl; x⋯
+
     Adjust URLs to refer to new CDN.
 
   • Stefan Seefeld: xsl/block.xsl; xsl/charmap.groff.xsl; xsl/docbook.xsl; xsl/
@@ -140,6 +161,11 @@ release.
 Epub
 
 The following changes have been made to the epub code since the 1.79.1 release.
+
+  • Stefan Seefeld: xsl/bin/spec/files/test_cust.xsl; xsl/bin/spec/tools/
+    obfuscate_regression_⋯
+
+    Convert stylesheets to be namespace-aware.
 
   • Stefan Seefeld: xsl/bin/spec/files/dupedgraphics.xml; xsl/bin/spec/files/
     manygraphics.xml;⋯
@@ -159,6 +185,11 @@ release.
   • Stefan Seefeld: xsl/htmlhelp-common.xsl; xsl/htmlhelp.xsl; xsl/
     profile-htmlhelp.xsl
 
+    Convert stylesheets to be namespace-aware.
+
+  • Stefan Seefeld: xsl/htmlhelp-common.xsl; xsl/htmlhelp.xsl; xsl/
+    profile-htmlhelp.xsl
+
     Clean up build and revision control logic.
 
   • Stefan Seefeld: xsl/Makefile
@@ -169,6 +200,10 @@ Eclipse
 
 The following changes have been made to the eclipse code since the 1.79.1
 release.
+
+  • Stefan Seefeld: xsl/eclipse.xsl; xsl/eclipse3.xsl
+
+    Convert stylesheets to be namespace-aware.
 
   • Stefan Seefeld: xsl/eclipse.xsl; xsl/eclipse3.xsl
 
@@ -189,6 +224,10 @@ release.
 
   • Stefan Seefeld: xsl/javahelp.xsl
 
+    Convert stylesheets to be namespace-aware.
+
+  • Stefan Seefeld: xsl/javahelp.xsl
+
     Adjust URLs to refer to new CDN.
 
   • Stefan Seefeld: xsl/javahelp.xsl
@@ -203,6 +242,11 @@ Roundtrip
 
 The following changes have been made to the roundtrip code since the 1.79.1
 release.
+
+  • Stefan Seefeld: xsl/blocks2dbk.xsl; xsl/dbk2ooo.xsl; xsl/dbk2pages.xsl; xsl
+    /dbk2wordml.xsl⋯
+
+    Convert stylesheets to be namespace-aware.
 
   • Stefan Seefeld: xsl/dbk2ooo.xsl; xsl/dbk2pages.xsl; xsl/dbk2wordml.xsl; xsl
     /dbk2wp.xsl; xs⋯
@@ -236,6 +280,10 @@ release.
 
     Fix slides build.
 
+  • Norman Walsh: COPYING
+
+    Attempt to rationalize the license to MIT
+
 Website
 
 The following changes have been made to the website code since the 1.79.1
@@ -254,10 +302,19 @@ release.
 
     Remove use of `svn`.
 
+  • Norman Walsh: COPYING
+
+    Attempt to rationalize the license to MIT
+
 Webhelp
 
 The following changes have been made to the webhelp code since the 1.79.1
 release.
+
+  • Stefan Seefeld: xsl/xsl/titlepage.templates.xsl; xsl/xsl/
+    webhelp-common.xsl; xsl/xsl/webhe⋯
+
+    Convert stylesheets to be namespace-aware.
 
   • Stefan Seefeld: xsl/docsrc/readme.xml
 
@@ -294,11 +351,25 @@ release.
 
   • Stefan Seefeld: xsl/common.xsl
 
+    Convert stylesheets to be namespace-aware.
+
+  • Stefan Seefeld: xsl/common.xsl
+
     Adjust URLs to refer to new CDN.
 
   • Stefan Seefeld: xsl/common.xsl
 
     Clean up build and revision control logic.
+
+Profiling
+
+The following changes have been made to the profiling code since the 1.79.1
+release.
+
+  • Stefan Seefeld: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
+    strip-attributes.xsl; xsl/xsl2p⋯
+
+    Convert stylesheets to be namespace-aware.
 
 Lib
 
@@ -343,6 +414,10 @@ release.
 
   • Stefan Seefeld: xsl/titlepage.xsl
 
+    Convert stylesheets to be namespace-aware.
+
+  • Stefan Seefeld: xsl/titlepage.xsl
+
     Adjust URLs to refer to new CDN.
 
   • Stefan Seefeld: xsl/titlepage.xsl
@@ -380,6 +455,10 @@ release.
 
     Fix extension builds.
 
+  • Norman Walsh: COPYING
+
+    Attempt to rationalize the license to MIT
+
   • Norman Walsh: build.xml; nbproject/build-impl.xml; nbproject/
     genfiles.properties; nbprojec⋯
 
@@ -398,6 +477,10 @@ release.
   • Stefan Seefeld: Makefile; build.xml
 
     Fix extension builds.
+
+  • Norman Walsh: COPYING
+
+    Attempt to rationalize the license to MIT
 
   • Norman Walsh: build.xml; nbproject/.gitignore; nbproject/build-impl.xml;
     nbproject/genfile⋯

@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="ASCII"?>
-<!--This file was created automatically by html2xhtml-->
-<!--from the HTML stylesheets.-->
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:its="http://www.w3.org/2005/11/its" xmlns="http://www.w3.org/1999/xhtml" exclude-result-prefixes="its" version="1.0">
+<?xml version="1.0" encoding="ASCII"?><!--This file was created automatically by html2xhtml--><!--from the HTML stylesheets.--><xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:d="http://docbook.org/ns/docbook" xmlns:its="http://www.w3.org/2005/11/its" xmlns="http://www.w3.org/1999/xhtml" exclude-result-prefixes="its d" version="1.0">
 
 <!-- ********************************************************************
 

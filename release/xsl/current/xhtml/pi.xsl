@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ASCII"?><!--This file was created automatically by html2xhtml--><!--from the HTML stylesheets.--><xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:doc="http://nwalsh.com/xsl/documentation/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/1999/xhtml" exclude-result-prefixes="doc" version="1.0">
+<?xml version="1.0" encoding="ASCII"?><!--This file was created automatically by html2xhtml--><!--from the HTML stylesheets.--><xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:d="http://docbook.org/ns/docbook" xmlns:doc="http://nwalsh.com/xsl/documentation/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/1999/xhtml" exclude-result-prefixes="doc d" version="1.0">
 
 <!-- ********************************************************************
 
@@ -909,7 +909,7 @@ specifications in one processing instruction:
   </refparameter>
 </doc:pi>
 <xsl:template name="pi.dbcmdlist">
-  <xsl:variable name="cmdsynopses" select="..//cmdsynopsis"/>
+  <xsl:variable name="cmdsynopses" select="..//d:cmdsynopsis"/>
   <xsl:if test="count($cmdsynopses)&lt;1">
     <xsl:message><xsl:text>No cmdsynopsis elements matched dbcmdlist PI, perhaps it's nested too deep?</xsl:text>
     </xsl:message>
@@ -939,7 +939,7 @@ specifications in one processing instruction:
   </refparameter>
 </doc:pi>
 <xsl:template name="pi.dbfunclist">
-  <xsl:variable name="funcsynopses" select="..//funcsynopsis"/>
+  <xsl:variable name="funcsynopses" select="..//d:funcsynopsis"/>
   <xsl:if test="count($funcsynopses)&lt;1">
     <xsl:message><xsl:text>No funcsynopsis elements matched dbfunclist PI, perhaps it's nested too deep?</xsl:text>
     </xsl:message>

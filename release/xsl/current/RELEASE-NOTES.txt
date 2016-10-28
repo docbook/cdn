@@ -2,7 +2,7 @@ Release Notes for the DocBook XSL Stylesheets
 
 $Revision: 10010 $ $Date: 2015-12-26 15:05:24 -0800 (Sat, 26 Dec 2015) $
 
-2016-07-17
+2016-10-28
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -25,6 +25,7 @@ Release Notes: snapshot
     Webhelp
     Params
     Highlighting
+    Profiling
     Lib
     Tools
     Template
@@ -352,6 +353,11 @@ release.
   • Stefan Seefeld: xsl/autoidx-kimber.xsl; xsl/autoidx-kosek.xsl; xsl/
     charmap.xsl; xsl/common⋯
 
+    Convert stylesheets to be namespace-aware.
+
+  • Stefan Seefeld: xsl/autoidx-kimber.xsl; xsl/autoidx-kosek.xsl; xsl/
+    charmap.xsl; xsl/common⋯
+
     Adjust URLs to refer to new CDN.
 
   • Stefan Seefeld: xsl/autoidx-kimber.xsl; xsl/autoidx-kosek.xsl; xsl/
@@ -366,6 +372,11 @@ release.
 FO
 
 The following changes have been made to the fo code since the 1.79.1 release.
+
+  • Stefan Seefeld: xsl/admon.xsl; xsl/annotations.xsl; xsl/autoidx-kimber.xsl;
+    xsl/autoidx-ko⋯
+
+    Convert stylesheets to be namespace-aware.
 
   • Stefan Seefeld: xsl/admon.xsl; xsl/annotations.xsl; xsl/autoidx-kimber.xsl;
     xsl/autoidx-ko⋯
@@ -389,6 +400,11 @@ The following changes have been made to the fo code since the 1.79.1 release.
 HTML
 
 The following changes have been made to the html code since the 1.79.1 release.
+
+  • Stefan Seefeld: xsl/admon.xsl; xsl/annotations.xsl; xsl/autoidx-kimber.xsl;
+    xsl/autoidx-ko⋯
+
+    Convert stylesheets to be namespace-aware.
 
   • Stefan Seefeld: xsl/admon.xsl; xsl/autoidx-kimber.xsl; xsl/
     autoidx-kosek.xsl; xsl/autoidx-⋯
@@ -417,6 +433,11 @@ release.
   • Stefan Seefeld: xsl/block.xsl; xsl/charmap.groff.xsl; xsl/docbook.xsl; xsl/
     endnotes.xsl; x⋯
 
+    Convert stylesheets to be namespace-aware.
+
+  • Stefan Seefeld: xsl/block.xsl; xsl/charmap.groff.xsl; xsl/docbook.xsl; xsl/
+    endnotes.xsl; x⋯
+
     Adjust URLs to refer to new CDN.
 
   • Stefan Seefeld: xsl/block.xsl; xsl/charmap.groff.xsl; xsl/docbook.xsl; xsl/
@@ -431,6 +452,11 @@ release.
 Epub
 
 The following changes have been made to the epub code since the 1.79.1 release.
+
+  • Stefan Seefeld: xsl/bin/spec/files/test_cust.xsl; xsl/bin/spec/tools/
+    obfuscate_regression_⋯
+
+    Convert stylesheets to be namespace-aware.
 
   • Stefan Seefeld: xsl/bin/spec/files/dupedgraphics.xml; xsl/bin/spec/files/
     manygraphics.xml;⋯
@@ -450,6 +476,11 @@ release.
   • Stefan Seefeld: xsl/htmlhelp-common.xsl; xsl/htmlhelp.xsl; xsl/
     profile-htmlhelp.xsl
 
+    Convert stylesheets to be namespace-aware.
+
+  • Stefan Seefeld: xsl/htmlhelp-common.xsl; xsl/htmlhelp.xsl; xsl/
+    profile-htmlhelp.xsl
+
     Clean up build and revision control logic.
 
   • Stefan Seefeld: xsl/Makefile
@@ -460,6 +491,10 @@ Eclipse
 
 The following changes have been made to the eclipse code since the 1.79.1
 release.
+
+  • Stefan Seefeld: xsl/eclipse.xsl; xsl/eclipse3.xsl
+
+    Convert stylesheets to be namespace-aware.
 
   • Stefan Seefeld: xsl/eclipse.xsl; xsl/eclipse3.xsl
 
@@ -480,6 +515,10 @@ release.
 
   • Stefan Seefeld: xsl/javahelp.xsl
 
+    Convert stylesheets to be namespace-aware.
+
+  • Stefan Seefeld: xsl/javahelp.xsl
+
     Adjust URLs to refer to new CDN.
 
   • Stefan Seefeld: xsl/javahelp.xsl
@@ -494,6 +533,11 @@ Roundtrip
 
 The following changes have been made to the roundtrip code since the 1.79.1
 release.
+
+  • Stefan Seefeld: xsl/blocks2dbk.xsl; xsl/dbk2ooo.xsl; xsl/dbk2pages.xsl; xsl
+    /dbk2wordml.xsl⋯
+
+    Convert stylesheets to be namespace-aware.
 
   • Stefan Seefeld: xsl/dbk2ooo.xsl; xsl/dbk2pages.xsl; xsl/dbk2wordml.xsl; xsl
     /dbk2wp.xsl; xs⋯
@@ -527,6 +571,10 @@ release.
 
     Fix slides build.
 
+  • Norman Walsh: COPYING
+
+    Attempt to rationalize the license to MIT
+
 Website
 
 The following changes have been made to the website code since the 1.79.1
@@ -545,10 +593,19 @@ release.
 
     Remove use of `svn`.
 
+  • Norman Walsh: COPYING
+
+    Attempt to rationalize the license to MIT
+
 Webhelp
 
 The following changes have been made to the webhelp code since the 1.79.1
 release.
+
+  • Stefan Seefeld: xsl/xsl/titlepage.templates.xsl; xsl/xsl/
+    webhelp-common.xsl; xsl/xsl/webhe⋯
+
+    Convert stylesheets to be namespace-aware.
 
   • Stefan Seefeld: xsl/docsrc/readme.xml
 
@@ -585,11 +642,25 @@ release.
 
   • Stefan Seefeld: xsl/common.xsl
 
+    Convert stylesheets to be namespace-aware.
+
+  • Stefan Seefeld: xsl/common.xsl
+
     Adjust URLs to refer to new CDN.
 
   • Stefan Seefeld: xsl/common.xsl
 
     Clean up build and revision control logic.
+
+Profiling
+
+The following changes have been made to the profiling code since the 1.79.1
+release.
+
+  • Stefan Seefeld: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
+    strip-attributes.xsl; xsl/xsl2p⋯
+
+    Convert stylesheets to be namespace-aware.
 
 Lib
 
@@ -634,6 +705,10 @@ release.
 
   • Stefan Seefeld: xsl/titlepage.xsl
 
+    Convert stylesheets to be namespace-aware.
+
+  • Stefan Seefeld: xsl/titlepage.xsl
+
     Adjust URLs to refer to new CDN.
 
   • Stefan Seefeld: xsl/titlepage.xsl
@@ -671,6 +746,10 @@ release.
 
     Fix extension builds.
 
+  • Norman Walsh: COPYING
+
+    Attempt to rationalize the license to MIT
+
   • Norman Walsh: build.xml; nbproject/build-impl.xml; nbproject/
     genfiles.properties; nbprojec⋯
 
@@ -689,6 +768,10 @@ release.
   • Stefan Seefeld: Makefile; build.xml
 
     Fix extension builds.
+
+  • Norman Walsh: COPYING
+
+    Attempt to rationalize the license to MIT
 
   • Norman Walsh: build.xml; nbproject/.gitignore; nbproject/build-impl.xml;
     nbproject/genfile⋯
@@ -10349,8 +10432,7 @@ release.
 
   • Added namespace declarations to document elements for all param files.
 
-  • Updated index.method doc to describe revised setup for importing index
-     extensions.
+  • Updated index.method doc to describe revised setup for importing index extensions.
 
   • Added several new HTML parameters for controlling appearance of
     content on HTML title pages:
@@ -10658,8 +10740,8 @@ The following changes have been made to the fo code since the 1.69.1 release.
 
     Modified: fo/autotoc.xsl,1.30; fo/qandaset.xsl,1.20 - Robert Stayton
 
-  • Added parameter ulink.hyphenate.chars. Added parameter insert.link
-    .page.number.
+  • Added parameter ulink.hyphenate.chars. Added parameter
+    insert.link.page.number.
 
     Modified: fo/param.ent,1.98; fo/param.xweb,1.111 - Robert Stayton
 
@@ -10923,10 +11005,10 @@ The following changes have been made to the fo code since the 1.69.1 release.
   • Implemented RFE #1292615.
 
     Added bunch of new parameters (attribute sets) that affect list
-    presentation: list.block.properties, itemizedlist.properties, orderedlist
-    .properties, itemizedlist.label.properties and orderedlist.label
-    .properties. Default behaviour of stylesheets has not been changed but
-    further customizations will be much more easier.
+    presentation: list.block.properties, itemizedlist.properties,
+    orderedlist.properties, itemizedlist.label.properties and
+    orderedlist.label.properties. Default behaviour of stylesheets has not been
+    changed but further customizations will be much more easier.
 
     Modified: fo/lists.xsl,1.61; fo/param.ent,1.87; fo/param.xweb,1.98; params/
     itemizedlist.label.properties.xml,1.1; params/
@@ -11001,17 +11083,17 @@ The following changes have been made to the html code since the 1.69.1 release.
     param.xweb,1.101; params/autotoc.label.in.hyperlink.xml,1.1 - Michael(tm)
     Smith
 
-  • Added two new params: html.head.legalnotice.link.types and html.head.
-    legalnotice.link.multiple.
+  • Added two new params: html.head.legalnotice.link.types and
+    html.head.legalnotice.link.multiple.
 
     If the value of the generate.legalnotice.link is non-zero, then the
     stylesheet generates (in the head section of the HTML source) either a
-    single HTML link element or, if the value of the html.head.legalnotice.link
-    .multiple is non-zero, one link element for each link type specified. Each
-    link has the following attributes:
+    single HTML link element or, if the value of the
+    html.head.legalnotice.link.multiple is non-zero, one link element for each
+    link type specified. Each link has the following attributes:
 
-    - a rel attribute whose value is derived from the value of html.head.
-    legalnotice.link.types
+    - a rel attribute whose value is derived from the value of
+    html.head.legalnotice.link.types
 
     - an href attribute whose value is set to the URL of the file containing
     the legalnotice
@@ -11242,9 +11324,9 @@ release.
 
   • Added man.table.footnotes.divider param.
 
-    In each table that contains footenotes, the string specified by the man.
-    table.footnotes.divider parameter is output before the list of footnotes
-    for the table.
+    In each table that contains footenotes, the string specified by the
+    man.table.footnotes.divider parameter is output before the list of
+    footnotes for the table.
 
     Modified: manpages/docbook.xsl,1.73; manpages/links.xsl,1.6; manpages/
     param.ent,1.21; manpages/param.xweb,1.23; params/
@@ -11599,17 +11681,17 @@ release.
     param.xweb,1.101; params/autotoc.label.in.hyperlink.xml,1.1 - Michael(tm)
     Smith
 
-  • Added two new params: html.head.legalnotice.link.types and html.head.
-    legalnotice.link.multiple.
+  • Added two new params: html.head.legalnotice.link.types and
+    html.head.legalnotice.link.multiple.
 
     If the value of the generate.legalnotice.link is non-zero, then the
     stylesheet generates (in the head section of the HTML source) either a
-    single HTML link element or, if the value of the html.head.legalnotice.link
-    .multiple is non-zero, one link element for each link type specified. Each
-    link has the following attributes:
+    single HTML link element or, if the value of the
+    html.head.legalnotice.link.multiple is non-zero, one link element for each
+    link type specified. Each link has the following attributes:
 
-    - a rel attribute whose value is derived from the value of html.head.
-    legalnotice.link.types
+    - a rel attribute whose value is derived from the value of
+    html.head.legalnotice.link.types
 
     - an href attribute whose value is set to the URL of the file containing
     the legalnotice
@@ -11653,9 +11735,9 @@ release.
 
   • Added man.table.footnotes.divider param.
 
-    In each table that contains footenotes, the string specified by the man.
-    table.footnotes.divider parameter is output before the list of footnotes
-    for the table.
+    In each table that contains footenotes, the string specified by the
+    man.table.footnotes.divider parameter is output before the list of
+    footnotes for the table.
 
     Modified: manpages/docbook.xsl,1.73; manpages/links.xsl,1.6; manpages/
     param.ent,1.21; manpages/param.xweb,1.23; params/
@@ -11870,10 +11952,10 @@ release.
   • Implemented RFE #1292615.
 
     Added bunch of new parameters (attribute sets) that affect list
-    presentation: list.block.properties, itemizedlist.properties, orderedlist
-    .properties, itemizedlist.label.properties and orderedlist.label
-    .properties. Default behaviour of stylesheets has not been changed but
-    further customizations will be much more easier.
+    presentation: list.block.properties, itemizedlist.properties,
+    orderedlist.properties, itemizedlist.label.properties and
+    orderedlist.label.properties. Default behaviour of stylesheets has not been
+    changed but further customizations will be much more easier.
 
     Modified: fo/lists.xsl,1.61; fo/param.ent,1.87; fo/param.xweb,1.98; params/
     itemizedlist.label.properties.xml,1.1; params/
@@ -12119,11 +12201,11 @@ Help
 
 HTML
 
-  • Added a first cut at support in HTML output for DocBook 5 style annotation
-    s. Controlled using the annotation.support parameter, and implemented using
-    JavaScript and CSS styling. For more details, see the documentation for the
-    annotation.js, annotation.css, annotation.graphic.open, and
-    annotation.graphic.close parameters.
+  • Added a first cut at support in HTML output for DocBook 5 style
+    annotations. Controlled using the annotation.support parameter, and
+    implemented using JavaScript and CSS styling. For more details, see the
+    documentation for the annotation.js, annotation.css,
+    annotation.graphic.open, and annotation.graphic.close parameters.
 
   • Generate client-side image map for imageobjectco with areas using calspair
     units
@@ -12147,8 +12229,8 @@ HTML
     citation, citerefentry, citetitle, city, classname, code, command,
     computeroutput, constant, country, database, email, envar, errorcode,
     errorname, errortext, errortype, exceptionname, fax, filename, firstname,
-    firstterm, foreignphrase, function, glossterm, guibutton, guiicon, guilabel
-    , guimenu, guimenuitem, guisubmenu, hardware, honorific, interface,
+    firstterm, foreignphrase, function, glossterm, guibutton, guiicon,
+    guilabel, guimenu, guimenuitem, guisubmenu, hardware, honorific, interface,
     interfacename, keycap, keycode, keysym, lineage, lineannotation, literal,
     markup, medialabel, methodname, mousebutton, option, optional, otheraddr,
     othername, package, parameter, personname, phone, pob, postcode,
@@ -12197,9 +12279,9 @@ and footers.
   • Added parameters for controlling hyphenation of computer inlines,
     filenames, and URLs. By default, even when hyphenation is enabled
     (globally), hyphenation is now suppressed for "computer inlines"
-    (currently, just classname, constant, envar, errorcode, option, replaceable
-    , userinput, type, and varname, and for filenames, and for URLs from link.
-    It can be (re)enabled using the man.hyphenate.computer.inlines,
+    (currently, just classname, constant, envar, errorcode, option,
+    replaceable, userinput, type, and varname, and for filenames, and for URLs
+    from link. It can be (re)enabled using the man.hyphenate.computer.inlines,
     man.hyphenate.filenames, and man.hyphenate.urls parameters.
 
   • Implemented a new system for replacing Unicode characters. There are two
@@ -12557,8 +12639,8 @@ and footers.
     kludge for generating “curly” quotes in Emacs and in X-Windows fonts. While
     Emacs still seems to support that, I don't think X-Windows has for a long
     time now. And, anyway, it looks (and has always looked) like crap when
-    viewed on a normal tty/console. In addition, it breaks localiztion of quote
-    . By default, quote content is output with localized quotation marks,
+    viewed on a normal tty/console. In addition, it breaks localiztion of
+    quote. By default, quote content is output with localized quotation marks,
     which, depending on the locale, may or may not be left and right double
     quotation marks.
 
