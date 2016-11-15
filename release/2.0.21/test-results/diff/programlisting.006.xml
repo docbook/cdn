@@ -1,0 +1,86 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" deltaxml:deltaV2="A!=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head deltaxml:deltaV2="A=B">
+      <link href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../resources/css/default.css"/>
+      <link href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/>
+      <script type="text/javascript" src="../../resources/js/dbmodnizr.js"/>
+      <title>Article wrapper</title>
+   </head>
+   <body deltaxml:deltaV2="A!=B">
+      <article deltaxml:deltaV2="A!=B" id="R.1" class="article">
+         <header deltaxml:deltaV2="A=B" class="article-titlepage">
+            <h2>Article wrapper</h2>
+         </header>
+         <pre deltaxml:deltaV2="A" class="programlisting language-none">
+            <code>@rem = '--*-Perl-*--
+@echo off
+perl.exe %_batchname %$
+goto endofperl
+@rem ';
+
+# Compress mail...
+
+require 'n:/home/nwalsh/lib/cygnus.pl';
+require 'timelocal.pl';
+use Cwd;
+
+select (STDERR); $| = 1;
+select (STDOUT); $| = 1;
+
+@DIRS = ("/home/nwalsh/Mail");
+while (@DIRS) {
+    $dir = shift @DIRS;
+    opendir (DIR, $dir);
+    while ($fname = readdir(DIR)) {
+        $file = "$dir/$fname";
+        next if ! -d $file;
+        next if $fname =~ /^\.\.?$/;
+
+        print "$file\n";
+        push (@DIRS, $file);
+        &amp;compress ($file);
+    }
+}
+
+exit;</code>
+         </pre><div deltaxml:deltaV2="B" class="content">
+            <pre class="programlisting language-none">
+               <code>@rem = '--*-Perl-*--
+@echo off
+perl.exe %_batchname %$
+goto endofperl
+@rem ';
+
+# Compress mail...
+
+require 'n:/home/nwalsh/lib/cygnus.pl';
+require 'timelocal.pl';
+use Cwd;
+
+select (STDERR); $| = 1;
+select (STDOUT); $| = 1;
+
+@DIRS = ("/home/nwalsh/Mail");
+while (@DIRS) {
+    $dir = shift @DIRS;
+    opendir (DIR, $dir);
+    while ($fname = readdir(DIR)) {
+        $file = "$dir/$fname";
+        next if ! -d $file;
+        next if $fname =~ /^\.\.?$/;
+
+        print "$file\n";
+        push (@DIRS, $file);
+        &amp;compress ($file);
+    }
+}
+
+exit;</code>
+            </pre>
+         </div>
+      </article>
+      <script deltaxml:deltaV2="A=B" src="../../resources/js/prism.js"/>
+   </body>
+</html>

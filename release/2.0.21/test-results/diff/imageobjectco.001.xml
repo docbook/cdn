@@ -1,0 +1,102 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" deltaxml:deltaV2="A!=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head deltaxml:deltaV2="A=B">
+      <link href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../resources/css/default.css"/>
+      <link href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/>
+      <script type="text/javascript" src="../../resources/js/dbmodnizr.js"/>
+      <title>Article wrapper</title>
+   </head>
+   <body deltaxml:deltaV2="A!=B">
+      <article deltaxml:deltaV2="A!=B" id="R.1" class="article">
+         <header deltaxml:deltaV2="A=B" class="article-titlepage">
+            <h2>Article wrapper</h2>
+         </header>
+         <p deltaxml:deltaV2="A">A whole duck</p><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="A" id="R.1.3" class="mediaobject">
+            <div class="imageobjectco">
+               <img border="0" usemap="#wholeduckmap" src="../graphics/duck-small.png"/>
+               <map name="wholeduckmap">
+                  <area shape="rect" href="#p1" coords="0,293,300,0"/>
+               </map>
+            </div>
+         </div><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><p deltaxml:deltaV2="A">A duck with callouts</p><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="A" id="R.1.5" class="mediaobject">
+            <div class="imageobjectco">
+               <img border="0" usemap="#duckmapco" src="../graphics/duck-co.png"/>
+               <map name="duckmapco">
+                  <area shape="rect" href="#c1" coords="15,58,31,74"/>
+                  <area shape="rect" href="#c2" coords="181,527,197,543"/>
+                  <area shape="rect" href="#c3" coords="548,519,564,535"/>
+               </map>
+            </div>
+         </div><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="A!=B"><deltaxml:attributes deltaxml:deltaV2="A!=B"><dxa:class deltaxml:deltaV2="A!=B"><deltaxml:attributeValue deltaxml:deltaV2="A">calloutlist</deltaxml:attributeValue><deltaxml:attributeValue deltaxml:deltaV2="B">content</deltaxml:attributeValue></dxa:class></deltaxml:attributes>
+            <dl deltaxml:deltaV2="A">
+               <dt id="c1" class="callout">
+                  <span data-number="1" class="callout-bug callout-bug-unicode">❶</span>
+               </dt>
+               <dd>
+                  <p>The bill.</p>
+               </dd>
+               <dt id="c2" class="callout">
+                  <span data-number="2" class="callout-bug callout-bug-unicode">❷</span>
+               </dt>
+               <dd>
+                  <p>The feet.</p>
+               </dd>
+               <dt id="c3" class="callout">
+                  <span data-number="3" class="callout-bug callout-bug-unicode">❸</span>
+               </dt>
+               <dd>
+                  <p>The tail.</p>
+               </dd>
+            </dl><p deltaxml:deltaV2="B">A whole duck</p><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+            </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="B" id="R.1.3" class="mediaobject">
+               <div class="imageobjectco">
+                  <img border="0" usemap="#wholeduckmap" src="../graphics/duck-small.png"/>
+                  <map name="wholeduckmap">
+                     <area shape="rect" href="#p1" coords="0,293,300,0"/>
+                  </map>
+               </div>
+            </div><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+            </deltaxml:text></deltaxml:textGroup><p deltaxml:deltaV2="B">A duck with callouts</p><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+            </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="B" id="R.1.5" class="mediaobject">
+               <div class="imageobjectco">
+                  <img border="0" usemap="#duckmapco" src="../graphics/duck-co.png"/>
+                  <map name="duckmapco">
+                     <area shape="rect" href="#c1" coords="15,58,31,74"/>
+                     <area shape="rect" href="#c2" coords="181,527,197,543"/>
+                     <area shape="rect" href="#c3" coords="548,519,564,535"/>
+                  </map>
+               </div>
+            </div><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+            </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="B" class="calloutlist">
+               <dl>
+                  <dt id="c1" class="callout">
+                     <span data-number="1" class="callout-bug callout-bug-unicode">❶</span>
+                  </dt>
+                  <dd>
+                     <p>The bill.</p>
+                  </dd>
+                  <dt id="c2" class="callout">
+                     <span data-number="2" class="callout-bug callout-bug-unicode">❷</span>
+                  </dt>
+                  <dd>
+                     <p>The feet.</p>
+                  </dd>
+                  <dt id="c3" class="callout">
+                     <span data-number="3" class="callout-bug callout-bug-unicode">❸</span>
+                  </dt>
+                  <dd>
+                     <p>The tail.</p>
+                  </dd>
+               </dl>
+            </div>
+         </div>
+      </article>
+      <script deltaxml:deltaV2="A=B" src="../../resources/js/prism.js"/>
+   </body>
+</html>

@@ -1,0 +1,60 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" deltaxml:deltaV2="A=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head>
+      <link href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../resources/css/default.css"/>
+      <link href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/>
+      <script type="text/javascript" src="../../resources/js/dbmodnizr.js"/>
+      <title>Unit Test: bibliography.004</title>
+   </head>
+   <body>
+      <article id="R.1" class="bibliography">
+         <header class="bibliography-titlepage">
+            <h2>Unit Test: bibliography.004</h2>
+         </header>
+         <div id="R.1.2" class="bibliodiv">
+            <header class="bibliodiv-titlepage">
+               <h3>Normative References</h3>
+            </header>
+            <div id="xml" class="biblioentry">
+               <p class="biblioentry">
+                  <span class="label">[<span class="abbrev">XML 1.0</span>] </span>
+                  <span class="entry">
+                     <span class="editor">
+                        <span class="firstname">Tim</span>
+                        <span class="surname">Bray</span>
+                     </span>. <span class="title">
+                        <cite>Extensible Markup Language (XML) 1.0</cite>
+                     </span>. <span class="edition">2nd ed</span>. <span class="releaseinfo">W3C Recommendation</span>. <span class="date">6 October 2000</span>. <span class="copyright">Copyright © <span class="years">2000</span> <span class="holders">
+                           <span class="holder">World Wide Web Consortium</span>
+                        </span>
+                     </span>. <span class="biblioid">
+                        <a href="http://www.w3.org/TR/2000/REC-xml-20001006/">http://www.w3.org/TR/2000/REC-xml-20001006/</a>
+                     </span>. </span>
+               </p>
+            </div>
+         </div>
+         <div id="R.1.3" class="bibliodiv">
+            <header class="bibliodiv-titlepage">
+               <h3>Articles</h3>
+            </header>
+            <div id="flynn-xml-faq" class="biblioentry">
+               <p class="biblioentry">
+                  <span class="label">[<span class="abbrev">Fl01</span>] </span>
+                  <span class="entry">
+                     <span class="author">
+                        <span class="firstname">Peter</span>
+                        <span class="surname">Flynn</span>
+                     </span>. <span class="title">
+                        <cite>The XML FAQ</cite>
+                     </span>. <span class="edition">2.1</span>. <span class="date">1 January 2002</span>. <span class="biblioid">
+                        <a href="http://www.ucc.ie/xml/faq.html">http://www.ucc.ie/xml/faq.html</a>
+                     </span>. </span>
+               </p>
+            </div>
+         </div>
+      </article>
+      <script src="../../resources/js/prism.js"/>
+   </body>
+</html>

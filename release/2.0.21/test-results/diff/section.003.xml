@@ -1,0 +1,69 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" deltaxml:deltaV2="A!=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head deltaxml:deltaV2="A=B">
+      <link href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../resources/css/default.css"/>
+      <link href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/>
+      <script type="text/javascript" src="../../resources/js/dbmodnizr.js"/>
+      <title>Article wrapper</title>
+   </head>
+   <body deltaxml:deltaV2="A!=B">
+      <article deltaxml:deltaV2="A!=B" id="R.1" class="article">
+         <header deltaxml:deltaV2="A=B" class="article-titlepage">
+            <h2>Article wrapper</h2>
+         </header>
+         <div deltaxml:deltaV2="A=B" class="lists-of-titles">
+            <div class="toc">
+               <p>
+                  <b>Table of Contents</b>
+               </p>
+               <ul class="toc">
+                  <li>
+                     <span>
+                        <a href="#c2s1">1. This is a Section Title.</a>
+                     </span>
+                     <ul class="toc">
+                        <li>
+                           <span>
+                              <a href="#c2s1s1">1.1. This is a Really Long Section Title That's Almost Certainly Bound to Wrap Around on the Page</a>
+                           </span>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <section deltaxml:deltaV2="A" id="c2s1" class="section">
+            <div class="section-titlepage">
+               <h2>1. This is a Section Title.</h2>
+            </div>
+            <p>blah.</p>
+            <section id="c2s1s1" class="section">
+               <div class="section-titlepage">
+                  <h3>1.1. This is a Really Long Section Title That's Almost Certainly Bound to Wrap Around on the Page</h3>
+               </div>
+               <p>blah.</p>
+            </section>
+         </section><div deltaxml:deltaV2="B" class="content">
+            <section id="c2s1" class="section">
+               <div class="section-titlepage">
+                  <h2>1. This is a Section Title.</h2>
+               </div>
+               <div class="content">
+                  <p>blah.</p>
+                  <section id="c2s1s1" class="section">
+                     <div class="section-titlepage">
+                        <h3>1.1. This is a Really Long Section Title That's Almost Certainly Bound to Wrap Around on the Page</h3>
+                     </div>
+                     <div class="content">
+                        <p>blah.</p>
+                     </div>
+                  </section>
+               </div>
+            </section>
+         </div>
+      </article>
+      <script deltaxml:deltaV2="A=B" src="../../resources/js/prism.js"/>
+   </body>
+</html>

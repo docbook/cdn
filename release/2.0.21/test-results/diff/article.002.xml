@@ -1,0 +1,47 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" deltaxml:deltaV2="A!=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head deltaxml:deltaV2="A=B">
+      <link href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../resources/css/default.css"/>
+      <link href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/>
+      <script type="text/javascript" src="../../resources/js/dbmodnizr.js"/>
+      <title>Unit Test: article.002.xml</title>
+   </head>
+   <body deltaxml:deltaV2="A!=B" class="draft">
+      <article deltaxml:deltaV2="A!=B" class="article" id="article">
+         <header deltaxml:deltaV2="A=B" class="article-titlepage">
+            <h2>Unit Test: article.002.xml</h2>
+            <div class="authorgroup">
+               <div class="author">
+                  <h3>
+                     <span class="personname">
+                        <span class="firstname">Norman</span>
+                        <span class="surname">Walsh</span>
+                     </span>
+                  </h3>
+               </div>
+               <div class="author">
+                  <h3>
+                     <span class="personname">
+                        <span class="firstname">Jane</span>
+                        <span class="surname">Doe</span>
+                     </span>
+                  </h3>
+               </div>
+            </div>
+            <div class="abstract">
+               <p>This is the abstract.</p>
+               <p>It has several paras.</p>
+               <p>It has several paras.</p>
+            </div>
+         </header>
+         <p deltaxml:deltaV2="A">This is an article tests.</p><div deltaxml:deltaV2="B" class="content">
+            <p>This is an article tests.</p>
+            <p>I'd like to thank all the tests that came before me.</p>
+         </div><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><p deltaxml:deltaV2="A">I'd like to thank all the tests that came before me.</p>
+      </article>
+      <script deltaxml:deltaV2="A=B" src="../../resources/js/prism.js"/>
+   </body>
+</html>

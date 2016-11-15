@@ -1,0 +1,131 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" deltaxml:deltaV2="A!=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head deltaxml:deltaV2="A=B">
+      <link href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../resources/css/default.css"/>
+      <link href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/>
+      <script type="text/javascript" src="../../resources/js/dbmodnizr.js"/>
+      <title>Article wrapper</title>
+   </head>
+   <body deltaxml:deltaV2="A!=B">
+      <article deltaxml:deltaV2="A!=B" id="R.1" class="article">
+         <header deltaxml:deltaV2="A=B" class="article-titlepage">
+            <h2>Article wrapper</h2>
+         </header>
+         <div deltaxml:deltaV2="A=B" class="lists-of-titles">
+            <div class="toc">
+               <p>
+                  <b>Table of Contents</b>
+               </p>
+               <ul class="toc">
+                  <li>
+                     <span class="refentrytitle">
+                        <a href="#evenlessminimal">Fred</a>
+                     </span>
+                     <span class="refpurpose"> - Test of a minimal RefEntry</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <article deltaxml:deltaV2="A" id="evenlessminimal" class="refentry">
+            <div class="refnamediv">
+               <h2>Name</h2>
+               <p>
+                  <span class="refname">Less Minimal</span>, <span class="refname">Even Less Minimal</span>
+                  <span class="refpurpose">
+                     <span class="refpurpose-sep"> — </span>
+                     <span class="refpurpose-text">Test of a minimal RefEntry</span>
+                     <span class="refpurpose-punc">.</span>
+                  </span>
+               </p>
+            </div>
+            <div class="refsynopsisdiv">
+               <h2>
+                  <div class="title">Synopsis</div>
+               </h2>
+               <div class="cmdsynopsis" style="margin-top: 1em; text-indent: -0.66in; margin-left: 0.66in;">
+                  <code class="command">command</code>  [ -a  |   -alpha ]</div>
+               <div class="cmdsynopsis" style="margin-top: 1em; text-indent: -0.66in; margin-left: 0.66in;">
+                  <code class="command">command</code>  [ -b  |   -beta ]</div>
+               <div class="cmdsynopsis" style="margin-top: 1em; text-indent: -0.66in; margin-left: 0.66in;">
+                  <code class="command">command</code>    -c  |   
+-charlie  </div>
+               <div class="cmdsynopsis" style="margin-top: 1em; text-indent: -0.66in; margin-left: 0.66in;">
+                  <code class="command">command</code>    -d  |   
+-delta  </div>
+               <div class="cmdsynopsis" style="margin-top: 1em; text-indent: -0.66in; margin-left: 0.66in;">
+                  <code class="command">command</code>   --help </div>
+            </div>
+            <div class="refsect1">
+               <div class="refsection-titlepage">
+                  <h2>Description</h2>
+               </div>
+               <p>This is a less minimal RefEntry.</p>
+               <figure id="evenlessminimal.4.3" class="figure-wrapper">
+                  <div class="figure">
+                     <pre class="programlisting language-none line-numbers">
+                        <code>Testing
+Some
+Text</code>
+                     </pre>
+                  </div>
+                  <div class="title">Figure 1. Some Program</div>
+               </figure>
+            </div>
+         </article><div deltaxml:deltaV2="B" class="content">
+            <article id="evenlessminimal" class="refentry">
+               <div class="content">
+                  <div class="refnamediv">
+                     <h2>Name</h2>
+                     <p>
+                        <span class="refname">Less Minimal</span>, <span class="refname">Even Less Minimal</span>
+                        <span class="refpurpose">
+                           <span class="refpurpose-sep"> — </span>
+                           <span class="refpurpose-text">Test of a minimal RefEntry</span>
+                           <span class="refpurpose-punc">.</span>
+                        </span>
+                     </p>
+                  </div>
+                  <div class="refsynopsisdiv">
+                     <h2>
+                        <div class="title">Synopsis</div>
+                     </h2>
+                     <div class="cmdsynopsis" style="margin-top: 1em; text-indent: -0.66in; margin-left: 0.66in;">
+                        <code class="command">command</code>  [ -a  |   -alpha ]</div>
+                     <div class="cmdsynopsis" style="margin-top: 1em; text-indent: -0.66in; margin-left: 0.66in;">
+                        <code class="command">command</code>  [ -b  |   -beta ]</div>
+                     <div class="cmdsynopsis" style="margin-top: 1em; text-indent: -0.66in; margin-left: 0.66in;">
+                        <code class="command">command</code>    -c  |   
+-charlie  </div>
+                     <div class="cmdsynopsis" style="margin-top: 1em; text-indent: -0.66in; margin-left: 0.66in;">
+                        <code class="command">command</code>    -d  |   
+-delta  </div>
+                     <div class="cmdsynopsis" style="margin-top: 1em; text-indent: -0.66in; margin-left: 0.66in;">
+                        <code class="command">command</code>   --help </div>
+                  </div>
+                  <div class="refsect1">
+                     <div class="refsection-titlepage">
+                        <h2>Description</h2>
+                     </div>
+                     <div class="content">
+                        <p>This is a less minimal RefEntry.</p>
+                        <figure id="evenlessminimal.4.3" class="figure-wrapper">
+                           <div class="figure">
+                              <pre class="programlisting language-none line-numbers">
+                                 <code>Testing
+Some
+Text</code>
+                              </pre>
+                           </div>
+                           <div class="title">Figure 1. Some Program</div>
+                        </figure>
+                     </div>
+                  </div>
+               </div>
+            </article>
+         </div>
+      </article>
+      <script deltaxml:deltaV2="A=B" src="../../resources/js/prism.js"/>
+   </body>
+</html>
