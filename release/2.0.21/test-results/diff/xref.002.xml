@@ -1,0 +1,111 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" deltaxml:deltaV2="A!=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head deltaxml:deltaV2="A=B">
+      <link href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../resources/css/default.css"/>
+      <link href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/>
+      <script type="text/javascript" src="../../resources/js/dbmodnizr.js"/>
+      <title>Article wrapper</title>
+   </head>
+   <body deltaxml:deltaV2="A!=B">
+      <article deltaxml:deltaV2="A!=B" id="R.1" class="article">
+         <header deltaxml:deltaV2="A=B" class="article-titlepage">
+            <h2>Article wrapper</h2>
+         </header>
+         <div deltaxml:deltaV2="A=B" class="lists-of-titles">
+            <div class="toc">
+               <p>
+                  <b>Table of Contents</b>
+               </p>
+               <ul class="toc">
+                  <li>
+                     <span>
+                        <a href="#s1">1. Section One Title</a>
+                     </span>
+                  </li>
+                  <li>
+                     <span>
+                        <a href="#s2">2. Section Two Title</a>
+                     </span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <p deltaxml:deltaV2="A">This is an xref test.</p><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="A!=B"><deltaxml:attributes deltaxml:deltaV2="A!=B"><dxa:class deltaxml:deltaV2="A!=B"><deltaxml:attributeValue deltaxml:deltaV2="A">itemizedlist</deltaxml:attributeValue><deltaxml:attributeValue deltaxml:deltaV2="B">content</deltaxml:attributeValue></dxa:class><dxa:id deltaxml:deltaV2="A"><deltaxml:attributeValue deltaxml:deltaV2="A">xreftests</deltaxml:attributeValue></dxa:id></deltaxml:attributes>
+            <ul deltaxml:deltaV2="A">
+               <li>
+                  <p>Cross reference to section one: <a href="#s1" title="Section One Title">Section 1, “Section One Title”</a>.</p>
+               </li>
+               <li>
+                  <p>Cross reference to section two: <a href="#s2">Section Two XRefLabel</a>.</p>
+               </li>
+               <li>
+                  <p>Cross reference to section one with endterm:
+<a href="#s1">
+                        <span>Xref Endterm</span>
+                     </a>.</p>
+               </li>
+               <li>
+                  <p>Cross reference to section two with endterm:
+<a href="#s2">
+                        <span>Xref Endterm</span>
+                     </a>.</p>
+               </li>
+            </ul><p deltaxml:deltaV2="B">This is an xref test.</p><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+            </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="B" id="xreftests" class="itemizedlist">
+               <ul>
+                  <li>
+                     <p>Cross reference to section one: <a href="#s1" title="Section One Title">Section 1, “Section One Title”</a>.</p>
+                  </li>
+                  <li>
+                     <p>Cross reference to section two: <a href="#s2">Section Two XRefLabel</a>.</p>
+                  </li>
+                  <li>
+                     <p>Cross reference to section one with endterm:
+<a href="#s1">
+                           <span>Xref Endterm</span>
+                        </a>.</p>
+                  </li>
+                  <li>
+                     <p>Cross reference to section two with endterm:
+<a href="#s2">
+                           <span>Xref Endterm</span>
+                        </a>.</p>
+                  </li>
+               </ul>
+            </div><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+            </deltaxml:text></deltaxml:textGroup><section deltaxml:deltaV2="B" id="s1" class="section">
+               <div class="section-titlepage">
+                  <h2>1. Section One Title</h2>
+               </div>
+               <div class="content">
+                  <p>This text is irrelevant.</p>
+               </div>
+            </section><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+            </deltaxml:text></deltaxml:textGroup><section deltaxml:deltaV2="B" id="s2" class="section">
+               <div class="section-titlepage">
+                  <h2>2. Section Two Title</h2>
+               </div>
+               <div class="content">
+                  <p>This text is irrelevant.</p>
+               </div>
+            </section>
+         </div><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><section deltaxml:deltaV2="A" id="s1" class="section">
+            <div class="section-titlepage">
+               <h2>1. Section One Title</h2>
+            </div>
+            <p>This text is irrelevant.</p>
+         </section><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><section deltaxml:deltaV2="A" id="s2" class="section">
+            <div class="section-titlepage">
+               <h2>2. Section Two Title</h2>
+            </div>
+            <p>This text is irrelevant.</p>
+         </section>
+      </article>
+      <script deltaxml:deltaV2="A=B" src="../../resources/js/prism.js"/>
+   </body>
+</html>

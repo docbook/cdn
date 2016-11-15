@@ -1,0 +1,206 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" deltaxml:deltaV2="A!=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head deltaxml:deltaV2="A=B">
+      <link href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../resources/css/default.css"/>
+      <link href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/>
+      <script type="text/javascript" src="../../resources/js/dbmodnizr.js"/>
+      <title>Article wrapper</title>
+   </head>
+   <body deltaxml:deltaV2="A!=B">
+      <article deltaxml:deltaV2="A!=B" id="R.1" class="article">
+         <header deltaxml:deltaV2="A=B" class="article-titlepage">
+            <h2>Article wrapper</h2>
+         </header>
+         <p deltaxml:deltaV2="A">This is a para.</p><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><p deltaxml:deltaV2="A">This is another para. See the space of separate between
+paragraphs. The following lists should have additional space
+before/after them, since they are not within paragraphs and thus
+should use paragraph spacing.</p><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="A!=B"><deltaxml:attributes deltaxml:deltaV2="A!=B"><dxa:class deltaxml:deltaV2="A!=B"><deltaxml:attributeValue deltaxml:deltaV2="A">itemizedlist</deltaxml:attributeValue><deltaxml:attributeValue deltaxml:deltaV2="B">content</deltaxml:attributeValue></dxa:class></deltaxml:attributes>
+            <ul deltaxml:deltaV2="A">
+               <li>
+                  <p>some text (not compact)</p>
+               </li>
+               <li>
+                  <p>some text (not compact)</p>
+               </li>
+               <li>
+                  <p>some text (not compact)</p>
+               </li>
+               <li>
+                  <p>some text (not compact)</p>
+               </li>
+               <li>
+                  <p>some text (not compact)</p>
+               </li>
+               <li>
+                  <p>some text (not compact)</p>
+               </li>
+               <li>
+                  <p>some text (not compact)</p>
+               </li>
+            </ul><p deltaxml:deltaV2="B">This is a para.</p><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+            </deltaxml:text></deltaxml:textGroup><p deltaxml:deltaV2="B">This is another para. See the space of separate between
+paragraphs. The following lists should have additional space
+before/after them, since they are not within paragraphs and thus
+should use paragraph spacing.</p><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+            </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="B" class="itemizedlist">
+               <ul>
+                  <li>
+                     <p>some text (not compact)</p>
+                  </li>
+                  <li>
+                     <p>some text (not compact)</p>
+                  </li>
+                  <li>
+                     <p>some text (not compact)</p>
+                  </li>
+                  <li>
+                     <p>some text (not compact)</p>
+                  </li>
+                  <li>
+                     <p>some text (not compact)</p>
+                  </li>
+                  <li>
+                     <p>some text (not compact)</p>
+                  </li>
+                  <li>
+                     <p>some text (not compact)</p>
+                  </li>
+               </ul>
+            </div><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+            </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="B" class="orderedlist">
+               <ol style="list-style: decimal;">
+                  <li>
+                     <p>some text (not compact)</p>
+                  </li>
+                  <li>
+                     <p>some text (not compact)</p>
+                  </li>
+                  <li>
+                     <p>some text (not compact)</p>
+                  </li>
+                  <li>
+                     <p>some text (not compact)</p>
+                  </li>
+                  <li>
+                     <p>some text (not compact)</p>
+                  </li>
+                  <li>
+                     <p>some text (not compact)</p>
+                  </li>
+                  <li>
+                     <p>some text (not compact)</p>
+                  </li>
+               </ol>
+            </div><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+            </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="B" class="itemizedlist">
+               <ul>
+                  <li>some text (compact)</li>
+                  <li>some text (compact)</li>
+                  <li>some text (compact)</li>
+                  <li>some text (compact)</li>
+                  <li>some text (compact)</li>
+                  <li>some text (compact)</li>
+                  <li>some text (compact)</li>
+               </ul>
+            </div><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+            </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="B" class="orderedlist">
+               <ol style="list-style: decimal;">
+                  <li>some text (compact)</li>
+                  <li>some text (compact)</li>
+                  <li>some text (compact)</li>
+                  <li>some text (compact)</li>
+                  <li>some text (compact)</li>
+                  <li>some text (compact)</li>
+                  <li>some text (compact)</li>
+               </ol>
+            </div><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+            </deltaxml:text></deltaxml:textGroup><p deltaxml:deltaV2="B">Here is a para.</p><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+            </deltaxml:text></deltaxml:textGroup><p deltaxml:deltaV2="B">The following two itemizedlists are within a block element and
+so should use paragraph spacing between them.
+
+<div class="itemizedlist">
+                  <ul>
+                     <li>some text (compact)</li>
+                     <li>some text (compact)</li>
+                  </ul>
+               </div>
+               <div class="itemizedlist">
+                  <ul>
+                     <li>some text (compact)</li>
+                     <li>some text (compact)</li>
+                  </ul>
+               </div>
+            </p>
+         </div><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="A" class="orderedlist">
+            <ol style="list-style: decimal;">
+               <li>
+                  <p>some text (not compact)</p>
+               </li>
+               <li>
+                  <p>some text (not compact)</p>
+               </li>
+               <li>
+                  <p>some text (not compact)</p>
+               </li>
+               <li>
+                  <p>some text (not compact)</p>
+               </li>
+               <li>
+                  <p>some text (not compact)</p>
+               </li>
+               <li>
+                  <p>some text (not compact)</p>
+               </li>
+               <li>
+                  <p>some text (not compact)</p>
+               </li>
+            </ol>
+         </div><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="A" class="itemizedlist">
+            <ul>
+               <li>some text (compact)</li>
+               <li>some text (compact)</li>
+               <li>some text (compact)</li>
+               <li>some text (compact)</li>
+               <li>some text (compact)</li>
+               <li>some text (compact)</li>
+               <li>some text (compact)</li>
+            </ul>
+         </div><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="A" class="orderedlist">
+            <ol style="list-style: decimal;">
+               <li>some text (compact)</li>
+               <li>some text (compact)</li>
+               <li>some text (compact)</li>
+               <li>some text (compact)</li>
+               <li>some text (compact)</li>
+               <li>some text (compact)</li>
+               <li>some text (compact)</li>
+            </ol>
+         </div><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><p deltaxml:deltaV2="A">Here is a para.</p><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><p deltaxml:deltaV2="A">The following two itemizedlists are within a block element and
+so should use paragraph spacing between them.
+
+<div class="itemizedlist">
+               <ul>
+                  <li>some text (compact)</li>
+                  <li>some text (compact)</li>
+               </ul>
+            </div>
+            <div class="itemizedlist">
+               <ul>
+                  <li>some text (compact)</li>
+                  <li>some text (compact)</li>
+               </ul>
+            </div>
+         </p>
+      </article>
+      <script deltaxml:deltaV2="A=B" src="../../resources/js/prism.js"/>
+   </body>
+</html>

@@ -1,0 +1,108 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" deltaxml:deltaV2="A!=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head deltaxml:deltaV2="A=B">
+      <link href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../resources/css/default.css"/>
+      <link href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/>
+      <script type="text/javascript" src="../../resources/js/dbmodnizr.js"/>
+      <title>Unit Test: indexterm.003</title>
+   </head>
+   <body deltaxml:deltaV2="A!=B">
+      <article deltaxml:deltaV2="A!=B" id="R.1" class="book">
+         <header deltaxml:deltaV2="A=B" class="book-titlepage">
+            <h1>Unit Test: indexterm.003</h1>
+         </header>
+         <div deltaxml:deltaV2="A=B" class="lists-of-titles">
+            <div class="toc">
+               <p>
+                  <b>Table of Contents</b>
+               </p>
+               <ul class="toc">
+                  <li>
+                     <span>
+                        <a href="#R.1.2">1. First Chapter</a>
+                     </span>
+                  </li>
+                  <li>
+                     <span>
+                        <a href="#R.1.3">2. Second Chapter</a>
+                     </span>
+                  </li>
+                  <li>
+                     <span>
+                        <a href="#idx">Index</a>
+                     </span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <article deltaxml:deltaV2="A" id="R.1.2" class="chapter">
+            <header class="chapter-titlepage">
+               <h2>Chapter 1. First Chapter</h2>
+            </header>
+            <p>An indexterm starts
+here.<a class="indexterm" name="start"/>
+            </p>
+         </article><div deltaxml:deltaV2="B" class="content">
+            <article id="R.1.2" class="chapter">
+               <header class="chapter-titlepage">
+                  <h2>Chapter 1. First Chapter</h2>
+               </header>
+               <div class="content">
+                  <p>An indexterm starts
+here.<a class="indexterm" name="start"/>
+                  </p>
+               </div>
+            </article>
+            <article id="R.1.3" class="chapter">
+               <header class="chapter-titlepage">
+                  <h2>Chapter 2. Second Chapter</h2>
+               </header>
+               <div class="content">
+                  <p>The term ends
+here.<a class="indexterm" name="R.1.3.2.1"/>
+                  </p>
+               </div>
+            </article>
+            <article id="idx" class="index">
+               <header class="index-titlepage">
+                  <h2>Index</h2>
+               </header>
+               <div class="generated-index">
+                  <div class="generated-indexdiv">
+                     <h3>S</h3>
+                     <dl>
+                        <dt>Start, <a href="#start" title="Chapter 1. First Chapter">1</a>-<a href="#R.1.3.2.1" title="Chapter 2. Second Chapter">1</a>
+                        </dt>
+                     </dl>
+                  </div>
+               </div>
+            </article>
+         </div><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><article deltaxml:deltaV2="A" id="R.1.3" class="chapter">
+            <header class="chapter-titlepage">
+               <h2>Chapter 2. Second Chapter</h2>
+            </header>
+            <p>The term ends
+here.<a class="indexterm" name="R.1.3.2.1"/>
+            </p>
+         </article><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><article deltaxml:deltaV2="A" id="idx" class="index">
+            <header class="index-titlepage">
+               <h2>Index</h2>
+            </header>
+            <div class="generated-index">
+               <div class="generated-indexdiv">
+                  <h3>S</h3>
+                  <dl>
+                     <dt>Start, <a href="#start" title="Chapter 1. First Chapter">1</a>-<a href="#R.1.3.2.1" title="Chapter 2. Second Chapter">1</a>
+                     </dt>
+                  </dl>
+               </div>
+            </div>
+         </article>
+      </article>
+      <script deltaxml:deltaV2="A=B" src="../../resources/js/prism.js"/>
+   </body>
+</html>

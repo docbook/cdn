@@ -1,0 +1,100 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" deltaxml:deltaV2="A!=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head deltaxml:deltaV2="A=B">
+      <link href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../resources/css/default.css"/>
+      <link href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/>
+      <script type="text/javascript" src="../../resources/js/dbmodnizr.js"/>
+      <title>Unit Test: co.001</title>
+   </head>
+   <body deltaxml:deltaV2="A!=B">
+      <article deltaxml:deltaV2="A!=B" id="R.1" class="article">
+         <header deltaxml:deltaV2="A=B" class="article-titlepage">
+            <h2>Unit Test: co.001</h2>
+            <div class="author">
+               <h3>
+                  <span class="personname">
+                     <span class="firstname">John</span>
+                     <span class="surname">Himpel</span>
+                  </span>
+               </h3>
+            </div>
+         </header>
+         <p deltaxml:deltaV2="A">Callouts inside <code class="tag-element">userinput</code> elements.</p><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><pre deltaxml:deltaV2="A" class="screen language-none">
+            <code>
+               <code class="prompt">$</code>
+               <strong class="userinput">
+                  <code>cp a b<a href="#cp" class="co" id="cp-co">
+                        <span data-number="1" class="callout-bug callout-bug-unicode">❶</span>
+                     </a>
+                  </code>
+               </strong>
+               <code class="prompt">$</code>
+               <strong class="userinput">
+                  <code>mv a b<a href="#mv" class="co" id="mv-co">
+                        <span data-number="2" class="callout-bug callout-bug-unicode">❷</span>
+                     </a>
+                  </code>
+               </strong>
+            </code>
+         </pre><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="A!=B"><deltaxml:attributes deltaxml:deltaV2="A!=B"><dxa:class deltaxml:deltaV2="A!=B"><deltaxml:attributeValue deltaxml:deltaV2="A">calloutlist</deltaxml:attributeValue><deltaxml:attributeValue deltaxml:deltaV2="B">content</deltaxml:attributeValue></dxa:class></deltaxml:attributes>
+            <dl deltaxml:deltaV2="A">
+               <dt id="cp" class="callout">
+                  <a href="#cp-co" class="callout-link">
+                     <span data-number="1" class="callout-bug callout-bug-unicode">❶</span>
+                  </a> </dt>
+               <dd>
+                  <p>This is a copy.</p>
+               </dd>
+               <dt id="mv" class="callout">
+                  <a href="#mv-co" class="callout-link">
+                     <span data-number="2" class="callout-bug callout-bug-unicode">❷</span>
+                  </a> </dt>
+               <dd>
+                  <p>This is a move.</p>
+               </dd>
+            </dl><p deltaxml:deltaV2="B">Callouts inside <code class="tag-element">userinput</code> elements.</p><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+            </deltaxml:text></deltaxml:textGroup><pre deltaxml:deltaV2="B" class="screen language-none">
+               <code>
+                  <code class="prompt">$</code>
+                  <strong class="userinput">
+                     <code>cp a b<a href="#cp" class="co" id="cp-co">
+                           <span data-number="1" class="callout-bug callout-bug-unicode">❶</span>
+                        </a>
+                     </code>
+                  </strong>
+                  <code class="prompt">$</code>
+                  <strong class="userinput">
+                     <code>mv a b<a href="#mv" class="co" id="mv-co">
+                           <span data-number="2" class="callout-bug callout-bug-unicode">❷</span>
+                        </a>
+                     </code>
+                  </strong>
+               </code>
+            </pre><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+            </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="B" class="calloutlist">
+               <dl>
+                  <dt id="cp" class="callout">
+                     <a href="#cp-co" class="callout-link">
+                        <span data-number="1" class="callout-bug callout-bug-unicode">❶</span>
+                     </a> </dt>
+                  <dd>
+                     <p>This is a copy.</p>
+                  </dd>
+                  <dt id="mv" class="callout">
+                     <a href="#mv-co" class="callout-link">
+                        <span data-number="2" class="callout-bug callout-bug-unicode">❷</span>
+                     </a> </dt>
+                  <dd>
+                     <p>This is a move.</p>
+                  </dd>
+               </dl>
+            </div>
+         </div>
+      </article>
+      <script deltaxml:deltaV2="A=B" src="../../resources/js/prism.js"/>
+   </body>
+</html>

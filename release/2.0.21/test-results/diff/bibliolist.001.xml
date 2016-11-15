@@ -1,0 +1,108 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" deltaxml:deltaV2="A!=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head deltaxml:deltaV2="A=B">
+      <link href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../resources/css/default.css"/>
+      <link href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/>
+      <script type="text/javascript" src="../../resources/js/dbmodnizr.js"/>
+      <title>Unit Test: bibliolist.001</title>
+   </head>
+   <body deltaxml:deltaV2="A!=B">
+      <article deltaxml:deltaV2="A!=B" id="R.1" class="article">
+         <header deltaxml:deltaV2="A=B" class="article-titlepage">
+            <h2>Unit Test: bibliolist.001</h2>
+         </header>
+         <p deltaxml:deltaV2="A">This is a article.</p><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="A!=B"><deltaxml:attributes deltaxml:deltaV2="A!=B"><dxa:class deltaxml:deltaV2="A!=B"><deltaxml:attributeValue deltaxml:deltaV2="A">bibliolist</deltaxml:attributeValue><deltaxml:attributeValue deltaxml:deltaV2="B">content</deltaxml:attributeValue></dxa:class><dxa:id deltaxml:deltaV2="A"><deltaxml:attributeValue deltaxml:deltaV2="A">R.1.3</deltaxml:attributeValue></dxa:id></deltaxml:attributes>
+            <h3 deltaxml:deltaV2="A">Bibliography List</h3><p deltaxml:deltaV2="B">This is a article.</p>
+            <div deltaxml:deltaV2="A!=B"><deltaxml:attributes deltaxml:deltaV2="A!=B"><dxa:class deltaxml:deltaV2="A!=B"><deltaxml:attributeValue deltaxml:deltaV2="A">biblioentry</deltaxml:attributeValue><deltaxml:attributeValue deltaxml:deltaV2="B">bibliolist</deltaxml:attributeValue></dxa:class><dxa:id deltaxml:deltaV2="B"><deltaxml:attributeValue deltaxml:deltaV2="B">R.1.3</deltaxml:attributeValue></dxa:id></deltaxml:attributes>
+               <p deltaxml:deltaV2="A" class="biblioentry">
+                  <span class="label">[<span class="abbrev">AhoSethiUllman96</span>] </span>
+                  <span class="entry">
+                     <span class="authorgroup">
+                        <span class="firstname">Alfred V.</span>
+                        <span class="surname">Aho</span>, <span class="firstname">Ravi</span>
+                        <span class="surname">Sethi</span>, and <span class="firstname">Jeffrey D.</span>
+                        <span class="surname">Ullman</span>
+                     </span>. <span class="title">
+                        <cite>Compilers, Principles, Techniques, and Tools</cite>
+                     </span>. <span class="publishername">Addison-Wesley Publishing Company</span>. <span class="copyright">Copyright © <span class="years">1996</span> <span class="holders">
+                           <span class="holder">Bell Telephone Laboratories, Inc.</span>
+                        </span>
+                     </span>
+                     <span class="biblioid">0-201-10088-6</span>. <span class="editor">
+                        <span class="firstname">James T.</span>
+                        <span class="surname">DeWolf</span>
+                     </span>. </span>
+               </p><h3 deltaxml:deltaV2="B">Bibliography List</h3><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+               </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="B" class="biblioentry">
+                  <p class="biblioentry">
+                     <span class="label">[<span class="abbrev">AhoSethiUllman96</span>] </span>
+                     <span class="entry">
+                        <span class="authorgroup">
+                           <span class="firstname">Alfred V.</span>
+                           <span class="surname">Aho</span>, <span class="firstname">Ravi</span>
+                           <span class="surname">Sethi</span>, and <span class="firstname">Jeffrey D.</span>
+                           <span class="surname">Ullman</span>
+                        </span>. <span class="title">
+                           <cite>Compilers, Principles, Techniques, and Tools</cite>
+                        </span>. <span class="publishername">Addison-Wesley Publishing Company</span>. <span class="copyright">Copyright © <span class="years">1996</span> <span class="holders">
+                              <span class="holder">Bell Telephone Laboratories, Inc.</span>
+                           </span>
+                        </span>
+                        <span class="biblioid">0-201-10088-6</span>. <span class="editor">
+                           <span class="firstname">James T.</span>
+                           <span class="surname">DeWolf</span>
+                        </span>. </span>
+                  </p>
+               </div><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+               </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="B" id="Walsh97" class="biblioentry">
+                  <p class="biblioentry">
+                     <span class="label">[<span class="abbrev">Walsh97</span>] </span>
+                     <span class="entry">
+                        <span class="biblioset">“A Guide to XML”. <span class="author">
+                              <span class="firstname">Norman</span>
+                              <span class="surname">Walsh</span>
+                           </span>. <span class="pubdate">1997</span>. <span class="copyright">Copyright © <span class="years">1997</span> <span class="holders">
+                                 <span class="holder">ArborText, Inc.</span>
+                              </span>
+                           </span>
+                           <span class="pagenums">97-108</span>. </span>
+                        <span class="biblioset">
+                           <cite>XML: Principles, Tools, and Techniques</cite>. <span class="publishername">O'Reilly &amp; Associates, Inc.</span>
+                           <span class="biblioid">1085-2301</span>. <span class="editor">
+                              <span class="firstname">Dan</span>
+                              <span class="surname">Connolly</span>
+                           </span>. </span>
+                     </span>
+                  </p>
+               </div>
+            </div>
+            <div deltaxml:deltaV2="A" id="Walsh97" class="biblioentry">
+               <p class="biblioentry">
+                  <span class="label">[<span class="abbrev">Walsh97</span>] </span>
+                  <span class="entry">
+                     <span class="biblioset">“A Guide to XML”. <span class="author">
+                           <span class="firstname">Norman</span>
+                           <span class="surname">Walsh</span>
+                        </span>. <span class="pubdate">1997</span>. <span class="copyright">Copyright © <span class="years">1997</span> <span class="holders">
+                              <span class="holder">ArborText, Inc.</span>
+                           </span>
+                        </span>
+                        <span class="pagenums">97-108</span>. </span>
+                     <span class="biblioset">
+                        <cite>XML: Principles, Tools, and Techniques</cite>. <span class="publishername">O'Reilly &amp; Associates, Inc.</span>
+                        <span class="biblioid">1085-2301</span>. <span class="editor">
+                           <span class="firstname">Dan</span>
+                           <span class="surname">Connolly</span>
+                        </span>. </span>
+                  </span>
+               </p>
+            </div><p deltaxml:deltaV2="B">This is another paragraph.</p>
+         </div><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><p deltaxml:deltaV2="A">This is another paragraph.</p>
+      </article>
+      <script deltaxml:deltaV2="A=B" src="../../resources/js/prism.js"/>
+   </body>
+</html>

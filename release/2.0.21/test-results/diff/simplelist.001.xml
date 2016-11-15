@@ -1,0 +1,210 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" deltaxml:deltaV2="A!=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head deltaxml:deltaV2="A=B">
+      <link href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../resources/css/default.css"/>
+      <link href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/>
+      <script type="text/javascript" src="../../resources/js/dbmodnizr.js"/>
+      <title>Article wrapper</title>
+   </head>
+   <body deltaxml:deltaV2="A!=B">
+      <article deltaxml:deltaV2="A!=B" id="R.1" class="article">
+         <header deltaxml:deltaV2="A=B" class="article-titlepage">
+            <h2>Article wrapper</h2>
+         </header>
+         <p deltaxml:deltaV2="A">An inline simple list:
+<span class="simplelist">
+               <span class="member">eggs</span>, <span class="member">milk</span>, <span class="member">butter</span>
+            </span>.
+</p><div deltaxml:deltaV2="B" class="content">
+            <p>An inline simple list:
+<span class="simplelist">
+                  <span class="member">eggs</span>, <span class="member">milk</span>, <span class="member">butter</span>
+               </span>.
+</p>
+            <p>A horizontal simple list:</p>
+            <table border="0" summary="Simple list" class="simplelist">
+               <tr>
+                  <td>
+                     <span class="member">A</span>
+                  </td>
+                  <td>
+                     <span class="member">B</span>
+                  </td>
+                  <td>
+                     <span class="member">C</span>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <span class="member">D</span>
+                  </td>
+                  <td>
+                     <span class="member">E</span>
+                  </td>
+                  <td>
+                     <span class="member">F</span>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <span class="member">G</span>
+                  </td>
+                  <td>
+                     <span class="member">H</span>
+                  </td>
+                  <td>
+                     <span class="member">I</span>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <span class="member">J</span>
+                  </td>
+                  <td>
+                     <span class="member">K</span>
+                  </td>
+                  <td> </td>
+               </tr>
+            </table>
+            <p>A vertical simple list:</p>
+            <table border="0" summary="Simple list" class="simplelist">
+               <tr>
+                  <td>
+                     <span class="member">A</span>
+                  </td>
+                  <td>
+                     <span class="member">E</span>
+                  </td>
+                  <td>
+                     <span class="member">I</span>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <span class="member">B</span>
+                  </td>
+                  <td>
+                     <span class="member">F</span>
+                  </td>
+                  <td>
+                     <span class="member">J</span>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <span class="member">C</span>
+                  </td>
+                  <td>
+                     <span class="member">G</span>
+                  </td>
+                  <td>
+                     <span class="member">K</span>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <span class="member">D</span>
+                  </td>
+                  <td>
+                     <span class="member">H</span>
+                  </td>
+                  <td> </td>
+               </tr>
+            </table>
+         </div><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><p deltaxml:deltaV2="A">A horizontal simple list:</p><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><table deltaxml:deltaV2="A" border="0" summary="Simple list" class="simplelist">
+            <tr>
+               <td>
+                  <span class="member">A</span>
+               </td>
+               <td>
+                  <span class="member">B</span>
+               </td>
+               <td>
+                  <span class="member">C</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <span class="member">D</span>
+               </td>
+               <td>
+                  <span class="member">E</span>
+               </td>
+               <td>
+                  <span class="member">F</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <span class="member">G</span>
+               </td>
+               <td>
+                  <span class="member">H</span>
+               </td>
+               <td>
+                  <span class="member">I</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <span class="member">J</span>
+               </td>
+               <td>
+                  <span class="member">K</span>
+               </td>
+               <td> </td>
+            </tr>
+         </table><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><p deltaxml:deltaV2="A">A vertical simple list:</p><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><table deltaxml:deltaV2="A" border="0" summary="Simple list" class="simplelist">
+            <tr>
+               <td>
+                  <span class="member">A</span>
+               </td>
+               <td>
+                  <span class="member">E</span>
+               </td>
+               <td>
+                  <span class="member">I</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <span class="member">B</span>
+               </td>
+               <td>
+                  <span class="member">F</span>
+               </td>
+               <td>
+                  <span class="member">J</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <span class="member">C</span>
+               </td>
+               <td>
+                  <span class="member">G</span>
+               </td>
+               <td>
+                  <span class="member">K</span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <span class="member">D</span>
+               </td>
+               <td>
+                  <span class="member">H</span>
+               </td>
+               <td> </td>
+            </tr>
+         </table>
+      </article>
+      <script deltaxml:deltaV2="A=B" src="../../resources/js/prism.js"/>
+   </body>
+</html>

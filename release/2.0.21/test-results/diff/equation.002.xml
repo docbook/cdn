@@ -1,0 +1,52 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" deltaxml:deltaV2="A!=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head deltaxml:deltaV2="A=B">
+      <link href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../resources/css/default.css"/>
+      <link href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/>
+      <script type="text/javascript" src="../../resources/js/dbmodnizr.js"/>
+      <title>Article wrapper</title>
+   </head>
+   <body deltaxml:deltaV2="A!=B">
+      <article deltaxml:deltaV2="A!=B" id="R.1" class="article">
+         <header deltaxml:deltaV2="A=B" class="article-titlepage">
+            <h2>Article wrapper</h2>
+         </header>
+         <figure deltaxml:deltaV2="A" id="eq2" class="equation-wrapper">
+            <div class="equation">
+               <div id="eq2.2" class="mediaobject">
+                  <img src="../graphics/emc2.png" alt="e=mc^2"/>
+               </div>
+            </div>
+            <div class="title">Equation 1. Second Equation</div>
+         </figure><div deltaxml:deltaV2="B" class="content">
+            <figure id="eq2" class="equation-wrapper">
+               <div class="equation">
+                  <div id="eq2.2" class="mediaobject">
+                     <img src="../graphics/emc2.png" alt="e=mc^2"/>
+                  </div>
+               </div>
+               <div class="title">Equation 1. Second Equation</div>
+            </figure>
+            <p>An informal equation:</p>
+            <figure id="eq3" class="informalequation-wrapper">
+               <div class="informalequation">
+                  <div id="eq3.1" class="mediaobject">
+                     <img src="../graphics/emc2.png" alt="e=mc^2"/>
+                  </div>
+               </div>
+            </figure>
+         </div><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><p deltaxml:deltaV2="A">An informal equation:</p><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><figure deltaxml:deltaV2="A" id="eq3" class="informalequation-wrapper">
+            <div class="informalequation">
+               <div id="eq3.1" class="mediaobject">
+                  <img src="../graphics/emc2.png" alt="e=mc^2"/>
+               </div>
+            </div>
+         </figure>
+      </article>
+      <script deltaxml:deltaV2="A=B" src="../../resources/js/prism.js"/>
+   </body>
+</html>

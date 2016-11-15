@@ -1,0 +1,164 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" deltaxml:deltaV2="A!=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head deltaxml:deltaV2="A=B">
+      <link href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../resources/css/default.css"/>
+      <link href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/>
+      <script type="text/javascript" src="../../resources/js/dbmodnizr.js"/>
+      <title>Unit Test: informaltable.017</title>
+   </head>
+   <body deltaxml:deltaV2="A!=B">
+      <article deltaxml:deltaV2="A!=B" id="R.1" class="article">
+         <header deltaxml:deltaV2="A=B" class="article-titlepage">
+            <h2>Unit Test: informaltable.017</h2>
+            <div class="author">
+               <h3>
+                  <span class="personname">
+                     <span class="firstname">Adam</span>
+                     <span class="surname">Di Carlo</span>
+                  </span>
+               </h3>
+            </div>
+         </header>
+         <p deltaxml:deltaV2="A">Row valign test.</p><div deltaxml:deltaV2="B" class="content">
+            <p>Row valign test.</p>
+            <figure id="informaltable" class="informaltable-wrapper">
+               <div class="informaltable">
+                  <table border="0" style="border-collapse: collapse;border-top: 1px solid ; border-bottom: 1px solid ; border-left: 1px solid ; border-right: 1px solid ; ">
+                     <colgroup>
+                        <col class="tcol1" width="50%"/>
+                        <col class="tcol2" width="50%"/>
+                     </colgroup>
+                     <tbody>
+                        <tr valign="top">
+                           <td style="border-right: 1px solid ; border-bottom: 1px solid ; " valign="top">
+                              <p>Para one.</p>
+                              <p>Para two.</p>
+                           </td>
+                           <td style="border-bottom: 1px solid ; " valign="top">Top align me.</td>
+                        </tr>
+                        <tr valign="middle">
+                           <td style="border-right: 1px solid ; border-bottom: 1px solid ; " valign="middle">
+                              <p>Para one.</p>
+                              <p>Para two.</p>
+                           </td>
+                           <td style="border-bottom: 1px solid ; " valign="middle">Middle align me.</td>
+                        </tr>
+                        <tr valign="bottom">
+                           <td style="border-right: 1px solid ; " valign="bottom">
+                              <p>Para one.</p>
+                              <p>Para two.</p>
+                           </td>
+                           <td valign="bottom">Bottom align me.</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </figure>
+            <p>This one should look the same, we use valign setting on the tbody.</p>
+            <figure id="R.1.5" class="informaltable-wrapper">
+               <div class="informaltable">
+                  <table border="0" style="border-collapse: collapse;border-top: 1px solid ; border-bottom: 1px solid ; border-left: 1px solid ; border-right: 1px solid ; ">
+                     <colgroup>
+                        <col class="tcol1" width="50%"/>
+                        <col class="tcol2" width="50%"/>
+                     </colgroup>
+                     <tbody valign="top">
+                        <tr>
+                           <td style="border-right: 1px solid ; border-bottom: 1px solid ; ">
+                              <p>Para one.</p>
+                              <p>Para two.</p>
+                           </td>
+                           <td style="border-bottom: 1px solid ; ">Top align me.</td>
+                        </tr>
+                        <tr valign="middle">
+                           <td style="border-right: 1px solid ; border-bottom: 1px solid ; " valign="middle">
+                              <p>Para one.</p>
+                              <p>Para two.</p>
+                           </td>
+                           <td style="border-bottom: 1px solid ; " valign="middle">Middle align me.</td>
+                        </tr>
+                        <tr valign="bottom">
+                           <td style="border-right: 1px solid ; " valign="bottom">
+                              <p>Para one.</p>
+                              <p>Para two.</p>
+                           </td>
+                           <td valign="bottom">Bottom align me.</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </figure>
+         </div><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><figure deltaxml:deltaV2="A" id="informaltable" class="informaltable-wrapper">
+            <div class="informaltable">
+               <table border="0" style="border-collapse: collapse;border-top: 1px solid ; border-bottom: 1px solid ; border-left: 1px solid ; border-right: 1px solid ; ">
+                  <colgroup>
+                     <col class="tcol1" width="50%"/>
+                     <col class="tcol2" width="50%"/>
+                  </colgroup>
+                  <tbody>
+                     <tr valign="top">
+                        <td style="border-right: 1px solid ; border-bottom: 1px solid ; " valign="top">
+                           <p>Para one.</p>
+                           <p>Para two.</p>
+                        </td>
+                        <td style="border-bottom: 1px solid ; " valign="top">Top align me.</td>
+                     </tr>
+                     <tr valign="middle">
+                        <td style="border-right: 1px solid ; border-bottom: 1px solid ; " valign="middle">
+                           <p>Para one.</p>
+                           <p>Para two.</p>
+                        </td>
+                        <td style="border-bottom: 1px solid ; " valign="middle">Middle align me.</td>
+                     </tr>
+                     <tr valign="bottom">
+                        <td style="border-right: 1px solid ; " valign="bottom">
+                           <p>Para one.</p>
+                           <p>Para two.</p>
+                        </td>
+                        <td valign="bottom">Bottom align me.</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </figure><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><p deltaxml:deltaV2="A">This one should look the same, we use valign setting on the tbody.</p><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><figure deltaxml:deltaV2="A" id="R.1.5" class="informaltable-wrapper">
+            <div class="informaltable">
+               <table border="0" style="border-collapse: collapse;border-top: 1px solid ; border-bottom: 1px solid ; border-left: 1px solid ; border-right: 1px solid ; ">
+                  <colgroup>
+                     <col class="tcol1" width="50%"/>
+                     <col class="tcol2" width="50%"/>
+                  </colgroup>
+                  <tbody valign="top">
+                     <tr>
+                        <td style="border-right: 1px solid ; border-bottom: 1px solid ; ">
+                           <p>Para one.</p>
+                           <p>Para two.</p>
+                        </td>
+                        <td style="border-bottom: 1px solid ; ">Top align me.</td>
+                     </tr>
+                     <tr valign="middle">
+                        <td style="border-right: 1px solid ; border-bottom: 1px solid ; " valign="middle">
+                           <p>Para one.</p>
+                           <p>Para two.</p>
+                        </td>
+                        <td style="border-bottom: 1px solid ; " valign="middle">Middle align me.</td>
+                     </tr>
+                     <tr valign="bottom">
+                        <td style="border-right: 1px solid ; " valign="bottom">
+                           <p>Para one.</p>
+                           <p>Para two.</p>
+                        </td>
+                        <td valign="bottom">Bottom align me.</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </figure>
+      </article>
+      <script deltaxml:deltaV2="A=B" src="../../resources/js/prism.js"/>
+   </body>
+</html>

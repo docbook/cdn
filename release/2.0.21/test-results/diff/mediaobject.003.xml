@@ -1,0 +1,29 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:exf="http://exproc.org/standard/functions" xmlns:c="http://www.w3.org/ns/xproc-step" xmlns:dbp="http://docbook.github.com/ns/pipeline" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:cx="http://xmlcalabash.com/ns/extensions" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" xmlns:db="http://docbook.org/ns/docbook" deltaxml:deltaV2="A!=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head deltaxml:deltaV2="A!=B">
+      <link deltaxml:deltaV2="B" href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+      </deltaxml:text></deltaxml:textGroup><link deltaxml:deltaV2="B" rel="stylesheet" type="text/css" href="../../resources/css/default.css"/><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+      </deltaxml:text></deltaxml:textGroup><link deltaxml:deltaV2="B" href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+      </deltaxml:text></deltaxml:textGroup><meta deltaxml:deltaV2="B" charset="utf-8"/><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+      </deltaxml:text></deltaxml:textGroup><meta deltaxml:deltaV2="B" name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+      </deltaxml:text></deltaxml:textGroup><script deltaxml:deltaV2="B" type="text/javascript" src="../../resources/js/dbmodnizr.js"/><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+      </deltaxml:text></deltaxml:textGroup><title deltaxml:deltaV2="A!=B"><deltaxml:textGroup deltaxml:deltaV2="A!=B"><deltaxml:text deltaxml:deltaV2="A">Error</deltaxml:text><deltaxml:text deltaxml:deltaV2="B">Mediaobject test</deltaxml:text></deltaxml:textGroup></title>
+   </head>
+   <body deltaxml:deltaV2="A!=B">
+      <p deltaxml:deltaV2="A">No expected result exists.</p><article deltaxml:deltaV2="B" id="R.1" class="article">
+         <header class="article-titlepage">
+            <h2>Mediaobject test</h2>
+         </header>
+         <div class="content">
+            <p>This tests passing multiple objects through to HTML using
+srcset.</p>
+            <div id="R.1.3" class="mediaobject">
+               <img src="../graphics/duck.png/projects/docbook/xslt20/test/graphics/duck-small.png" alt="The DocBook: TDG Duck"/>
+               <div class="caption">
+                  <p>The Duck</p>
+               </div>
+            </div>
+         </div>
+      </article><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+      </deltaxml:text></deltaxml:textGroup><script deltaxml:deltaV2="B" src="../../resources/js/prism.js"/>
+   </body>
+</html>

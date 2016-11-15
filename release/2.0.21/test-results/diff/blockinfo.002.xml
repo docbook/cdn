@@ -1,0 +1,175 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" deltaxml:deltaV2="A!=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head deltaxml:deltaV2="A=B">
+      <link href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../resources/css/default.css"/>
+      <link href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/>
+      <script type="text/javascript" src="../../resources/js/dbmodnizr.js"/>
+      <title>Unit Test: blockinfo.002</title>
+   </head>
+   <body deltaxml:deltaV2="A!=B">
+      <article deltaxml:deltaV2="A!=B" id="R.1" class="article">
+         <header deltaxml:deltaV2="A=B" class="article-titlepage">
+            <h2>Unit Test: blockinfo.002</h2>
+            <div class="author">
+               <h3>
+                  <span class="personname">
+                     <span class="firstname">Adam</span>
+                     <span class="surname">Di Carlo</span>
+                  </span>
+               </h3>
+            </div>
+            <p class="CVS">$Id: blockinfo.002.xml 4613 2005-04-20 11:54:35Z nwalsh $</p>
+         </header>
+         <div deltaxml:deltaV2="A!=B"><deltaxml:attributes deltaxml:deltaV2="A!=B"><dxa:class deltaxml:deltaV2="A!=B"><deltaxml:attributeValue deltaxml:deltaV2="A">qandaset</deltaxml:attributeValue><deltaxml:attributeValue deltaxml:deltaV2="B">content</deltaxml:attributeValue></dxa:class></deltaxml:attributes>
+            <h2 deltaxml:deltaV2="A">QandASet BlockInfo Title</h2><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+            </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="A!=B"><deltaxml:attributes deltaxml:deltaV2="A!=B"><dxa:class deltaxml:deltaV2="A!=B"><deltaxml:attributeValue deltaxml:deltaV2="A">lists-of-titles</deltaxml:attributeValue><deltaxml:attributeValue deltaxml:deltaV2="B">qandaset</deltaxml:attributeValue></dxa:class></deltaxml:attributes>
+               <h2 deltaxml:deltaV2="B">QandASet BlockInfo Title</h2><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+               </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="A!=B"><deltaxml:attributes deltaxml:deltaV2="A!=B"><dxa:class deltaxml:deltaV2="A!=B"><deltaxml:attributeValue deltaxml:deltaV2="A">toc</deltaxml:attributeValue><deltaxml:attributeValue deltaxml:deltaV2="B">lists-of-titles</deltaxml:attributeValue></dxa:class></deltaxml:attributes>
+                  <ul deltaxml:deltaV2="A" class="toc">
+                     <li>
+                        <span>
+                           <a href="#qa1">1. Question one.</a>
+                        </span>
+                     </li>
+                     <li>
+                        <span>
+                           <a href="#Two">2. Question two.</a>
+                        </span>
+                     </li>
+                     <li>
+                        <span>
+                           <a href="#Twoc">3. Question two.</a>
+                        </span>
+                     </li>
+                  </ul><div deltaxml:deltaV2="B" class="toc">
+                     <ul class="toc">
+                        <li>
+                           <span>
+                              <a href="#qa1">1. Question one.</a>
+                           </span>
+                        </li>
+                        <li>
+                           <span>
+                              <a href="#Two">2. Question two.</a>
+                           </span>
+                        </li>
+                        <li>
+                           <span>
+                              <a href="#Twoc">3. Question two.</a>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+               </deltaxml:text></deltaxml:textGroup><table deltaxml:deltaV2="B" class="qandaentries" border="0" summary="Q&amp;A Set">
+                  <tr id="qa1" class="qandaentry">
+                     <td align="left" valign="top" id="q1" class="question-label">1.</td>
+                     <td align="left" valign="top" class="question">
+                        <p>Question one.</p>
+                     </td>
+                  </tr>
+                  <tr id="qa1" class="qandaentry">
+                     <td align="left" valign="top" id="a1" class="answer-label"/>
+                     <td align="left" valign="top" class="answer">
+                        <p>Answer one.
+See <a href="#faq-Two">Q: 2</a>
+                        </p>
+                     </td>
+                  </tr>
+                  <tr id="Two" class="qandaentry">
+                     <td align="left" valign="top" id="faq-Two" class="question-label">2.</td>
+                     <td align="left" valign="top" class="question">
+                        <p>Question two.</p>
+                     </td>
+                  </tr>
+                  <tr id="Two" class="qandaentry">
+                     <td align="left" valign="top" id="faa-Two" class="answer-label"/>
+                     <td align="left" valign="top" class="answer">
+                        <p>Answer two.</p>
+                     </td>
+                  </tr>
+                  <tr id="Twoc" class="qandaentry">
+                     <td align="left" valign="top" id="faq-Twoc" class="question-label">3.</td>
+                     <td align="left" valign="top" class="question">
+                        <p>Question two.</p>
+                     </td>
+                  </tr>
+                  <tr id="Twoc" class="qandaentry">
+                     <td align="left" valign="top" id="faa-Twoc" class="answer-label"/>
+                     <td align="left" valign="top" class="answer">
+                        <div class="orderedlist">
+                           <ol style="list-style: decimal;">
+                              <li>
+                                 <p>testing a list</p>
+                              </li>
+                              <li>
+                                 <p>testing a list</p>
+                              </li>
+                              <li>
+                                 <p>testing a list</p>
+                              </li>
+                           </ol>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+            </div><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+            </deltaxml:text></deltaxml:textGroup><table deltaxml:deltaV2="A" class="qandaentries" border="0" summary="Q&amp;A Set">
+               <tr id="qa1" class="qandaentry">
+                  <td align="left" valign="top" id="q1" class="question-label">1.</td>
+                  <td align="left" valign="top" class="question">
+                     <p>Question one.</p>
+                  </td>
+               </tr>
+               <tr id="qa1" class="qandaentry">
+                  <td align="left" valign="top" id="a1" class="answer-label"/>
+                  <td align="left" valign="top" class="answer">
+                     <p>Answer one.
+See <a href="#faq-Two">Q: 2</a>
+                     </p>
+                  </td>
+               </tr>
+               <tr id="Two" class="qandaentry">
+                  <td align="left" valign="top" id="faq-Two" class="question-label">2.</td>
+                  <td align="left" valign="top" class="question">
+                     <p>Question two.</p>
+                  </td>
+               </tr>
+               <tr id="Two" class="qandaentry">
+                  <td align="left" valign="top" id="faa-Two" class="answer-label"/>
+                  <td align="left" valign="top" class="answer">
+                     <p>Answer two.</p>
+                  </td>
+               </tr>
+               <tr id="Twoc" class="qandaentry">
+                  <td align="left" valign="top" id="faq-Twoc" class="question-label">3.</td>
+                  <td align="left" valign="top" class="question">
+                     <p>Question two.</p>
+                  </td>
+               </tr>
+               <tr id="Twoc" class="qandaentry">
+                  <td align="left" valign="top" id="faa-Twoc" class="answer-label"/>
+                  <td align="left" valign="top" class="answer">
+                     <div class="orderedlist">
+                        <ol style="list-style: decimal;">
+                           <li>
+                              <p>testing a list</p>
+                           </li>
+                           <li>
+                              <p>testing a list</p>
+                           </li>
+                           <li>
+                              <p>testing a list</p>
+                           </li>
+                        </ol>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </article>
+      <script deltaxml:deltaV2="A=B" src="../../resources/js/prism.js"/>
+   </body>
+</html>

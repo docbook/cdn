@@ -1,0 +1,268 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" deltaxml:deltaV2="A!=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head deltaxml:deltaV2="A=B">
+      <link href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../resources/css/default.css"/>
+      <link href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/>
+      <script type="text/javascript" src="../../resources/js/dbmodnizr.js"/>
+      <title>Article wrapper</title>
+   </head>
+   <body deltaxml:deltaV2="A!=B">
+      <article deltaxml:deltaV2="A!=B" id="R.1" lang="en" class="article">
+         <header deltaxml:deltaV2="A=B" class="article-titlepage">
+            <h2>Article wrapper</h2>
+         </header>
+         <p deltaxml:deltaV2="A">Testing <code class="tag-element">keycap</code>.</p><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="A!=B"><deltaxml:attributes deltaxml:deltaV2="A!=B"><dxa:class deltaxml:deltaV2="A!=B"><deltaxml:attributeValue deltaxml:deltaV2="A">itemizedlist</deltaxml:attributeValue><deltaxml:attributeValue deltaxml:deltaV2="B">content</deltaxml:attributeValue></dxa:class></deltaxml:attributes>
+            <ul deltaxml:deltaV2="A">
+               <li>
+                  <p>
+                     <strong class="keycap">K</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="keycap-with-function" class="keycap">ALT</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="alt" class="keycap">Alt</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="backspace" class="keycap">⤆</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="command" class="keycap">⌘</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="control" class="keycap">Ctrl</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="delete" class="keycap">Delete</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="down" class="keycap">↓</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="end" class="keycap">End</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="enter" class="keycap">Enter</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="escape" class="keycap">Esc</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="home" class="keycap">Home</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="insert" class="keycap">Insert</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="left" class="keycap">←</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="meta" class="keycap">Meta</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="option" class="keycap">Option</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="other" class="keycap"/>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="pagedown" class="keycap">Page Down</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="pageup" class="keycap">Page Up</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="right" class="keycap">→</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="shift" class="keycap">Shift</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="space" class="keycap">Spacebar</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="tab" class="keycap">Tab</strong>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <strong id="up" class="keycap">↑</strong>
+                  </p>
+               </li>
+            </ul><p deltaxml:deltaV2="B">Testing <code class="tag-element">keycap</code>.</p><deltaxml:textGroup deltaxml:deltaV2="B"><deltaxml:text deltaxml:deltaV2="B">
+            </deltaxml:text></deltaxml:textGroup><div deltaxml:deltaV2="B" class="itemizedlist">
+               <ul>
+                  <li>
+                     <p>
+                        <strong class="keycap">K</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="keycap-with-function" class="keycap">ALT</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="alt" class="keycap">Alt</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="backspace" class="keycap">⤆</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="command" class="keycap">⌘</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="control" class="keycap">Ctrl</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="delete" class="keycap">Delete</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="down" class="keycap">↓</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="end" class="keycap">End</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="enter" class="keycap">Enter</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="escape" class="keycap">Esc</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="home" class="keycap">Home</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="insert" class="keycap">Insert</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="left" class="keycap">←</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="meta" class="keycap">Meta</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="option" class="keycap">Option</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="other" class="keycap"/>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="pagedown" class="keycap">Page Down</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="pageup" class="keycap">Page Up</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="right" class="keycap">→</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="shift" class="keycap">Shift</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="space" class="keycap">Spacebar</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="tab" class="keycap">Tab</strong>
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <strong id="up" class="keycap">↑</strong>
+                     </p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </article>
+      <script deltaxml:deltaV2="A=B" src="../../resources/js/prism.js"/>
+   </body>
+</html>

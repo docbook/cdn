@@ -1,0 +1,206 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:p="http://www.w3.org/ns/xproc" p:style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Results for calloutlist.001.xml</title><link rel="stylesheet" type="text/css" href="../../resources/css/default.css" /><script type="text/javascript" src="../../resources/js/dbmodnizr.js"></script><link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/start/jquery-ui.css" /><link rel="stylesheet" type="text/css" href="../../resources/css/prism.css" /><link rel="stylesheet" type="text/css" href="../../resources/css/db-prism.css" /><link href="../style/show-results.css" rel="stylesheet" type="text/css" /><meta name="deltaxml" content="true" /></head><body><h1>DocBook XSLT 2.0 Stylesheet output: calloutlist.001.xml</h1><table class="diffs"><tbody><tr><th>Expected (<span class="exdiff">6</span> differences)</th><th>Actual (<span class="adiff">6</span> differences)</th></tr><tr><td><pre class="show-diff"><span class="tag diff">&lt;html&gt;
+   <span class="tag nodiff">&lt;head&gt;
+      <span class="tag">&lt;link <span class="att">href="../../resources/css/db-prism.css"</span> <span class="att">rel="stylesheet"</span> <span class="att">type="text/css"</span>/&gt;</span>
+      <span class="tag">&lt;link <span class="att">href="../../resources/css/default.css"</span> <span class="att">rel="stylesheet"</span> <span class="att">type="text/css"</span>/&gt;</span>
+      <span class="tag">&lt;link <span class="att">href="../../resources/css/prism.css"</span> <span class="att">rel="stylesheet"</span> <span class="att">type="text/css"</span>/&gt;</span>
+      <span class="tag">&lt;meta <span class="att">charset="utf-8"</span>/&gt;</span>
+      <span class="tag">&lt;meta <span class="att">content="DocBook XSL 2.0 Stylesheets Vxxx"</span> <span class="att">name="generator"</span>/&gt;</span>
+      <span class="tag">&lt;script <span class="att">src="../../resources/js/dbmodnizr.js"</span> <span class="att">type="text/javascript"</span>/&gt;</span>
+      <span class="tag">&lt;title&gt;Article wrapper&lt;/title&gt;</span>
+   &lt;/head&gt;</span>
+   <span class="tag diff">&lt;body&gt;
+      <span class="tag diff">&lt;article <span class="att">class="article"</span> <span class="att">id="R.1"</span>&gt;
+         <span class="tag nodiff">&lt;header <span class="att">class="article-titlepage"</span>&gt;
+            <span class="tag">&lt;h2&gt;Article wrapper&lt;/h2&gt;</span>
+         &lt;/header&gt;</span>
+         <span class="tag diff del">&lt;p&gt;Callouts using <span class="tag">&lt;code <span class="att">class="tag-element"</span>&gt;co&lt;/code&gt;</span>:&lt;/p&gt;</span><span class="diff txtchg">
+         </span><span class="tag diff del">&lt;pre <span class="att">class="screen language-none line-numbers"</span>&gt;
+            <span class="tag">&lt;code&gt;
+(let <span class="tag">&lt;a <span class="att">id="dl1"</span> <span class="att">name="dl1"</span>/&gt;</span>
+               <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="1"</span>&gt;❶&lt;/span&gt;</span>loopvar <span class="tag">&lt;a <span class="att">id="dl2"</span> <span class="att">name="dl2"</span>/&gt;</span>
+               <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="2"</span>&gt;❷&lt;/span&gt;</span>((count 1))
+  <span class="tag">&lt;a <span class="att">id="dl3"</span> <span class="att">name="dl3"</span>/&gt;</span>
+               <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="3"</span>&gt;❸&lt;/span&gt;</span>(if (&gt; count 10)
+    <span class="tag">&lt;a <span class="att">id="dl4"</span> <span class="att">name="dl4"</span>/&gt;</span>
+               <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="4"</span>&gt;❹&lt;/span&gt;</span>#t
+    (<span class="tag">&lt;a <span class="att">id="dl5"</span> <span class="att">name="dl5"</span>/&gt;</span>
+               <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="5"</span>&gt;❺&lt;/span&gt;</span>loopvar <span class="tag">&lt;a <span class="att">id="dl6"</span> <span class="att">name="dl6"</span>/&gt;</span>
+               <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="6"</span>&gt;❻&lt;/span&gt;</span>(+ count 1))))&lt;/code&gt;</span>
+         &lt;/pre&gt;</span><span class="diff txtchg">
+         </span><span class="tag diff">&lt;div <span class="att">class="<span class="att attchg">calloutlist</span>"</span>&gt;
+            <span class="tag diff del">&lt;dl&gt;
+               <span class="tag">&lt;dt <span class="att">class="callout"</span>&gt;
+                  <span class="tag">&lt;a <span class="att">class="callout-link"</span> <span class="att">href="#dl1"</span>&gt;
+                     <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="1"</span>&gt;❶&lt;/span&gt;</span>
+                  &lt;/a&gt;</span> &lt;/dt&gt;</span>
+               <span class="tag">&lt;dd&gt;
+                  <span class="tag">&lt;p&gt;This variable controls the loop. It is declared without an
+initial value, immediately after the <span class="tag">&lt;code <span class="att">class="literal"</span>&gt;let&lt;/code&gt;</span>
+operand.&lt;/p&gt;</span>
+               &lt;/dd&gt;</span>
+               <span class="tag">&lt;dt <span class="att">class="callout"</span>&gt;
+                  <span class="tag">&lt;a <span class="att">class="callout-link"</span> <span class="att">href="#dl2"</span>&gt;
+                     <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="2"</span>&gt;❷&lt;/span&gt;</span>
+                  &lt;/a&gt;</span> &lt;/dt&gt;</span>
+               <span class="tag">&lt;dd&gt;
+                  <span class="tag">&lt;p&gt;Any number of additional local variables can be defined after
+the loop variable, just as they can in any other
+<span class="tag">&lt;code <span class="att">class="literal"</span>&gt;let&lt;/code&gt;</span> expression.&lt;/p&gt;</span>
+               &lt;/dd&gt;</span>
+               <span class="tag">&lt;dt <span class="att">class="callout"</span>&gt;
+                  <span class="tag">&lt;a <span class="att">class="callout-link"</span> <span class="att">href="#dl3"</span>&gt;
+                     <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="3"</span>&gt;❸&lt;/span&gt;</span>
+                  &lt;/a&gt;</span> &lt;/dt&gt;</span>
+               <span class="tag">&lt;dd&gt;
+                  <span class="tag">&lt;p&gt;If you ever want the loop to end, you have to put some sort of a
+test in it.&lt;/p&gt;</span>
+               &lt;/dd&gt;</span>
+               <span class="tag">&lt;dt <span class="att">class="callout"</span>&gt;
+                  <span class="tag">&lt;a <span class="att">class="callout-link"</span> <span class="att">href="#dl4"</span>&gt;
+                     <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="4"</span>&gt;❹&lt;/span&gt;</span>
+                  &lt;/a&gt;</span> &lt;/dt&gt;</span>
+               <span class="tag">&lt;dd&gt;
+                  <span class="tag">&lt;p&gt;This is the value that will be returned.&lt;/p&gt;</span>
+               &lt;/dd&gt;</span>
+               <span class="tag">&lt;dt <span class="att">class="callout"</span>&gt;
+                  <span class="tag">&lt;a <span class="att">class="callout-link"</span> <span class="att">href="#dl5"</span>&gt;
+                     <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="5"</span>&gt;❺&lt;/span&gt;</span>
+                  &lt;/a&gt;</span> &lt;/dt&gt;</span>
+               <span class="tag">&lt;dd&gt;
+                  <span class="tag">&lt;p&gt;Note that you iterate the loop by using the loop variable as if
+it was a function name.&lt;/p&gt;</span>
+               &lt;/dd&gt;</span>
+               <span class="tag">&lt;dt <span class="att">class="callout"</span>&gt;
+                  <span class="tag">&lt;a <span class="att">class="callout-link"</span> <span class="att">href="#dl6"</span>&gt;
+                     <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="6"</span>&gt;❻&lt;/span&gt;</span>
+                  &lt;/a&gt;</span> &lt;/dt&gt;</span>
+               <span class="tag">&lt;dd&gt;
+                  <span class="tag">&lt;p&gt;The arguments to this function are the values that
+you want the local variables declared in <span class="tag">&lt;a <span class="att">class="callout-link"</span> <span class="att">href="#dl2"</span>&gt;
+                        <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="2"</span>&gt;❷&lt;/span&gt;</span>
+                     &lt;/a&gt;</span> to have
+in the next iteration.&lt;/p&gt;</span>
+               &lt;/dd&gt;</span>
+            &lt;/dl&gt;</span>
+         &lt;/div&gt;</span>
+      &lt;/article&gt;</span>
+      <span class="tag nodiff">&lt;script <span class="att">src="../../resources/js/prism.js"</span>/&gt;</span>
+   &lt;/body&gt;</span>
+&lt;/html&gt;</span></pre></td><td><pre class="show-diff"><span class="tag diff">&lt;html&gt;
+   <span class="tag nodiff">&lt;head&gt;
+      <span class="tag">&lt;link <span class="att">href="../../resources/css/db-prism.css"</span> <span class="att">rel="stylesheet"</span> <span class="att">type="text/css"</span>/&gt;</span>
+      <span class="tag">&lt;link <span class="att">href="../../resources/css/default.css"</span> <span class="att">rel="stylesheet"</span> <span class="att">type="text/css"</span>/&gt;</span>
+      <span class="tag">&lt;link <span class="att">href="../../resources/css/prism.css"</span> <span class="att">rel="stylesheet"</span> <span class="att">type="text/css"</span>/&gt;</span>
+      <span class="tag">&lt;meta <span class="att">charset="utf-8"</span>/&gt;</span>
+      <span class="tag">&lt;meta <span class="att">content="DocBook XSL 2.0 Stylesheets Vxxx"</span> <span class="att">name="generator"</span>/&gt;</span>
+      <span class="tag">&lt;script <span class="att">src="../../resources/js/dbmodnizr.js"</span> <span class="att">type="text/javascript"</span>/&gt;</span>
+      <span class="tag">&lt;title&gt;Article wrapper&lt;/title&gt;</span>
+   &lt;/head&gt;</span>
+   <span class="tag diff">&lt;body&gt;
+      <span class="tag diff">&lt;article <span class="att">class="article"</span> <span class="att">id="R.1"</span>&gt;
+         <span class="tag nodiff">&lt;header <span class="att">class="article-titlepage"</span>&gt;
+            <span class="tag">&lt;h2&gt;Article wrapper&lt;/h2&gt;</span>
+         &lt;/header&gt;</span>
+         <span class="tag diff">&lt;div <span class="att">class="<span class="att attchg">content</span>"</span>&gt;
+            <span class="tag diff add">&lt;p&gt;Callouts using <span class="tag">&lt;code <span class="att">class="tag-element"</span>&gt;co&lt;/code&gt;</span>:&lt;/p&gt;</span><span class="diff txtchg">
+            </span><span class="tag diff add">&lt;pre <span class="att">class="screen language-none line-numbers"</span>&gt;
+               <span class="tag">&lt;code&gt;
+(let <span class="tag">&lt;a <span class="att">id="dl1"</span> <span class="att">name="dl1"</span>/&gt;</span>
+                  <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="1"</span>&gt;❶&lt;/span&gt;</span>loopvar <span class="tag">&lt;a <span class="att">id="dl2"</span> <span class="att">name="dl2"</span>/&gt;</span>
+                  <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="2"</span>&gt;❷&lt;/span&gt;</span>((count 1))
+  <span class="tag">&lt;a <span class="att">id="dl3"</span> <span class="att">name="dl3"</span>/&gt;</span>
+                  <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="3"</span>&gt;❸&lt;/span&gt;</span>(if (&gt; count 10)
+    <span class="tag">&lt;a <span class="att">id="dl4"</span> <span class="att">name="dl4"</span>/&gt;</span>
+                  <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="4"</span>&gt;❹&lt;/span&gt;</span>#t
+    (<span class="tag">&lt;a <span class="att">id="dl5"</span> <span class="att">name="dl5"</span>/&gt;</span>
+                  <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="5"</span>&gt;❺&lt;/span&gt;</span>loopvar <span class="tag">&lt;a <span class="att">id="dl6"</span> <span class="att">name="dl6"</span>/&gt;</span>
+                  <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="6"</span>&gt;❻&lt;/span&gt;</span>(+ count 1))))&lt;/code&gt;</span>
+            &lt;/pre&gt;</span><span class="diff txtchg">
+            </span><span class="tag diff add">&lt;div <span class="att">class="calloutlist"</span>&gt;
+               <span class="tag">&lt;dl&gt;
+                  <span class="tag">&lt;dt <span class="att">class="callout"</span>&gt;
+                     <span class="tag">&lt;a <span class="att">class="callout-link"</span> <span class="att">href="#dl1"</span>&gt;
+                        <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="1"</span>&gt;❶&lt;/span&gt;</span>
+                     &lt;/a&gt;</span> &lt;/dt&gt;</span>
+                  <span class="tag">&lt;dd&gt;
+                     <span class="tag">&lt;p&gt;This variable controls the loop. It is declared without an
+initial value, immediately after the <span class="tag">&lt;code <span class="att">class="literal"</span>&gt;let&lt;/code&gt;</span>
+operand.&lt;/p&gt;</span>
+                  &lt;/dd&gt;</span>
+                  <span class="tag">&lt;dt <span class="att">class="callout"</span>&gt;
+                     <span class="tag">&lt;a <span class="att">class="callout-link"</span> <span class="att">href="#dl2"</span>&gt;
+                        <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="2"</span>&gt;❷&lt;/span&gt;</span>
+                     &lt;/a&gt;</span> &lt;/dt&gt;</span>
+                  <span class="tag">&lt;dd&gt;
+                     <span class="tag">&lt;p&gt;Any number of additional local variables can be defined after
+the loop variable, just as they can in any other
+<span class="tag">&lt;code <span class="att">class="literal"</span>&gt;let&lt;/code&gt;</span> expression.&lt;/p&gt;</span>
+                  &lt;/dd&gt;</span>
+                  <span class="tag">&lt;dt <span class="att">class="callout"</span>&gt;
+                     <span class="tag">&lt;a <span class="att">class="callout-link"</span> <span class="att">href="#dl3"</span>&gt;
+                        <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="3"</span>&gt;❸&lt;/span&gt;</span>
+                     &lt;/a&gt;</span> &lt;/dt&gt;</span>
+                  <span class="tag">&lt;dd&gt;
+                     <span class="tag">&lt;p&gt;If you ever want the loop to end, you have to put some sort of a
+test in it.&lt;/p&gt;</span>
+                  &lt;/dd&gt;</span>
+                  <span class="tag">&lt;dt <span class="att">class="callout"</span>&gt;
+                     <span class="tag">&lt;a <span class="att">class="callout-link"</span> <span class="att">href="#dl4"</span>&gt;
+                        <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="4"</span>&gt;❹&lt;/span&gt;</span>
+                     &lt;/a&gt;</span> &lt;/dt&gt;</span>
+                  <span class="tag">&lt;dd&gt;
+                     <span class="tag">&lt;p&gt;This is the value that will be returned.&lt;/p&gt;</span>
+                  &lt;/dd&gt;</span>
+                  <span class="tag">&lt;dt <span class="att">class="callout"</span>&gt;
+                     <span class="tag">&lt;a <span class="att">class="callout-link"</span> <span class="att">href="#dl5"</span>&gt;
+                        <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="5"</span>&gt;❺&lt;/span&gt;</span>
+                     &lt;/a&gt;</span> &lt;/dt&gt;</span>
+                  <span class="tag">&lt;dd&gt;
+                     <span class="tag">&lt;p&gt;Note that you iterate the loop by using the loop variable as if
+it was a function name.&lt;/p&gt;</span>
+                  &lt;/dd&gt;</span>
+                  <span class="tag">&lt;dt <span class="att">class="callout"</span>&gt;
+                     <span class="tag">&lt;a <span class="att">class="callout-link"</span> <span class="att">href="#dl6"</span>&gt;
+                        <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="6"</span>&gt;❻&lt;/span&gt;</span>
+                     &lt;/a&gt;</span> &lt;/dt&gt;</span>
+                  <span class="tag">&lt;dd&gt;
+                     <span class="tag">&lt;p&gt;The arguments to this function are the values that
+you want the local variables declared in <span class="tag">&lt;a <span class="att">class="callout-link"</span> <span class="att">href="#dl2"</span>&gt;
+                           <span class="tag">&lt;span <span class="att">class="callout-bug callout-bug-unicode"</span> <span class="att">data-number="2"</span>&gt;❷&lt;/span&gt;</span>
+                        &lt;/a&gt;</span> to have
+in the next iteration.&lt;/p&gt;</span>
+                  &lt;/dd&gt;</span>
+               &lt;/dl&gt;</span>
+            &lt;/div&gt;</span>
+         &lt;/div&gt;</span>
+      &lt;/article&gt;</span>
+      <span class="tag nodiff">&lt;script <span class="att">src="../../resources/js/prism.js"</span>/&gt;</span>
+   &lt;/body&gt;</span>
+&lt;/html&gt;</span></pre></td></tr><tr><td><em>The “current” CSS styling is applied
+                  to the this entire document; the results in this
+                  column may be anomalous. Also, image links are broken
+                  in this column.</em></td><td> </td></tr><tr><td><article id="R.1" class="article"><header class="article-titlepage"><h2>Article wrapper</h2></header><p>Callouts using <code class="tag-element">co</code>:</p><pre class="screen language-none line-numbers"><code>
+(let <a name="dl1" id="dl1"></a><span data-number="1" class="callout-bug callout-bug-unicode">❶</span>loopvar <a name="dl2" id="dl2"></a><span data-number="2" class="callout-bug callout-bug-unicode">❷</span>((count 1))
+  <a name="dl3" id="dl3"></a><span data-number="3" class="callout-bug callout-bug-unicode">❸</span>(if (&gt; count 10)
+    <a name="dl4" id="dl4"></a><span data-number="4" class="callout-bug callout-bug-unicode">❹</span>#t
+    (<a name="dl5" id="dl5"></a><span data-number="5" class="callout-bug callout-bug-unicode">❺</span>loopvar <a name="dl6" id="dl6"></a><span data-number="6" class="callout-bug callout-bug-unicode">❻</span>(+ count 1))))</code></pre><div class="calloutlist"><dl><dt class="callout"><a href="#dl1" class="callout-link"><span data-number="1" class="callout-bug callout-bug-unicode">❶</span></a> </dt><dd><p>This variable controls the loop. It is declared without an
+initial value, immediately after the <code class="literal">let</code>
+operand.</p></dd><dt class="callout"><a href="#dl2" class="callout-link"><span data-number="2" class="callout-bug callout-bug-unicode">❷</span></a> </dt><dd><p>Any number of additional local variables can be defined after
+the loop variable, just as they can in any other
+<code class="literal">let</code> expression.</p></dd><dt class="callout"><a href="#dl3" class="callout-link"><span data-number="3" class="callout-bug callout-bug-unicode">❸</span></a> </dt><dd><p>If you ever want the loop to end, you have to put some sort of a
+test in it.</p></dd><dt class="callout"><a href="#dl4" class="callout-link"><span data-number="4" class="callout-bug callout-bug-unicode">❹</span></a> </dt><dd><p>This is the value that will be returned.</p></dd><dt class="callout"><a href="#dl5" class="callout-link"><span data-number="5" class="callout-bug callout-bug-unicode">❺</span></a> </dt><dd><p>Note that you iterate the loop by using the loop variable as if
+it was a function name.</p></dd><dt class="callout"><a href="#dl6" class="callout-link"><span data-number="6" class="callout-bug callout-bug-unicode">❻</span></a> </dt><dd><p>The arguments to this function are the values that
+you want the local variables declared in <a href="#dl2" class="callout-link"><span data-number="2" class="callout-bug callout-bug-unicode">❷</span></a> to have
+in the next iteration.</p></dd></dl></div></article><script src="../../resources/js/prism.js"></script></td><td><article id="R.1" class="article"><header class="article-titlepage"><h2>Article wrapper</h2></header><div class="content"><p>Callouts using <code class="tag-element">co</code>:</p><pre class="screen language-none line-numbers"><code>
+(let <a name="dl1" id="dl1"></a><span data-number="1" class="callout-bug callout-bug-unicode">❶</span>loopvar <a name="dl2" id="dl2"></a><span data-number="2" class="callout-bug callout-bug-unicode">❷</span>((count 1))
+  <a name="dl3" id="dl3"></a><span data-number="3" class="callout-bug callout-bug-unicode">❸</span>(if (&gt; count 10)
+    <a name="dl4" id="dl4"></a><span data-number="4" class="callout-bug callout-bug-unicode">❹</span>#t
+    (<a name="dl5" id="dl5"></a><span data-number="5" class="callout-bug callout-bug-unicode">❺</span>loopvar <a name="dl6" id="dl6"></a><span data-number="6" class="callout-bug callout-bug-unicode">❻</span>(+ count 1))))</code></pre><div class="calloutlist"><dl><dt class="callout"><a href="#dl1" class="callout-link"><span data-number="1" class="callout-bug callout-bug-unicode">❶</span></a> </dt><dd><p>This variable controls the loop. It is declared without an
+initial value, immediately after the <code class="literal">let</code>
+operand.</p></dd><dt class="callout"><a href="#dl2" class="callout-link"><span data-number="2" class="callout-bug callout-bug-unicode">❷</span></a> </dt><dd><p>Any number of additional local variables can be defined after
+the loop variable, just as they can in any other
+<code class="literal">let</code> expression.</p></dd><dt class="callout"><a href="#dl3" class="callout-link"><span data-number="3" class="callout-bug callout-bug-unicode">❸</span></a> </dt><dd><p>If you ever want the loop to end, you have to put some sort of a
+test in it.</p></dd><dt class="callout"><a href="#dl4" class="callout-link"><span data-number="4" class="callout-bug callout-bug-unicode">❹</span></a> </dt><dd><p>This is the value that will be returned.</p></dd><dt class="callout"><a href="#dl5" class="callout-link"><span data-number="5" class="callout-bug callout-bug-unicode">❺</span></a> </dt><dd><p>Note that you iterate the loop by using the loop variable as if
+it was a function name.</p></dd><dt class="callout"><a href="#dl6" class="callout-link"><span data-number="6" class="callout-bug callout-bug-unicode">❻</span></a> </dt><dd><p>The arguments to this function are the values that
+you want the local variables declared in <a href="#dl2" class="callout-link"><span data-number="2" class="callout-bug callout-bug-unicode">❷</span></a> to have
+in the next iteration.</p></dd></dl></div></div></article><script src="../../resources/js/prism.js"></script></td></tr></tbody></table><h2>XML source</h2><pre data-src="../src/calloutlist.001.xml"></pre></body><script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script><script type="text/javascript" src="../../resources/js/annotation.js"></script><script type="text/javascript" src="../../resources/js/prism.js"></script></html>

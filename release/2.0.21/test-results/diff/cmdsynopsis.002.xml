@@ -1,0 +1,114 @@
+<html xmlns:deltaxml="http://www.deltaxml.com/ns/well-formed-delta-v1" xmlns="http://www.w3.org/1999/xhtml" xmlns:dxx="http://www.deltaxml.com/ns/xml-namespaced-attribute" xmlns:dxa="http://www.deltaxml.com/ns/non-namespaced-attribute" deltaxml:deltaV2="A!=B" deltaxml:version="2.0" deltaxml:content-type="full-context">
+   <head deltaxml:deltaV2="A=B">
+      <link href="../../resources/css/db-prism.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="../../resources/css/default.css"/>
+      <link href="../../resources/css/prism.css" rel="stylesheet" type="text/css"/>
+      <meta charset="utf-8"/>
+      <meta name="generator" content="DocBook XSL 2.0 Stylesheets Vxxx"/>
+      <script type="text/javascript" src="../../resources/js/dbmodnizr.js"/>
+      <title>Unit Test: cmdsynopsis.002</title>
+   </head>
+   <body deltaxml:deltaV2="A!=B">
+      <article deltaxml:deltaV2="A!=B" id="R.1" class="article">
+         <header deltaxml:deltaV2="A=B" class="article-titlepage">
+            <h2>Unit Test: cmdsynopsis.002</h2>
+            <div class="author">
+               <h3>
+                  <span class="personname">
+                     <span class="firstname">Adam</span>
+                     <span class="surname">Di Carlo</span>
+                  </span>
+               </h3>
+            </div>
+         </header>
+         <div deltaxml:deltaV2="A=B" class="lists-of-titles">
+            <div class="toc">
+               <p>
+                  <b>Table of Contents</b>
+               </p>
+               <ul class="toc">
+                  <li>
+                     <span class="refentrytitle">
+                        <a href="#foo">testing</a>
+                     </span>
+                     <span class="refpurpose"> - 
+        Testing more cmdsynopsis stuff, esp. permutations of grouped
+        arguments.
+      </span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <p deltaxml:deltaV2="A">
+    Lets refer to <a href="#foo">
+               <span class="refname">testing</span>
+            </a>.
+  </p><div deltaxml:deltaV2="B" class="content">
+            <p>
+    Lets refer to <a href="#foo">
+                  <span class="refname">testing</span>
+               </a>.
+  </p>
+            <article id="foo" class="refentry">
+               <div class="content">
+                  <div class="refnamediv">
+                     <h2>Name</h2>
+                     <p>
+                        <span class="refname">testing</span>
+                        <span class="refpurpose">
+                           <span class="refpurpose-sep"> — </span>
+                           <span class="refpurpose-text">
+        Testing more cmdsynopsis stuff, esp. permutations of grouped
+        arguments.
+      </span>
+                           <span class="refpurpose-punc">.</span>
+                        </span>
+                     </p>
+                  </div>
+                  <div class="refsynopsisdiv">
+                     <h2>Synopsis</h2>
+                     <div class="cmdsynopsis" style="margin-top: 1em; text-indent: -0.66in; margin-left: 0.66in;">
+                        <code class="command">foo</code>  [[-foo] |  [-bar]] [[-re] |  [-peat]...]</div>
+                  </div>
+                  <div class="refsect1">
+                     <div class="refsection-titlepage">
+                        <h2>Description</h2>
+                     </div>
+                     <div class="content">
+                        <p>This is a dummy description.</p>
+                     </div>
+                  </div>
+               </div>
+            </article>
+         </div><deltaxml:textGroup deltaxml:deltaV2="A"><deltaxml:text deltaxml:deltaV2="A">
+         </deltaxml:text></deltaxml:textGroup><article deltaxml:deltaV2="A" id="foo" class="refentry">
+            <div class="refnamediv">
+               <h2>Name</h2>
+               <p>
+                  <span class="refname">testing</span>
+                  <span class="refpurpose">
+                     <span class="refpurpose-sep"> — </span>
+                     <span class="refpurpose-text">
+        Testing more cmdsynopsis stuff, esp. permutations of grouped
+        arguments.
+      </span>
+                     <span class="refpurpose-punc">.</span>
+                  </span>
+               </p>
+            </div>
+            <div class="refsynopsisdiv">
+               <h2>Synopsis</h2>
+               <div class="cmdsynopsis" style="margin-top: 1em; text-indent: -0.66in; margin-left: 0.66in;">
+                  <code class="command">foo</code>  [[-foo] |  [-bar]] [[-re] |  [-peat]...]</div>
+            </div>
+            <div class="refsect1">
+               <div class="refsection-titlepage">
+                  <h2>Description</h2>
+               </div>
+               <p>This is a dummy description.</p>
+            </div>
+         </article>
+      </article>
+      <script deltaxml:deltaV2="A=B" src="../../resources/js/prism.js"/>
+   </body>
+</html>

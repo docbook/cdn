@@ -1,0 +1,23 @@
+2000-07-29  Norman Walsh  <ndw@nwalsh.com>
+
+	* iso-amsa.ent, iso-amsb.ent, iso-amsn.ent, iso-amso.ent, iso-amsr.ent, iso-dia.ent, iso-lat1.ent, iso-lat2.ent, iso-num.ent, iso-tech.ent: 
+	Corrections and enhancements suggested by Morus Walter and others.
+	Character mappings moved out of the private use area when other
+	alternatives could be suggested.
+
+2000-07-06  Norman Walsh  <ndw@nwalsh.com>
+
+	* iso-amsa.ent, iso-amsb.ent, iso-amsc.ent, iso-amsn.ent, iso-amso.ent, iso-amsr.ent, iso-box.ent, iso-cyr1.ent, iso-cyr2.ent, iso-dia.ent, iso-grk1.ent, iso-grk2.ent, iso-grk3.ent, iso-grk4.ent, iso-lat1.ent, iso-lat2.ent, iso-num.ent, iso-pub.ent, iso-tech.ent: 
+	Added version numbers
+
+	* iso-lat1.ent: Fixed Ucirc/ucirc transposition
+
+2000-04-03  Norman Walsh  <ndw@nwalsh.com>
+
+	* iso-num.ent: Added declarations for lt and amp, as per the XML Rec.
+
+2000-03-02  Norman Walsh  <ndw@nwalsh.com>
+
+	* iso-amsa.ent, iso-amsb.ent, iso-amsc.ent, iso-amsn.ent, iso-amso.ent, iso-amsr.ent, iso-box.ent, iso-cyr1.ent, iso-cyr2.ent, iso-dia.ent, iso-grk1.ent, iso-grk2.ent, iso-grk3.ent, iso-grk4.ent, iso-lat1.ent, iso-lat2.ent, iso-num.ent, iso-pub.ent, iso-tech.ent: 
+	New file.
+
