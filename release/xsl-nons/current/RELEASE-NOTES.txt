@@ -1,18 +1,12 @@
 Release Notes for the DocBook XSL Stylesheets
 
-2016-12-09
-
-This release-notes document is available in the following formats: HTML, plain
-text; it provides a per-release list of enhancements and changes to the
-stylesheets’ public APIs (user-configurable parameters) and excludes
-descriptions of most bug fixes. For a complete list of all changes (including
-all bug fixes) that have been made since the previous release, see the separate
-NEWS (plain text) or NEWS.html files.
+2016-12-15
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Table of Contents
 
+Release Notes: snapshot
 Release Notes: 1.79.2
 Release Notes: 1.79.1
 
@@ -302,6 +296,11 @@ Release 1.57.0
 Release 1.56.0
 Older releases
 About dot-zero releases
+
+Release Notes: snapshot
+
+The following is a list of changes that have been made since the 1.79.1
+release.
 
 Release Notes: 1.79.2
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<grammar xmlns:dbs="http://docbook.org/ns/docbook-slides" ns="" xmlns:db="http://docbook.org/ns/docbook" xmlns:svg="http://www.w3.org/2000/svg" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns="http://relaxng.org/ns/structure/1.0">
+<grammar ns="" xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns:dbs="http://docbook.org/ns/docbook-slides" xmlns:svg="http://www.w3.org/2000/svg" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:db="http://docbook.org/ns/docbook" xmlns="http://relaxng.org/ns/structure/1.0">
   <!-- See http://docbook.org/ns/docbook-slides -->
   <!--
     This file is part of DocBook Slides V5.0
