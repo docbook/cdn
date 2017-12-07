@@ -13,7 +13,9 @@
   <p:delete match="/c:directory/c:directory[@name='xpl']"/>
   <p:delete match="/c:directory/c:file[@name='README.html']"/>
   <p:delete match="/c:directory/c:file[@name='index.html']"/>
-  <p:delete match="/c:directory/c:file[@name='Makefile']"/>
+  <p:delete match="/c:directory/c:file[@name='Makefile']">
+    <p:log port="result" href="/tmp/dirlist.xml"/>
+  </p:delete>
 
   <p:xslt name="list">
     <p:input port="stylesheet">
