@@ -11,8 +11,14 @@
 
   <p:delete match="/c:directory/c:directory[@name='.git']"/>
   <p:delete match="/c:directory/c:directory[@name='xpl']"/>
+  <p:delete match="/c:directory/c:directory[@name='bin']"/>
+  <p:delete match="/c:directory/c:directory[@name='schema']"/>
+  <p:delete match="/c:directory/c:directory[@name='release']/c:directory[@name='xsl']"/>
+  <p:delete match="/c:directory/c:directory[@name='release']/c:directory[@name='xsl-nons']"/>
+  <p:delete match="/c:directory/c:file[@name='CNAME']"/>
   <p:delete match="/c:directory/c:file[@name='README.html']"/>
   <p:delete match="/c:directory/c:file[@name='index.html']"/>
+  <p:delete match="/c:directory/c:file[@name='xslt2.html']"/>
   <p:delete match="/c:directory/c:file[@name='Makefile']">
     <p:log port="result" href="/tmp/dirlist.xml"/>
   </p:delete>
