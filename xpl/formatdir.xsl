@@ -5,12 +5,35 @@
                 exclude-result-prefixes="c"
                 version="2.0">
 
+<xsl:variable name="root" select="base-uri(/c:directory)"/>
+
 <xsl:template match="/c:directory" priority="10">
   <dl class="dirlist">
     <xsl:apply-templates select="c:directory[@name='release']"/>
     <xsl:apply-templates select="c:directory[@name!='release']"/>
     <xsl:apply-templates select="c:file[@name!='README.md']"/>
   </dl>
+</xsl:template>
+
+<!-- Grotesque hack -->
+<xsl:template match="c:directory[@name='2.0.18'
+                                 or @name='2.0.17'
+                                 or @name='2.0.16'
+                                 or @name='2.0.15'
+                                 or @name='2.0.14'
+                                 or @name='2.0.13'
+                                 or @name='2.0.12'
+                                 or @name='2.0.9'
+                                 or @name='2.0.8'
+                                 or @name='2.0.7'
+                                 or @name='2.0.6'
+                                 or @name='2.0.5'
+                                 or @name='2.0.4'
+                                 or @name='2.0.3'
+                                 or @name='2.0.2'
+                                 or @name='2.0.1'
+                                 or @name='2.0.0']">
+  <!-- suppress -->
 </xsl:template>
 
 <xsl:template match="c:directory">
@@ -65,7 +88,7 @@
           <xsl:choose>
             <xsl:when test="count(current-group()) = 1">
               <xsl:variable name="file" select="current-group()"/>
-              <a href="/release/{substring-after(base-uri($file), '/release/')}{$file/@name}">
+              <a href="{substring-after(base-uri($file), $root)}{$file/@name}">
                 <xsl:value-of select="@name"/>
               </a>
             </xsl:when>
@@ -75,7 +98,7 @@
                 <xsl:sort select="@name"/>
                 <xsl:if test="position()&gt;1">, </xsl:if>
                 <xsl:text>.</xsl:text>
-                <a href="/release/{substring-after(base-uri(.), '/release/')}{@name}">
+                <a href="{substring-after(base-uri(.), $root)}{@name}">
                   <xsl:value-of select="replace(@name,'^.*\.([^\.]+)$','$1')"/>
                 </a>
               </xsl:for-each>
