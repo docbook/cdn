@@ -1,0 +1,12 @@
+<bibliography xmlns="http://docbook.org/ns/docbook"
+              version="5.0">
+<info>
+  <title>Bibliography</title>
+</info>
+
+<para>This bibliography is empty. Change the
+<code>$bibliography.collection</code> parameter to point to your bibliography
+file.</para>
+
+</bibliography>
+
