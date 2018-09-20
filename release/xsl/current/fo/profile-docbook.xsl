@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="US-ASCII"?><!--This file was created automatically by xsl2profile--><!--from the DocBook XSL stylesheets.--><xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:d="http://docbook.org/ns/docbook" xmlns:exsl="http://exslt.org/common" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:ng="http://docbook.org/docbook-ng" xmlns:db="http://docbook.org/ns/docbook" xmlns:exslt="http://exslt.org/common" exslt:dummy="dummy" ng:dummy="dummy" db:dummy="dummy" extension-element-prefixes="exslt" exclude-result-prefixes="db ng exsl d exslt" version="1.0">
+<?xml version="1.0" encoding="US-ASCII"?><!--This file was created automatically by xsl2profile--><!--from the DocBook XSL stylesheets.--><xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:d="http://docbook.org/ns/docbook" xmlns:exsl="http://exslt.org/common" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:ng="http://docbook.org/docbook-ng" xmlns:db="http://docbook.org/ns/docbook" xmlns:exslt="http://exslt.org/common" exslt:dummy="dummy" ng:dummy="dummy" db:dummy="dummy" extension-element-prefixes="exslt" exclude-result-prefixes="db ng exsl d exslt db ng" version="1.0">
 
 <!-- It is important to use indent="no" here, otherwise verbatim -->
 <!-- environments get broken by indented tags...at least when the -->
@@ -306,7 +306,9 @@
   <xsl:apply-templates select="*" mode="bookmark"/>
 </xsl:template>
 
-<xsl:template match="d:set|d:book|d:part|d:reference|                      d:preface|d:chapter|d:appendix|d:article|d:topic                      |d:glossary|d:bibliography|d:index|d:setindex                      |d:refentry                      |d:sect1|d:sect2|d:sect3|d:sect4|d:sect5|d:section" mode="bookmark">
+<!-- to turn off any of these, add to your customization layer
+     an empty template matching on that element and in this mode -->
+<xsl:template match="d:appendix |                      d:article |                      d:bibliography |                      d:book |                      d:chapter |                      d:glossary |                      d:index |                      d:part |                      d:preface |                      d:refentry |                      d:reference |                      d:refsect1 |                      d:refsect2 |                      d:refsect3 |                      d:refsection |                      d:refsynopsisdiv |                      d:sect1 |                      d:sect2 |                      d:sect3 |                      d:sect4 |                      d:sect5 |                      d:section |                      d:set |                      d:setindex |                      d:topic" mode="bookmark">
 
   <xsl:variable name="id">
     <xsl:call-template name="object.id"/>

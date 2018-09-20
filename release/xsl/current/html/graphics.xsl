@@ -651,6 +651,8 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
                 <xsl:when test="$alt != ''">
                   <xsl:copy-of select="$alt"/>
                 </xsl:when>
+                <xsl:when test="ancestor::d:inlinemediaobject">
+                </xsl:when>
                 <xsl:when test="ancestor::d:figure">
                   <xsl:variable name="fig.title">
                     <xsl:apply-templates select="ancestor::d:figure/d:title/node()"/>
@@ -1429,7 +1431,7 @@ valign: <xsl:value-of select="@valign"/></xsl:message>
   </xsl:variable>
 
   <div class="longdesc-link" align="{$direction.align.end}">
-    <br clear="all"/>
+    <br style="clear: both"/>
     <span class="longdesc-link">
       <xsl:text>[</xsl:text>
       <a href="{$href.to}" target="longdesc">D</a>

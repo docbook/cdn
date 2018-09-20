@@ -19,12 +19,33 @@
   <xsl:apply-templates select="*" mode="fop1.outline"/>
 </xsl:template>
 
-<xsl:template match="set|book|part|reference|
-                     preface|chapter|appendix|article|topic
-                     |glossary|bibliography|index|setindex
-                     |refentry|refsynopsisdiv
-                     |refsect1|refsect2|refsect3|refsection
-                     |sect1|sect2|sect3|sect4|sect5|section"
+<!-- to turn off any of these, add to your customization layer
+     an empty template matching on that element and in this mode -->
+<xsl:template match="appendix |
+                     article |
+                     bibliography |
+                     book |
+                     chapter |
+                     glossary |
+                     index |
+                     part |
+                     preface |
+                     refentry |
+                     reference |
+                     refsect1 |
+                     refsect2 |
+                     refsect3 |
+                     refsection |
+                     refsynopsisdiv |
+                     sect1 |
+                     sect2 |
+                     sect3 |
+                     sect4 |
+                     sect5 |
+                     section |
+                     set |
+                     setindex |
+                     topic"
               mode="fop1.outline">
 
   <xsl:variable name="id">

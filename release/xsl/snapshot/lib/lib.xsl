@@ -52,6 +52,9 @@
   <xsl:param name="replacement"/>
 
   <xsl:choose>
+    <xsl:when xmlns:str="http://exslt.org/strings" str:foo="" test="function-available('str:replace')">
+      <xsl:value-of select="str:replace($string, string($target), string($replacement))"/>
+    </xsl:when>
     <xsl:when test="contains($string, $target)">
       <xsl:variable name="rest">
         <xsl:call-template name="string.subst">
@@ -326,7 +329,7 @@
   <xsl:template name="str.tokenize.keep.delimiters-characters">
     <xsl:param name="string"/>
     <xsl:if test="$string">
-      <ssb:token xmlns:ssb="http://sideshowbarker.net/ns" xmlns="http://docbook.org/ns/docbook" xmlns:src="http://nwalsh.com/xmlns/litprog/fragment" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dyn="http://exslt.org/dynamic" xmlns:saxon="http://icl.com/saxon"><xsl:value-of select="substring($string, 1, 1)"/></ssb:token>
+      <ssb:token xmlns:ssb="http://sideshowbarker.net/ns" xmlns="http://docbook.org/ns/docbook" xmlns:src="http://nwalsh.com/xmlns/litprog/fragment" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dyn="http://exslt.org/dynamic" xmlns:saxon="http://icl.com/saxon" xmlns:str="http://exslt.org/strings"><xsl:value-of select="substring($string, 1, 1)"/></ssb:token>
       <xsl:call-template name="str.tokenize.keep.delimiters-characters">
         <xsl:with-param name="string" select="substring($string, 2)"/>
       </xsl:call-template>
@@ -338,7 +341,7 @@
     <xsl:variable name="delimiter" select="substring($delimiters, 1, 1)"/>
     <xsl:choose>
       <xsl:when test="not($delimiter)">
-        <ssb:token xmlns:ssb="http://sideshowbarker.net/ns" xmlns="http://docbook.org/ns/docbook" xmlns:src="http://nwalsh.com/xmlns/litprog/fragment" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dyn="http://exslt.org/dynamic" xmlns:saxon="http://icl.com/saxon"><xsl:value-of select="$string"/></ssb:token>
+        <ssb:token xmlns:ssb="http://sideshowbarker.net/ns" xmlns="http://docbook.org/ns/docbook" xmlns:src="http://nwalsh.com/xmlns/litprog/fragment" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dyn="http://exslt.org/dynamic" xmlns:saxon="http://icl.com/saxon" xmlns:str="http://exslt.org/strings"><xsl:value-of select="$string"/></ssb:token>
       </xsl:when>
       <xsl:when test="contains($string, $delimiter)">
         <xsl:if test="not(starts-with($string, $delimiter))">

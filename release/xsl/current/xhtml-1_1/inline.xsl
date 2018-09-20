@@ -54,7 +54,7 @@
 
   <xsl:variable name="link">
     <xsl:choose>
-      <xsl:when test="$xhref and                        (not($node/@xlink:type) or                             $node/@xlink:type='simple')">
+      <xsl:when test="$xhref and                       (not($node/@xlink:type) or                            $node/@xlink:type='simple')">
 
         <!-- Is it a local idref or a uri? -->
         <xsl:variable name="is.idref">
@@ -173,7 +173,7 @@
                   </xsl:attribute>
                 </xsl:when>
               </xsl:choose>
-              
+
               <xsl:copy-of select="$content"/>
             </a>
           </xsl:otherwise>
@@ -200,7 +200,7 @@
           <xsl:apply-templates select="$target" mode="html.title.attribute"/>
 
           <xsl:copy-of select="$content"/>
-          
+
         </a>
       </xsl:when>
       <xsl:otherwise>
@@ -850,7 +850,7 @@
     <xsl:call-template name="locale.html.attributes"/>
     <!-- We don't want empty @class values, so do not propagate empty @roles -->
     <xsl:choose>
-      <xsl:when test="@role and                       normalize-space(@role) != '' and                      $phrase.propagates.style != 0">
+      <xsl:when test="@role and                      normalize-space(@role) != '' and                      $phrase.propagates.style != 0">
         <xsl:apply-templates select="." mode="class.attribute">
           <xsl:with-param name="class" select="@role"/>
         </xsl:apply-templates>
@@ -972,7 +972,7 @@
             </xsl:attribute>
 
             <xsl:call-template name="inline.italicseq">
-              <xsl:with-param name="content" select="$content"/>
+              <xsl:with-param name="contentwithlink" select="$content"/>
             </xsl:call-template>
           </a>
         </xsl:when>
@@ -1413,7 +1413,7 @@
 </xsl:template>
 
 <!-- in Addresses, for example -->
-<xsl:template match="d:honorific|d:firstname|d:surname|d:lineage|d:othername">
+<xsl:template match="d:honorific|d:firstname|d:givenname|d:surname|d:lineage|d:othername">
   <xsl:call-template name="inline.charseq"/>
 </xsl:template>
 
@@ -1545,6 +1545,12 @@
 
 <xsl:template match="d:beginpage">
   <!-- does nothing; this *is not* markup to force a page break. -->
+</xsl:template>
+
+<!-- ==================================================================== -->
+<!-- generate text for xrefs to inline elements -->
+<xsl:template match="d:abbrev | d:accel | d:acronym | d:application | d:author | d:citation | d:citebiblioid                 | d:citetitle | d:classname | d:code | d:command | d:computeroutput | d:constant | d:database                 | d:date | d:editor | d:email | d:emphasis | d:envar | d:errorcode | d:errorname | d:errortext                 | d:errortype | d:exceptionname | d:filename | d:firstterm | d:foreignphrase | d:function                 | d:glossterm | d:guibutton | d:guiicon | d:guilabel | d:guimenu | d:guimenuitem | d:guisubmenu                 | d:hardware | d:initializer | d:inlineequation | d:inlinemediaobject | d:interfacename | d:jobtitle                 | d:keycap | d:keycode | d:keycombo | d:keysym | d:literal | d:markup | d:menuchoice | d:methodname                 | d:modifier | d:mousebutton | d:nonterminal | d:ooclass | d:ooexception | d:oointerface                 | d:option | d:optional | d:org | d:orgname | d:package | d:parameter | d:person | d:personname                 | d:phrase | d:productname | d:productnumber | d:prompt | d:property | d:quote | d:replaceable                 | d:returnvalue | d:shortcut | d:symbol | d:systemitem | d:tag | d:termdef | d:token | d:trademark                 | d:type | d:uri | d:userinput | d:varname | d:wordasword" mode="xref-to">
+  <xsl:apply-templates mode="no.anchor.mode"/>
 </xsl:template>
 
 </xsl:stylesheet>

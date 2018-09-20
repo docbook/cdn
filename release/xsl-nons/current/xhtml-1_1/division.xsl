@@ -114,18 +114,26 @@
       </xsl:call-template>
     </xsl:variable>
     <xsl:if test="not(partintro) and contains($toc.params, 'toc')">
-      <xsl:call-template name="division.toc"/>
+      <xsl:call-template name="division.toc">
+        <xsl:with-param name="toc.title.p" select="contains($toc.params, 'title')"/>
+      </xsl:call-template>
     </xsl:if>
     <xsl:apply-templates/>
   </div>
 </xsl:template>
 
 <xsl:template match="part" mode="make.part.toc">
-  <xsl:call-template name="division.toc"/>
+  <xsl:param name="toc.title.p" select="true()"/>
+  <xsl:call-template name="division.toc">
+    <xsl:with-param name="toc.title.p" select="$toc.title.p"/>
+  </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="reference" mode="make.part.toc">
-  <xsl:call-template name="division.toc"/>
+  <xsl:param name="toc.title.p" select="true()"/>
+  <xsl:call-template name="division.toc">
+    <xsl:with-param name="toc.title.p" select="$toc.title.p"/>
+  </xsl:call-template>
 </xsl:template>
 
 <xsl:template match="part/docinfo"/>
@@ -155,7 +163,9 @@
     </xsl:variable>
     <xsl:if test="contains($toc.params, 'toc')">
       <!-- not ancestor::part because partintro appears in reference -->
-      <xsl:apply-templates select="parent::*" mode="make.part.toc"/>
+      <xsl:apply-templates select="parent::*" mode="make.part.toc">
+        <xsl:with-param name="toc.title.p" select="contains($toc.params, 'title')"/>
+      </xsl:apply-templates>
     </xsl:if>
     <xsl:call-template name="process.footnotes"/>
   </div>

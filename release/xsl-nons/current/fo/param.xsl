@@ -1040,5 +1040,7 @@ set       toc,title
   <xsl:attribute name="font-style">italic</xsl:attribute>
 </xsl:attribute-set>
 <xsl:attribute-set name="dialogue.properties" use-attribute-sets="publishers.properties"/>
+<xsl:attribute-set name="simplelist.vertical.properties" use-attribute-sets="normal.para.spacing">
+</xsl:attribute-set>
 
 </xsl:stylesheet>

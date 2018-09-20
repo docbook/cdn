@@ -562,7 +562,7 @@
 <l:template name="MsgLevel" text="Poziom: "/>
 <l:template name="MsgOrig" text="Nadawca: "/>
 </l:context>
-<l:context name="datetime"><l:template name="format" text="m/d/Y"/>
+<l:context name="datetime"><l:template name="format" text="d.m.Y"/>
 </l:context>
 <l:context name="termdef"><l:template name="prefix" text="[Definicja: "/>
 <l:template name="suffix" text="]"/>

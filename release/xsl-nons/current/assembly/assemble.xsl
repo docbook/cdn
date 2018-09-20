@@ -124,9 +124,14 @@
     </xsl:attribute>
     <xsl:copy-of select="@xml:id"/>
 
+    <!-- get any merge resource element before changing context -->
+    <xsl:variable name="merge.resourceref" select="merge[1]/@resourceref"/>
+    <xsl:variable name="merge.resource" select="key('id', $merge.resourceref)"/>
+    
     <!-- use the merge element if present -->
     <xsl:call-template name="merge.info">
       <xsl:with-param name="merge.element" select="merge"/>
+      <xsl:with-param name="resource" select="$merge.resource"/>
     </xsl:call-template>
 
     <xsl:apply-templates> 
@@ -166,10 +171,16 @@
       </xsl:when>
     </xsl:choose>
 
+    <!-- get any merge resource element before changing context -->
+    <xsl:variable name="merge.resourceref" select="merge[1]/@resourceref"/>
+    <xsl:variable name="merge.resource" select="key('id', $merge.resourceref)"/>
+    
+    <!-- use the merge element if present -->
     <xsl:call-template name="merge.info">
-      <xsl:with-param name="merge.element" select="$module/merge"/>
+      <xsl:with-param name="merge.element" select="merge"/>
+      <xsl:with-param name="resource" select="$merge.resource"/>
     </xsl:call-template>
-      
+          
     <xsl:apply-templates>
       <xsl:with-param name="parent" select="$element.name"/>
     </xsl:apply-templates>
@@ -339,7 +350,7 @@
     </xsl:when>
   </xsl:choose>
 
-  <xsl:variable name="href.att" select="$resource/@fileref | $resource/@href"/>
+  <xsl:variable name="href.att" select="$resource/@href"/>
 
   <xsl:variable name="fragment.id">
     <xsl:if test="contains($href.att, '#')">
@@ -373,14 +384,18 @@
 
   <xsl:choose>
     <xsl:when test="string-length($fileref) = 0">
-      <!-- A resource without @fileref gets its content copied -->
-      <xsl:apply-templates select="$resource/node()" mode="copycontent"/>
+      <!-- A resource without an @href value is an error -->
+      <xsl:message terminate="yes">
+        <xsl:text>ERROR: resource with @xml:id='</xsl:text>
+        <xsl:value-of select="$resourceref"/>
+        <xsl:text>' does not resolve to a filename.</xsl:text>
+      </xsl:message>
     </xsl:when>
+    
     <xsl:otherwise>
-
       <xsl:variable name="ref.file.content" select="document($fileref,/)"/>
     
-      <!-- selects root or fragmeht depending on if $fragment is blank -->
+      <!-- selects root or fragment depending on if $fragment is blank -->
       <xsl:variable name="ref.content"
         select="$ref.file.content/*[1][$fragment.id = ''] |
                 $ref.file.content/*[1][$fragment.id != '']/
@@ -388,7 +403,7 @@
         
       <xsl:if test="count($ref.content) = 0">
         <xsl:message terminate="yes">
-          <xsl:text>ERROR: @fileref = '</xsl:text>
+          <xsl:text>ERROR: @href = '</xsl:text>
           <xsl:value-of select="$fileref"/>
           <xsl:text>' has no content or is unresolved.</xsl:text>
         </xsl:message>
@@ -412,6 +427,10 @@
         </xsl:call-template>
       </xsl:variable>
     
+      <!-- get any merge resource element before changing context -->
+      <xsl:variable name="merge.resourceref" select="$module/merge[1]/@resourceref"/>
+      <xsl:variable name="merge.resource" select="key('id', $merge.resourceref)"/>
+
       <xsl:choose>
         <xsl:when test="$contentonly.property = 'true' or 
                         $contentonly.property = 'yes' or
@@ -425,6 +444,9 @@
           <!-- must use for-each to set context node for xsl:copy -->
           <xsl:for-each select="$ref.content">
             <xsl:copy>
+              <xsl:attribute name="xml:base">
+                <xsl:value-of select="$fileref"/>
+              </xsl:attribute>
               <xsl:copy-of select="@*[not(name() = 'xml:id')]"/>
               <xsl:choose>
                 <!-- Use the module's xml:id if it has one -->
@@ -443,6 +465,7 @@
                 <xsl:with-param name="merge.element" select="$module/merge"/>
                 <xsl:with-param name="ref.content" select="$ref.content"/>
                 <xsl:with-param name="omittitles" select="$omittitles.property"/>
+                <xsl:with-param name="resource" select="$merge.resource"/>
               </xsl:call-template>
       
               <!-- copy through all but titles, which moved to info -->
@@ -461,6 +484,9 @@
         <xsl:otherwise>
           <!-- create the element instead of copying it -->
           <xsl:element name="{$element.name}" namespace="http://docbook.org/ns/docbook">
+            <xsl:attribute name="xml:base">
+              <xsl:value-of select="$fileref"/>
+            </xsl:attribute>
             <xsl:copy-of select="$ref.content/@*[not(name() = 'xml:id')]"/>
             <xsl:choose>
               <!-- Use the module's xml:id if it has one -->
@@ -481,6 +507,7 @@
               <xsl:with-param name="merge.element" select="merge"/>
               <xsl:with-param name="ref.content" select="$ref.content"/>
               <xsl:with-param name="omittitles" select="$omittitles.property"/>
+              <xsl:with-param name="resource" select="$merge.resource"/>
             </xsl:call-template>
     
             <!-- copy through all but titles, which moved to info -->
@@ -504,32 +531,31 @@
   <xsl:param name="merge.element" select="NOTANODE"/>
   <xsl:param name="ref.content" select="NOTANODE"/>
   <xsl:param name="omittitles"/> 
+  <xsl:param name="resource"/> 
 
   <!-- a merge element may use resourceref as well as literal content -->
   <!-- any literal content overrides the merge resourceref content -->
   <xsl:variable name="merge.ref.content">
     <xsl:if test="$merge.element/@resourceref">
-      <xsl:variable name="resourceref" select="$merge.element/@resourceref"/>
-      <xsl:variable name="resource" select="key('id', $resourceref)"/>
 
       <xsl:choose>
         <xsl:when test="not($resource)">
           <xsl:message terminate="yes">
             <xsl:text>ERROR: no xml:id matches @resourceref = '</xsl:text>
-            <xsl:value-of select="$resourceref"/>
+            <xsl:value-of select="$merge.element/@resourceref"/>
             <xsl:text>'.</xsl:text>
           </xsl:message>
         </xsl:when>
         <xsl:when test="not($resource/self::resource)">
           <xsl:message terminate="yes">
             <xsl:text>ERROR: xml:id matching @resourceref = '</xsl:text>
-            <xsl:value-of select="$resourceref"/>
+            <xsl:value-of select="$merge.element/@resourceref"/>
             <xsl:text> is not a resource element'.</xsl:text>
           </xsl:message>
         </xsl:when>
       </xsl:choose>
 
-      <xsl:variable name="href.att" select="$resource/@fileref | $resource/@href"/>
+      <xsl:variable name="href.att" select="$resource/@href"/>
 
       <xsl:variable name="fileref">
         <xsl:choose>
@@ -550,16 +576,16 @@
     </xsl:if>
   </xsl:variable>
 
-  <xsl:variable name="merge.ref.info" 
-                select="exsl:node-set($merge.ref.content)//info[1]"/>
-
-  <xsl:if test="$merge.element/@resourceref and not($merge.ref.info)">
-    <xsl:message terminate="yes">
-      <xsl:text>ERROR: merge element with resourceref '</xsl:text>
-      <xsl:value-of select="$merge.element/@resourceref"/>
-      <xsl:text>' must point to something with an info element.'</xsl:text>
-    </xsl:message>
-  </xsl:if>
+  <!-- Copy all metadata from merge.ref.content to a single node-set -->
+  <xsl:variable name="merge.ref.nodes">
+    <xsl:copy-of select="exsl:node-set($merge.ref.content)/*/title[1]"/>
+    <xsl:copy-of select="exsl:node-set($merge.ref.content)/*/titleabbrev[1]"/>
+    <xsl:copy-of select="exsl:node-set($merge.ref.content)/*/subtitle[1]"/>
+    <xsl:copy-of select="exsl:node-set($merge.ref.content)/*/info[1]/node()"/>
+  </xsl:variable>
+  <xsl:variable name="merge.ref.nodeset" select="exsl:node-set($merge.ref.nodes)"/>
+  <!-- copy attributes separately so they can be applied in the right place -->
+  <xsl:variable name="merge.ref.attributes" select="exsl:node-set($merge.ref.content)/*/info[1]/@*"/>
 
   <xsl:variable name="omittitles.boolean">
     <xsl:choose>
@@ -573,7 +599,8 @@
   </xsl:variable>
   <!-- output info if there is any -->
   <xsl:if test="$merge.element/node() or 
-                $merge.ref.info/node() or
+                $merge.ref.nodeset or
+                $merge.ref.attributes or 
                 $ref.content/info/node() or
                 $ref.content/title[$omittitles.boolean = 0] or
                 $ref.content/subtitle[$omittitles.boolean = 0] or
@@ -590,12 +617,18 @@
     <info>
       <!-- First copy through any merge attributes and elements and comments -->
       <xsl:copy-of select="$merge.element/@*[not(local-name(.) = 'resourceref')]"/>
+      
+      <!-- add any attributes from the merge resource -->
+      <xsl:copy-of select="$merge.ref.attributes"/>
 
       <!-- And copy any resource info attributes not in merge-->
       <xsl:for-each select="$ref.info/@*">
         <xsl:variable name="resource.att" select="local-name(.)"/>
         <xsl:choose>
           <xsl:when test="$merge.element/@*[local-name(.) = $resource.att]">
+            <!-- do nothing because overridden -->
+          </xsl:when>
+          <xsl:when test="$merge.ref.attributes[local-name(.) = $resource.att]">
             <!-- do nothing because overridden -->
           </xsl:when>
           <xsl:otherwise>
@@ -609,9 +642,15 @@
       <xsl:copy-of select="$merge.element/node()"/>
 
       <!-- and copy through those merge resource elements not in merge element -->
-      <xsl:for-each select="$merge.ref.info/node()">
+      <xsl:for-each select="$merge.ref.nodeset/node()">
         <xsl:variable name="resource.node" select="local-name(.)"/>
         <xsl:choose>
+          <xsl:when test="self::processing-instruction()">
+            <xsl:copy-of select="."/>
+          </xsl:when>
+          <xsl:when test="self::comment()">
+            <xsl:copy-of select="."/>
+          </xsl:when>
           <xsl:when test="$merge.element/node()[local-name(.) = $resource.node]">
             <!-- do nothing because overridden -->
           </xsl:when>
@@ -635,7 +674,7 @@
           <xsl:when test="$merge.element/node()[local-name(.) = $resource.node]">
             <!-- do nothing because overridden -->
           </xsl:when>
-          <xsl:when test="$merge.ref.info/node()[local-name(.) = $resource.node]">
+          <xsl:when test="$merge.ref.nodeset/*[local-name(.) = $resource.node]">
             <!-- do nothing because overridden -->
           </xsl:when>
           <xsl:otherwise>

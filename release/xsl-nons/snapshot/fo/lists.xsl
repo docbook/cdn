@@ -656,7 +656,7 @@
     </xsl:choose>
   </xsl:variable>
 
-  <fo:table id="{$id}" xsl:use-attribute-sets="normal.para.spacing">
+  <fo:table id="{$id}" xsl:use-attribute-sets="simplelist.vertical.properties">
 
     <xsl:choose>
       <xsl:when test="$axf.extensions != 0 or $xep.extensions != 0">

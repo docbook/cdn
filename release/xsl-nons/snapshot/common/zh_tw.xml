@@ -95,8 +95,8 @@
 <l:gentext key="poetry" text="Poetry" lang="en"/>
 <l:gentext key="Preface" text="序言"/>
 <l:gentext key="preface" text="序言"/>
-<l:gentext key="Procedure" text="過程"/>
-<l:gentext key="procedure" text="過程"/>
+<l:gentext key="Procedure" text="程序"/>
+<l:gentext key="procedure" text="程序"/>
 <l:gentext key="ProductionSet" text="奉獻"/>
 <l:gentext key="PubDate" text="出版日期"/>
 <l:gentext key="pubdate" text="出版日期"/>
@@ -191,8 +191,8 @@
 <l:gentext key="listofexamples" text="範例目錄"/>
 <l:gentext key="ListofFigures" text="附圖目錄"/>
 <l:gentext key="listoffigures" text="附圖目錄"/>
-<l:gentext key="ListofProcedures" text="過程清單"/>
-<l:gentext key="listofprocedures" text="過程清單"/>
+<l:gentext key="ListofProcedures" text="程序清單"/>
+<l:gentext key="listofprocedures" text="程序清單"/>
 <l:gentext key="listoftables" text="附表目錄"/>
 <l:gentext key="ListofTables" text="附表目錄"/>
 <l:gentext key="ListofUnknown" text="其他內容目錄"/>
@@ -310,7 +310,7 @@
 <l:template name="partintro" text="%t"/>
 <l:template name="preface" text="%t"/>
 <l:template name="procedure" text="%t"/>
-<l:template name="procedure.formal" text="過程 %n. %t"/>
+<l:template name="procedure.formal" text="程序 %n. %t"/>
 <l:template name="productionset" text="%t"/>
 <l:template name="productionset.formal" text="奉獻 %n"/>
 <l:template name="qandadiv" text="%t"/>
@@ -514,7 +514,7 @@
 <l:template name="example" text="範例 %n"/>
 <l:template name="figure" text="圖形 %n"/>
 <l:template name="part" text="部 %n"/>
-<l:template name="procedure" text="過程 %n"/>
+<l:template name="procedure" text="程序 %n"/>
 <l:template name="productionset" text="奉獻 %n"/>
 <l:template name="qandadiv" text="問答 %n"/>
 <l:template name="qandaentry" text="問： %n"/>
@@ -527,28 +527,28 @@
 <l:template name="section" text="節 %n"/>
 <l:template name="table" text="表格 %n"/>
 </l:context>
-<l:context name="xref-number-and-title"><l:template name="appendix" text="附錄 %n, %t"/>
-<l:template name="bridgehead" text="節 %n, “%t”"/>
-<l:template name="chapter" text="章 %n, %t"/>
-<l:template name="equation" text="公式 %n, “%t”"/>
-<l:template name="example" text="範例 %n, “%t”"/>
-<l:template name="figure" text="圖形 %n, “%t”"/>
-<l:template name="part" text="部 %n, “%t”"/>
-<l:template name="procedure" text="過程 %n, “%t”"/>
-<l:template name="productionset" text="奉獻 %n, “%t”"/>
-<l:template name="qandadiv" text="問答 %n, “%t”"/>
+<l:context name="xref-number-and-title"><l:template name="appendix" text="附錄 %n %t"/>
+<l:template name="bridgehead" text="節 %n “%t”"/>
+<l:template name="chapter" text="章 %n %t"/>
+<l:template name="equation" text="公式 %n “%t”"/>
+<l:template name="example" text="範例 %n “%t”"/>
+<l:template name="figure" text="圖形 %n “%t”"/>
+<l:template name="part" text="部 %n “%t”"/>
+<l:template name="procedure" text="程序 %n “%t”"/>
+<l:template name="productionset" text="奉獻 %n “%t”"/>
+<l:template name="qandadiv" text="問答 %n “%t”"/>
 <l:template name="refsect1" text="一節 “%t”"/>
 <l:template name="refsect2" text="一節 “%t”"/>
 <l:template name="refsect3" text="一節 “%t”"/>
 <l:template name="refsection" text="一節 “%t”"/>
-<l:template name="sect1" text="節 %n, “%t”"/>
-<l:template name="sect2" text="節 %n, “%t”"/>
-<l:template name="sect3" text="節 %n, “%t”"/>
-<l:template name="sect4" text="節 %n, “%t”"/>
-<l:template name="sect5" text="節 %n, “%t”"/>
-<l:template name="section" text="節 %n, “%t”"/>
+<l:template name="sect1" text="節 %n “%t”"/>
+<l:template name="sect2" text="節 %n “%t”"/>
+<l:template name="sect3" text="節 %n “%t”"/>
+<l:template name="sect4" text="節 %n “%t”"/>
+<l:template name="sect5" text="節 %n “%t”"/>
+<l:template name="section" text="節 %n “%t”"/>
 <l:template name="simplesect" text="一節 “%t”"/>
-<l:template name="table" text="表格 %n, “%t”"/>
+<l:template name="table" text="表格 %n “%t”"/>
 </l:context>
 <l:context name="authorgroup"><l:template name="sep" text=", "/>
 <l:template name="sep2" text=" 且 "/>

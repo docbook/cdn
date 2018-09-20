@@ -63,8 +63,8 @@
 
   <xsl:variable name="link">
     <xsl:choose>
-      <xsl:when test="$xhref and 
-                      (not($node/@xlink:type) or 
+      <xsl:when test="$xhref and
+                      (not($node/@xlink:type) or
                            $node/@xlink:type='simple')">
 
         <!-- Is it a local idref or a uri? -->
@@ -189,7 +189,7 @@
                   </xsl:attribute>
                 </xsl:when>
               </xsl:choose>
-              
+
               <xsl:copy-of select="$content"/>
             </a>
           </xsl:otherwise>
@@ -216,7 +216,7 @@
           <xsl:apply-templates select="$target" mode="html.title.attribute"/>
 
           <xsl:copy-of select="$content"/>
-          
+
         </a>
       </xsl:when>
       <xsl:otherwise>
@@ -879,7 +879,7 @@
     <xsl:call-template name="locale.html.attributes"/>
     <!-- We don't want empty @class values, so do not propagate empty @roles -->
     <xsl:choose>
-      <xsl:when test="@role and 
+      <xsl:when test="@role and
                      normalize-space(@role) != '' and
                      $phrase.propagates.style != 0">
         <xsl:apply-templates select="." mode="class.attribute">
@@ -1004,7 +1004,7 @@
             </xsl:attribute>
 
             <xsl:call-template name="inline.italicseq">
-              <xsl:with-param name="content" select="$content"/>
+              <xsl:with-param name="contentwithlink" select="$content"/>
             </xsl:call-template>
           </a>
         </xsl:when>
@@ -1454,7 +1454,7 @@
 </xsl:template>
 
 <!-- in Addresses, for example -->
-<xsl:template match="honorific|firstname|surname|lineage|othername">
+<xsl:template match="honorific|firstname|givenname|surname|lineage|othername">
   <xsl:call-template name="inline.charseq"/>
 </xsl:template>
 
@@ -1588,5 +1588,10 @@
   <!-- does nothing; this *is not* markup to force a page break. -->
 </xsl:template>
 
-</xsl:stylesheet>
+<!-- ==================================================================== -->
+<!-- generate text for xrefs to inline elements -->
+<xsl:template match="&inline.elements;" mode="xref-to">
+  <xsl:apply-templates mode="no.anchor.mode"/>
+</xsl:template>
 
+</xsl:stylesheet>

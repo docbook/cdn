@@ -527,16 +527,16 @@
 <l:template name="section" text="第 %n 节"/>
 <l:template name="table" text="表 %n"/>
 </l:context>
-<l:context name="xref-number-and-title"><l:template name="appendix" text="附录 %n, %t"/>
+<l:context name="xref-number-and-title"><l:template name="appendix" text="附录 %n %t"/>
 <l:template name="bridgehead" text="第 %n 节 “%t”"/>
 <l:template name="chapter" text="第 %n 章 %t"/>
 <l:template name="equation" text="公式 %n “%t”"/>
 <l:template name="example" text="例 %n “%t”"/>
 <l:template name="figure" text="图 %n “%t”"/>
 <l:template name="part" text="第 %n 部分 “%t”"/>
-<l:template name="procedure" text="过程 %n, “%t”"/>
-<l:template name="productionset" text="产品 %n, “%t”"/>
-<l:template name="qandadiv" text="答问集 %n, “%t”"/>
+<l:template name="procedure" text="过程 %n “%t”"/>
+<l:template name="productionset" text="产品 %n “%t”"/>
+<l:template name="qandadiv" text="答问集 %n “%t”"/>
 <l:template name="refsect1" text="“%t”一节"/>
 <l:template name="refsect2" text="“%t”一节"/>
 <l:template name="refsect3" text="“%t”一节"/>

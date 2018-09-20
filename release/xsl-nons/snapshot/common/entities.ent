@@ -63,3 +63,17 @@
                                 parent::sect5|parent::section|parent::setindex|parent::sidebar|
                                 parent::simplesect|parent::taskprerequisites|parent::taskrelated|
                                 parent::tasksummary|parent::warning|parent::topic">
+
+<!-- Entity used in xref-to for inline elements -->
+<!ENTITY inline.elements "abbrev | accel | acronym | application | author | citation | citebiblioid
+                | citetitle | classname | code | command | computeroutput | constant | database
+                | date | editor | email | emphasis | envar | errorcode | errorname | errortext
+                | errortype | exceptionname | filename | firstterm | foreignphrase | function
+                | glossterm | guibutton | guiicon | guilabel | guimenu | guimenuitem | guisubmenu
+                | hardware | initializer | inlineequation | inlinemediaobject | interfacename | jobtitle
+                | keycap | keycode | keycombo | keysym | literal | markup | menuchoice | methodname
+                | modifier | mousebutton | nonterminal | ooclass | ooexception | oointerface
+                | option | optional | org | orgname | package | parameter | person | personname
+                | phrase | productname | productnumber | prompt | property | quote | replaceable
+                | returnvalue | shortcut | symbol | systemitem | tag | termdef | token | trademark
+                | type | uri | userinput | varname | wordasword">

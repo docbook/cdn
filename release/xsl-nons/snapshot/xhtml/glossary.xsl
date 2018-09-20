@@ -73,6 +73,8 @@
       </xsl:otherwise>
     </xsl:choose>
 
+    <xsl:apply-templates select="bibliography"/>
+
     <xsl:if test="not(parent::article)">
       <xsl:call-template name="process.footnotes"/>
     </xsl:if>

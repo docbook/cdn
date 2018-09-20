@@ -20,6 +20,34 @@
   </div>
 </xsl:template>
 
+<xsl:template match="dialogue">
+
+  <div>
+    <xsl:call-template name="common.html.attributes"/>
+    <xsl:call-template name="id.attribute"/>
+    <xsl:call-template name="anchor"/>
+
+    <xsl:call-template name="dialogue.titlepage"/>
+
+    <xsl:apply-templates/>
+
+  </div>
+</xsl:template>
+
+<xsl:template match="poetry">
+
+  <div>
+    <xsl:call-template name="common.html.attributes"/>
+    <xsl:call-template name="id.attribute"/>
+    <xsl:call-template name="anchor"/>
+
+    <xsl:call-template name="poetry.titlepage"/>
+
+    <xsl:apply-templates/>
+
+  </div>
+</xsl:template>
+
 <xsl:template match="stagedir">
 
   <div>

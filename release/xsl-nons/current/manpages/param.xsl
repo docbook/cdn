@@ -148,6 +148,7 @@ or
   <xsl:param name="man.string.subst.map.local.pre"/>
 <xsl:param name="man.subheading.divider.enabled">0</xsl:param>
 <xsl:param name="man.subheading.divider">========================================================================</xsl:param>
+<xsl:param name="man.show.top.comment.date">1</xsl:param>
 <xsl:param name="man.table.footnotes.divider">----</xsl:param>
 <xsl:param name="man.th.extra1.suppress">0</xsl:param>
 <xsl:param name="man.th.extra2.max.length">30</xsl:param>

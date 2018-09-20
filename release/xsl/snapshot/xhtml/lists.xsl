@@ -860,9 +860,18 @@
 <xsl:template match="d:step/d:title">
   <p>
     <xsl:call-template name="common.html.attributes"/>
-    <strong>
-      <xsl:apply-templates/>
-    </strong>
+    <xsl:choose>
+      <xsl:when test="$make.clean.html != 0">
+	<span class="step-title">
+	  <xsl:apply-templates/>
+	</span>
+      </xsl:when>
+      <xsl:otherwise>
+	<strong>
+	  <xsl:apply-templates/>
+	</strong>
+      </xsl:otherwise>
+    </xsl:choose>
   </p>
 </xsl:template>
 

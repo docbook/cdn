@@ -30,7 +30,9 @@
     </xsl:variable>
 
     <xsl:if test="not(partintro) and contains($toc.params, 'toc')">
-      <xsl:call-template name="division.toc"/>
+      <xsl:call-template name="division.toc">
+        <xsl:with-param name="toc.title.p" select="contains($toc.params, 'title')"/>
+      </xsl:call-template>
     </xsl:if>
     <xsl:apply-templates/>
   </div>

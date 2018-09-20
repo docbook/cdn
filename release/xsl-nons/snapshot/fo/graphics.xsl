@@ -5,11 +5,13 @@
  ]>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 		xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                xmlns:axf="http://www.antennahouse.com/names/XSL/Extensions"
+		xmlns:fox="http://xmlgraphics.apache.org/fop/extensions"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:stext="http://nwalsh.com/xslt/ext/com.nwalsh.saxon.TextFactory"
                 xmlns:xtext="com.nwalsh.xalan.Text"
                 xmlns:lxslt="http://xml.apache.org/xslt"
-                exclude-result-prefixes="xlink stext xtext lxslt"
+                exclude-result-prefixes="axf fox xlink stext xtext lxslt"
                 extension-element-prefixes="stext xtext"
                 version='1.0'>
 
@@ -372,6 +374,25 @@
     <xsl:call-template name="image.valign"/>
   </xsl:variable>
 
+  <xsl:variable name="phrases"
+                select="ancestor::mediaobject/textobject[phrase]
+                        |ancestor::inlinemediaobject/textobject[phrase]
+                        |ancestor::mediaobjectco/textobject[phrase]"/>
+
+  <xsl:variable name="alt">
+    <xsl:choose>
+      <xsl:when test="ancestor::mediaobject[1]/alt">
+        <xsl:apply-templates select="ancestor::mediaobject[1]/alt"/>
+      </xsl:when>
+      <xsl:when test="ancestor::inlinemediaobject[1]/alt">
+        <xsl:apply-templates select="ancestor::inlinemediaobject[1]/alt"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:apply-templates select="$phrases[not(@role) or @role!='tex'][1]"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
   <xsl:variable name="element.name">
     <xsl:choose>
       <xsl:when test="svg:*" xmlns:svg="http://www.w3.org/2000/svg">
@@ -392,6 +413,21 @@
       <xsl:attribute name="src">
         <xsl:value-of select="$src"/>
       </xsl:attribute>
+    </xsl:if>
+
+    <xsl:if test="$alt != ''">
+      <xsl:choose>
+        <xsl:when test="$fop1.extensions != 0">
+          <xsl:attribute name="fox:alt-text">
+            <xsl:value-of select="$alt"/>
+          </xsl:attribute>
+        </xsl:when>
+        <xsl:when test="$axf.extensions != 0">
+          <xsl:attribute name="axf:alttext">
+            <xsl:value-of select="$alt"/>
+          </xsl:attribute>
+        </xsl:when>
+      </xsl:choose>
     </xsl:if>
 
     <xsl:if test="$width != ''">
@@ -570,7 +606,10 @@
 </xsl:template>
 
 <xsl:template match="inlinemediaobject">
-  <xsl:call-template name="select.mediaobject"/>
+  <fo:inline>
+    <xsl:call-template name="anchor"/>
+    <xsl:call-template name="select.mediaobject"/>
+  </fo:inline>
 </xsl:template>
 
 <!-- ==================================================================== -->
@@ -809,4 +848,11 @@
   </xsl:choose>
 </xsl:template>
 
+<xsl:template match="mediaobject/alt | inlinemediaobject/alt">
+  <xsl:variable name="content">
+    <xsl:apply-templates/>
+  </xsl:variable>
+  <!-- take the text only -->
+  <xsl:value-of select="$content"/>
+</xsl:template>
 </xsl:stylesheet>

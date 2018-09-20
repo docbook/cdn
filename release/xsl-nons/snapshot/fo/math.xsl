@@ -14,7 +14,10 @@
      ******************************************************************** -->
 
 <xsl:template match="inlineequation">
-  <xsl:apply-templates/>
+  <fo:inline>
+    <xsl:call-template name="anchor"/>
+    <xsl:apply-templates/>
+  </fo:inline>
 </xsl:template>
 
 <xsl:template match="alt">
@@ -22,6 +25,7 @@
 
 <xsl:template match="mathphrase">
   <fo:inline>
+    <xsl:call-template name="anchor"/>
     <xsl:apply-templates/>
   </fo:inline>
 </xsl:template>

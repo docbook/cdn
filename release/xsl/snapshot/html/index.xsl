@@ -56,7 +56,6 @@
 
       <xsl:if test="count(d:indexentry) = 0 and count(d:indexdiv) = 0">
         <xsl:call-template name="generate-index">
-          <xsl:with-param name="scope" select="(ancestor::d:book|/)[last()]"/>
         </xsl:call-template>
       </xsl:if>
 
@@ -88,7 +87,6 @@
 
       <xsl:if test="count(d:indexentry) = 0 and count(d:indexdiv) = 0">
         <xsl:call-template name="generate-index">
-          <xsl:with-param name="scope" select="/"/>
         </xsl:call-template>
       </xsl:if>
 
@@ -104,6 +102,11 @@
 <xsl:template match="d:index/d:title"></xsl:template>
 <xsl:template match="d:index/d:subtitle"></xsl:template>
 <xsl:template match="d:index/d:titleabbrev"></xsl:template>
+<xsl:template match="d:setindex/d:indexinfo"></xsl:template>
+<xsl:template match="d:setindex/d:info"></xsl:template>
+<xsl:template match="d:setindex/d:title"></xsl:template>
+<xsl:template match="d:setindex/d:subtitle"></xsl:template>
+<xsl:template match="d:setindex/d:titleabbrev"></xsl:template>
 
 <!-- ==================================================================== -->
 

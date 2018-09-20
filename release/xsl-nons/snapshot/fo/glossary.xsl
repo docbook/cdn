@@ -35,6 +35,7 @@
   <xsl:param name="preamble" select="*[not(self::title
                                            or self::subtitle
                                            or self::glossdiv
+                                           or self::bibliography
                                            or self::glossentry)]"/>
 
   &setup-language-variable;
@@ -140,6 +141,8 @@
       </xsl:if>
     </xsl:otherwise>
   </xsl:choose>
+
+  <xsl:apply-templates select="bibliography"/>
 </xsl:template>
 
 <xsl:template match="book/glossary|part/glossary|/glossary" priority="2">

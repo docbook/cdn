@@ -69,7 +69,22 @@
 
 
 <xsl:template name="generate-index">
-  <xsl:param name="scope" select="(ancestor::book|/)[last()]"/>
+  <!-- these are all the elements that can contain an index element -->
+  <xsl:param name="scope" select="(ancestor::book 
+                                 | ancestor::appendix 
+                                 | ancestor::article 
+                                 | ancestor::chapter 
+                                 | ancestor::part 
+                                 | ancestor::preface 
+                                 | ancestor::sect1 
+                                 | ancestor::sect2 
+                                 | ancestor::sect3 
+                                 | ancestor::sect4 
+                                 | ancestor::sect5 
+                                 | ancestor::section 
+                                 | ancestor::set
+                                 | ancestor::topic 
+                                 |/)[last()]"/>
 
   <xsl:choose>
     <xsl:when test="$index.method = 'kosek'">
@@ -106,15 +121,19 @@
     </xsl:if>
   </xsl:variable>
 
+  <!-- set of indexterms within scope, one for each unique primary first character -->
+  <!-- The scope takes into account the context of the index
+       element, and @type or @role -->
   <xsl:variable name="terms"
                 select="//indexterm
-                        [count(.|key('letter',
+                        [generate-id(.) = generate-id(key('letter',
                           translate(substring(&primary;, 1, 1),
                              &lowercase;,
                              &uppercase;))
-                          [&scope;][1]) = 1
+                          [&scope;])
                           and not(@class = 'endofrange')]"/>
 
+  <!-- subset of $terms that start with letters of the current alphabet -->
   <xsl:variable name="alphabetical"
                 select="$terms[contains(concat(&lowercase;, &uppercase;),
                                         substring(&primary;, 1, 1))]"/>
@@ -133,9 +152,11 @@
         </xsl:with-param>
       </xsl:call-template>
 
+      <xsl:variable name="others.in.index" 
+                    select="$others[generate-id(.) = generate-id(key('primary', &primary;)[&scope;])]"/>
+
       <fo:block>
-        <xsl:apply-templates select="$others[count(.|key('primary',
-                                     &primary;)[&scope;][1]) = 1]"
+        <xsl:apply-templates select="$others.in.index"
                              mode="index-symbol-div">
           <xsl:with-param name="scope" select="$scope"/>
           <xsl:with-param name="role" select="$role"/>
@@ -146,10 +167,12 @@
       </fo:block>
     </xsl:if>
 
-    <xsl:apply-templates select="$alphabetical[count(.|key('letter',
+    <xsl:variable name="alphabetical.in.index"
+                  select="$alphabetical[generate-id(.) = generate-id(key('letter',
                                  translate(substring(&primary;, 1, 1),
-                                           &lowercase;,&uppercase;))
-                                           [&scope;][1]) = 1]"
+                                           &lowercase;,&uppercase;))[&scope;])]"/>
+
+    <xsl:apply-templates select="$alphabetical.in.index"
                          mode="index-div-basic">
       <xsl:with-param name="scope" select="$scope"/>
       <xsl:with-param name="role" select="$role"/>
@@ -199,7 +222,7 @@
   <xsl:if test="not(contains($vendor, 'SAXON '))">
     <xsl:message terminate="yes">
       <xsl:text>ERROR: the 'kimber' index method requires the </xsl:text>
-      <xsl:text>Saxon version 6 or 8 XSLT processor.</xsl:text>
+      <xsl:text>Saxon version 6 or 9 XSLT processor.</xsl:text>
     </xsl:message>
   </xsl:if>
 
@@ -222,8 +245,8 @@
                 select="translate(substring(&primary;, 1, 1),
                          &lowercase;,&uppercase;)"/>
 
-  <xsl:if test="key('letter', $key)[&scope;]
-                [count(.|key('primary', &primary;)[&scope;][1]) = 1]">
+  <xsl:if test="key('letter', $key)
+                [generate-id(.) = generate-id(key('primary', &primary;)[&scope;])]">
     <fo:block>
       <xsl:if test="contains(concat(&lowercase;, &uppercase;), $key)">
         <xsl:call-template name="indexdiv.title">
@@ -233,9 +256,12 @@
         </xsl:call-template>
       </xsl:if>
       <fo:block xsl:use-attribute-sets="index.entry.properties">
-        <xsl:apply-templates select="key('letter', $key)[&scope;]
-                                     [count(.|key('primary', &primary;)
-                                     [&scope;][1])=1]"
+        <xsl:variable name="these.terms" 
+                      select="key('letter', $key)
+                              [generate-id(.) = generate-id(key('primary', &primary;)
+                              [&scope;])]"/>
+        
+        <xsl:apply-templates select="$these.terms"
                              mode="index-primary">
           <xsl:sort select="translate(&primary;, &lowercase;, &uppercase;)"/>
           <xsl:with-param name="scope" select="$scope"/>
@@ -256,7 +282,8 @@
                 select="translate(substring(&primary;, 1, 1),&lowercase;,&uppercase;)"/>
 
   <fo:block xsl:use-attribute-sets="index.entry.properties">
-    <xsl:apply-templates select="key('letter', $key)[&scope;][count(.|key('primary', &primary;)[&scope;][1]) = 1]"
+    <xsl:apply-templates select="key('letter', $key)
+                               [generate-id(.) = generate-id(key('primary', &primary;)[&scope;])]"
                          mode="index-primary">
       <xsl:with-param name="scope" select="$scope"/>
       <xsl:with-param name="role" select="$role"/>
@@ -294,9 +321,18 @@
 
   <fo:block>
     <xsl:if test="$autolink.index.see != 0">
-      <xsl:attribute name="id">
-        <xsl:value-of select="concat('ientry-', generate-id())"/>
-      </xsl:attribute>
+      <xsl:choose>
+        <xsl:when test="$fop1.extensions != 0 and count(//index|//setindex) &gt; 1">
+          <!-- more than one index can generate duplicate ids
+               which cause FOP to fail -->
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:attribute name="id">
+            <xsl:text>ientry-</xsl:text>
+            <xsl:call-template name="object.id"/>
+          </xsl:attribute>
+        </xsl:otherwise>
+      </xsl:choose>
     </xsl:if>
     <xsl:if test="$axf.extensions != 0">
       <xsl:attribute name="axf:suppress-duplicate-page-number">true</xsl:attribute>
@@ -790,7 +826,10 @@
 
   <xsl:variable name="linkend">
     <xsl:if test="$seetarget">
-      <xsl:value-of select="concat('ientry-', generate-id($seetarget))"/>
+      <xsl:text>ientry-</xsl:text>
+      <xsl:call-template name="object.id">
+        <xsl:with-param name="object" select="$seetarget"/>
+      </xsl:call-template>
     </xsl:if>
   </xsl:variable>
   
@@ -809,6 +848,9 @@
         </xsl:call-template>
       </xsl:when>
       <xsl:when test="$autolink.index.see = 0">
+         <xsl:value-of select="$see"/>
+      </xsl:when>
+      <xsl:when test="$fop1.extensions != 0 and count(//index|//setindex) &gt; 1">
          <xsl:value-of select="$see"/>
       </xsl:when>
       <xsl:when test="$seetarget">
@@ -852,7 +894,10 @@
 
     <xsl:variable name="linkend">
       <xsl:if test="$seealsotarget">
-        <xsl:value-of select="concat('ientry-', generate-id($seealsotarget))"/>
+        <xsl:text>ientry-</xsl:text>
+        <xsl:call-template name="object.id">
+          <xsl:with-param name="object" select="$seealsotarget"/>
+        </xsl:call-template>
       </xsl:if>
     </xsl:variable>
 
@@ -872,6 +917,9 @@
         </xsl:when>
         <xsl:when test="$autolink.index.see = 0">
           <xsl:value-of select="$seealso"/>
+        </xsl:when>
+        <xsl:when test="$fop1.extensions != 0 and count(//index|//setindex) &gt; 1">
+           <xsl:value-of select="$seealso"/>
         </xsl:when>
         <xsl:when test="$seealsotarget">
           <fo:basic-link internal-destination="{$linkend}"

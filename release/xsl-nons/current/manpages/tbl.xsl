@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet 
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-  xmlns:exsl="http://exslt.org/common"
+    xmlns:exsl="http://exslt.org/common"
   exclude-result-prefixes="exsl"
   version="1.0">
 
@@ -11,10 +11,14 @@ The HTML comes either from an HTML-markup table in the source,
 stripped of docbook namespace if necessary, or from applying
 the stock DocBook HTML templates to a CALS table. -->
 
+<!--
 <xsl:import href="../common/stripns.xsl"/>
+-->
 
 <xsl:template match="*" mode="fix.namespace">
+  <!--
   <xsl:apply-templates select="." mode="stripNS"/>
+  -->
 </xsl:template>
 
 
@@ -495,18 +499,6 @@ the stock DocBook HTML templates to a CALS table. -->
   <!-- * The following template for footnote.body.number mode was just -->
   <!-- * lifted from the HTML stylesheets with some minor adjustments -->
   <xsl:template match="*"  mode="footnote.body.number">
-    <xsl:variable name="name">
-      <xsl:text>ftn.</xsl:text>
-      <xsl:call-template name="object.id">
-        <xsl:with-param name="object" select="ancestor::footnote"/>
-      </xsl:call-template>
-    </xsl:variable>
-    <xsl:variable name="href">
-      <xsl:text>#</xsl:text>
-      <xsl:call-template name="object.id">
-        <xsl:with-param name="object" select="ancestor::footnote"/>
-      </xsl:call-template>
-    </xsl:variable>
     <xsl:variable name="footnote.mark">
       <xsl:text>[</xsl:text>
       <xsl:apply-templates select="ancestor::footnote"
@@ -538,9 +530,9 @@ the stock DocBook HTML templates to a CALS table. -->
     </xsl:choose>
   </xsl:template>
 
-  <!-- * The HTML stylesheets output <sup><a>...</a></sup> around -->
+  <!-- * The HTML stylesheets output <a><sup>...</sup></a> around -->
   <!-- * footnote markers in tables -->
-  <xsl:template match="th/sup">
+  <xsl:template match="a/sup">
     <xsl:apply-templates/>
   </xsl:template>
   <xsl:template match="a">
