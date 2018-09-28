@@ -145,7 +145,7 @@
   <xsl:attribute name="hyphenate">false</xsl:attribute>
   <xsl:attribute name="text-align">
     <xsl:choose>
-      <xsl:when test="((parent::article | parent::articleinfo | parent::info/parent::article) and not(ancestor::book) and not(self::bibliography))         or (parent::slides | parent::slidesinfo)">center</xsl:when>
+      <xsl:when test="((parent::*[local-name() = 'article'] | parent::*[local-name() = 'articleinfo'] | parent::*[local-name() = 'info']/parent::*[local-name() = 'article']) and not(ancestor::*[local-name() = 'book']) and not(self::*[local-name() = 'bibliography'])) or (parent::*[local-name() = 'slides'] | parent::*[local-name() = 'slidesinfo'])">center</xsl:when>
       <xsl:otherwise>start</xsl:otherwise>
     </xsl:choose>
   </xsl:attribute>

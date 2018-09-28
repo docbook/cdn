@@ -22140,7 +22140,7 @@ this parameter is ignored.
 </refsection>
 </refentry>
 
-<refentry version="5.0" id="component.title.properties">
+<refentry exclude-result-prefixes="xi src" version="5.0" id="component.title.properties">
 <refmeta>
 <refentrytitle>component.title.properties</refentrytitle>
 <refmiscinfo class="other" otherclass="datatype">attribute set</refmiscinfo>
@@ -22160,7 +22160,7 @@ this parameter is ignored.
   &lt;xsl:attribute name="hyphenate"&gt;false&lt;/xsl:attribute&gt;
   &lt;xsl:attribute name="text-align"&gt;
     &lt;xsl:choose&gt;
-      &lt;xsl:when test="((parent::article | parent::articleinfo | parent::info/parent::article) and not(ancestor::book) and not(self::bibliography))         or (parent::slides | parent::slidesinfo)"&gt;center&lt;/xsl:when&gt;
+      &lt;xsl:when test="((parent::*[local-name() = 'article'] | parent::*[local-name() = 'articleinfo'] | parent::*[local-name() = 'info']/parent::*[local-name() = 'article']) and not(ancestor::*[local-name() = 'book']) and not(self::*[local-name() = 'bibliography'])) or (parent::*[local-name() = 'slides'] | parent::*[local-name() = 'slidesinfo'])"&gt;center&lt;/xsl:when&gt;
       &lt;xsl:otherwise&gt;start&lt;/xsl:otherwise&gt;
     &lt;/xsl:choose&gt;
   &lt;/xsl:attribute&gt;
