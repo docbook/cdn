@@ -108,6 +108,7 @@ http://cdn.docbook.org/release/xsl/images/annot-close.png</xsl:param>
 <xsl:param name="collect.xref.targets">no</xsl:param>
 <xsl:param name="component.label.includes.part.label" select="0"/>
 <xsl:param name="contrib.inline.enabled">1</xsl:param>
+<xsl:param name="copy.rdfa.attributes" select="1"/>
 <xsl:param name="css.decoration" select="1"/>
 <xsl:param name="current.docid"/>
 <xsl:param name="custom.css.source"/>
