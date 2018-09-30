@@ -162,6 +162,7 @@
 <l:gentext key="Editedby" text="Επιμέλεια από"/>
 <l:gentext key="editedby" text="επιμέλεια από"/>
 <l:gentext key="in" text="σε"/>
+<l:gentext key="In" text="In" lang="en"/>
 <l:gentext key="lastlistcomma" text=","/>
 <l:gentext key="listcomma" text=","/>
 <l:gentext key="notes" text="σημειώσεις"/>

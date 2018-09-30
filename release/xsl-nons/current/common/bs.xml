@@ -162,6 +162,7 @@
 <l:gentext key="Editedby" text="Izdao"/>
 <l:gentext key="editedby" text="izdao"/>
 <l:gentext key="in" text="u"/>
+<l:gentext key="In" text="In" lang="en"/>
 <l:gentext key="lastlistcomma" text=""/>
 <l:gentext key="listcomma" text=","/>
 <l:gentext key="notes" text="bilješke"/>

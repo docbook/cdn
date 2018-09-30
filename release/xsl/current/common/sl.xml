@@ -162,6 +162,7 @@
 <l:gentext key="Editedby" text="Uredil"/>
 <l:gentext key="editedby" text="Uredil"/>
 <l:gentext key="in" text="v"/>
+<l:gentext key="In" text="In" lang="en"/>
 <l:gentext key="lastlistcomma" text=","/>
 <l:gentext key="listcomma" text=","/>
 <l:gentext key="notes" text="Notes"/>

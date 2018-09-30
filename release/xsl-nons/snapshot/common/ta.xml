@@ -162,6 +162,7 @@
 <l:gentext key="Editedby" text="திருத்தியவர்"/>
 <l:gentext key="editedby" text="திருத்தியவர்"/>
 <l:gentext key="in" text="இல்"/>
+<l:gentext key="In" text="In" lang="en"/>
 <l:gentext key="lastlistcomma" text=","/>
 <l:gentext key="listcomma" text=","/>
 <l:gentext key="notes" text="குறிப்புகள்"/>

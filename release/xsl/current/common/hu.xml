@@ -162,6 +162,7 @@
 <l:gentext key="Editedby" text="Szerkesztette"/>
 <l:gentext key="editedby" text="szerkesztette"/>
 <l:gentext key="in" text="in"/>
+<l:gentext key="In" text="In" lang="en"/>
 <l:gentext key="lastlistcomma" text=","/>
 <l:gentext key="listcomma" text=","/>
 <l:gentext key="notes" text="megjegyzések"/>

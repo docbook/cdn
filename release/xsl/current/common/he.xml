@@ -162,6 +162,7 @@
 <l:gentext key="Editedby" text="נערך על ידי"/>
 <l:gentext key="editedby" text="נערך על ידי"/>
 <l:gentext key="in" text="ב"/>
+<l:gentext key="In" text="In" lang="en"/>
 <l:gentext key="lastlistcomma" text=","/>
 <l:gentext key="listcomma" text=","/>
 <l:gentext key="notes" text="הערות"/>

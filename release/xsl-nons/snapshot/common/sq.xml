@@ -162,6 +162,7 @@
 <l:gentext key="Editedby" text="Shkruar nga"/>
 <l:gentext key="editedby" text="Shkruar nga"/>
 <l:gentext key="in" text="në"/>
+<l:gentext key="In" text="In" lang="en"/>
 <l:gentext key="lastlistcomma" text=","/>
 <l:gentext key="listcomma" text=","/>
 <l:gentext key="notes" text="Shënime"/>

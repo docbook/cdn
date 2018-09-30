@@ -167,7 +167,10 @@
 <!-- Contribution -->
   <xsl:apply-templates mode="iso690.paper.part" select="./biblioset[@relation='part']"/>
 <!-- In -->
-  <xsl:text>In </xsl:text>
+  <xsl:call-template name="gentext">
+    <xsl:with-param name="key">In</xsl:with-param>
+  </xsl:call-template>
+  <xsl:text> </xsl:text>
 <!-- Host -->
   <xsl:apply-templates mode="iso690.paper.book" select="./biblioset[@relation='book']"/>
 </xsl:template>

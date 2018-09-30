@@ -162,6 +162,7 @@
 <l:gentext key="Editedby" text="Yayına hazırlayan"/>
 <l:gentext key="editedby" text="yayına hazırlayan"/>
 <l:gentext key="in" text=""/>
+<l:gentext key="In" text="In" lang="en"/>
 <l:gentext key="lastlistcomma" text=","/>
 <l:gentext key="listcomma" text=","/>
 <l:gentext key="notes" text="Notlar"/>

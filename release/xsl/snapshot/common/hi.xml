@@ -162,6 +162,7 @@
 <l:gentext key="Editedby" text="इनके द्वारा संपादित"/>
 <l:gentext key="editedby" text="इनके द्वारा संपादित"/>
 <l:gentext key="in" text="अंदर"/>
+<l:gentext key="In" text="In" lang="en"/>
 <l:gentext key="lastlistcomma" text=","/>
 <l:gentext key="listcomma" text=","/>
 <l:gentext key="notes" text="नोट्स"/>

@@ -162,6 +162,7 @@
 <l:gentext key="Editedby" text="Хянан тохиолдуулсан"/>
 <l:gentext key="editedby" text="хянан тохиолдуулсан"/>
 <l:gentext key="in" text="дотор"/>
+<l:gentext key="In" text="In" lang="en"/>
 <l:gentext key="lastlistcomma" text=","/>
 <l:gentext key="listcomma" text=","/>
 <l:gentext key="notes" text="тайлбар"/>

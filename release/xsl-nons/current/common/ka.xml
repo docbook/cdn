@@ -162,6 +162,7 @@
 <l:gentext key="Editedby" text="გამართა:"/>
 <l:gentext key="editedby" text="გამართა:"/>
 <l:gentext key="in" text=""/>
+<l:gentext key="In" text="In" lang="en"/>
 <l:gentext key="lastlistcomma" text=","/>
 <l:gentext key="listcomma" text=","/>
 <l:gentext key="notes" text="შენიშვნები"/>

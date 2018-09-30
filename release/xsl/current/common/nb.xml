@@ -162,6 +162,7 @@
 <l:gentext key="Editedby" text="Redigert av"/>
 <l:gentext key="editedby" text="redigert av"/>
 <l:gentext key="in" text="i"/>
+<l:gentext key="In" text="In" lang="en"/>
 <l:gentext key="lastlistcomma" text=","/>
 <l:gentext key="listcomma" text=","/>
 <l:gentext key="notes" text="Sluttnotater"/>

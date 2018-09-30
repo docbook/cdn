@@ -162,6 +162,7 @@
 <l:gentext key="Editedby" text="Под редакцией"/>
 <l:gentext key="editedby" text="Под редакцией"/>
 <l:gentext key="in" text="в"/>
+<l:gentext key="In" text="In" lang="en"/>
 <l:gentext key="lastlistcomma" text=","/>
 <l:gentext key="listcomma" text=","/>
 <l:gentext key="notes" text="Примечания"/>

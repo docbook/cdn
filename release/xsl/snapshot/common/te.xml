@@ -162,6 +162,7 @@
 <l:gentext key="Editedby" text="వీరిచేత సరికూర్చబడింది"/>
 <l:gentext key="editedby" text="వీరిచేత సరికూర్చబడింది"/>
 <l:gentext key="in" text="నందు"/>
+<l:gentext key="In" text="In" lang="en"/>
 <l:gentext key="lastlistcomma" text=","/>
 <l:gentext key="listcomma" text=","/>
 <l:gentext key="notes" text="గమనికలు"/>

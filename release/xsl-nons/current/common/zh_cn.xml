@@ -162,6 +162,7 @@
 <l:gentext key="Editedby" text="编辑"/>
 <l:gentext key="editedby" text="编辑"/>
 <l:gentext key="in" text="于"/>
+<l:gentext key="In" text="In" lang="en"/>
 <l:gentext key="lastlistcomma" text=""/>
 <l:gentext key="listcomma" text="、"/>
 <l:gentext key="notes" text="备注"/>
