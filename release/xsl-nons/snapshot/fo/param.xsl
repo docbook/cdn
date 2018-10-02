@@ -66,7 +66,7 @@
   <xsl:attribute name="start-indent">0.5in</xsl:attribute>
   <xsl:attribute name="text-indent">-0.5in</xsl:attribute>
 </xsl:attribute-set>
-<xsl:param name="bibliography.collection">http://cdn.docbook.org/release/xsl/bibliography/bibliography.xml</xsl:param>
+<xsl:param name="bibliography.collection">https://cdn.docbook.org/resources/latest/xml/bibliography.xml</xsl:param>
 
 <xsl:param name="bibliography.numbered" select="0"/>
 <xsl:param name="bibliography.style">normal</xsl:param>
@@ -301,7 +301,7 @@ reference toc,title
 set       toc,title
 </xsl:param>
 <xsl:param name="glossary.as.blocks" select="0"/>
-<xsl:param name="glossary.collection"/>
+<xsl:param name="glossary.collection">https://cdn.docbook.org/resources/latest/xml/glossary.xml</xsl:param>
 <xsl:param name="glossary.sort" select="0"/>
 <xsl:param name="glossentry.show.acronym">no</xsl:param>
 <xsl:param name="glosslist.as.blocks" select="0"/>

@@ -6047,7 +6047,7 @@ following WiKi page</link>.</para>
 
 <refsynopsisdiv>
 <programlisting id="bibliography.collection.frag">
-&lt;xsl:param name="bibliography.collection"&gt;http://cdn.docbook.org/release/xsl/bibliography/bibliography.xml&lt;/xsl:param&gt;
+&lt;xsl:param name="bibliography.collection"&gt;https://cdn.docbook.org/resources/latest/xml/bibliography.xml&lt;/xsl:param&gt;
 
 </programlisting>
 </refsynopsisdiv>
@@ -6243,7 +6243,7 @@ has no effect.</para>
 
 <refsynopsisdiv>
 <programlisting id="glossary.collection.frag">
-&lt;xsl:param name="glossary.collection"&gt;&lt;/xsl:param&gt;
+&lt;xsl:param name="glossary.collection"&gt;https://cdn.docbook.org/resources/latest/xml/glossary.xml&lt;/xsl:param&gt;
 </programlisting>
 </refsynopsisdiv>
 
@@ -16439,7 +16439,7 @@ following WiKi page</link>.</para>
 
 <refsynopsisdiv>
 <programlisting id="bibliography.collection.frag">
-&lt;xsl:param name="bibliography.collection"&gt;http://cdn.docbook.org/release/xsl/bibliography/bibliography.xml&lt;/xsl:param&gt;
+&lt;xsl:param name="bibliography.collection"&gt;https://cdn.docbook.org/resources/latest/xml/bibliography.xml&lt;/xsl:param&gt;
 
 </programlisting>
 </refsynopsisdiv>
@@ -16659,7 +16659,7 @@ has no effect.</para>
 
 <refsynopsisdiv>
 <programlisting id="glossary.collection.frag">
-&lt;xsl:param name="glossary.collection"&gt;&lt;/xsl:param&gt;
+&lt;xsl:param name="glossary.collection"&gt;https://cdn.docbook.org/resources/latest/xml/glossary.xml&lt;/xsl:param&gt;
 </programlisting>
 </refsynopsisdiv>
 
