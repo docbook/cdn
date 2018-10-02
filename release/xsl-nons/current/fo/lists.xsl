@@ -132,10 +132,14 @@
           </xsl:with-param>
         </xsl:call-template>
       </fo:block>
+      <!-- include leading indexterms in this part to prevent
+           extra spacing above first para from its space-before -->
+      <xsl:apply-templates mode="leading.indexterms" 
+                           select="child::indexterm[not(preceding-sibling::*)]"/>
     </fo:list-item-label>
     <fo:list-item-body start-indent="body-start()">
       <fo:block>
-        <xsl:apply-templates/>
+        <xsl:apply-templates select="*[not(self::indexterm[not(preceding-sibling::*)])]"/>
       </fo:block>
     </fo:list-item-body>
   </xsl:variable>
@@ -160,6 +164,13 @@
       </fo:list-item>
     </xsl:otherwise>
   </xsl:choose>
+</xsl:template>
+
+<!-- process any <indexterms> appearing before other elements in
+     listitem here to prevent empty block that triggers space-before
+     of the first para in the listitem -->
+<xsl:template match="indexterm" mode="leading.indexterms">
+  <xsl:apply-templates select="."/>
 </xsl:template>
 
 <xsl:template name="itemizedlist.label.markup">
@@ -276,10 +287,14 @@
       <fo:block>
         <xsl:apply-templates select="." mode="item-number"/>
       </fo:block>
+      <!-- include leading indexterms in this part to prevent
+           extra spacing above first para from its space-before -->
+      <xsl:apply-templates mode="leading.indexterms" 
+                           select="child::indexterm[not(preceding-sibling::*)]"/>
     </fo:list-item-label>
     <fo:list-item-body start-indent="body-start()">
       <fo:block>
-        <xsl:apply-templates/>
+        <xsl:apply-templates select="*[not(self::indexterm[not(preceding-sibling::*)])]"/>
       </fo:block>
     </fo:list-item-body>
   </xsl:variable>
@@ -501,10 +516,16 @@
       <fo:block xsl:use-attribute-sets="variablelist.term.properties">
         <xsl:apply-templates select="term"/>
       </fo:block>
+      <!-- include leading indexterms in this part to prevent
+           extra spacing above first para from its space-before -->
+      <xsl:apply-templates mode="leading.indexterms" 
+                           select="listitem/indexterm[not(preceding-sibling::*)]"/>
     </fo:list-item-label>
     <fo:list-item-body start-indent="body-start()">
       <fo:block>
-        <xsl:apply-templates select="listitem"/>
+        <xsl:apply-templates select="listitem">
+          <xsl:with-param name="vl.as.list" select="1"/>
+        </xsl:apply-templates>
       </fo:block>
     </fo:list-item-body>
   </xsl:variable>
@@ -614,7 +635,15 @@
 </xsl:template>
 
 <xsl:template match="varlistentry/listitem">
-  <xsl:apply-templates/>
+  <xsl:param name="vl.as.list" select="0"/>
+  <xsl:choose>
+    <xsl:when test="$vl.as.list != 0">
+      <xsl:apply-templates select="*[not(self::indexterm[not(preceding-sibling::*)])]"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:apply-templates/>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <!-- ==================================================================== -->
@@ -656,7 +685,7 @@
     </xsl:choose>
   </xsl:variable>
 
-  <fo:table id="{$id}" xsl:use-attribute-sets="simplelist.vertical.properties">
+  <fo:table id="{$id}" xsl:use-attribute-sets="normal.para.spacing">
 
     <xsl:choose>
       <xsl:when test="$axf.extensions != 0 or $xep.extensions != 0">
@@ -1011,10 +1040,14 @@
           </xsl:otherwise>
         </xsl:choose>
       </fo:block>
+      <!-- include leading indexterms in this part to prevent
+           extra spacing above first para from its space-before -->
+      <xsl:apply-templates mode="leading.indexterms" 
+                           select="child::indexterm[not(preceding-sibling::*)]"/>
     </fo:list-item-label>
     <fo:list-item-body start-indent="body-start()">
       <fo:block>
-        <xsl:apply-templates/>
+        <xsl:apply-templates select="*[not(self::indexterm[not(preceding-sibling::*)])]"/>
       </fo:block>
     </fo:list-item-body>
   </fo:list-item>
@@ -1045,10 +1078,14 @@
       <fo:block id="{$id}">
         <xsl:text>&#x2022;</xsl:text>
       </fo:block>
+      <!-- include leading indexterms in this part to prevent
+           extra spacing above first para from its space-before -->
+      <xsl:apply-templates mode="leading.indexterms" 
+                           select="child::indexterm[not(preceding-sibling::*)]"/>
     </fo:list-item-label>
     <fo:list-item-body start-indent="body-start()">
       <fo:block>
-        <xsl:apply-templates/>
+        <xsl:apply-templates select="*[not(self::indexterm[not(preceding-sibling::*)])]"/>
       </fo:block>
     </fo:list-item-body>
   </fo:list-item>
@@ -1301,10 +1338,14 @@
           <xsl:with-param name="arearefs" select="@arearefs"/>
         </xsl:call-template>
       </fo:block>
+      <!-- include leading indexterms in this part to prevent
+           extra spacing above first para from its space-before -->
+      <xsl:apply-templates mode="leading.indexterms" 
+                           select="child::indexterm[not(preceding-sibling::*)]"/>
     </fo:list-item-label>
     <fo:list-item-body start-indent="body-start()">
       <fo:block>
-        <xsl:apply-templates/>
+        <xsl:apply-templates select="*[not(self::indexterm[not(preceding-sibling::*)])]"/>
       </fo:block>
     </fo:list-item-body>
   </fo:list-item>

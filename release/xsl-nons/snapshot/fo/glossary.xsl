@@ -776,6 +776,10 @@ GlossEntry ::=
         </xsl:choose>
         <xsl:apply-templates select="indexterm"/>
       </fo:block>
+      <!-- include leading indexterms in glossdef to prevent
+           extra spacing above first para from its space-before -->
+      <xsl:apply-templates mode="leading.indexterms" 
+                           select="glossdef/indexterm[not(preceding-sibling::*)]"/>
     </fo:list-item-label>
 
     <fo:list-item-body start-indent="body-start()">
@@ -857,7 +861,8 @@ GlossEntry ::=
 </xsl:template>
 
 <xsl:template match="glossentry/glossdef" mode="glossary.as.list">
-  <xsl:apply-templates select="*[local-name(.) != 'glossseealso']"/>
+  <xsl:apply-templates select="*[local-name(.) != 'glossseealso' and
+                                 not(self::indexterm[not(preceding-sibling::*)])]"/>
   <xsl:if test="glossseealso">
     <fo:block>
       <xsl:variable name="template">

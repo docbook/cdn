@@ -267,16 +267,22 @@
           <fo:block/>
         </xsl:otherwise>
       </xsl:choose>
+      <!-- include leading indexterms in this part to prevent
+           extra spacing above first para from its space-before -->
+      <xsl:apply-templates mode="leading.indexterms" 
+                           select="child::indexterm[not(preceding-sibling::*)]"/>
     </fo:list-item-label>
     <fo:list-item-body start-indent="body-start()">
       <xsl:choose>
         <xsl:when test="$deflabel = 'none' and not(label)">
           <fo:block font-weight="bold">
-            <xsl:apply-templates select="*[local-name(.)!='label']"/>
+            <xsl:apply-templates select="*[local-name(.)!='label' and
+                                           not(self::indexterm[not(preceding-sibling::*)])]"/>
           </fo:block>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:apply-templates select="*[local-name(.)!='label']"/>
+          <xsl:apply-templates select="*[local-name(.)!='label' and
+                                         not(self::indexterm[not(preceding-sibling::*)])]"/>
         </xsl:otherwise>
       </xsl:choose>
       <!-- Uncomment this line to get revhistory output in the question -->
@@ -310,12 +316,17 @@
           </fo:block>
         </xsl:when>
         <xsl:otherwise>
-          <fo:block/>
+          <fo:block>&#xA0;</fo:block>
         </xsl:otherwise>
       </xsl:choose>
+      <!-- include leading indexterms in this part to prevent
+           extra spacing above first para from its space-before -->
+      <xsl:apply-templates mode="leading.indexterms" 
+                           select="child::indexterm[not(preceding-sibling::*)]"/>
     </fo:list-item-label>
     <fo:list-item-body start-indent="body-start()">
-      <xsl:apply-templates select="*[local-name(.)!='label' and local-name(.) != 'qandaentry']"/>
+      <xsl:apply-templates select="*[local-name(.)!='label' and local-name(.) != 'qandaentry' and
+                                     not(self::indexterm[not(preceding-sibling::*)])]"/>
       <!-- * handle nested answer/qandaentry instances -->
       <!-- * (bug 1509043 from Daniel Leidert) -->
       <xsl:if test="descendant::question">
