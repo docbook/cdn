@@ -1,3 +1,11 @@
+/* Stylesheet for rendering verbatim markup using Prism.
+   From the DocBook XSLT 2.0 Stylesheets.
+
+   Version 2.1.0
+*/
+
+@import url("prism.css");
+
 pre {
    font: 100%/1.25 sans-serif;
 }
