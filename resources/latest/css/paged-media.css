@@ -1,7 +1,7 @@
 /* Stylesheet for paged media rendered from HTML rendered from DocBook
    by the DocBook XSLT 2.0 Stylesheets.
 
-   Version 2.1.0
+   Version 2.1.1
 */
 
 @import url("default.css");
@@ -135,6 +135,53 @@ article.reference {
 div.footnotes {
    float: bottom;
    page-break-inside: avoid;
+}
+
+.admonition {
+    border-top: 0.5pt solid black;
+    border-bottom: 0.5pt solid black;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.admonition h3 {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 12pt 12pt;
+    padding-left: 16pt;
+    font-size: 12pt;
+    font-weight: bold;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.tip h3 {
+    background-image: url(../img/tip.png);
+}
+
+.note h3 {
+    background-image: url(../img/note.png);
+}
+
+.caution h3 {
+    background-image: url(../img/caution.png);
+}
+
+.important h3 {
+    background-image: url(../img/important.png);
+}
+
+.warning h3 {
+    background-image: url(../img/warning.png);
+}
+
+.admonition-body {
+    padding-left: 16pt;
+    padding-right: 16pt;
+}
+
+.admonition-body > p {
+    margin-top: 0.5em;
 }
 
 @page {
