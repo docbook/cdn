@@ -17,6 +17,60 @@ th {
 }
 
 /* ===================================================== */
+/* Many things related to margins, padding, and borders apply to HTML
+   but not (or, at least, not in the same way) to paged media. Rather
+   than another round trip to the server, use media queries.
+*/
+
+@media screen {
+    body {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    html.draft:after {
+        /* See https://webreflection.blogspot.com/2014/09/a-simple-css-page-watermark.html */
+        content: "DRAFT";
+        font-size: 180pt;
+        color: rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+        cursor: default;
+        display: block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translatex(-50%) translatey(-50%) rotate(-45deg);
+        font-family: sans-serif;
+        text-align: center;
+        line-height: 100%;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    section {
+        margin-left: 0.25in;
+    }
+
+    .section-titlepage {
+        margin-left: -0.25in;
+    }
+
+    div.toc {
+        border-top: 1px solid black;
+    }
+
+    div.admonition {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html.draft:after {
+        font-size: 96pt;
+    }
+}
+
+/* ===================================================== */
 
 html {
    background-color: #FFFFF8;
@@ -25,18 +79,6 @@ html {
 
 body {
    font: 100%/1.5 serif;
-   padding-left: 1em;
-   padding-right: 1em;
-}
-
-body.draft {
-   background-image: url("../img/draft.svg");
-   background-repeat: no-repeat;
-   background-position: center center;
-}
-
-div.toc {
-   border-top: 1px solid black;
 }
 
 ul.toc {
@@ -79,10 +121,6 @@ div.attribution {
     margin-left: 50%;
 }
 
-div.admonition {
-    margin-left: 5px;
-}
-
 span.admon-graphic {
     padding-right: 5px;
     vertical-align: middle;
@@ -101,14 +139,6 @@ div.admon-text {
 div.admon-text > p:first-child {
     padding-top: 0px;
     margin-top: 0px;
-}
-
-section {
-    margin-left: 0.25in;
-}
-
-.section-titlepage {
-    margin-left: -0.25in;
 }
 
 div.address {
@@ -297,10 +327,6 @@ div.synopfragment {
 
 div.cmdsynopsis {
     margin-bottom: 1em;
-}
-
-body.draft {
-    background-image: url("http://docbook.github.com/latest/img/draft.png");
 }
 
 em.strikethrough {
