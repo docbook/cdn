@@ -1,0 +1,26 @@
+.numbered-verbatim {
+    background: #f7f4f2;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.unnumbered-verbatim {
+    background: #f7f4f2;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.unnumbered-verbatim pre {
+    padding-left: 0.5em;
+}
+
+pre.line-numbers-column {
+    width: 2em;
+    padding-right: 0.5em;
+    margin-right: 0.5em;
+    border-right: 1pt solid #7f7f7f;
+}
+
+dt.callout a {
+  text-decoration: none;
+}
