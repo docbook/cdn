@@ -1,0 +1,33 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>autolink.index.see</title><link rel="stylesheet" type="text/css" href="../reference.css"><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="../index.html" title="DocBook XSL Stylesheets: Reference&nbsp;Documentation"><link rel="up" href="toc_index.html" title="ToC/LoT/Index Generation"><link rel="prev" href="index.div.title.properties.html" title="index.div.title.properties"><link rel="next" href="index.number.separator.html" title="index.number.separator"><link rel="copyright" href="copyright.html" title="License"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">autolink.index.see</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="index.div.title.properties.html">Prev</a>&nbsp;</td><th width="60%" align="center">ToC/LoT/Index Generation</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="index.number.separator.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="autolink.index.see"></a><div class="titlepage"></div><div class="refnamediv"><h2><span class="refentrytitle">autolink.index.see</span></h2><p>autolink.index.see &#8212; Link index see and seealso to index primary</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><a name="autolink.index.see.frag"></a><pre class="programlisting">&lt;xsl:param name="autolink.index.see" select="1"&gt;&lt;/xsl:param&gt;</pre></div><div class="refsection"><a name="d0e12610"></a><h2>Description</h2><p>If this param is set to a non-zero value,
+(default = 1), then the
+stylesheet will attempt for form a link between a 
+<code class="sgmltag-element">see</code> or <code class="sgmltag-element">seealso</code> element
+and a matching indexterm <code class="sgmltag-element">primary</code> element.
+</p><p>The stylesheet uses an exact text match after 
+applying the <code class="literal">normalize-space()</code> function.
+If the <code class="sgmltag-element">see</code> or <code class="sgmltag-element">seealso</code> text contains a comma,
+then only the text prior to the comma is used.
+This assumes the author is using the convention "see primary, secondary"
+to specify a subentry.  Automatic links always land on the primary
+entry in the index, so the reader has to look down to see the
+secondary entry.</p><p>If there is no match on a 
+<code class="sgmltag-element">primary</code>, no link is formed, but the text
+still displays.</p><p>No attempt is made to automatically link to text in
+<code class="sgmltag-element">secondary</code> or <code class="sgmltag-element">tertiary</code> elements.
+If you want to link to such elements, you can form a
+manual link by adding a linkend attribute to the 
+<code class="sgmltag-element">see</code> or <code class="sgmltag-element">seealso</code> element, where
+the linkend references an id or xml:id attribute on
+such a subelement.  Such manual links take precedence over
+any automatic links.
+</p><p>If this parameter is zero, then
+no automatic links from see and seealso
+are formed within the index.  Any manual links are
+still processed, however.</p><p>If a document contains more than one index, then any indexterms used
+in more than one index will generate duplicate id attributes, which will 
+cause the FOP processor to fail. Therefore the stylesheet turns this feature off
+if it detects more than one index and setindex, and the fop1.extensions parameter
+is nonzero.
+</p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="index.div.title.properties.html">Prev</a>&nbsp;</td><td width="20%" align="center"><a accesskey="u" href="toc_index.html">Up</a></td><td width="40%" align="right">&nbsp;<a accesskey="n" href="index.number.separator.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">index.div.title.properties&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="../index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;index.number.separator</td></tr></table></div></body></html>

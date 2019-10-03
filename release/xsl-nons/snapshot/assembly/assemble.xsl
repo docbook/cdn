@@ -34,6 +34,15 @@
    </xsl:copy>
 </xsl:template>
 
+<!-- process modules and structures encountered in resourceref content -->
+<xsl:template match="module" mode="copycontent">
+  <xsl:apply-templates select="."/>
+</xsl:template>
+  
+<xsl:template match="structure" mode="copycontent">
+  <xsl:apply-templates select="."/>
+</xsl:template>
+  
 <xsl:template match="processing-instruction('oxygen')"/>
 
 <!-- skip assembly info elements -->
@@ -394,12 +403,21 @@
     
     <xsl:otherwise>
       <xsl:variable name="ref.file.content" select="document($fileref,/)"/>
+        
     
       <!-- selects root or fragment depending on if $fragment is blank -->
-      <xsl:variable name="ref.content"
+      <xsl:variable name="ref.content.element"
         select="$ref.file.content/*[1][$fragment.id = ''] |
                 $ref.file.content/*[1][$fragment.id != '']/
                    descendant-or-self::*[@xml:id = $fragment.id]"/>
+      
+      
+      
+      <xsl:variable name="ref.content.nodes">
+        <xsl:apply-templates select="$ref.content.element" mode="ref.content.nodes"/>
+      </xsl:variable>
+      
+      <xsl:variable name="ref.content" select="exsl:node-set($ref.content.nodes)/*[1]"/>
         
       <xsl:if test="count($ref.content) = 0">
         <xsl:message terminate="yes">
@@ -408,10 +426,12 @@
           <xsl:text>' has no content or is unresolved.</xsl:text>
         </xsl:message>
       </xsl:if>
+      
+      <xsl:variable name="ref.name" select="local-name($ref.content)"/>
 
       <xsl:variable name="element.name">
         <xsl:apply-templates select="." mode="compute.element.name">
-          <xsl:with-param name="ref.name" select="local-name($ref.content)"/>
+          <xsl:with-param name="ref.name" select="$ref.name"/>
         </xsl:apply-templates>
       </xsl:variable>
 
@@ -526,8 +546,17 @@
     </xsl:otherwise>
   </xsl:choose>
 </xsl:template>
-
-<xsl:template name="merge.info">
+  
+<!-- resolve resourceref reference to another structure into content -->  
+<xsl:template match="structure" mode="ref.content.nodes">
+  <xsl:apply-templates select="."/>
+</xsl:template>
+  
+<xsl:template match="*" mode="ref.content.nodes">
+  <xsl:copy-of select="."/>
+</xsl:template>
+  
+  <xsl:template name="merge.info">
   <xsl:param name="merge.element" select="NOTANODE"/>
   <xsl:param name="ref.content" select="NOTANODE"/>
   <xsl:param name="omittitles"/> 

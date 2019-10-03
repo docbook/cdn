@@ -1302,7 +1302,7 @@
 
 <xsl:template match="citation">
   <!-- todo: integrate with bibliography collection -->
-  <xsl:variable name="targets" select="(//biblioentry | //bibliomixed)[abbrev = string(current())]"/>
+  <xsl:variable name="targets" select="(//biblioentry | //bibliomixed)[normalize-space(abbrev) = normalize-space(string(current()))]"/>
   <xsl:variable name="target" select="$targets[1]"/>
 
   <xsl:choose>
@@ -1340,7 +1340,7 @@
 </xsl:template>
 
 <xsl:template match="citebiblioid">
-  <xsl:variable name="targets" select="//*[biblioid = string(current())]"/>
+  <xsl:variable name="targets" select="//*[normalize-space(biblioid) = normalize-space(string(current()))]"/>
   <xsl:variable name="target" select="$targets[1]"/>
 
   <xsl:choose>

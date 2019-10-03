@@ -1,6 +1,6 @@
 Release Notes for the DocBook XSL Stylesheets
 
-2018-11-01
+2019-10-03
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -12831,7 +12831,7 @@ The 1.59.1 fixes a few bugs.
 
   • Improvements to mediaobject for selecting print vs. online images.
 
-  • Added seperate property sets for figures, examples, equations, tabless, and
+  • Added separate property sets for figures, examples, equations, tabless, and
     procedures.
 
   • Make lineannotations italic.
