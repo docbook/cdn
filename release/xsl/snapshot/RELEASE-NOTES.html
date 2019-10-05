@@ -1924,7 +1924,7 @@ significant feature changes:
         localizations.</p></dd><dt><span class="term">ISO690 citation style for bibliography output.</span></dt><dd><p>Set the
         <em class="parameter"><code>bibliography.style</code></em> parameter to
         <code class="literal">iso690</code> to use ISO690 style.</p></dd><dt><span class="term">New documentation for processing instructions (PI)</span></dt><dd><p>The reference documentation that ships with the
-        release now includes <a class="link" href="http://cdn.docbook.org/release/xsl/current/doc/pi/" target="_top">documentation on all PIs</a> that you can use to
+        release now includes <a class="link" href="https://cdn.docbook.org/release/xsl/current/doc/pi/" target="_top">documentation on all PIs</a> that you can use to
         control output from the stylesheets.</p></dd><dt><span class="term">New profiling parameters for <code class="literal">audience</code> and <code class="literal">wordsize</code></span></dt><dd><p>You can now do profiling based on the values of the
         <code class="literal">audience</code> and
         <code class="literal">wordsize</code> attributes.</p></dd><dt><span class="term">Changes to man-page output</span></dt><dd><p>The manpages stylesheet now supports single-pass
@@ -3779,7 +3779,7 @@ Steve Ball</p></li></ul></div></div></div><div class="section"><div class="title
           stylesheets into the DocBook XSL stylesheets package. So,
           for example, Website documents can now be processed using
           the following URI for the driver Website
-          <code class="filename">tabular.xsl</code> file: </p><pre class="literallayout"><code class="uri">http://cdn.docbook.org/release/xsl/current/website/tabular.xsl</code></pre></li><li class="listitem"><p>A <code class="sgmltag-element">procedure</code> without a <code class="sgmltag-element">title</code> is
+          <code class="filename">tabular.xsl</code> file: </p><pre class="literallayout"><code class="uri">https://cdn.docbook.org/release/xsl/current/website/tabular.xsl</code></pre></li><li class="listitem"><p>A <code class="sgmltag-element">procedure</code> without a <code class="sgmltag-element">title</code> is
           now treated as an <span class="quote">&#8220;<span class="quote">informal</span>&#8221;</span> procedure (meaning
           that it is not added to any generated <span class="quote">&#8220;<span class="quote">list of
           procedures</span>&#8221;</span> and has no affect on numbering of
@@ -4342,7 +4342,7 @@ Steve Ball</p></li></ul></div></div></div><div class="section"><div class="title
               </p><pre class="screen">  &lt;xsl:stylesheet
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     version='1.0'&gt;
-    &lt;xsl:import href="http://cdn.docbook.org/release/xsl/current/htmlhelp/htmlhelp.xsl"/&gt;
+    &lt;xsl:import href="https://cdn.docbook.org/release/xsl/current/htmlhelp/htmlhelp.xsl"/&gt;
     &lt;xsl:output method="html" encoding="WINDOWS-1252" indent="no"/&gt;
     &lt;xsl:param name="htmlhelp.encoding" select="'WINDOWS-1252'"&gt;&lt;/xsl:param&gt;
     &lt;xsl:param name="chunker.output.encoding" select="'WINDOWS-1252'"&gt;&lt;/xsl:param&gt;
@@ -4556,8 +4556,8 @@ stylesheet with new indexing code
 <code class="filename">html/autoidx-ng.xsl</code>). For example:</p><pre class="programlisting">&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 version="1.0"&gt;
 
-&lt;xsl:import href="http://cdn.docbook.org/release/xsl/current/fo/docbook.xsl"/&gt;
-&lt;xsl:include href="http://cdn.docbook.org/release/xsl/current/fo/autoidx-ng.xsl"/&gt;
+&lt;xsl:import href="https://cdn.docbook.org/release/xsl/current/fo/docbook.xsl"/&gt;
+&lt;xsl:include href="https://cdn.docbook.org/release/xsl/current/fo/autoidx-ng.xsl"/&gt;
 
 &lt;/xsl:stylesheet&gt;</pre><p>New method is known to work with Saxon and it should also work
 with xsltproc 1.1.1 and later. Currently supported languages are

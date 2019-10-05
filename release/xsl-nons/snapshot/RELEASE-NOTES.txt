@@ -11639,7 +11639,7 @@ Common
     be processed using the following URI for the driver Website tabular.xsl
     file:
 
-    http://cdn.docbook.org/release/xsl/current/website/tabular.xsl
+    https://cdn.docbook.org/release/xsl/current/website/tabular.xsl
 
   • A procedure without a title is now treated as an “informal” procedure
     (meaning that it is not added to any generated “list of procedures” and has
@@ -12355,7 +12355,7 @@ XSL Java extensions
           <xsl:stylesheet
             xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
             version='1.0'>
-            <xsl:import href="http://cdn.docbook.org/release/xsl/current/htmlhelp/htmlhelp.xsl"/>
+            <xsl:import href="https://cdn.docbook.org/release/xsl/current/htmlhelp/htmlhelp.xsl"/>
             <xsl:output method="html" encoding="WINDOWS-1252" indent="no"/>
             <xsl:param name="htmlhelp.encoding" select="'WINDOWS-1252'"></xsl:param>
             <xsl:param name="chunker.output.encoding" select="'WINDOWS-1252'"></xsl:param>
@@ -12588,8 +12588,8 @@ Release 1.65.0
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                     version="1.0">
 
-    <xsl:import href="http://cdn.docbook.org/release/xsl/current/fo/docbook.xsl"/>
-    <xsl:include href="http://cdn.docbook.org/release/xsl/current/fo/autoidx-ng.xsl"/>
+    <xsl:import href="https://cdn.docbook.org/release/xsl/current/fo/docbook.xsl"/>
+    <xsl:include href="https://cdn.docbook.org/release/xsl/current/fo/autoidx-ng.xsl"/>
 
     </xsl:stylesheet>
 

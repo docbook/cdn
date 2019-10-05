@@ -3,7 +3,7 @@
 <!-- ********************************************************************
 
      This file is part of the XSL DocBook Stylesheet distribution.
-     See ../README or http://cdn.docbook.org/release/xsl/current/ for
+     See ../README or https://cdn.docbook.org/release/xsl/current/ for
      copyright and other information.
 
      ******************************************************************** -->
@@ -62,11 +62,11 @@ div.annotation-close { position: absolute;
                      }
 </xsl:param>
 <xsl:param name="annotation.graphic.close">
-http://cdn.docbook.org/release/xsl/images/annot-close.png</xsl:param>
-<xsl:param name="annotation.graphic.open">http://cdn.docbook.org/release/xsl/images/annot-open.png</xsl:param>
+https://cdn.docbook.org/release/xsl/images/annot-close.png</xsl:param>
+<xsl:param name="annotation.graphic.open">https://cdn.docbook.org/release/xsl/images/annot-open.png</xsl:param>
 
 <xsl:param name="annotation.js">
-<xsl:text>http://cdn.docbook.org/release/xsl/script/AnchorPosition.js http://cdn.docbook.org/release/xsl/script/PopupWindow.js</xsl:text></xsl:param>
+<xsl:text>https://cdn.docbook.org/release/xsl/script/AnchorPosition.js https://cdn.docbook.org/release/xsl/script/PopupWindow.js</xsl:text></xsl:param>
 
 <xsl:param name="annotation.support" select="0"/>
 <xsl:param name="appendix.autolabel">A</xsl:param>

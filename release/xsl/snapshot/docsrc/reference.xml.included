@@ -71,9 +71,9 @@ THE SOFTWARE.</para>
         XSL stylesheets. It is available in the following formats:
         <itemizedlist>
           <listitem>
-            <para><link xlink:href="http://cdn.docbook.org/release/xsl/current/doc/reference.html">HTML</link>,
-              <link xlink:href="http://cdn.docbook.org/release/xsl/current/doc/reference.pdf">PDF</link>,
-              <link xlink:href="http://cdn.docbook.org/release/xsl/current/doc/reference.txt">plain text</link></para>
+            <para><link xlink:href="https://cdn.docbook.org/release/xsl/current/doc/reference.html">HTML</link>,
+              <link xlink:href="https://cdn.docbook.org/release/xsl/current/doc/reference.pdf">PDF</link>,
+              <link xlink:href="https://cdn.docbook.org/release/xsl/current/doc/reference.txt">plain text</link></para>
           </listitem>
         </itemizedlist>
         This is primarily documentation on the parameters and processing instructions you can use
@@ -7505,7 +7505,7 @@ elements in HTML by including some JavaScript (see
 <programlisting id="annotation.js.frag">
 
 &lt;xsl:param name="annotation.js"&gt;
-&lt;xsl:text&gt;http://cdn.docbook.org/release/xsl/script/AnchorPosition.js http://cdn.docbook.org/release/xsl/script/PopupWindow.js&lt;/xsl:text&gt;&lt;/xsl:param&gt;
+&lt;xsl:text&gt;https://cdn.docbook.org/release/xsl/script/AnchorPosition.js https://cdn.docbook.org/release/xsl/script/PopupWindow.js&lt;/xsl:text&gt;&lt;/xsl:param&gt;
 
 </programlisting>
 </refsynopsisdiv>
@@ -7599,7 +7599,7 @@ parameter will be included in the document.</para>
 
 <refsynopsisdiv>
 <programlisting id="annotation.graphic.open.frag">
-&lt;xsl:param name="annotation.graphic.open"&gt;http://cdn.docbook.org/release/xsl/images/annot-open.png&lt;/xsl:param&gt;
+&lt;xsl:param name="annotation.graphic.open"&gt;https://cdn.docbook.org/release/xsl/images/annot-open.png&lt;/xsl:param&gt;
 </programlisting>
 </refsynopsisdiv>
 
@@ -7624,7 +7624,7 @@ annotations. It may be replaced by a user provided graphic. The size should be a
 <refsynopsisdiv>
 <programlisting id="annotation.graphic.close.frag">
 &lt;xsl:param name="annotation.graphic.close"&gt;
-http://cdn.docbook.org/release/xsl/images/annot-close.png&lt;/xsl:param&gt;
+https://cdn.docbook.org/release/xsl/images/annot-close.png&lt;/xsl:param&gt;
 </programlisting>
 </refsynopsisdiv>
 
