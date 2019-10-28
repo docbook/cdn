@@ -12,5 +12,461 @@
 <para>The following is a list of changes that have been made
         since the 1.79.1 release.</para>
 
+<section xml:id="Vsnapshot_Gentext">
+<title>Gentext</title>
+<para>The following changes have been made to the
+            <filename>gentext</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Norman Walsh: dsssl/dsssl.dsl; xsl/dsssl.xsl; xsl/xsl.xsl</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: locale/en.xml</literal></para><screen><phrase role="commit-message">fix issue #39 change word from hardcoded to gentext</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd; locale/Auditl⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of Gentext changes for snapshot-->
+
+<section xml:id="Vsnapshot_Common">
+<title>Common</title>
+<para>The following changes have been made to the
+            <filename>common</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Norman Walsh: xsl/autoidx-kimber.xsl; xsl/autoidx-kosek.xsl; xsl/charmap.xsl; xsl/common.x⋯</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/common.xsl</literal></para><screen><phrase role="commit-message">fix issue #109 manpages extra white space namespace mismatch</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/entities.ent</literal></para><screen><phrase role="commit-message">fix issue #52 add support for xrefs to inlines</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/autoidx-kimber.xsl; xsl/a⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of Common changes for snapshot-->
+
+<section xml:id="Vsnapshot_FO">
+<title>FO</title>
+<para>The following changes have been made to the
+            <filename>fo</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Norman Walsh: xsl/admon.xsl; xsl/annotations.xsl; xsl/autoidx-kimber.xsl; xsl/autoidx-kose⋯</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>andrewcarver: xsl/pagesetup.xsl</literal></para><screen><phrase role="commit-message">Clean up trivial param-name mismatch</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Tony Graham: xsl/axf.xsl</literal></para><screen><phrase role="commit-message">&lt;axf:document-info name="displaydoctitle" value="true"/&gt; to show PDF <tag>title</tag></phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/inline.xsl</literal></para><screen><phrase role="commit-message">fix bug #133 <tag>Citation</tag> linking to <tag>abbrev</tag> should ignore whitespace</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/admon.xsl; xsl/glossary.xsl; xsl/lists.xsl; xsl/qandaset.xsl</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/pagesetup.xsl</literal></para><screen><phrase role="commit-message">fix bug in issue #103 fix</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/pagesetup.xsl</literal></para><screen><phrase role="commit-message">fix issue #103 change header <tag>table</tag> to be more customizable</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/biblio-iso690.xsl</literal></para><screen><phrase role="commit-message">fix issue #39 change word from hardcoded to gentext</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/formal.xsl</literal></para><screen><phrase role="commit-message">fix issue #105 floatstyle attribute not supported in informal objects</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/autoidx.xsl</literal></para><screen><phrase role="commit-message">fix issue #99 multiple indexes with <parameter>autolink.index.see</parameter> fails with FOP</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/graphics.xsl</literal></para><screen><phrase role="commit-message">fix issue #62 Make use of alternate text set for <tag>mediaobject</tag></phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/lists.xsl; xsl/param.ent; xsl/param.xweb</literal></para><screen><phrase role="commit-message">fix issue #31 missing space after vertical <tag>simplelist</tag></phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/division.xsl</literal></para><screen><phrase role="commit-message">fix issue #89 fo template for set element needs update for DocBook 5.1</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/autoidx.xsl; xsl/index.xsl</literal></para><screen><phrase role="commit-message">fix issue #92 fo indexes not handling scope or type attributes properly</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/autoidx.xsl</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/xref.xsl</literal></para><screen><phrase role="commit-message">fix issue #49 <tag>xref</tag> to <tag>title</tag> in <tag>info</tag> resolves incorrectly</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/ebnf.xsl; xsl/graphics.xsl; xsl/inline.xsl; xsl/math.xsl; xsl/synop.xs⋯</literal></para><screen><phrase role="commit-message">fix issue #52 add support for xrefs to inlines</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl; xsl/auto⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of FO changes for snapshot-->
+
+<section xml:id="Vsnapshot_HTML">
+<title>HTML</title>
+<para>The following changes have been made to the
+            <filename>html</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Norman Walsh: xsl/admon.xsl; xsl/autoidx-kimber.xsl; xsl/autoidx-kosek.xsl; xsl/autoidx-ng⋯</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Jirka Kosek: xsl/autoidx.xsl</literal></para><screen><phrase role="commit-message"><tag>Reference</tag> to <tag>indexterm</tag> location specified by zone is not rendered if there is nested <tag>phrase</tag> (<tag>secondary</tag>, <tag>tertiary</tag>, ...)</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/inline.xsl</literal></para><screen><phrase role="commit-message">fix bug #133 <tag>Citation</tag> linking to <tag>abbrev</tag> should ignore whitespace</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/table.xsl</literal></para><screen><phrase role="commit-message">fix issue #113 <tag>table</tag> <tag>entry</tag> bottom rowsep not created for morerows <tag>entry</tag></phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/biblio-iso690.xsl</literal></para><screen><phrase role="commit-message">fix issue #39 change word from hardcoded to gentext</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/html.xsl; xsl/param.ent; xsl/param.xweb</literal></para><screen><phrase role="commit-message">fix issue #40 Add support for RDFalite attributes</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/graphics.xsl</literal></para><screen><phrase role="commit-message">fix infinite recursion when <tag>inlinemediaobject</tag> in <tag>figure</tag>/<tag>title</tag></phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/autoidx.xsl; xsl/index.xsl</literal></para><screen><phrase role="commit-message">fix HTML indexes for scope and type attribute selection</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/autoidx.xsl; xsl/index.xsl</literal></para><screen><phrase role="commit-message">fix issue #41 Indexes in articles in a set collect <tag>index</tag> entries from other articles in the set (HTML)</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/autoidx.xsl</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/chunk-common.xsl</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/xref.xsl</literal></para><screen><phrase role="commit-message">fix issue #49 <tag>xref</tag> to <tag>title</tag> in <tag>info</tag> resolves incorrectly</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/inline.xsl</literal></para><screen><phrase role="commit-message">fix issue #52 add support for xrefs to inlines</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl; xsl/auto⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of HTML changes for snapshot-->
+
+<section xml:id="Vsnapshot_Manpages">
+<title>Manpages</title>
+<para>The following changes have been made to the
+            <filename>manpages</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Robert Stayton: xsl/lists.xsl</literal></para><screen><phrase role="commit-message">fix bug #145 to support @numeration on <tag>orderedlist</tag></phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/block.xsl; xsl/charmap.groff.xsl; xsl/docbook.xsl; xsl/endnotes.xsl; xsl⋯</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/other.xsl</literal></para><screen><phrase role="commit-message">fix issue #43 Spurious escapes caused by manpage <tag>title</tag> truncation</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/table.xsl; xsl/tbl.xsl</literal></para><screen><phrase role="commit-message">fix issue #59 man: mishandles footnotes in tables</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/utility.xsl</literal></para><screen><phrase role="commit-message">fix issue #83 restart numbering of tables in manpages output in each manpage</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/block.xsl; xsl/b⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of Manpages changes for snapshot-->
+
+<section xml:id="Vsnapshot_Epub">
+<title>Epub</title>
+<para>The following changes have been made to the
+            <filename>epub</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Shlomi Fish: xsl/bin/dbtoepub; xsl/bin/spec/epub_realbook_spec.rb; xsl/bin/spec/epub_regre⋯</literal></para><screen><phrase role="commit-message">Fix insecure tmpdir() creation.</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin/spec/.gitign⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of Epub changes for snapshot-->
+
+<section xml:id="Vsnapshot_HTMLHelp">
+<title>HTMLHelp</title>
+<para>The following changes have been made to the
+            <filename>htmlhelp</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/htmlhelp-common.xsl; xsl/⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of HTMLHelp changes for snapshot-->
+
+<section xml:id="Vsnapshot_Eclipse">
+<title>Eclipse</title>
+<para>The following changes have been made to the
+            <filename>eclipse</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Norman Walsh: xsl/eclipse.xsl; xsl/eclipse3.xsl</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl; xsl/eclipse3⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of Eclipse changes for snapshot-->
+
+<section xml:id="Vsnapshot_JavaHelp">
+<title>JavaHelp</title>
+<para>The following changes have been made to the
+            <filename>javahelp</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Norman Walsh: xsl/javahelp.xsl</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of JavaHelp changes for snapshot-->
+
+<section xml:id="Vsnapshot_Roundtrip">
+<title>Roundtrip</title>
+<para>The following changes have been made to the
+            <filename>roundtrip</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Norman Walsh: xsl/dbk2ooo.xsl; xsl/dbk2pages.xsl; xsl/dbk2wordml.xsl; xsl/dbk2wp.xsl; xsl/⋯</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/blocks2dbk.dtd; xsl⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of Roundtrip changes for snapshot-->
+
+<section xml:id="Vsnapshot_Slides">
+<title>Slides</title>
+<para>The following changes have been made to the
+            <filename>slides</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Norman Walsh: xsl/schema/relaxng/slides.rnc</literal></para><screen><phrase role="commit-message">Fix URI for DocBook schema</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/images/callouts/Makefile</literal></para><screen><phrase role="commit-message">Fix the convert error in the SVG construction</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/fo/param.xweb; xsl/xhtml/param.xweb</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files/s5/index-xox⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of Slides changes for snapshot-->
+
+<section xml:id="Vsnapshot_Website">
+<title>Website</title>
+<para>The following changes have been made to the
+            <filename>website</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Norman Walsh: xsl/param.xweb; xsl/website-targets.xsl; xsl/xbel.xsl</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; RELEASE-NOTES.xml; T⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of Website changes for snapshot-->
+
+<section xml:id="Vsnapshot_Webhelp">
+<title>Webhelp</title>
+<para>The following changes have been made to the
+            <filename>webhelp</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Norman Walsh: xsl/docsrc/readme.xml</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/Makefile.sample; xsl/bu⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of Webhelp changes for snapshot-->
+
+<section xml:id="Vsnapshot_Params">
+<title>Params</title>
+<para>The following changes have been made to the
+            <filename>params</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Norman Walsh: xsl/annotation.graphic.close.xml; xsl/annotation.graphic.open.xml; xsl/annot⋯</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/bibliography.collection.xml; xsl/glossary.collection.xml</literal></para><screen><phrase role="commit-message">fix bug #84 where default URLs pointed to obsolete locations</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/copy.rdfa.attributes.xml</literal></para><screen><phrase role="commit-message">fix issue #40 Add support for RDFalite attributes</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/component.title.properties.xml</literal></para><screen><phrase role="commit-message">fix issue #45 <tag>Title</tag> not centering in namespaced fo stylesheets</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/autolink.index.see.xml</literal></para><screen><phrase role="commit-message">fix issue #99 multiple indexes with <parameter>autolink.index.see</parameter> fails with FOP</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/simplelist.vertical.properties.xml</literal></para><screen><phrase role="commit-message">fix issue #31 missing space after vertical <tag>simplelist</tag></phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/abstract.properties.xml; xsl/abstrac⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of Params changes for snapshot-->
+
+<section xml:id="Vsnapshot_Highlighting">
+<title>Highlighting</title>
+<para>The following changes have been made to the
+            <filename>highlighting</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Norman Walsh: xsl/common.xsl</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/cmake-hl.xml; xsl/common.⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of Highlighting changes for snapshot-->
+
+<section xml:id="Vsnapshot_Profiling">
+<title>Profiling</title>
+<para>The following changes have been made to the
+            <filename>profiling</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/strip-attributes.xsl; xsl/xsl2p⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of Profiling changes for snapshot-->
+
+<section xml:id="Vsnapshot_Lib">
+<title>Lib</title>
+<para>The following changes have been made to the
+            <filename>lib</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Norman Walsh: xsl/lib.xweb</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of Lib changes for snapshot-->
+
+<section xml:id="Vsnapshot_Tools">
+<title>Tools</title>
+<para>The following changes have been made to the
+            <filename>tools</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Norman Walsh: xsl/make/Makefile.DocBook; xsl/make/Makefile.combine; xsl/xsl/build/dblatex-⋯</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/ant-contrib-1.0b⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of Tools changes for snapshot-->
+
+<section xml:id="Vsnapshot_Template">
+<title>Template</title>
+<para>The following changes have been made to the
+            <filename>template</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Norman Walsh: xsl/titlepage.xsl</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of Template changes for snapshot-->
+
+<section xml:id="Vsnapshot_Extensions">
+<title>Extensions</title>
+<para>The following changes have been made to the
+            <filename>extensions</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of Extensions changes for snapshot-->
+
+<section xml:id="Vsnapshot_XSL-Saxon">
+<title>XSL-Saxon</title>
+<para>The following changes have been made to the
+            <filename>xsl-saxon</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Norman Walsh: src/com/nwalsh/saxon/Windows1252.java</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; ⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of XSL-Saxon changes for snapshot-->
+
+<section xml:id="Vsnapshot_XSL-Xalan">
+<title>XSL-Xalan</title>
+<para>The following changes have been made to the
+            <filename>xsl-xalan</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; ⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of XSL-Xalan changes for snapshot-->
+
+<section xml:id="Vsnapshot_XSL-libxslt">
+<title>XSL-libxslt</title>
+<para>The following changes have been made to the
+            <filename>xsl-libxslt</filename> code
+            since the 1.79.1 release.</para>
+<itemizedlist>
+<listitem>
+<para><literal>Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/docbook.py; python/xslt.p⋯</literal></para><screen><phrase role="commit-message">fix issue #63 XHTML <parameter>generate.toc</parameter> no suppress part <tag>toc</tag> <tag>title</tag></phrase></screen>
+</listitem>
+</itemizedlist>
+</section><!--end of XSL-libxslt changes for snapshot-->
+
 </section>
 </article>

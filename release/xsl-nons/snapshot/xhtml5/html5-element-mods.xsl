@@ -335,7 +335,7 @@
 
 <!-- HTML5: converts obsolete HTML attributes to CSS styles -->
 <xsl:template match="*" mode="convert.to.style">
-
+ 
   <xsl:variable name="element" select="local-name(.)"/>
 
   <xsl:variable name="style.from.atts">
@@ -396,6 +396,12 @@
           <xsl:text>px</xsl:text>
           <xsl:text>; </xsl:text>
         </xsl:when>
+
+        <xsl:when test="local-name() = 'bgcolor'">
+          <xsl:text>background-color: </xsl:text>
+          <xsl:value-of select="."/>
+         <xsl:text>; </xsl:text>
+        </xsl:when>
       </xsl:choose>
     </xsl:for-each>
   </xsl:variable>
@@ -425,6 +431,7 @@
         <xsl:when test="local-name(.) = 'border'"/>
         <xsl:when test="local-name(.) = 'cellspacing'"/>
         <xsl:when test="local-name(.) = 'cellpadding'"/>
+        <xsl:when test="local-name(.) = 'bgcolor'"/>
         <xsl:when test="local-name(.) = 'style'"/>
         <xsl:when test="local-name(.) = 'align'"/>
         <xsl:when test="local-name(.) = 'valign'"/>
