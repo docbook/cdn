@@ -53,7 +53,7 @@ release.
   • Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/
     l10n.dtd; locale/Auditl⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 Common
 
@@ -69,14 +69,10 @@ release.
 
     fix issue #109 manpages extra white space namespace mismatch
 
-  • Robert Stayton: xsl/entities.ent
-
-    fix issue #52 add support for xrefs to inlines
-
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
     autoidx-kimber.xsl; xsl/a⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 FO
 
@@ -148,15 +144,10 @@ The following changes have been made to the fo code since the 1.79.1 release.
 
     fix issue #49 xref to title in info resolves incorrectly
 
-  • Robert Stayton: xsl/ebnf.xsl; xsl/graphics.xsl; xsl/inline.xsl; xsl/
-    math.xsl; xsl/synop.xs⋯
-
-    fix issue #52 add support for xrefs to inlines
-
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 HTML
 
@@ -211,14 +202,10 @@ The following changes have been made to the html code since the 1.79.1 release.
 
     fix issue #49 xref to title in info resolves incorrectly
 
-  • Robert Stayton: xsl/inline.xsl
-
-    fix issue #52 add support for xrefs to inlines
-
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 Manpages
 
@@ -249,7 +236,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
     block.xsl; xsl/b⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 Epub
 
@@ -263,7 +250,7 @@ The following changes have been made to the epub code since the 1.79.1 release.
   • Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/
     bin/spec/.gitign⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 HTMLHelp
 
@@ -273,7 +260,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     htmlhelp-common.xsl; xsl/⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 Eclipse
 
@@ -287,7 +274,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     eclipse.xsl; xsl/eclipse3⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 JavaHelp
 
@@ -301,7 +288,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     javahelp.xsl
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 Roundtrip
 
@@ -316,7 +303,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
     blocks2dbk.dtd; xsl⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 Slides
 
@@ -338,7 +325,7 @@ release.
   • Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html;
     files/s5/index-xox⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 Website
 
@@ -352,7 +339,7 @@ release.
   • Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
     RELEASE-NOTES.xml; T⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 Webhelp
 
@@ -366,7 +353,7 @@ release.
   • Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
     Makefile.sample; xsl/bu⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 Params
 
@@ -402,7 +389,7 @@ release.
   • Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/
     abstract.properties.xml; xsl/abstrac⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 Highlighting
 
@@ -416,7 +403,7 @@ release.
   • Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
     cmake-hl.xml; xsl/common.⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 Profiling
 
@@ -426,7 +413,7 @@ release.
   • Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
     strip-attributes.xsl; xsl/xsl2p⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 Lib
 
@@ -438,7 +425,7 @@ The following changes have been made to the lib code since the 1.79.1 release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 Tools
 
@@ -453,7 +440,7 @@ release.
   • Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
     ant-contrib-1.0b⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 Template
 
@@ -466,7 +453,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 Extensions
 
@@ -475,7 +462,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 XSL-Saxon
 
@@ -489,7 +476,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 XSL-Xalan
 
@@ -499,7 +486,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
 XSL-libxslt
 
@@ -509,5 +496,5 @@ release.
   • Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/
     docbook.py; python/xslt.p⋯
 
-    fix issue #63 XHTML generate.toc no suppress part toc title
+    fix issue #52 add support for xrefs to inlines
 
