@@ -53,7 +53,7 @@ release.
   • Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/
     l10n.dtd; locale/Auditl⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 Common
 
@@ -72,11 +72,15 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
     autoidx-kimber.xsl; xsl/a⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 FO
 
 The following changes have been made to the fo code since the 1.79.1 release.
+
+  • Robert Stayton: xsl/pagesetup.xsl
+
+    fix bug #147 precedence does not apply to side regions
 
   • Norman Walsh: xsl/admon.xsl; xsl/annotations.xsl; xsl/autoidx-kimber.xsl;
     xsl/autoidx-kose⋯
@@ -140,14 +144,10 @@ The following changes have been made to the fo code since the 1.79.1 release.
 
     fix issue #54 autoidx does not respect generate.consistent.ids
 
-  • Robert Stayton: xsl/xref.xsl
-
-    fix issue #49 xref to title in info resolves incorrectly
-
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 HTML
 
@@ -194,18 +194,10 @@ The following changes have been made to the html code since the 1.79.1 release.
 
     fix issue #54 autoidx does not respect generate.consistent.ids
 
-  • Robert Stayton: xsl/chunk-common.xsl
-
-    fix issue #35 nested sets not showing in chunked next and prev
-
-  • Robert Stayton: xsl/xref.xsl
-
-    fix issue #49 xref to title in info resolves incorrectly
-
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 Manpages
 
@@ -236,7 +228,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
     block.xsl; xsl/b⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 Epub
 
@@ -250,7 +242,7 @@ The following changes have been made to the epub code since the 1.79.1 release.
   • Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/
     bin/spec/.gitign⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 HTMLHelp
 
@@ -260,7 +252,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     htmlhelp-common.xsl; xsl/⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 Eclipse
 
@@ -274,7 +266,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     eclipse.xsl; xsl/eclipse3⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 JavaHelp
 
@@ -288,7 +280,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     javahelp.xsl
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 Roundtrip
 
@@ -303,7 +295,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
     blocks2dbk.dtd; xsl⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 Slides
 
@@ -325,7 +317,7 @@ release.
   • Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html;
     files/s5/index-xox⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 Website
 
@@ -339,7 +331,7 @@ release.
   • Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
     RELEASE-NOTES.xml; T⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 Webhelp
 
@@ -353,12 +345,16 @@ release.
   • Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
     Makefile.sample; xsl/bu⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 Params
 
 The following changes have been made to the params code since the 1.79.1
 release.
+
+  • Robert Stayton: xsl/side.region.precedence.xml
+
+    fix bug #147 precedence does not apply to side regions
 
   • Norman Walsh: xsl/annotation.graphic.close.xml; xsl/
     annotation.graphic.open.xml; xsl/annot⋯
@@ -389,7 +385,7 @@ release.
   • Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/
     abstract.properties.xml; xsl/abstrac⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 Highlighting
 
@@ -403,7 +399,7 @@ release.
   • Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
     cmake-hl.xml; xsl/common.⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 Profiling
 
@@ -413,7 +409,7 @@ release.
   • Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
     strip-attributes.xsl; xsl/xsl2p⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 Lib
 
@@ -425,7 +421,7 @@ The following changes have been made to the lib code since the 1.79.1 release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 Tools
 
@@ -440,7 +436,7 @@ release.
   • Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
     ant-contrib-1.0b⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 Template
 
@@ -453,7 +449,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 Extensions
 
@@ -462,7 +458,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 XSL-Saxon
 
@@ -476,7 +472,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 XSL-Xalan
 
@@ -486,7 +482,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
 XSL-libxslt
 
@@ -496,5 +492,5 @@ release.
   • Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/
     docbook.py; python/xslt.p⋯
 
-    fix issue #52 add support for xrefs to inlines
+    fix issue #35 nested sets not showing in chunked next and prev
 
