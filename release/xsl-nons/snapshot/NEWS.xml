@@ -25,7 +25,7 @@
 <para><literal>Robert Stayton: locale/en.xml</literal></para><screen><phrase role="commit-message">fix issue #39 change word from hardcoded to gentext</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd; locale/Auditl⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd; locale/Auditl⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Gentext changes for snapshot-->
@@ -43,7 +43,7 @@
 <para><literal>Robert Stayton: xsl/common.xsl</literal></para><screen><phrase role="commit-message">fix issue #109 manpages extra white space namespace mismatch</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/autoidx-kimber.xsl; xsl/a⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/autoidx-kimber.xsl; xsl/a⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Common changes for snapshot-->
@@ -100,10 +100,7 @@
 <para><literal>Robert Stayton: xsl/autoidx.xsl; xsl/index.xsl</literal></para><screen><phrase role="commit-message">fix issue #92 fo indexes not handling scope or type attributes properly</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/autoidx.xsl</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
-</listitem>
-<listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl; xsl/auto⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl; xsl/auto⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of FO changes for snapshot-->
@@ -142,10 +139,7 @@
 <para><literal>Robert Stayton: xsl/autoidx.xsl; xsl/index.xsl</literal></para><screen><phrase role="commit-message">fix issue #41 Indexes in articles in a set collect <tag>index</tag> entries from other articles in the set (HTML)</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/autoidx.xsl</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
-</listitem>
-<listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl; xsl/auto⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl; xsl/auto⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of HTML changes for snapshot-->
@@ -172,7 +166,7 @@
 <para><literal>Robert Stayton: xsl/utility.xsl</literal></para><screen><phrase role="commit-message">fix issue #83 restart numbering of tables in manpages output in each manpage</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/block.xsl; xsl/b⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/block.xsl; xsl/b⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Manpages changes for snapshot-->
@@ -187,7 +181,7 @@
 <para><literal>Shlomi Fish: xsl/bin/dbtoepub; xsl/bin/spec/epub_realbook_spec.rb; xsl/bin/spec/epub_regre⋯</literal></para><screen><phrase role="commit-message">Fix insecure tmpdir() creation.</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin/spec/.gitign⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin/spec/.gitign⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Epub changes for snapshot-->
@@ -199,7 +193,7 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/htmlhelp-common.xsl; xsl/⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/htmlhelp-common.xsl; xsl/⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of HTMLHelp changes for snapshot-->
@@ -214,7 +208,7 @@
 <para><literal>Norman Walsh: xsl/eclipse.xsl; xsl/eclipse3.xsl</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl; xsl/eclipse3⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl; xsl/eclipse3⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Eclipse changes for snapshot-->
@@ -229,7 +223,7 @@
 <para><literal>Norman Walsh: xsl/javahelp.xsl</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of JavaHelp changes for snapshot-->
@@ -244,7 +238,7 @@
 <para><literal>Norman Walsh: xsl/dbk2ooo.xsl; xsl/dbk2pages.xsl; xsl/dbk2wordml.xsl; xsl/dbk2wp.xsl; xsl/⋯</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/blocks2dbk.dtd; xsl⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/blocks2dbk.dtd; xsl⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Roundtrip changes for snapshot-->
@@ -265,7 +259,7 @@
 <para><literal>Norman Walsh: xsl/fo/param.xweb; xsl/xhtml/param.xweb</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files/s5/index-xox⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files/s5/index-xox⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Slides changes for snapshot-->
@@ -280,7 +274,7 @@
 <para><literal>Norman Walsh: xsl/param.xweb; xsl/website-targets.xsl; xsl/xbel.xsl</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; RELEASE-NOTES.xml; T⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; RELEASE-NOTES.xml; T⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Website changes for snapshot-->
@@ -295,7 +289,7 @@
 <para><literal>Norman Walsh: xsl/docsrc/readme.xml</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/Makefile.sample; xsl/bu⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/Makefile.sample; xsl/bu⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Webhelp changes for snapshot-->
@@ -306,6 +300,9 @@
             <filename>params</filename> code
             since the 1.79.1 release.</para>
 <itemizedlist>
+<listitem>
+<para><literal>Robert Stayton: xsl/list.item.spacing.xml</literal></para><screen><phrase role="commit-message">fix issue #137 vertical <parameter>alignment</parameter> of list items</phrase></screen>
+</listitem>
 <listitem>
 <para><literal>Robert Stayton: xsl/side.region.precedence.xml</literal></para><screen><phrase role="commit-message">fix bug #147 precedence does not apply to side regions</phrase></screen>
 </listitem>
@@ -328,7 +325,7 @@
 <para><literal>Robert Stayton: xsl/simplelist.vertical.properties.xml</literal></para><screen><phrase role="commit-message">fix issue #31 missing space after vertical <tag>simplelist</tag></phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/abstract.properties.xml; xsl/abstrac⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/abstract.properties.xml; xsl/abstrac⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Params changes for snapshot-->
@@ -343,7 +340,7 @@
 <para><literal>Norman Walsh: xsl/common.xsl</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/cmake-hl.xml; xsl/common.⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/cmake-hl.xml; xsl/common.⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Highlighting changes for snapshot-->
@@ -355,7 +352,7 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
-<para><literal>Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/strip-attributes.xsl; xsl/xsl2p⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/strip-attributes.xsl; xsl/xsl2p⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Profiling changes for snapshot-->
@@ -370,7 +367,7 @@
 <para><literal>Norman Walsh: xsl/lib.xweb</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Lib changes for snapshot-->
@@ -385,7 +382,7 @@
 <para><literal>Norman Walsh: xsl/make/Makefile.DocBook; xsl/make/Makefile.combine; xsl/xsl/build/dblatex-⋯</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/ant-contrib-1.0b⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/ant-contrib-1.0b⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Tools changes for snapshot-->
@@ -400,7 +397,7 @@
 <para><literal>Norman Walsh: xsl/titlepage.xsl</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Template changes for snapshot-->
@@ -412,7 +409,7 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Extensions changes for snapshot-->
@@ -427,7 +424,7 @@
 <para><literal>Norman Walsh: src/com/nwalsh/saxon/Windows1252.java</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; ⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; ⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of XSL-Saxon changes for snapshot-->
@@ -439,7 +436,7 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
-<para><literal>Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; ⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; ⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of XSL-Xalan changes for snapshot-->
@@ -451,7 +448,7 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
-<para><literal>Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/docbook.py; python/xslt.p⋯</literal></para><screen><phrase role="commit-message">fix issue #35 nested sets not showing in chunked next and prev</phrase></screen>
+<para><literal>Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/docbook.py; python/xslt.p⋯</literal></para><screen><phrase role="commit-message">fix issue #54 autoidx does not respect <parameter>generate.consistent.ids</parameter></phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of XSL-libxslt changes for snapshot-->

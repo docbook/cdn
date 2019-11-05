@@ -53,7 +53,7 @@ release.
   • Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/
     l10n.dtd; locale/Auditl⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 Common
 
@@ -72,7 +72,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
     autoidx-kimber.xsl; xsl/a⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 FO
 
@@ -140,14 +140,10 @@ The following changes have been made to the fo code since the 1.79.1 release.
 
     fix issue #92 fo indexes not handling scope or type attributes properly
 
-  • Robert Stayton: xsl/autoidx.xsl
-
-    fix issue #54 autoidx does not respect generate.consistent.ids
-
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 HTML
 
@@ -190,14 +186,10 @@ The following changes have been made to the html code since the 1.79.1 release.
 
     fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
 
-  • Robert Stayton: xsl/autoidx.xsl
-
-    fix issue #54 autoidx does not respect generate.consistent.ids
-
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 Manpages
 
@@ -228,7 +220,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
     block.xsl; xsl/b⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 Epub
 
@@ -242,7 +234,7 @@ The following changes have been made to the epub code since the 1.79.1 release.
   • Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/
     bin/spec/.gitign⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 HTMLHelp
 
@@ -252,7 +244,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     htmlhelp-common.xsl; xsl/⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 Eclipse
 
@@ -266,7 +258,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     eclipse.xsl; xsl/eclipse3⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 JavaHelp
 
@@ -280,7 +272,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     javahelp.xsl
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 Roundtrip
 
@@ -295,7 +287,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
     blocks2dbk.dtd; xsl⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 Slides
 
@@ -317,7 +309,7 @@ release.
   • Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html;
     files/s5/index-xox⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 Website
 
@@ -331,7 +323,7 @@ release.
   • Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
     RELEASE-NOTES.xml; T⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 Webhelp
 
@@ -345,12 +337,16 @@ release.
   • Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
     Makefile.sample; xsl/bu⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 Params
 
 The following changes have been made to the params code since the 1.79.1
 release.
+
+  • Robert Stayton: xsl/list.item.spacing.xml
+
+    fix issue #137 vertical alignment of list items
 
   • Robert Stayton: xsl/side.region.precedence.xml
 
@@ -385,7 +381,7 @@ release.
   • Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/
     abstract.properties.xml; xsl/abstrac⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 Highlighting
 
@@ -399,7 +395,7 @@ release.
   • Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
     cmake-hl.xml; xsl/common.⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 Profiling
 
@@ -409,7 +405,7 @@ release.
   • Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
     strip-attributes.xsl; xsl/xsl2p⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 Lib
 
@@ -421,7 +417,7 @@ The following changes have been made to the lib code since the 1.79.1 release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 Tools
 
@@ -436,7 +432,7 @@ release.
   • Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
     ant-contrib-1.0b⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 Template
 
@@ -449,7 +445,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 Extensions
 
@@ -458,7 +454,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 XSL-Saxon
 
@@ -472,7 +468,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 XSL-Xalan
 
@@ -482,7 +478,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 
 XSL-libxslt
 
@@ -492,5 +488,5 @@ release.
   • Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/
     docbook.py; python/xslt.p⋯
 
-    fix issue #35 nested sets not showing in chunked next and prev
+    fix issue #54 autoidx does not respect generate.consistent.ids
 

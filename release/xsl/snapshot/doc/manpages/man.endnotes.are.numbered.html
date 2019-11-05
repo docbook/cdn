@@ -2,8 +2,8 @@
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
    <title>man.endnotes.are.numbered</title><link rel="stylesheet" type="text/css" href="../reference.css"><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"><link rel="home" href="../index.html" title="DocBook XSL Stylesheets: Reference&nbsp;Documentation"><link rel="up" href="endnotes.html" title="Endnotes and link handling"><link rel="prev" href="man.endnotes.list.heading.html" title="man.endnotes.list.heading"><link rel="next" href="man.base.url.for.relative.links.html" title="man.base.url.for.relative.links"><link rel="copyright" href="copyright.html" title="License"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">man.endnotes.are.numbered</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="man.endnotes.list.heading.html">Prev</a>&nbsp;</td><th width="60%" align="center">Endnotes and link handling</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="man.base.url.for.relative.links.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="man.endnotes.are.numbered"></a><div class="titlepage"></div><div class="refnamediv"><h2><span class="refentrytitle">man.endnotes.are.numbered</span></h2><p>man.endnotes.are.numbered &#8212; Number endnotes?</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><a name="man.endnotes.are.numbered.frag"></a><pre class="programlisting">
 &lt;xsl:param name="man.endnotes.are.numbered"&gt;1&lt;/xsl:param&gt;
-</pre></div><div class="refsection"><a name="d0e25480"></a><h2>Description</h2><p>If the value of <em class="parameter"><code>man.endnotes.are.numbered</code></em> is
-non-zero (the default), then for each non-empty<a href="#ftn.d0e25489" class="footnote" name="d0e25489"><sup class="footnote">[8]</sup></a> &#8220;notesource&#8221;:
+</pre></div><div class="refsection"><a name="d0e25485"></a><h2>Description</h2><p>If the value of <em class="parameter"><code>man.endnotes.are.numbered</code></em> is
+non-zero (the default), then for each non-empty<a href="#ftn.d0e25494" class="footnote" name="d0e25494"><sup class="footnote">[8]</sup></a> &#8220;notesource&#8221;:
 
 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>a number (in square brackets) is displayed inline after the
     rendered inline contents (if any) of the notesource</p></li><li class="listitem"><p>the contents of the notesource are included in a
@@ -25,7 +25,7 @@ contents (if any) of the notesource are displayed inline.
   before you do so, first take some time to carefully
   consider the information needs and experiences of your users. The
   square-bracketed numbers displayed inline after notesources may seem
-  obstrusive and aesthetically unpleasing<a href="#ftn.d0e25530" class="footnote" name="d0e25530"><sup class="footnote">[9]</sup></a>,
+  obstrusive and aesthetically unpleasing<a href="#ftn.d0e25535" class="footnote" name="d0e25535"><sup class="footnote">[9]</sup></a>,
 
   but in a text-only output format, the
   numbered-notesources/endnotes-listing mechanism is the only
@@ -42,11 +42,11 @@ contents (if any) of the notesource are displayed inline.
 parameter. Empty links are handled simply by displaying their URLs
 inline. Empty links are never auto-numbered.</p><p>If you disable endnotes numbering, you should probably also set
 <em class="parameter"><code>man.font.links</code></em> to an empty value (to
-disable font formatting for links.</p></div><div class="refsection"><a name="d0e25560"></a><h2>Related Parameters</h2><p><em class="parameter"><code>man.endnotes.list.enabled</code></em>,
-    <em class="parameter"><code>man.font.links</code></em></p></div><div class="footnotes"><br><hr style="width:100; text-align:left;margin-left: 0"><div id="ftn.d0e25489" class="footnote"><p><a href="#d0e25489" class="para"><sup class="para">[8] </sup></a>A &#8220;non-empty&#8221; notesource is one that looks like
+disable font formatting for links.</p></div><div class="refsection"><a name="d0e25565"></a><h2>Related Parameters</h2><p><em class="parameter"><code>man.endnotes.list.enabled</code></em>,
+    <em class="parameter"><code>man.font.links</code></em></p></div><div class="footnotes"><br><hr style="width:100; text-align:left;margin-left: 0"><div id="ftn.d0e25494" class="footnote"><p><a href="#d0e25494" class="para"><sup class="para">[8] </sup></a>A &#8220;non-empty&#8221; notesource is one that looks like
 this:</p><pre class="literallayout">  &lt;ulink url="http://snapshots.docbook.org/xsl/doc/manpages/"&gt;manpages&lt;/ulink&gt;</pre><p>
 an &#8220;empty&#8221; notesource is on that looks like this:</p><pre class="literallayout">  &lt;ulink url="http://snapshots.docbook.org/xsl/doc/manpages/"/&gt;</pre><p>
-</p></div><div id="ftn.d0e25530" class="footnote"><p><a href="#d0e25530" class="para"><sup class="para">[9] </sup></a>As far as notesources that are links, ytou might
+</p></div><div id="ftn.d0e25535" class="footnote"><p><a href="#d0e25535" class="para"><sup class="para">[9] </sup></a>As far as notesources that are links, ytou might
   think it would be better to just display URLs for non-empty
   links inline, after their content, rather than displaying
   square-bracketed numbers all over the place. But it's not better. In

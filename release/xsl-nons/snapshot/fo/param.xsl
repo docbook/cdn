@@ -426,6 +426,7 @@ set       toc,title
   <xsl:attribute name="space-before.optimum">1em</xsl:attribute>
   <xsl:attribute name="space-before.minimum">0.8em</xsl:attribute>
   <xsl:attribute name="space-before.maximum">1.2em</xsl:attribute>
+  <xsl:attribute name="relative-align">baseline</xsl:attribute>
 </xsl:attribute-set>
 <xsl:param name="make.index.markup" select="0"/>
 <xsl:param name="make.single.year.ranges" select="0"/>

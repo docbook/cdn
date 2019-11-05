@@ -15924,10 +15924,13 @@ consistent spacing.</para>
   &lt;xsl:attribute name="space-before.optimum"&gt;1em&lt;/xsl:attribute&gt;
   &lt;xsl:attribute name="space-before.minimum"&gt;0.8em&lt;/xsl:attribute&gt;
   &lt;xsl:attribute name="space-before.maximum"&gt;1.2em&lt;/xsl:attribute&gt;
+  &lt;xsl:attribute name="relative-align"&gt;baseline&lt;/xsl:attribute&gt;
 &lt;/xsl:attribute-set&gt;</programlisting>
 </refsynopsisdiv>
 <refsection><info><title>Description</title></info>
 <para>Specify what spacing you want before (and optionally after) each list item.</para>
+<para>The setting for <tag>relative-align</tag> ensures the text aligns vertically with the list mark
+even if an inline image is in the text.</para>
 <para>See also <parameter>list.block.spacing</parameter>, which sets
 the spacing before and after an entire list.</para>
 </refsection>
