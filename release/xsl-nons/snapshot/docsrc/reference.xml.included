@@ -15786,12 +15786,15 @@ in the <literal>l:context name="xref"</literal>.
   &lt;xsl:attribute name="space-before.optimum"&gt;0em&lt;/xsl:attribute&gt;
   &lt;xsl:attribute name="space-before.minimum"&gt;0em&lt;/xsl:attribute&gt;
   &lt;xsl:attribute name="space-before.maximum"&gt;0.2em&lt;/xsl:attribute&gt;
+  &lt;xsl:attribute name="relative-align"&gt;baseline&lt;/xsl:attribute&gt;
 &lt;/xsl:attribute-set&gt;</programlisting>
 </refsynopsisdiv>
 <refsection><info><title>Description</title></info>
 <para>Specify what spacing you want between each list item when
 <tag class="attribute">spacing</tag> is
 <quote><literal>compact</literal></quote>.</para>
+<para>The setting for <tag class="attribute">relative-align</tag> ensures the text aligns vertically with the list mark
+even if an inline image is in the text.</para>
 </refsection>
 </refentry>
 

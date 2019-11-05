@@ -135,6 +135,7 @@
   <xsl:attribute name="space-before.optimum">0em</xsl:attribute>
   <xsl:attribute name="space-before.minimum">0em</xsl:attribute>
   <xsl:attribute name="space-before.maximum">0.2em</xsl:attribute>
+  <xsl:attribute name="relative-align">baseline</xsl:attribute>
 </xsl:attribute-set>
 <xsl:param name="component.label.includes.part.label" select="0"/>
 <xsl:attribute-set name="component.title.properties">
