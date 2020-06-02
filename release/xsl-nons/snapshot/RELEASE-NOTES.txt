@@ -339,7 +339,7 @@ release.
   • Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/
     l10n.dtd; locale/Auditl⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 Common
 
@@ -354,11 +354,15 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
     autoidx-kimber.xsl; xsl/a⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 FO
 
 The following changes have been made to the fo code since the 1.79.1 release.
+
+  • Tony Graham: xsl/axf.xsl
+
+    Add 'user-axf-document-information' named template
 
   • Tony Graham: xsl/axf.xsl
 
@@ -389,15 +393,10 @@ The following changes have been made to the fo code since the 1.79.1 release.
 
     fix bug #133 Citation linking to abbrev should ignore whitespace
 
-  • Robert Stayton: xsl/admon.xsl; xsl/glossary.xsl; xsl/lists.xsl; xsl/
-    qandaset.xsl
-
-    fix bug #108 indexterm before listitem triggers extra blank line
-
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 HTML
 
@@ -427,7 +426,7 @@ The following changes have been made to the html code since the 1.79.1 release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 Manpages
 
@@ -446,7 +445,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
     block.xsl; xsl/b⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 Epub
 
@@ -460,7 +459,7 @@ The following changes have been made to the epub code since the 1.79.1 release.
   • Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/
     bin/spec/.gitign⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 HTMLHelp
 
@@ -470,7 +469,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     htmlhelp-common.xsl; xsl/⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 Eclipse
 
@@ -484,7 +483,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     eclipse.xsl; xsl/eclipse3⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 JavaHelp
 
@@ -498,7 +497,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     javahelp.xsl
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 Roundtrip
 
@@ -513,7 +512,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
     blocks2dbk.dtd; xsl⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 Slides
 
@@ -535,7 +534,7 @@ release.
   • Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html;
     files/s5/index-xox⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 Website
 
@@ -549,7 +548,7 @@ release.
   • Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
     RELEASE-NOTES.xml; T⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 Webhelp
 
@@ -563,7 +562,7 @@ release.
   • Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
     Makefile.sample; xsl/bu⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 Params
 
@@ -590,7 +589,7 @@ release.
   • Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/
     abstract.properties.xml; xsl/abstrac⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 Highlighting
 
@@ -608,7 +607,7 @@ release.
   • Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
     cmake-hl.xml; xsl/common.⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 Profiling
 
@@ -618,7 +617,7 @@ release.
   • Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
     strip-attributes.xsl; xsl/xsl2p⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 Lib
 
@@ -630,7 +629,7 @@ The following changes have been made to the lib code since the 1.79.1 release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 Tools
 
@@ -645,7 +644,7 @@ release.
   • Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
     ant-contrib-1.0b⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 Template
 
@@ -658,7 +657,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 Extensions
 
@@ -667,7 +666,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 XSL-Saxon
 
@@ -681,7 +680,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 XSL-Xalan
 
@@ -691,7 +690,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 XSL-libxslt
 
@@ -701,7 +700,7 @@ release.
   • Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/
     docbook.py; python/xslt.p⋯
 
-    fix bug #84 where default URLs pointed to obsolete locations
+    fix bug #108 indexterm before listitem triggers extra blank line
 
 Release Notes: 1.79.2
 
