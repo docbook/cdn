@@ -49,7 +49,7 @@ release.
   • Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/
     l10n.dtd; locale/Auditl⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 Common
 
@@ -64,7 +64,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
     autoidx-kimber.xsl; xsl/a⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 FO
 
@@ -100,14 +100,10 @@ The following changes have been made to the fo code since the 1.79.1 release.
 
     fix bug in issue #103 fix
 
-  • Robert Stayton: xsl/pagesetup.xsl
-
-    fix issue #103 change header table to be more customizable
-
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 HTML
 
@@ -137,7 +133,7 @@ The following changes have been made to the html code since the 1.79.1 release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 Manpages
 
@@ -156,7 +152,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
     block.xsl; xsl/b⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 Epub
 
@@ -170,7 +166,7 @@ The following changes have been made to the epub code since the 1.79.1 release.
   • Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/
     bin/spec/.gitign⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 HTMLHelp
 
@@ -180,7 +176,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     htmlhelp-common.xsl; xsl/⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 Eclipse
 
@@ -194,7 +190,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     eclipse.xsl; xsl/eclipse3⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 JavaHelp
 
@@ -208,7 +204,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     javahelp.xsl
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 Roundtrip
 
@@ -223,7 +219,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
     blocks2dbk.dtd; xsl⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 Slides
 
@@ -245,7 +241,7 @@ release.
   • Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html;
     files/s5/index-xox⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 Website
 
@@ -259,7 +255,7 @@ release.
   • Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
     RELEASE-NOTES.xml; T⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 Webhelp
 
@@ -273,7 +269,7 @@ release.
   • Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
     Makefile.sample; xsl/bu⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 Params
 
@@ -305,12 +301,16 @@ release.
   • Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/
     abstract.properties.xml; xsl/abstrac⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 Highlighting
 
 The following changes have been made to the highlighting code since the 1.79.1
 release.
+
+  • Tony Graham: xsl/common.xsl
+
+    Extension function instead of Saxon6 <saxon:script>
 
   • Norman Walsh: xsl/common.xsl
 
@@ -319,7 +319,7 @@ release.
   • Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
     cmake-hl.xml; xsl/common.⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 Profiling
 
@@ -329,7 +329,7 @@ release.
   • Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
     strip-attributes.xsl; xsl/xsl2p⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 Lib
 
@@ -341,7 +341,7 @@ The following changes have been made to the lib code since the 1.79.1 release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 Tools
 
@@ -356,7 +356,7 @@ release.
   • Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
     ant-contrib-1.0b⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 Template
 
@@ -369,7 +369,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 Extensions
 
@@ -378,7 +378,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 XSL-Saxon
 
@@ -392,7 +392,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 XSL-Xalan
 
@@ -402,7 +402,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
 XSL-libxslt
 
@@ -412,5 +412,5 @@ release.
   • Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/
     docbook.py; python/xslt.p⋯
 
-    fix issue #109 manpages extra white space namespace mismatch
+    fix issue #103 change header table to be more customizable
 
