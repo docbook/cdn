@@ -1,6 +1,6 @@
 Release Notes for the DocBook XSL Stylesheets
 
-2019-11-05
+2020-06-02
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -336,14 +336,10 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • Robert Stayton: locale/en.xml
-
-    fix issue #39 change word from hardcoded to gentext
-
   • Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/
     l10n.dtd; locale/Auditl⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 Common
 
@@ -362,7 +358,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
     autoidx-kimber.xsl; xsl/a⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 FO
 
@@ -402,38 +398,10 @@ The following changes have been made to the fo code since the 1.79.1 release.
 
     fix issue #103 change header table to be more customizable
 
-  • Robert Stayton: xsl/biblio-iso690.xsl
-
-    fix issue #39 change word from hardcoded to gentext
-
-  • Robert Stayton: xsl/formal.xsl
-
-    fix issue #105 floatstyle attribute not supported in informal objects
-
-  • Robert Stayton: xsl/autoidx.xsl
-
-    fix issue #99 multiple indexes with autolink.index.see fails with FOP
-
-  • Robert Stayton: xsl/graphics.xsl
-
-    fix issue #62 Make use of alternate text set for mediaobject
-
-  • Robert Stayton: xsl/lists.xsl; xsl/param.ent; xsl/param.xweb
-
-    fix issue #31 missing space after vertical simplelist
-
-  • Robert Stayton: xsl/division.xsl
-
-    fix issue #89 fo template for set element needs update for DocBook 5.1
-
-  • Robert Stayton: xsl/autoidx.xsl; xsl/index.xsl
-
-    fix issue #92 fo indexes not handling scope or type attributes properly
-
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 HTML
 
@@ -456,26 +424,10 @@ The following changes have been made to the html code since the 1.79.1 release.
 
     fix issue #113 table entry bottom rowsep not created for morerows entry
 
-  • Robert Stayton: xsl/biblio-iso690.xsl
-
-    fix issue #39 change word from hardcoded to gentext
-
-  • Robert Stayton: xsl/html.xsl; xsl/param.ent; xsl/param.xweb
-
-    fix issue #40 Add support for RDFalite attributes
-
-  • Robert Stayton: xsl/graphics.xsl
-
-    fix infinite recursion when inlinemediaobject in figure/title
-
-  • Robert Stayton: xsl/autoidx.xsl; xsl/index.xsl
-
-    fix HTML indexes for scope and type attribute selection
-
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 Manpages
 
@@ -491,22 +443,10 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • Robert Stayton: xsl/other.xsl
-
-    fix issue #43 Spurious escapes caused by manpage title truncation
-
-  • Robert Stayton: xsl/table.xsl; xsl/tbl.xsl
-
-    fix issue #59 man: mishandles footnotes in tables
-
-  • Robert Stayton: xsl/utility.xsl
-
-    fix issue #83 restart numbering of tables in manpages output in each manpage
-
   • Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
     block.xsl; xsl/b⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 Epub
 
@@ -520,7 +460,7 @@ The following changes have been made to the epub code since the 1.79.1 release.
   • Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/
     bin/spec/.gitign⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 HTMLHelp
 
@@ -530,7 +470,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     htmlhelp-common.xsl; xsl/⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 Eclipse
 
@@ -544,7 +484,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     eclipse.xsl; xsl/eclipse3⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 JavaHelp
 
@@ -558,7 +498,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     javahelp.xsl
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 Roundtrip
 
@@ -573,7 +513,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
     blocks2dbk.dtd; xsl⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 Slides
 
@@ -595,7 +535,7 @@ release.
   • Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html;
     files/s5/index-xox⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 Website
 
@@ -609,7 +549,7 @@ release.
   • Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
     RELEASE-NOTES.xml; T⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 Webhelp
 
@@ -623,7 +563,7 @@ release.
   • Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
     Makefile.sample; xsl/bu⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 Params
 
@@ -652,26 +592,10 @@ release.
 
     fix bug #84 where default URLs pointed to obsolete locations
 
-  • Robert Stayton: xsl/copy.rdfa.attributes.xml
-
-    fix issue #40 Add support for RDFalite attributes
-
-  • Robert Stayton: xsl/component.title.properties.xml
-
-    fix issue #45 Title not centering in namespaced fo stylesheets
-
-  • Robert Stayton: xsl/autolink.index.see.xml
-
-    fix issue #99 multiple indexes with autolink.index.see fails with FOP
-
-  • Robert Stayton: xsl/simplelist.vertical.properties.xml
-
-    fix issue #31 missing space after vertical simplelist
-
   • Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/
     abstract.properties.xml; xsl/abstrac⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 Highlighting
 
@@ -685,7 +609,7 @@ release.
   • Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
     cmake-hl.xml; xsl/common.⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 Profiling
 
@@ -695,7 +619,7 @@ release.
   • Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
     strip-attributes.xsl; xsl/xsl2p⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 Lib
 
@@ -707,7 +631,7 @@ The following changes have been made to the lib code since the 1.79.1 release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 Tools
 
@@ -722,7 +646,7 @@ release.
   • Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
     ant-contrib-1.0b⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 Template
 
@@ -735,7 +659,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 Extensions
 
@@ -744,7 +668,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 XSL-Saxon
 
@@ -758,7 +682,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 XSL-Xalan
 
@@ -768,7 +692,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 XSL-libxslt
 
@@ -778,7 +702,7 @@ release.
   • Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/
     docbook.py; python/xslt.p⋯
 
-    fix issue #41 Indexes in articles in a set collect index entries from other articles in the set (HTML)
+    fix issue #39 change word from hardcoded to gentext
 
 Release Notes: 1.79.2
 
