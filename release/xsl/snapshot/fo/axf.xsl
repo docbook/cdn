@@ -6,6 +6,10 @@
                 xmlns:axf="http://www.antennahouse.com/names/XSL/Extensions"
                 version='1.0'>
 
+<xsl:key name="keywords"
+         match="d:keyword[normalize-space(.) != '']"
+         use="normalize-space(.)" />
+
 <xsl:template name="axf-document-information">
 
     <xsl:variable name="authors" select="(//d:author|//d:editor|
@@ -55,7 +59,10 @@
       <xsl:element name="axf:document-info">
         <xsl:attribute name="name">keywords</xsl:attribute>
         <xsl:attribute name="value">
-          <xsl:for-each select="//d:keyword">
+          <xsl:for-each
+              select="//d:keyword[normalize-space(.) != '']
+                                 [count(. | key('keywords', normalize-space(.))[1]) = 1]">
+            <xsl:sort select="normalize-space(.)"/>
             <xsl:value-of select="normalize-space(.)"/>
             <xsl:if test="position() != last()">
               <xsl:text>, </xsl:text>
