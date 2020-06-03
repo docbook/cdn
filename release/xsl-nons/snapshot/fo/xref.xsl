@@ -350,7 +350,7 @@
   </xsl:apply-templates>
 </xsl:template>
 
-<xsl:template match="author|editor|othercredit|personname" mode="xref-to">
+<xsl:template match="author|editor|othercredit|personname" mode="xref-to" priority="1">
   <xsl:param name="referrer"/>
   <xsl:param name="xrefstyle"/>
   <xsl:param name="verbose" select="1"/>
@@ -543,10 +543,6 @@
       <xsl:apply-templates select="glossterm[1]" mode="xref-to"/>
     </xsl:otherwise>
   </xsl:choose>
-</xsl:template>
-
-<xsl:template match="glossterm|firstterm" mode="xref-to">
-  <xsl:apply-templates mode="no.anchor.mode"/>
 </xsl:template>
 
 <xsl:template match="index" mode="xref-to">

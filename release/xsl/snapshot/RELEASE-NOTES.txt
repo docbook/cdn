@@ -336,20 +336,30 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • NIKITA: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd; locale
-    /Auditlocale.pl⋯
+  • Jirka Kosek: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd;
+    locale/Auditloca⋯
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd;
+    locale/Auditloca⋯
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd;
     locale/Auditloc⋯
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd;
+    locale/Auditloc⋯
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/
     l10n.dtd; locale/Auditl⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 Common
 
@@ -361,24 +371,38 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
-    autoidx-kimber.xsl; xsl/autoidx-k⋯
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
+    autoidx-kimber.xsl; xsl/auto⋯
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
+    autoidx-kimber.xsl; xsl/auto⋯
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
     autoidx-kimber.xsl; xsl/aut⋯
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
+    autoidx-kimber.xsl; xsl/aut⋯
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
     autoidx-kimber.xsl; xsl/a⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 FO
 
 The following changes have been made to the fo code since the 1.79.1 release.
+
+  • Robert Stayton: xsl/xref.xsl
+
+    fix bug #189 to resolve ambiguous matches in mode xref-to
 
   • Tony Graham: xsl/highlight.xsl
 
@@ -409,18 +433,19 @@ The following changes have been made to the fo code since the 1.79.1 release.
 
     Fix http://cdn... to https://cdn...
 
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
+    annotations.xsl; xsl/autoidx⋯
+
+    Merge pull request #136 from NikitaRana07/patch-1
+
   • andrewcarver: xsl/pagesetup.xsl
 
     Clean up trivial param-name mismatch
 
-  • Tony Graham: xsl/axf.xsl
+  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
+    annotations.xsl; xsl/autoidx⋯
 
     <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
-
-  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl;
-    xsl/autoidx-kimb⋯
-
-    Fix typo "seperate"
 
   • Robert Stayton: xsl/inline.xsl
 
@@ -429,16 +454,25 @@ The following changes have been made to the fo code since the 1.79.1 release.
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/autoid⋯
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
+    annotations.xsl; xsl/autoid⋯
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 HTML
 
 The following changes have been made to the html code since the 1.79.1 release.
+
+  • Robert Stayton: xsl/xref.xsl
+
+    fix bug #189 to resolve ambiguous matches in mode xref-to
 
   • Peter Fleck: xsl/graphics.xsl
 
@@ -453,10 +487,15 @@ The following changes have been made to the html code since the 1.79.1 release.
 
     Reference to indexterm location specified by zone is not rendered if there is nested phrase (secondary, tertiary, ...)
 
-  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl;
-    xsl/autoidx-kimb⋯
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
+    annotations.xsl; xsl/autoidx⋯
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
+    annotations.xsl; xsl/autoidx⋯
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Robert Stayton: xsl/inline.xsl
 
@@ -465,16 +504,17 @@ The following changes have been made to the html code since the 1.79.1 release.
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/autoid⋯
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
 
-  • Robert Stayton: xsl/table.xsl
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
+    annotations.xsl; xsl/autoid⋯
 
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 Manpages
 
@@ -490,64 +530,94 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • NIKITA: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
-    block.xsl; xsl/build.xml⋯
+  • Jirka Kosek: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
+    block.xsl; xsl/buil⋯
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
+    block.xsl; xsl/buil⋯
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
     block.xsl; xsl/bui⋯
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
+    block.xsl; xsl/bui⋯
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
     block.xsl; xsl/b⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 Epub
 
 The following changes have been made to the epub code since the 1.79.1 release.
+
+  • Jirka Kosek: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin/
+    spec/.gitignore⋯
+
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin/
+    spec/.gitignore⋯
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Shlomi Fish: xsl/bin/dbtoepub; xsl/bin/spec/epub_realbook_spec.rb; xsl/bin/
     spec/epub_regre⋯
 
     Fix insecure tmpdir() creation.
 
-  • NIKITA: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin/spec
-    /.gitignore; xsl⋯
+  • Norman Walsh: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin
+    /spec/.gitignor⋯
 
-    Fix typo "seperate"
+    Temporarily suspend publication
 
   • Norman Walsh: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin
     /spec/.gitignor⋯
 
-    Turn the log output volume down a notch or two
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/
     bin/spec/.gitign⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 HTMLHelp
 
 The following changes have been made to the htmlhelp code since the 1.79.1
 release.
 
-  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
-    htmlhelp-common.xsl; xsl/htmlhelp⋯
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
+    htmlhelp-common.xsl; xsl/htm⋯
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
+    htmlhelp-common.xsl; xsl/htm⋯
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     htmlhelp-common.xsl; xsl/ht⋯
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
+    htmlhelp-common.xsl; xsl/ht⋯
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     htmlhelp-common.xsl; xsl/⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 Eclipse
 
@@ -558,20 +628,30 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl; xsl/
-    eclipse3.xsl
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl;
+    xsl/eclipse3.xs⋯
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl;
+    xsl/eclipse3.xs⋯
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl;
     xsl/eclipse3.x⋯
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl;
+    xsl/eclipse3.x⋯
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     eclipse.xsl; xsl/eclipse3⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 JavaHelp
 
@@ -582,18 +662,26 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     javahelp.xsl
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 Roundtrip
 
@@ -605,20 +693,30 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
-    blocks2dbk.dtd; xsl/blocks2⋯
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
+    blocks2dbk.dtd; xsl/bl⋯
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
+    blocks2dbk.dtd; xsl/bl⋯
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
     blocks2dbk.dtd; xsl/b⋯
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
+    blocks2dbk.dtd; xsl/b⋯
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
     blocks2dbk.dtd; xsl⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 Slides
 
@@ -637,20 +735,30 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • NIKITA: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files/s5/
-    index-xoxo.html; ⋯
+  • Jirka Kosek: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files/
+    s5/index-xoxo.h⋯
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files/
+    s5/index-xoxo.h⋯
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files
     /s5/index-xoxo.⋯
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files
+    /s5/index-xoxo.⋯
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html;
     files/s5/index-xox⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 Website
 
@@ -661,20 +769,30 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • NIKITA: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
-    RELEASE-NOTES.xml; TODO; VER⋯
+  • Jirka Kosek: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
+    RELEASE-NOTES.xml; TODO⋯
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
+    RELEASE-NOTES.xml; TODO⋯
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
     RELEASE-NOTES.xml; TOD⋯
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
+    RELEASE-NOTES.xml; TOD⋯
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
     RELEASE-NOTES.xml; T⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 Webhelp
 
@@ -685,20 +803,30 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • NIKITA: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/Makefile.sample;
-    xsl/build.prop⋯
+  • Jirka Kosek: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
+    Makefile.sample; xsl/build⋯
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
+    Makefile.sample; xsl/build⋯
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
     Makefile.sample; xsl/buil⋯
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
+    Makefile.sample; xsl/buil⋯
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
     Makefile.sample; xsl/bu⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 Params
 
@@ -722,20 +850,30 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • NIKITA: xsl/abstract.notitle.enabled.xml; xsl/abstract.properties.xml; xsl/
-    abstract.title.⋯
+  • Jirka Kosek: xsl/abstract.notitle.enabled.xml; xsl/abstract.properties.xml;
+    xsl/abstract.t⋯
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: xsl/abstract.notitle.enabled.xml; xsl/abstract.properties.xml;
+    xsl/abstract.t⋯
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: xsl/abstract.notitle.enabled.xml; xsl/
     abstract.properties.xml; xsl/abstract.⋯
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: xsl/abstract.notitle.enabled.xml; xsl/
+    abstract.properties.xml; xsl/abstract.⋯
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/
     abstract.properties.xml; xsl/abstrac⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 Highlighting
 
@@ -750,40 +888,60 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • NIKITA: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/cmake-hl.xml; xsl/
-    common.xsl; xsl⋯
+  • Jirka Kosek: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/cmake-hl.xml;
+    xsl/common.xsl⋯
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/cmake-hl.xml;
+    xsl/common.xsl⋯
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
     cmake-hl.xml; xsl/common.xs⋯
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
+    cmake-hl.xml; xsl/common.xs⋯
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
     cmake-hl.xml; xsl/common.⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 Profiling
 
 The following changes have been made to the profiling code since the 1.79.1
 release.
 
-  • NIKITA: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/strip-attributes.xsl;
-    xsl/xsl2profile.x⋯
+  • Jirka Kosek: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
+    strip-attributes.xsl; xsl/xsl2prof⋯
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
+    strip-attributes.xsl; xsl/xsl2prof⋯
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
     strip-attributes.xsl; xsl/xsl2pro⋯
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
+    strip-attributes.xsl; xsl/xsl2pro⋯
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
     strip-attributes.xsl; xsl/xsl2p⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 Lib
 
@@ -793,17 +951,25 @@ The following changes have been made to the lib code since the 1.79.1 release.
 
     Fix http://cdn... to https://cdn...
 
-  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 Tools
 
@@ -815,20 +981,30 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • NIKITA: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
-    ant-contrib-1.0b3.jar; x⋯
+  • Jirka Kosek: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
+    ant-contrib-1.0b3.j⋯
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
+    ant-contrib-1.0b3.j⋯
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
     ant-contrib-1.0b3.⋯
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
+    ant-contrib-1.0b3.⋯
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
     ant-contrib-1.0b⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 Template
 
@@ -839,34 +1015,50 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • NIKITA: xsl/.gitignore; xsl/titlepage.xsl
+  • Jirka Kosek: xsl/.gitignore; xsl/titlepage.xsl
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: xsl/.gitignore; xsl/titlepage.xsl
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: xsl/.gitignore; xsl/titlepage.xsl
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: xsl/.gitignore; xsl/titlepage.xsl
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 Extensions
 
 The following changes have been made to the extensions code since the 1.79.1
 release.
 
-  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/build.xml
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/build.xml
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 XSL-Saxon
 
@@ -877,60 +1069,90 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • NIKITA: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile;
-    README; VERSION;⋯
+  • Jirka Kosek: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
+    Makefile; README; VER⋯
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
+    Makefile; README; VER⋯
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; VE⋯
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
+    Makefile; README; VE⋯
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 XSL-Xalan
 
 The following changes have been made to the xsl-xalan code since the 1.79.1
 release.
 
-  • NIKITA: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile;
-    README; VERSION;⋯
+  • Jirka Kosek: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
+    Makefile; README; VER⋯
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
+    Makefile; README; VER⋯
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; VE⋯
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
+    Makefile; README; VE⋯
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 XSL-libxslt
 
 The following changes have been made to the xsl-libxslt code since the 1.79.1
 release.
 
-  • NIKITA: python/.gitignore; python/README.LIBXSLT; python/docbook.py; python
-    /xslt.py
+  • Jirka Kosek: python/.gitignore; python/README.LIBXSLT; python/docbook.py;
+    python/xslt.py
 
-    Fix typo "seperate"
+    Merge pull request #136 from NikitaRana07/patch-1
+
+  • Tony Graham: python/.gitignore; python/README.LIBXSLT; python/docbook.py;
+    python/xslt.py
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Norman Walsh: python/.gitignore; python/README.LIBXSLT; python/docbook.py;
     python/xslt.py
 
-    Turn the log output volume down a notch or two
+    Temporarily suspend publication
+
+  • Norman Walsh: python/.gitignore; python/README.LIBXSLT; python/docbook.py;
+    python/xslt.py
+
+    Bump Lucene version to avoid remote code execution exploit
 
   • Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/
     docbook.py; python/xslt.p⋯
 
-    restore previous README until I discuss it with developers
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
 Release Notes: 1.79.2
 
