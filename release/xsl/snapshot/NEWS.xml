@@ -22,7 +22,13 @@
 <para><literal>Norman Walsh: dsssl/dsssl.dsl; xsl/dsssl.xsl; xsl/xsl.xsl</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd; locale/Auditl⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd; locale/Auditlocale.pl⋯</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd; locale/Auditloc⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd; locale/Auditl⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Gentext changes for snapshot-->
@@ -37,7 +43,13 @@
 <para><literal>Norman Walsh: xsl/autoidx-kimber.xsl; xsl/autoidx-kosek.xsl; xsl/charmap.xsl; xsl/common.x⋯</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/autoidx-kimber.xsl; xsl/a⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/autoidx-kimber.xsl; xsl/autoidx-k⋯</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/autoidx-kimber.xsl; xsl/aut⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/autoidx-kimber.xsl; xsl/a⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Common changes for snapshot-->
@@ -48,6 +60,12 @@
             <filename>fo</filename> code
             since the 1.79.1 release.</para>
 <itemizedlist>
+<listitem>
+<para><literal>Tony Graham: xsl/highlight.xsl</literal></para><screen><phrase role="commit-message">Corrected attribute set for 'xslthl:<tag>annotation</tag>'.</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Tony Graham: xsl/highlight.xsl</literal></para><screen><phrase role="commit-message">Use attribute sets to style highlighted text</phrase></screen>
+</listitem>
 <listitem>
 <para><literal>Tony Graham: xsl/axf.xsl</literal></para><screen><phrase role="commit-message">Add 'user-axf-document-information' named template</phrase></screen>
 </listitem>
@@ -70,10 +88,16 @@
 <para><literal>Tony Graham: xsl/axf.xsl</literal></para><screen><phrase role="commit-message">&lt;axf:document-info name="displaydoctitle" value="true"/&gt; to show PDF <tag>title</tag></phrase></screen>
 </listitem>
 <listitem>
+<para><literal>NIKITA: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl; xsl/autoidx-kimb⋯</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
 <para><literal>Robert Stayton: xsl/inline.xsl</literal></para><screen><phrase role="commit-message">fix bug #133 <tag>Citation</tag> linking to <tag>abbrev</tag> should ignore whitespace</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl; xsl/auto⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl; xsl/autoid⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl; xsl/auto⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of FO changes for snapshot-->
@@ -94,13 +118,19 @@
 <para><literal>Jirka Kosek: xsl/autoidx.xsl</literal></para><screen><phrase role="commit-message"><tag>Reference</tag> to <tag>indexterm</tag> location specified by zone is not rendered if there is nested <tag>phrase</tag> (<tag>secondary</tag>, <tag>tertiary</tag>, ...)</phrase></screen>
 </listitem>
 <listitem>
+<para><literal>NIKITA: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl; xsl/autoidx-kimb⋯</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
 <para><literal>Robert Stayton: xsl/inline.xsl</literal></para><screen><phrase role="commit-message">fix bug #133 <tag>Citation</tag> linking to <tag>abbrev</tag> should ignore whitespace</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl; xsl/autoid⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
 </listitem>
 <listitem>
 <para><literal>Robert Stayton: xsl/table.xsl</literal></para><screen><phrase role="commit-message">fix issue #113 <tag>table</tag> <tag>entry</tag> bottom rowsep not created for morerows <tag>entry</tag></phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl; xsl/auto⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl; xsl/auto⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of HTML changes for snapshot-->
@@ -118,7 +148,13 @@
 <para><literal>Norman Walsh: xsl/block.xsl; xsl/charmap.groff.xsl; xsl/docbook.xsl; xsl/endnotes.xsl; xsl⋯</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/block.xsl; xsl/b⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/block.xsl; xsl/build.xml⋯</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/block.xsl; xsl/bui⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/block.xsl; xsl/b⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Manpages changes for snapshot-->
@@ -133,7 +169,13 @@
 <para><literal>Shlomi Fish: xsl/bin/dbtoepub; xsl/bin/spec/epub_realbook_spec.rb; xsl/bin/spec/epub_regre⋯</literal></para><screen><phrase role="commit-message">Fix insecure tmpdir() creation.</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin/spec/.gitign⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin/spec/.gitignore; xsl⋯</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin/spec/.gitignor⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin/spec/.gitign⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Epub changes for snapshot-->
@@ -145,7 +187,13 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/htmlhelp-common.xsl; xsl/⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/htmlhelp-common.xsl; xsl/htmlhelp⋯</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/htmlhelp-common.xsl; xsl/ht⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/htmlhelp-common.xsl; xsl/⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of HTMLHelp changes for snapshot-->
@@ -160,7 +208,13 @@
 <para><literal>Norman Walsh: xsl/eclipse.xsl; xsl/eclipse3.xsl</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl; xsl/eclipse3⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl; xsl/eclipse3.xsl</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl; xsl/eclipse3.x⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl; xsl/eclipse3⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Eclipse changes for snapshot-->
@@ -175,7 +229,13 @@
 <para><literal>Norman Walsh: xsl/javahelp.xsl</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of JavaHelp changes for snapshot-->
@@ -190,7 +250,13 @@
 <para><literal>Norman Walsh: xsl/dbk2ooo.xsl; xsl/dbk2pages.xsl; xsl/dbk2wordml.xsl; xsl/dbk2wp.xsl; xsl/⋯</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/blocks2dbk.dtd; xsl⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/blocks2dbk.dtd; xsl/blocks2⋯</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/blocks2dbk.dtd; xsl/b⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/blocks2dbk.dtd; xsl⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Roundtrip changes for snapshot-->
@@ -211,7 +277,13 @@
 <para><literal>Norman Walsh: xsl/fo/param.xweb; xsl/xhtml/param.xweb</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files/s5/index-xox⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files/s5/index-xoxo.html; ⋯</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files/s5/index-xoxo.⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files/s5/index-xox⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Slides changes for snapshot-->
@@ -226,7 +298,13 @@
 <para><literal>Norman Walsh: xsl/param.xweb; xsl/website-targets.xsl; xsl/xbel.xsl</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; RELEASE-NOTES.xml; T⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; RELEASE-NOTES.xml; TODO; VER⋯</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; RELEASE-NOTES.xml; TOD⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; RELEASE-NOTES.xml; T⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Website changes for snapshot-->
@@ -241,7 +319,13 @@
 <para><literal>Norman Walsh: xsl/docsrc/readme.xml</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/Makefile.sample; xsl/bu⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/Makefile.sample; xsl/build.prop⋯</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/Makefile.sample; xsl/buil⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/Makefile.sample; xsl/bu⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Webhelp changes for snapshot-->
@@ -265,7 +349,13 @@
 <para><literal>Norman Walsh: xsl/annotation.graphic.close.xml; xsl/annotation.graphic.open.xml; xsl/annot⋯</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/abstract.properties.xml; xsl/abstrac⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: xsl/abstract.notitle.enabled.xml; xsl/abstract.properties.xml; xsl/abstract.title.⋯</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/abstract.notitle.enabled.xml; xsl/abstract.properties.xml; xsl/abstract.⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/abstract.properties.xml; xsl/abstrac⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Params changes for snapshot-->
@@ -283,7 +373,13 @@
 <para><literal>Norman Walsh: xsl/common.xsl</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/cmake-hl.xml; xsl/common.⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/cmake-hl.xml; xsl/common.xsl; xsl⋯</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/cmake-hl.xml; xsl/common.xs⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/cmake-hl.xml; xsl/common.⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Highlighting changes for snapshot-->
@@ -295,7 +391,13 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
-<para><literal>Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/strip-attributes.xsl; xsl/xsl2p⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/strip-attributes.xsl; xsl/xsl2profile.x⋯</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/strip-attributes.xsl; xsl/xsl2pro⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/strip-attributes.xsl; xsl/xsl2p⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Profiling changes for snapshot-->
@@ -310,7 +412,13 @@
 <para><literal>Norman Walsh: xsl/lib.xweb</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Lib changes for snapshot-->
@@ -325,7 +433,13 @@
 <para><literal>Norman Walsh: xsl/make/Makefile.DocBook; xsl/make/Makefile.combine; xsl/xsl/build/dblatex-⋯</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/ant-contrib-1.0b⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/ant-contrib-1.0b3.jar; x⋯</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/ant-contrib-1.0b3.⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/ant-contrib-1.0b⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Tools changes for snapshot-->
@@ -340,7 +454,13 @@
 <para><literal>Norman Walsh: xsl/titlepage.xsl</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: xsl/.gitignore; xsl/titlepage.xsl</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/.gitignore; xsl/titlepage.xsl</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Template changes for snapshot-->
@@ -352,7 +472,13 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
-<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: xsl/.gitignore; xsl/Makefile; xsl/build.xml</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of Extensions changes for snapshot-->
@@ -367,7 +493,13 @@
 <para><literal>Norman Walsh: src/com/nwalsh/saxon/Windows1252.java</literal></para><screen><phrase role="commit-message">Fix http://cdn... to https://cdn...</phrase></screen>
 </listitem>
 <listitem>
-<para><literal>Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; ⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; VERSION;⋯</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; VE⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; ⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of XSL-Saxon changes for snapshot-->
@@ -379,7 +511,13 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
-<para><literal>Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; ⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; VERSION;⋯</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; VE⋯</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README; ⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of XSL-Xalan changes for snapshot-->
@@ -391,7 +529,13 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
-<para><literal>Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/docbook.py; python/xslt.p⋯</literal></para><screen><phrase role="commit-message">fix bug #108 <tag>indexterm</tag> before <tag>listitem</tag> triggers extra blank line</phrase></screen>
+<para><literal>NIKITA: python/.gitignore; python/README.LIBXSLT; python/docbook.py; python/xslt.py</literal></para><screen><phrase role="commit-message">Fix typo "seperate"</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Norman Walsh: python/.gitignore; python/README.LIBXSLT; python/docbook.py; python/xslt.py</literal></para><screen><phrase role="commit-message">Turn the log output volume down a notch or two</phrase></screen>
+</listitem>
+<listitem>
+<para><literal>Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/docbook.py; python/xslt.p⋯</literal></para><screen><phrase role="commit-message">restore previous README until I discuss it with developers</phrase></screen>
 </listitem>
 </itemizedlist>
 </section><!--end of XSL-libxslt changes for snapshot-->

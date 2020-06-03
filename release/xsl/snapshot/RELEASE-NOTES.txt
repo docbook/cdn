@@ -1,6 +1,6 @@
 Release Notes for the DocBook XSL Stylesheets
 
-2020-06-02
+2020-06-03
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -336,10 +336,20 @@ release.
 
     Fix http://cdn... to https://cdn...
 
+  • NIKITA: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd; locale
+    /Auditlocale.pl⋯
+
+    Fix typo "seperate"
+
+  • Norman Walsh: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd;
+    locale/Auditloc⋯
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/
     l10n.dtd; locale/Auditl⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 Common
 
@@ -351,14 +361,32 @@ release.
 
     Fix http://cdn... to https://cdn...
 
+  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
+    autoidx-kimber.xsl; xsl/autoidx-k⋯
+
+    Fix typo "seperate"
+
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
+    autoidx-kimber.xsl; xsl/aut⋯
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
     autoidx-kimber.xsl; xsl/a⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 FO
 
 The following changes have been made to the fo code since the 1.79.1 release.
+
+  • Tony Graham: xsl/highlight.xsl
+
+    Corrected attribute set for 'xslthl:annotation'.
+
+  • Tony Graham: xsl/highlight.xsl
+
+    Use attribute sets to style highlighted text
 
   • Tony Graham: xsl/axf.xsl
 
@@ -389,14 +417,24 @@ The following changes have been made to the fo code since the 1.79.1 release.
 
     <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
+  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl;
+    xsl/autoidx-kimb⋯
+
+    Fix typo "seperate"
+
   • Robert Stayton: xsl/inline.xsl
 
     fix bug #133 Citation linking to abbrev should ignore whitespace
 
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
+    annotations.xsl; xsl/autoid⋯
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 HTML
 
@@ -415,9 +453,19 @@ The following changes have been made to the html code since the 1.79.1 release.
 
     Reference to indexterm location specified by zone is not rendered if there is nested phrase (secondary, tertiary, ...)
 
+  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/annotations.xsl;
+    xsl/autoidx-kimb⋯
+
+    Fix typo "seperate"
+
   • Robert Stayton: xsl/inline.xsl
 
     fix bug #133 Citation linking to abbrev should ignore whitespace
+
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
+    annotations.xsl; xsl/autoid⋯
+
+    Turn the log output volume down a notch or two
 
   • Robert Stayton: xsl/table.xsl
 
@@ -426,7 +474,7 @@ The following changes have been made to the html code since the 1.79.1 release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 Manpages
 
@@ -442,10 +490,20 @@ release.
 
     Fix http://cdn... to https://cdn...
 
+  • NIKITA: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
+    block.xsl; xsl/build.xml⋯
+
+    Fix typo "seperate"
+
+  • Norman Walsh: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
+    block.xsl; xsl/bui⋯
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
     block.xsl; xsl/b⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 Epub
 
@@ -456,20 +514,40 @@ The following changes have been made to the epub code since the 1.79.1 release.
 
     Fix insecure tmpdir() creation.
 
+  • NIKITA: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin/spec
+    /.gitignore; xsl⋯
+
+    Fix typo "seperate"
+
+  • Norman Walsh: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin
+    /spec/.gitignor⋯
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/
     bin/spec/.gitign⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 HTMLHelp
 
 The following changes have been made to the htmlhelp code since the 1.79.1
 release.
 
+  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
+    htmlhelp-common.xsl; xsl/htmlhelp⋯
+
+    Fix typo "seperate"
+
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
+    htmlhelp-common.xsl; xsl/ht⋯
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     htmlhelp-common.xsl; xsl/⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 Eclipse
 
@@ -480,10 +558,20 @@ release.
 
     Fix http://cdn... to https://cdn...
 
+  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl; xsl/
+    eclipse3.xsl
+
+    Fix typo "seperate"
+
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl;
+    xsl/eclipse3.x⋯
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     eclipse.xsl; xsl/eclipse3⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 JavaHelp
 
@@ -494,10 +582,18 @@ release.
 
     Fix http://cdn... to https://cdn...
 
+  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
+
+    Fix typo "seperate"
+
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     javahelp.xsl
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 Roundtrip
 
@@ -509,10 +605,20 @@ release.
 
     Fix http://cdn... to https://cdn...
 
+  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
+    blocks2dbk.dtd; xsl/blocks2⋯
+
+    Fix typo "seperate"
+
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
+    blocks2dbk.dtd; xsl/b⋯
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
     blocks2dbk.dtd; xsl⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 Slides
 
@@ -531,10 +637,20 @@ release.
 
     Fix http://cdn... to https://cdn...
 
+  • NIKITA: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files/s5/
+    index-xoxo.html; ⋯
+
+    Fix typo "seperate"
+
+  • Norman Walsh: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files
+    /s5/index-xoxo.⋯
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html;
     files/s5/index-xox⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 Website
 
@@ -545,10 +661,20 @@ release.
 
     Fix http://cdn... to https://cdn...
 
+  • NIKITA: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
+    RELEASE-NOTES.xml; TODO; VER⋯
+
+    Fix typo "seperate"
+
+  • Norman Walsh: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
+    RELEASE-NOTES.xml; TOD⋯
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
     RELEASE-NOTES.xml; T⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 Webhelp
 
@@ -559,10 +685,20 @@ release.
 
     Fix http://cdn... to https://cdn...
 
+  • NIKITA: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/Makefile.sample;
+    xsl/build.prop⋯
+
+    Fix typo "seperate"
+
+  • Norman Walsh: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
+    Makefile.sample; xsl/buil⋯
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
     Makefile.sample; xsl/bu⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 Params
 
@@ -586,10 +722,20 @@ release.
 
     Fix http://cdn... to https://cdn...
 
+  • NIKITA: xsl/abstract.notitle.enabled.xml; xsl/abstract.properties.xml; xsl/
+    abstract.title.⋯
+
+    Fix typo "seperate"
+
+  • Norman Walsh: xsl/abstract.notitle.enabled.xml; xsl/
+    abstract.properties.xml; xsl/abstract.⋯
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/
     abstract.properties.xml; xsl/abstrac⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 Highlighting
 
@@ -604,20 +750,40 @@ release.
 
     Fix http://cdn... to https://cdn...
 
+  • NIKITA: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/cmake-hl.xml; xsl/
+    common.xsl; xsl⋯
+
+    Fix typo "seperate"
+
+  • Norman Walsh: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
+    cmake-hl.xml; xsl/common.xs⋯
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
     cmake-hl.xml; xsl/common.⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 Profiling
 
 The following changes have been made to the profiling code since the 1.79.1
 release.
 
+  • NIKITA: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/strip-attributes.xsl;
+    xsl/xsl2profile.x⋯
+
+    Fix typo "seperate"
+
+  • Norman Walsh: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
+    strip-attributes.xsl; xsl/xsl2pro⋯
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
     strip-attributes.xsl; xsl/xsl2p⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 Lib
 
@@ -627,9 +793,17 @@ The following changes have been made to the lib code since the 1.79.1 release.
 
     Fix http://cdn... to https://cdn...
 
+  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
+
+    Fix typo "seperate"
+
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 Tools
 
@@ -641,10 +815,20 @@ release.
 
     Fix http://cdn... to https://cdn...
 
+  • NIKITA: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
+    ant-contrib-1.0b3.jar; x⋯
+
+    Fix typo "seperate"
+
+  • Norman Walsh: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
+    ant-contrib-1.0b3.⋯
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
     ant-contrib-1.0b⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 Template
 
@@ -655,18 +839,34 @@ release.
 
     Fix http://cdn... to https://cdn...
 
+  • NIKITA: xsl/.gitignore; xsl/titlepage.xsl
+
+    Fix typo "seperate"
+
+  • Norman Walsh: xsl/.gitignore; xsl/titlepage.xsl
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 Extensions
 
 The following changes have been made to the extensions code since the 1.79.1
 release.
 
+  • NIKITA: xsl/.gitignore; xsl/Makefile; xsl/build.xml
+
+    Fix typo "seperate"
+
+  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 XSL-Saxon
 
@@ -677,30 +877,60 @@ release.
 
     Fix http://cdn... to https://cdn...
 
+  • NIKITA: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile;
+    README; VERSION;⋯
+
+    Fix typo "seperate"
+
+  • Norman Walsh: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
+    Makefile; README; VE⋯
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 XSL-Xalan
 
 The following changes have been made to the xsl-xalan code since the 1.79.1
 release.
 
+  • NIKITA: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL; Makefile;
+    README; VERSION;⋯
+
+    Fix typo "seperate"
+
+  • Norman Walsh: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
+    Makefile; README; VE⋯
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 XSL-libxslt
 
 The following changes have been made to the xsl-libxslt code since the 1.79.1
 release.
 
+  • NIKITA: python/.gitignore; python/README.LIBXSLT; python/docbook.py; python
+    /xslt.py
+
+    Fix typo "seperate"
+
+  • Norman Walsh: python/.gitignore; python/README.LIBXSLT; python/docbook.py;
+    python/xslt.py
+
+    Turn the log output volume down a notch or two
+
   • Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/
     docbook.py; python/xslt.p⋯
 
-    fix bug #108 indexterm before listitem triggers extra blank line
+    restore previous README until I discuss it with developers
 
 Release Notes: 1.79.2
 
