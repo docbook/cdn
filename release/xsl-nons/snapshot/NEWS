@@ -49,27 +49,27 @@ release.
   • Jirka Kosek: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd;
     locale/Auditloca⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd;
+  • Jirka Kosek: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd;
     locale/Auditloca⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd;
+    locale/Auditloc⋯
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd;
     locale/Auditloc⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd;
     locale/Auditloc⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/
-    l10n.dtd; locale/Auditl⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 Common
 
@@ -84,31 +84,35 @@ release.
   • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
     autoidx-kimber.xsl; xsl/auto⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
     autoidx-kimber.xsl; xsl/auto⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
+    autoidx-kimber.xsl; xsl/aut⋯
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
     autoidx-kimber.xsl; xsl/aut⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
     autoidx-kimber.xsl; xsl/aut⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
-    autoidx-kimber.xsl; xsl/a⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 FO
 
 The following changes have been made to the fo code since the 1.79.1 release.
+
+  • Robert Stayton: xsl/axf.xsl; xsl/docbook.xsl; xsl/fop1.xsl; xsl/xep.xsl
+
+    keyword metadata now removes duplicates and is sorted
 
   • Robert Stayton: xsl/xref.xsl
 
@@ -146,16 +150,17 @@ The following changes have been made to the fo code since the 1.79.1 release.
   • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/autoidx⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • andrewcarver: xsl/pagesetup.xsl
-
-    Clean up trivial param-name mismatch
-
-  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/autoidx⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
+    annotations.xsl; xsl/autoid⋯
+
+    Clean up trivial param-name mismatch
 
   • Robert Stayton: xsl/inline.xsl
 
@@ -164,17 +169,12 @@ The following changes have been made to the fo code since the 1.79.1 release.
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/autoid⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/autoid⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
-    annotations.xsl; xsl/auto⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 HTML
 
@@ -200,12 +200,17 @@ The following changes have been made to the html code since the 1.79.1 release.
   • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/autoidx⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/autoidx⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
+    annotations.xsl; xsl/autoid⋯
+
+    Clean up trivial param-name mismatch
 
   • Robert Stayton: xsl/inline.xsl
 
@@ -214,17 +219,12 @@ The following changes have been made to the html code since the 1.79.1 release.
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/autoid⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/autoid⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
-    annotations.xsl; xsl/auto⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 Manpages
 
@@ -243,27 +243,27 @@ release.
   • Jirka Kosek: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
     block.xsl; xsl/buil⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
+  • Jirka Kosek: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
     block.xsl; xsl/buil⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
+    block.xsl; xsl/bui⋯
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
     block.xsl; xsl/bui⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
     block.xsl; xsl/bui⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
-    block.xsl; xsl/b⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 Epub
 
@@ -272,12 +272,17 @@ The following changes have been made to the epub code since the 1.79.1 release.
   • Jirka Kosek: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin/
     spec/.gitignore⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin/
+  • Jirka Kosek: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin/
     spec/.gitignore⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin
+    /spec/.gitignor⋯
+
+    Clean up trivial param-name mismatch
 
   • Shlomi Fish: xsl/bin/dbtoepub; xsl/bin/spec/epub_realbook_spec.rb; xsl/bin/
     spec/epub_regre⋯
@@ -287,17 +292,12 @@ The following changes have been made to the epub code since the 1.79.1 release.
   • Norman Walsh: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin
     /spec/.gitignor⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin
     /spec/.gitignor⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/
-    bin/spec/.gitign⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 HTMLHelp
 
@@ -307,27 +307,27 @@ release.
   • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     htmlhelp-common.xsl; xsl/htm⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     htmlhelp-common.xsl; xsl/htm⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
+    htmlhelp-common.xsl; xsl/ht⋯
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     htmlhelp-common.xsl; xsl/ht⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     htmlhelp-common.xsl; xsl/ht⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
-    htmlhelp-common.xsl; xsl/⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 Eclipse
 
@@ -341,27 +341,27 @@ release.
   • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl;
     xsl/eclipse3.xs⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl;
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl;
     xsl/eclipse3.xs⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl;
+    xsl/eclipse3.x⋯
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl;
     xsl/eclipse3.x⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl;
     xsl/eclipse3.x⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
-    eclipse.xsl; xsl/eclipse3⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 JavaHelp
 
@@ -374,24 +374,23 @@ release.
 
   • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
-    javahelp.xsl
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 Roundtrip
 
@@ -406,27 +405,27 @@ release.
   • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
     blocks2dbk.dtd; xsl/bl⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
     blocks2dbk.dtd; xsl/bl⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
+    blocks2dbk.dtd; xsl/b⋯
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
     blocks2dbk.dtd; xsl/b⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
     blocks2dbk.dtd; xsl/b⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
-    blocks2dbk.dtd; xsl⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 Slides
 
@@ -448,27 +447,27 @@ release.
   • Jirka Kosek: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files/
     s5/index-xoxo.h⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files/
+  • Jirka Kosek: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files/
     s5/index-xoxo.h⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files
+    /s5/index-xoxo.⋯
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files
     /s5/index-xoxo.⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files
     /s5/index-xoxo.⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html;
-    files/s5/index-xox⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 Website
 
@@ -482,27 +481,27 @@ release.
   • Jirka Kosek: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
     RELEASE-NOTES.xml; TODO⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
+  • Jirka Kosek: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
     RELEASE-NOTES.xml; TODO⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
+    RELEASE-NOTES.xml; TOD⋯
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
     RELEASE-NOTES.xml; TOD⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
     RELEASE-NOTES.xml; TOD⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
-    RELEASE-NOTES.xml; T⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 Webhelp
 
@@ -516,27 +515,27 @@ release.
   • Jirka Kosek: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
     Makefile.sample; xsl/build⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
+  • Jirka Kosek: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
     Makefile.sample; xsl/build⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
+    Makefile.sample; xsl/buil⋯
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
     Makefile.sample; xsl/buil⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
     Makefile.sample; xsl/buil⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
-    Makefile.sample; xsl/bu⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 Params
 
@@ -563,27 +562,27 @@ release.
   • Jirka Kosek: xsl/abstract.notitle.enabled.xml; xsl/abstract.properties.xml;
     xsl/abstract.t⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: xsl/abstract.notitle.enabled.xml; xsl/abstract.properties.xml;
+  • Jirka Kosek: xsl/abstract.notitle.enabled.xml; xsl/abstract.properties.xml;
     xsl/abstract.t⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: xsl/abstract.notitle.enabled.xml; xsl/
+    abstract.properties.xml; xsl/abstract.⋯
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: xsl/abstract.notitle.enabled.xml; xsl/
     abstract.properties.xml; xsl/abstract.⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: xsl/abstract.notitle.enabled.xml; xsl/
     abstract.properties.xml; xsl/abstract.⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/
-    abstract.properties.xml; xsl/abstrac⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 Highlighting
 
@@ -601,27 +600,27 @@ release.
   • Jirka Kosek: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/cmake-hl.xml;
     xsl/common.xsl⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/cmake-hl.xml;
+  • Jirka Kosek: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/cmake-hl.xml;
     xsl/common.xsl⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
+    cmake-hl.xml; xsl/common.xs⋯
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
     cmake-hl.xml; xsl/common.xs⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
     cmake-hl.xml; xsl/common.xs⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
-    cmake-hl.xml; xsl/common.⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 Profiling
 
@@ -631,27 +630,27 @@ release.
   • Jirka Kosek: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
     strip-attributes.xsl; xsl/xsl2prof⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
+  • Jirka Kosek: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
     strip-attributes.xsl; xsl/xsl2prof⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
+    strip-attributes.xsl; xsl/xsl2pro⋯
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
     strip-attributes.xsl; xsl/xsl2pro⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
     strip-attributes.xsl; xsl/xsl2pro⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
-    strip-attributes.xsl; xsl/xsl2p⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 Lib
 
@@ -663,23 +662,23 @@ The following changes have been made to the lib code since the 1.79.1 release.
 
   • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 Tools
 
@@ -694,27 +693,27 @@ release.
   • Jirka Kosek: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
     ant-contrib-1.0b3.j⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
+  • Jirka Kosek: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
     ant-contrib-1.0b3.j⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
+    ant-contrib-1.0b3.⋯
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
     ant-contrib-1.0b3.⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
     ant-contrib-1.0b3.⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
-    ant-contrib-1.0b⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 Template
 
@@ -727,23 +726,23 @@ release.
 
   • Jirka Kosek: xsl/.gitignore; xsl/titlepage.xsl
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: xsl/.gitignore; xsl/titlepage.xsl
+  • Jirka Kosek: xsl/.gitignore; xsl/titlepage.xsl
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: xsl/.gitignore; xsl/titlepage.xsl
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: xsl/.gitignore; xsl/titlepage.xsl
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: xsl/.gitignore; xsl/titlepage.xsl
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 Extensions
 
@@ -752,23 +751,23 @@ release.
 
   • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: xsl/.gitignore; xsl/Makefile; xsl/build.xml
+  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/build.xml
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 XSL-Saxon
 
@@ -782,27 +781,27 @@ release.
   • Jirka Kosek: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; VER⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
+  • Jirka Kosek: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; VER⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
+    Makefile; README; VE⋯
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; VE⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; VE⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
-    Makefile; README; ⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 XSL-Xalan
 
@@ -812,27 +811,27 @@ release.
   • Jirka Kosek: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; VER⋯
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
+  • Jirka Kosek: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; VER⋯
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
+    Makefile; README; VE⋯
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; VE⋯
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; VE⋯
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
-    Makefile; README; ⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
 XSL-libxslt
 
@@ -842,25 +841,25 @@ release.
   • Jirka Kosek: python/.gitignore; python/README.LIBXSLT; python/docbook.py;
     python/xslt.py
 
-    Merge pull request #136 from NikitaRana07/patch-1
+    Changing JDK to OpenJDK as an attempt to get CI running again
 
-  • Tony Graham: python/.gitignore; python/README.LIBXSLT; python/docbook.py;
+  • Jirka Kosek: python/.gitignore; python/README.LIBXSLT; python/docbook.py;
     python/xslt.py
 
-    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
+    Merge pull request #148 from tgraham-antenna/patch-1
+
+  • andrewcarver: python/.gitignore; python/README.LIBXSLT; python/docbook.py;
+    python/xslt.py
+
+    Clean up trivial param-name mismatch
 
   • Norman Walsh: python/.gitignore; python/README.LIBXSLT; python/docbook.py;
     python/xslt.py
 
-    Temporarily suspend publication
+    Publish releases only on tags; use docbook-ci
 
   • Norman Walsh: python/.gitignore; python/README.LIBXSLT; python/docbook.py;
     python/xslt.py
 
-    Bump Lucene version to avoid remote code execution exploit
-
-  • Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/
-    docbook.py; python/xslt.p⋯
-
-    fix issue #113 table entry bottom rowsep not created for morerows entry
+    Merge pull request #125 from ndw/fix-warning
 
