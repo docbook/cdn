@@ -46,30 +46,14 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • Jirka Kosek: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd;
-    locale/Auditloca⋯
+  • Robert Stayton: locale/en.xml
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
+    fix issue #39 change word from hardcoded to gentext
 
-  • Jirka Kosek: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd;
-    locale/Auditloca⋯
+  • Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/
+    l10n.dtd; locale/Auditl⋯
 
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd;
-    locale/Auditloc⋯
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd;
-    locale/Auditloc⋯
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/l10n.dtd;
-    locale/Auditloc⋯
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 Common
 
@@ -81,30 +65,14 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
-    autoidx-kimber.xsl; xsl/auto⋯
+  • Robert Stayton: xsl/common.xsl
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
+    fix issue #109 manpages extra white space namespace mismatch
 
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
-    autoidx-kimber.xsl; xsl/auto⋯
+  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
+    autoidx-kimber.xsl; xsl/a⋯
 
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
-    autoidx-kimber.xsl; xsl/aut⋯
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
-    autoidx-kimber.xsl; xsl/aut⋯
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
-    autoidx-kimber.xsl; xsl/aut⋯
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 FO
 
@@ -147,34 +115,55 @@ The following changes have been made to the fo code since the 1.79.1 release.
 
     Fix http://cdn... to https://cdn...
 
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
-    annotations.xsl; xsl/autoidx⋯
-
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
-    annotations.xsl; xsl/autoidx⋯
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
-    annotations.xsl; xsl/autoid⋯
+  • andrewcarver: xsl/pagesetup.xsl
 
     Clean up trivial param-name mismatch
+
+  • Tony Graham: xsl/axf.xsl
+
+    <axf:document-info name="displaydoctitle" value="true"/> to show PDF title
 
   • Robert Stayton: xsl/inline.xsl
 
     fix bug #133 Citation linking to abbrev should ignore whitespace
 
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
-    annotations.xsl; xsl/autoid⋯
+  • Robert Stayton: xsl/admon.xsl; xsl/glossary.xsl; xsl/lists.xsl; xsl/
+    qandaset.xsl
 
-    Publish releases only on tags; use docbook-ci
+    fix bug #108 indexterm before listitem triggers extra blank line
 
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
-    annotations.xsl; xsl/autoid⋯
+  • Robert Stayton: xsl/pagesetup.xsl
 
-    Merge pull request #125 from ndw/fix-warning
+    fix bug in issue #103 fix
+
+  • Robert Stayton: xsl/pagesetup.xsl
+
+    fix issue #103 change header table to be more customizable
+
+  • Robert Stayton: xsl/biblio-iso690.xsl
+
+    fix issue #39 change word from hardcoded to gentext
+
+  • Robert Stayton: xsl/formal.xsl
+
+    fix issue #105 floatstyle attribute not supported in informal objects
+
+  • Robert Stayton: xsl/autoidx.xsl
+
+    fix issue #99 multiple indexes with autolink.index.see fails with FOP
+
+  • Robert Stayton: xsl/graphics.xsl
+
+    fix issue #62 Make use of alternate text set for mediaobject
+
+  • Robert Stayton: xsl/lists.xsl; xsl/param.ent; xsl/param.xweb
+
+    fix issue #31 missing space after vertical simplelist
+
+  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
+    annotations.xsl; xsl/auto⋯
+
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 HTML
 
@@ -197,34 +186,30 @@ The following changes have been made to the html code since the 1.79.1 release.
 
     Reference to indexterm location specified by zone is not rendered if there is nested phrase (secondary, tertiary, ...)
 
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
-    annotations.xsl; xsl/autoidx⋯
-
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
-    annotations.xsl; xsl/autoidx⋯
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
-    annotations.xsl; xsl/autoid⋯
-
-    Clean up trivial param-name mismatch
-
   • Robert Stayton: xsl/inline.xsl
 
     fix bug #133 Citation linking to abbrev should ignore whitespace
 
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
-    annotations.xsl; xsl/autoid⋯
+  • Robert Stayton: xsl/table.xsl
 
-    Publish releases only on tags; use docbook-ci
+    fix issue #113 table entry bottom rowsep not created for morerows entry
 
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
-    annotations.xsl; xsl/autoid⋯
+  • Robert Stayton: xsl/biblio-iso690.xsl
 
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #39 change word from hardcoded to gentext
+
+  • Robert Stayton: xsl/html.xsl; xsl/param.ent; xsl/param.xweb
+
+    fix issue #40 Add support for RDFalite attributes
+
+  • Robert Stayton: xsl/graphics.xsl
+
+    fix infinite recursion when inlinemediaobject in figure/title
+
+  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
+    annotations.xsl; xsl/auto⋯
+
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 Manpages
 
@@ -240,94 +225,46 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • Jirka Kosek: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
-    block.xsl; xsl/buil⋯
+  • Robert Stayton: xsl/other.xsl
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
+    fix issue #43 Spurious escapes caused by manpage title truncation
 
-  • Jirka Kosek: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
-    block.xsl; xsl/buil⋯
+  • Robert Stayton: xsl/table.xsl; xsl/tbl.xsl
 
-    Merge pull request #148 from tgraham-antenna/patch-1
+    fix issue #59 man: mishandles footnotes in tables
 
-  • andrewcarver: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
-    block.xsl; xsl/bui⋯
+  • Robert Stayton: xsl/utility.xsl
 
-    Clean up trivial param-name mismatch
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
-  • Norman Walsh: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
-    block.xsl; xsl/bui⋯
+  • Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
+    block.xsl; xsl/b⋯
 
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
-    block.xsl; xsl/bui⋯
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 Epub
 
 The following changes have been made to the epub code since the 1.79.1 release.
-
-  • Jirka Kosek: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin/
-    spec/.gitignore⋯
-
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin/
-    spec/.gitignore⋯
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin
-    /spec/.gitignor⋯
-
-    Clean up trivial param-name mismatch
 
   • Shlomi Fish: xsl/bin/dbtoepub; xsl/bin/spec/epub_realbook_spec.rb; xsl/bin/
     spec/epub_regre⋯
 
     Fix insecure tmpdir() creation.
 
-  • Norman Walsh: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin
-    /spec/.gitignor⋯
+  • Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/
+    bin/spec/.gitign⋯
 
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/bin
-    /spec/.gitignor⋯
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 HTMLHelp
 
 The following changes have been made to the htmlhelp code since the 1.79.1
 release.
 
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
-    htmlhelp-common.xsl; xsl/htm⋯
+  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
+    htmlhelp-common.xsl; xsl/⋯
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
-    htmlhelp-common.xsl; xsl/htm⋯
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
-    htmlhelp-common.xsl; xsl/ht⋯
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
-    htmlhelp-common.xsl; xsl/ht⋯
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
-    htmlhelp-common.xsl; xsl/ht⋯
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 Eclipse
 
@@ -338,30 +275,10 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl;
-    xsl/eclipse3.xs⋯
+  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
+    eclipse.xsl; xsl/eclipse3⋯
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl;
-    xsl/eclipse3.xs⋯
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl;
-    xsl/eclipse3.x⋯
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl;
-    xsl/eclipse3.x⋯
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/eclipse.xsl;
-    xsl/eclipse3.x⋯
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 JavaHelp
 
@@ -372,25 +289,10 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
+  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
+    javahelp.xsl
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/javahelp.xsl
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 Roundtrip
 
@@ -402,30 +304,10 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
-    blocks2dbk.dtd; xsl/bl⋯
+  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
+    blocks2dbk.dtd; xsl⋯
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
-    blocks2dbk.dtd; xsl/bl⋯
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
-    blocks2dbk.dtd; xsl/b⋯
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
-    blocks2dbk.dtd; xsl/b⋯
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
-    blocks2dbk.dtd; xsl/b⋯
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 Slides
 
@@ -444,30 +326,10 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • Jirka Kosek: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files/
-    s5/index-xoxo.h⋯
+  • Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html;
+    files/s5/index-xox⋯
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files/
-    s5/index-xoxo.h⋯
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files
-    /s5/index-xoxo.⋯
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files
-    /s5/index-xoxo.⋯
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: .gitignore; Makefile; VERSION; files/s5/index-osf.html; files
-    /s5/index-xoxo.⋯
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 Website
 
@@ -478,30 +340,10 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • Jirka Kosek: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
-    RELEASE-NOTES.xml; TODO⋯
+  • Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
+    RELEASE-NOTES.xml; T⋯
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
-    RELEASE-NOTES.xml; TODO⋯
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
-    RELEASE-NOTES.xml; TOD⋯
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
-    RELEASE-NOTES.xml; TOD⋯
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
-    RELEASE-NOTES.xml; TOD⋯
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 Webhelp
 
@@ -512,30 +354,10 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • Jirka Kosek: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
-    Makefile.sample; xsl/build⋯
+  • Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
+    Makefile.sample; xsl/bu⋯
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
-    Makefile.sample; xsl/build⋯
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
-    Makefile.sample; xsl/buil⋯
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
-    Makefile.sample; xsl/buil⋯
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
-    Makefile.sample; xsl/buil⋯
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 Params
 
@@ -559,30 +381,31 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • Jirka Kosek: xsl/abstract.notitle.enabled.xml; xsl/abstract.properties.xml;
-    xsl/abstract.t⋯
+  • Robert Stayton: xsl/bibliography.collection.xml; xsl/
+    glossary.collection.xml
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
+    fix bug #84 where default URLs pointed to obsolete locations
 
-  • Jirka Kosek: xsl/abstract.notitle.enabled.xml; xsl/abstract.properties.xml;
-    xsl/abstract.t⋯
+  • Robert Stayton: xsl/copy.rdfa.attributes.xml
 
-    Merge pull request #148 from tgraham-antenna/patch-1
+    fix issue #40 Add support for RDFalite attributes
 
-  • andrewcarver: xsl/abstract.notitle.enabled.xml; xsl/
-    abstract.properties.xml; xsl/abstract.⋯
+  • Robert Stayton: xsl/component.title.properties.xml
 
-    Clean up trivial param-name mismatch
+    fix issue #45 Title not centering in namespaced fo stylesheets
 
-  • Norman Walsh: xsl/abstract.notitle.enabled.xml; xsl/
-    abstract.properties.xml; xsl/abstract.⋯
+  • Robert Stayton: xsl/autolink.index.see.xml
 
-    Publish releases only on tags; use docbook-ci
+    fix issue #99 multiple indexes with autolink.index.see fails with FOP
 
-  • Norman Walsh: xsl/abstract.notitle.enabled.xml; xsl/
-    abstract.properties.xml; xsl/abstract.⋯
+  • Robert Stayton: xsl/simplelist.vertical.properties.xml
 
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #31 missing space after vertical simplelist
+
+  • Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/
+    abstract.properties.xml; xsl/abstrac⋯
+
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 Highlighting
 
@@ -593,64 +416,32 @@ release.
 
     Extension function instead of Saxon6 <saxon:script>
 
+  • Tony Graham: xsl/xquery-hl.xml
+
+    Add XQuery highlighter
+
+  • Tony Graham: xsl/xslthl-config.xml
+
+    Add XQuery highlighter
+
   • Norman Walsh: xsl/common.xsl
 
     Fix http://cdn... to https://cdn...
 
-  • Jirka Kosek: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/cmake-hl.xml;
-    xsl/common.xsl⋯
+  • Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
+    cmake-hl.xml; xsl/common.⋯
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/cmake-hl.xml;
-    xsl/common.xsl⋯
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
-    cmake-hl.xml; xsl/common.xs⋯
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
-    cmake-hl.xml; xsl/common.xs⋯
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
-    cmake-hl.xml; xsl/common.xs⋯
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 Profiling
 
 The following changes have been made to the profiling code since the 1.79.1
 release.
 
-  • Jirka Kosek: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
-    strip-attributes.xsl; xsl/xsl2prof⋯
+  • Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
+    strip-attributes.xsl; xsl/xsl2p⋯
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
-    strip-attributes.xsl; xsl/xsl2prof⋯
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
-    strip-attributes.xsl; xsl/xsl2pro⋯
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
-    strip-attributes.xsl; xsl/xsl2pro⋯
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
-    strip-attributes.xsl; xsl/xsl2pro⋯
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 Lib
 
@@ -660,25 +451,9 @@ The following changes have been made to the lib code since the 1.79.1 release.
 
     Fix http://cdn... to https://cdn...
 
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
+  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 Tools
 
@@ -690,30 +465,10 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • Jirka Kosek: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
-    ant-contrib-1.0b3.j⋯
+  • Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
+    ant-contrib-1.0b⋯
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
-    ant-contrib-1.0b3.j⋯
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
-    ant-contrib-1.0b3.⋯
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
-    ant-contrib-1.0b3.⋯
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
-    ant-contrib-1.0b3.⋯
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 Template
 
@@ -724,50 +479,18 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • Jirka Kosek: xsl/.gitignore; xsl/titlepage.xsl
+  • Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: xsl/.gitignore; xsl/titlepage.xsl
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: xsl/.gitignore; xsl/titlepage.xsl
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: xsl/.gitignore; xsl/titlepage.xsl
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: xsl/.gitignore; xsl/titlepage.xsl
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 Extensions
 
 The following changes have been made to the extensions code since the 1.79.1
 release.
 
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml
+  • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: xsl/.gitignore; xsl/Makefile; xsl/build.xml
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: xsl/.gitignore; xsl/Makefile; xsl/build.xml
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: xsl/.gitignore; xsl/Makefile; xsl/build.xml
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 XSL-Saxon
 
@@ -778,88 +501,28 @@ release.
 
     Fix http://cdn... to https://cdn...
 
-  • Jirka Kosek: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
-    Makefile; README; VER⋯
+  • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
+    Makefile; README; ⋯
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
-    Makefile; README; VER⋯
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
-    Makefile; README; VE⋯
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
-    Makefile; README; VE⋯
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
-    Makefile; README; VE⋯
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 XSL-Xalan
 
 The following changes have been made to the xsl-xalan code since the 1.79.1
 release.
 
-  • Jirka Kosek: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
-    Makefile; README; VER⋯
+  • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
+    Makefile; README; ⋯
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
-    Makefile; README; VER⋯
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
-    Makefile; README; VE⋯
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
-    Makefile; README; VE⋯
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
-    Makefile; README; VE⋯
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
 XSL-libxslt
 
 The following changes have been made to the xsl-libxslt code since the 1.79.1
 release.
 
-  • Jirka Kosek: python/.gitignore; python/README.LIBXSLT; python/docbook.py;
-    python/xslt.py
+  • Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/
+    docbook.py; python/xslt.p⋯
 
-    Changing JDK to OpenJDK as an attempt to get CI running again
-
-  • Jirka Kosek: python/.gitignore; python/README.LIBXSLT; python/docbook.py;
-    python/xslt.py
-
-    Merge pull request #148 from tgraham-antenna/patch-1
-
-  • andrewcarver: python/.gitignore; python/README.LIBXSLT; python/docbook.py;
-    python/xslt.py
-
-    Clean up trivial param-name mismatch
-
-  • Norman Walsh: python/.gitignore; python/README.LIBXSLT; python/docbook.py;
-    python/xslt.py
-
-    Publish releases only on tags; use docbook-ci
-
-  • Norman Walsh: python/.gitignore; python/README.LIBXSLT; python/docbook.py;
-    python/xslt.py
-
-    Merge pull request #125 from ndw/fix-warning
+    fix issue #89 fo template for set element needs update for DocBook 5.1
 
