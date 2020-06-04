@@ -42,6 +42,10 @@ Gentext
 The following changes have been made to the gentext code since the 1.79.1
 release.
 
+  • Robert Stayton: locale/cy.xml; locale/lv.xml; locale/ta.xml; locale/tl.xml
+
+    fix bug #192 incorrect langcodes for locale files
+
   • Norman Walsh: dsssl/dsssl.dsl; xsl/dsssl.xsl; xsl/xsl.xsl
 
     Fix http://cdn... to https://cdn...
@@ -53,7 +57,7 @@ release.
   • Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/
     l10n.dtd; locale/Auditl⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 Common
 
@@ -72,7 +76,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
     autoidx-kimber.xsl; xsl/a⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 FO
 
@@ -163,7 +167,7 @@ The following changes have been made to the fo code since the 1.79.1 release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 HTML
 
@@ -209,7 +213,7 @@ The following changes have been made to the html code since the 1.79.1 release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 Manpages
 
@@ -233,14 +237,10 @@ release.
 
     fix issue #59 man: mishandles footnotes in tables
 
-  • Robert Stayton: xsl/utility.xsl
-
-    fix issue #83 restart numbering of tables in manpages output in each manpage
-
   • Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
     block.xsl; xsl/b⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 Epub
 
@@ -254,7 +254,7 @@ The following changes have been made to the epub code since the 1.79.1 release.
   • Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/
     bin/spec/.gitign⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 HTMLHelp
 
@@ -264,7 +264,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     htmlhelp-common.xsl; xsl/⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 Eclipse
 
@@ -278,7 +278,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     eclipse.xsl; xsl/eclipse3⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 JavaHelp
 
@@ -292,7 +292,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     javahelp.xsl
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 Roundtrip
 
@@ -307,7 +307,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
     blocks2dbk.dtd; xsl⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 Slides
 
@@ -329,7 +329,7 @@ release.
   • Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html;
     files/s5/index-xox⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 Website
 
@@ -343,7 +343,7 @@ release.
   • Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
     RELEASE-NOTES.xml; T⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 Webhelp
 
@@ -357,7 +357,7 @@ release.
   • Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
     Makefile.sample; xsl/bu⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 Params
 
@@ -405,7 +405,7 @@ release.
   • Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/
     abstract.properties.xml; xsl/abstrac⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 Highlighting
 
@@ -431,7 +431,7 @@ release.
   • Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
     cmake-hl.xml; xsl/common.⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 Profiling
 
@@ -441,7 +441,7 @@ release.
   • Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
     strip-attributes.xsl; xsl/xsl2p⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 Lib
 
@@ -453,7 +453,7 @@ The following changes have been made to the lib code since the 1.79.1 release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 Tools
 
@@ -468,7 +468,7 @@ release.
   • Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
     ant-contrib-1.0b⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 Template
 
@@ -481,7 +481,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 Extensions
 
@@ -490,7 +490,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 XSL-Saxon
 
@@ -504,7 +504,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 XSL-Xalan
 
@@ -514,7 +514,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 
 XSL-libxslt
 
@@ -524,5 +524,5 @@ release.
   • Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/
     docbook.py; python/xslt.p⋯
 
-    fix issue #89 fo template for set element needs update for DocBook 5.1
+    fix issue #83 restart numbering of tables in manpages output in each manpage
 

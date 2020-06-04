@@ -608,7 +608,7 @@
 <l:template name="Sat" text="சனி"/>
 <l:template name="Sun" text="ஞாயி"/>
 </l:context>
-<l:context name="htmlhelp"><l:template name="langcode" text="0x0049 Tamil"/>
+<l:context name="htmlhelp"><l:template name="langcode" text="0x0449 Tamil"/>
 </l:context>
 <l:context name="index"><l:template name="term-separator" text=", "/>
 <l:template name="number-separator" text=", "/>

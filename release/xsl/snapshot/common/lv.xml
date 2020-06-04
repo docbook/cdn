@@ -608,7 +608,7 @@
 <l:template name="Sat" text="Se"/>
 <l:template name="Sun" text="Sv"/>
 </l:context>
-<l:context name="htmlhelp"><l:template name="langcode" text="0x0427 Latvian"/>
+<l:context name="htmlhelp"><l:template name="langcode" text="0x0426 Latvian"/>
 </l:context>
 <l:context name="index"><l:template name="term-separator" text=", "/>
 <l:template name="number-separator" text=", "/>

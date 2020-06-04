@@ -608,7 +608,7 @@
 <l:template name="Sat" text="Sab"/>
 <l:template name="Sun" text="Lin"/>
 </l:context>
-<l:context name="htmlhelp"><l:template name="langcode" text="0x0409 Tagalog (PHILIPPINES)"/>
+<l:context name="htmlhelp"><l:template name="langcode" text="0x0464 Tagalog (PHILIPPINES)"/>
 </l:context>
 <l:context name="index"><l:template name="term-separator" text=", " lang="en"/>
 <l:template name="number-separator" text=", " lang="en"/>

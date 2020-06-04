@@ -608,7 +608,7 @@
 <l:template name="Sat" text="Sadwrn"/>
 <l:template name="Sun" text="Sul"/>
 </l:context>
-<l:context name="htmlhelp"><l:template name="langcode" text="0x0409 Welsh (UNITED KINGDOM)"/>
+<l:context name="htmlhelp"><l:template name="langcode" text="0x0452 Welsh (UNITED KINGDOM)"/>
 </l:context>
 <l:context name="index"><l:template name="term-separator" text=", " lang="en"/>
 <l:template name="number-separator" text=", " lang="en"/>
