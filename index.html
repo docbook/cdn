@@ -3,44 +3,50 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Welcome to cdn.docbook.org</title>
-    <link rel="stylesheet" type="text/css" href="xpl/home.css" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
   </head>
   <body>
     <h1>Welcome to cdn.docbook.org</h1>
 
-    <p>This site hosts the DocBook stylesheets and schema files</p>
+    <p>This site hosts the DocBook stylesheets and schema files.</p>
 
-    <div>
+    <section>
       <h2>DocBook schema</h2>
       <ul>
         <li>Online content is in <a href="schema/">schema/</a>.</li>
       </ul>
-    </div>
+    </section>
 
-    <div>
-      <h2>DocBook XSL (for DocBook versions 5+)</h2>
-      <ul>
-        <li>Packages are <a href="https://github.com/docbook/xslt10-stylesheets/releases">on GitHub</a>.</li>
-        <li>Online content is in <a href="release/xsl/">release/xsl/</a>.</li>
-      </ul>
-    </div>
+    <section>
+      <h2>DocBook XSL (XSLT 1.0 stylesheets)</h2>
+      <p>The <em>DocBook XSL</em> stylesheets come in two flavors, one
+      to process DocBook 5.x and later (DocBook in a namespace) and one to
+      process DocBook 4.x and earlier (DocBook not in a namespace).</p>
 
-    <div>
-      <h2>DocBook XSL (for DocBook versions &lt; 5)</h2>
-      <ul>
-        <li>Packages are <a href="https://github.com/docbook/xslt10-stylesheets/releases">on GitHub</a>.</li>
-        <li>Online content is in <a href="release/xsl-nons/">release/xsl-nons/</a>.</li>
-      </ul>
-    </div>
+      <div>
+        <h3>For DocBook 5.x</h3>
+        <ul>
+          <li>Packages are <a href="https://github.com/docbook/xslt10-stylesheets/releases">on GitHub</a>.</li>
+          <li>Online content is in <a href="release/xsl/">release/xsl/</a>.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>For DocBook 4.x and earlier</h3>
+        <ul>
+          <li>Packages are <a href="https://github.com/docbook/xslt10-stylesheets/releases">on GitHub</a>.</li>
+          <li>Online content is in <a href="release/xsl-nons/">release/xsl-nons/</a>.</li>
+        </ul>
+      </div>
+    </section>
 
-    <div>
-      <h2>DocBook XSLT 2.0</h2>
+    <section>
+      <h2>DocBook XSLT 2.0 (XSLT 2.0 stylesheets)</h2>
       <ul>
         <li>Packages are <a href="https://github.com/docbook/xslt20-stylesheets/releases">on GitHub</a> or <a href="https://search.maven.org/search?q=a:docbook-xslt2">in Maven</a>.</li>
         <li>Online content is in <a href="release/xsl20/">release/xsl20/</a> (sic).</li>
         <li>Online resources (CSS, JavaScript, etc.) are in
         <a href="resources/">resources/</a>.</li>
       </ul>
-    </div>
+    </section>
   </body>
 </html>
