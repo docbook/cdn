@@ -1,3 +1,0 @@
-<watcher>
-  <action match=".*\.xsl$">calabash -isource=/projects/docbook/xslt20/tests/book.xml -oresult=/projects/docbook/xslt20/tests/out.html /projects/docbook/xslt20/xslt/base/pipelines/docbook.xpl</action>
-</watcher>
