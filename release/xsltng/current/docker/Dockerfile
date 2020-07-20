@@ -27,7 +27,7 @@ RUN mvn org.apache.maven.plugins:maven-dependency-plugin:2.4:get \
 RUN mvn org.apache.maven.plugins:maven-dependency-plugin:2.4:get \
         -Dartifact=org.slf4j:slf4j-simple:1.7.25
 
-ARG VERSION=0.9.14
+ARG VERSION=0.9.15
 
 WORKDIR /opt
 ADD https://github.com/docbook/xslTNG/releases/download/${VERSION}/docbook-xslTNG-${VERSION}.zip .
