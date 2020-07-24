@@ -3,42 +3,17 @@
                 xmlns:dbe="http://docbook.org/ns/docbook/errors"
                 xmlns:f="http://docbook.org/ns/docbook/functions"
                 xmlns:fp="http://docbook.org/ns/docbook/functions/private"
+                xmlns:m="http://docbook.org/ns/docbook/modes"
                 xmlns:map="http://www.w3.org/2005/xpath-functions/map"
                 xmlns:v="http://docbook.org/ns/docbook/variables"
                 xmlns:vp="http://docbook.org/ns/docbook/variables/private"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                exclude-result-prefixes="dbe f fp map v vp xs"
+                default-mode="m:profile"
+                exclude-result-prefixes="dbe f fp m map v vp xs"
                 version="3.0">
 
-<xsl:import href="../modules/errors.xsl"/>
-
-<xsl:variable name="v:debug" as="xs:string*" static="yes"
-              select="('dynamic-profile-suppress')"/>
-
-<xsl:param name="dynamic-profiles" select="true()"/>
-<xsl:param name="dynamic-profile-error" select="'ignore'"/>
-<xsl:param name="dynamic-profile-variables"
-           select="map{QName('','thingy'): 'enabled',
-                       QName('','istrue'): true(),
-                       QName('','isfalse'): false(),
-                       QName('','isempty'): (),
-                       QName('','isthree'): 3}"/>
-
-<xsl:param name="profile-separator" select="';'"/>
-<xsl:param name="profile-lang" select="''"/>
-<xsl:param name="profile-revisionflag" select="''"/>
-<xsl:param name="profile-role" select="''"/>
-<xsl:param name="profile-arch" select="''"/>
-<xsl:param name="profile-audience" select="''"/>
-<xsl:param name="profile-condition" select="''"/>
-<xsl:param name="profile-conformance" select="''"/>
-<xsl:param name="profile-os" select="''"/>
-<xsl:param name="profile-outputformat" select="''"/>
-<xsl:param name="profile-revision" select="''"/>
-<xsl:param name="profile-security" select="''"/>
-<xsl:param name="profile-userlevel" select="''"/>
-<xsl:param name="profile-vendor" select="''"/>
-<xsl:param name="profile-wordsize" select="''"/>
+<xsl:variable name="v:dynamic-profile-variables" as="map(xs:QName, item()*)"
+              select="$vp:dynamic-parameters"/>
 
 <xsl:variable name="vp:strmatch" select="'^(\$\P{Zs}+)\s*=\s*(.+)$'"/>
 <xsl:variable name="vp:varmatch" select="'^(\$\P{Zs}+)$'"/>
@@ -48,54 +23,54 @@
 
 <!-- This is a slightly odd way to initialize the list, but
      it means the initial value is readable in the guide -->
-<xsl:variable name="v:profile-value-map" as="map(xs:QName, xs:string*)">
+<xsl:variable name="vp:profile-value-map" as="map(xs:QName, xs:string*)">
   <xsl:map>
     <xsl:map-entry key="xs:QName('xml:lang')"
-                   select="f:profile-tokens($profile-lang)"/>
+                   select="fp:profile-tokens($profile-lang)"/>
     <xsl:map-entry key="QName('','revisionflag')"
-                   select="f:profile-tokens($profile-revisionflag)"/>
+                   select="fp:profile-tokens($profile-revisionflag)"/>
     <xsl:map-entry key="QName('','role')"
-                   select="f:profile-tokens($profile-role)"/>
+                   select="fp:profile-tokens($profile-role)"/>
     <xsl:map-entry key="QName('','arch')"
-                   select="f:profile-tokens($profile-arch)"/>
+                   select="fp:profile-tokens($profile-arch)"/>
     <xsl:map-entry key="QName('','audience')"
-                   select="f:profile-tokens($profile-audience)"/>
+                   select="fp:profile-tokens($profile-audience)"/>
     <xsl:map-entry key="QName('','condition')"
-                   select="f:profile-tokens($profile-condition)"/>
+                   select="fp:profile-tokens($profile-condition)"/>
     <xsl:map-entry key="QName('','conformance')"
-                   select="f:profile-tokens($profile-conformance)"/>
+                   select="fp:profile-tokens($profile-conformance)"/>
     <xsl:map-entry key="QName('','os')"
-                   select="f:profile-tokens($profile-os)"/>
+                   select="fp:profile-tokens($profile-os)"/>
     <xsl:map-entry key="QName('','outputformat')"
-                   select="f:profile-tokens($profile-outputformat)"/>
+                   select="fp:profile-tokens($profile-outputformat)"/>
     <xsl:map-entry key="QName('','revision')"
-                   select="f:profile-tokens($profile-revision)"/>
+                   select="fp:profile-tokens($profile-revision)"/>
     <xsl:map-entry key="QName('','security')"
-                   select="f:profile-tokens($profile-security)"/>
+                   select="fp:profile-tokens($profile-security)"/>
     <xsl:map-entry key="QName('','userlevel')"
-                   select="f:profile-tokens($profile-userlevel)"/>
+                   select="fp:profile-tokens($profile-userlevel)"/>
     <xsl:map-entry key="QName('','vendor')"
-                   select="f:profile-tokens($profile-vendor)"/>
+                   select="fp:profile-tokens($profile-vendor)"/>
     <xsl:map-entry key="QName('','wordsize')"
-                   select="f:profile-tokens($profile-wordsize)"/>
+                   select="fp:profile-tokens($profile-wordsize)"/>
   </xsl:map>
 </xsl:variable>
 
-<xsl:variable name="vp:profile-attributes" select="map:keys($v:profile-value-map)"/>
+<xsl:variable name="vp:profile-attributes" select="map:keys($vp:profile-value-map)"/>
 
 <xsl:template match="/" as="document-node()">
-  <!-- If all the v:profile-value-map values are the empty string,
+  <!-- If all the vp:profile-value-map values are the empty string,
        there's no actual ("static") profiling to be done. -->
   <xsl:variable name="has-profile" as="xs:string*">
-    <xsl:for-each select="map:keys($v:profile-value-map)">
-      <xsl:sequence select="map:get($v:profile-value-map, .)"/>
+    <xsl:for-each select="map:keys($vp:profile-value-map)">
+      <xsl:sequence select="map:get($vp:profile-value-map, .)"/>
     </xsl:for-each>
   </xsl:variable>
 
   <xsl:choose>
     <!-- In the really common case when there's no profiling
          to be done, just return the document unchanged. -->
-    <xsl:when test="not($dynamic-profiles) and empty($has-profile)">
+    <xsl:when test="not(f:is-true($dynamic-profiles)) and empty($has-profile)">
       <xsl:sequence select="."/>
     </xsl:when>
     <xsl:otherwise>
@@ -121,7 +96,7 @@
   <xsl:copy/>
 </xsl:template>
 
-<xsl:function name="f:profile-tokens" as="xs:string*">
+<xsl:function name="fp:profile-tokens" as="xs:string*">
   <xsl:param name="profile" as="xs:string*"/>
 
   <xsl:for-each select="tokenize($profile, $profile-separator)">
@@ -151,8 +126,8 @@
     <xsl:map>
       <xsl:for-each select="$context/@*[node-name(.) = $vp:profile-attributes]">
         <xsl:variable name="name" select="node-name(.)"/>
-        <xsl:variable name="value" select="map:get($v:profile-value-map, $name)"/>
-        <xsl:if test="$dynamic-profiles or exists($value)">
+        <xsl:variable name="value" select="map:get($vp:profile-value-map, $name)"/>
+        <xsl:if test="f:is-true($dynamic-profiles) or exists($value)">
           <xsl:map-entry key="$name" select="(., $value)"/>
         </xsl:if>
       </xsl:for-each>
@@ -170,13 +145,16 @@
                         select="string(map:get($profile, .)[1])"/>
           <xsl:variable name="tokens"
                         select="subsequence(map:get($profile, .), 2)"/>
-          <xsl:if test="exists($tokens) and not($tokens = f:profile-tokens($value))">
+          <xsl:variable name="ptokens"
+                        select="fp:profile-tokens($value)"/>
+          <xsl:if test="exists($tokens) and exists($ptokens)
+                        and not($tokens = $ptokens)">
             <xsl:message use-when="'profile-suppress' = $v:debug">
               <xsl:text>Suppressed </xsl:text>
               <xsl:sequence select="if ($context/@xml:id)
                                     then node-name($context) || '/' || $context/@xml:id
                                     else node-name($context)"/>
-              <xsl:sequence select="':', $tokens, '!=', f:profile-tokens($value)"/>
+              <xsl:sequence select="':', $tokens, '!=', fp:profile-tokens($value)"/>
             </xsl:message>
             <xsl:sequence select="."/>
           </xsl:if>
@@ -186,7 +164,7 @@
         <xsl:when test="exists($suppress)">
           <xsl:sequence select="true()"/>
         </xsl:when>
-        <xsl:when test="not($dynamic-profiles)">
+        <xsl:when test="not(f:is-true($dynamic-profiles))">
           <xsl:sequence select="false()"/>
         </xsl:when>
         <xsl:otherwise>
@@ -273,7 +251,7 @@
       <xsl:evaluate xpath="$variable"
                     context-item="$context"
                     namespace-context="$context"
-                    with-params="$dynamic-profile-variables"/>
+                    with-params="$v:dynamic-profile-variables"/>
     </xsl:variable>
     <xsl:choose>
       <xsl:when test="exists($expected-value)">
