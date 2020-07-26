@@ -1,4 +1,4 @@
-DocBook xslTNG version 1.0.0
+DocBook xslTNG version 1.1.0
 
 This directory contains an experimental Dockerfile. Using docker
 allows you to isolate the environment necessary to run the DocBook
