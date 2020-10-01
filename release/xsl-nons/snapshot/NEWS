@@ -42,6 +42,10 @@ Gentext
 The following changes have been made to the gentext code since the 1.79.1
 release.
 
+  • Petter Reinholdtsen: locale/nb.xml; locale/nn.xml
+
+    Corrected and updated nb and nn locales
+
   • Robert Stayton: locale/cy.xml; locale/lv.xml; locale/ta.xml; locale/tl.xml
 
     fix bug #192 incorrect langcodes for locale files
@@ -398,10 +402,6 @@ release.
   • Robert Stayton: xsl/autolink.index.see.xml
 
     fix issue #99 multiple indexes with autolink.index.see fails with FOP
-
-  • Robert Stayton: xsl/simplelist.vertical.properties.xml
-
-    fix issue #31 missing space after vertical simplelist
 
   • Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/
     abstract.properties.xml; xsl/abstrac⋯

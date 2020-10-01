@@ -19,6 +19,9 @@
             since the 1.79.1 release.</para>
 <itemizedlist>
 <listitem>
+<para><literal>Petter Reinholdtsen: locale/nb.xml; locale/nn.xml</literal></para><screen><phrase role="commit-message">Corrected and updated nb and nn locales</phrase></screen>
+</listitem>
+<listitem>
 <para><literal>Robert Stayton: locale/cy.xml; locale/lv.xml; locale/ta.xml; locale/tl.xml</literal></para><screen><phrase role="commit-message">fix bug #192 incorrect langcodes for locale files</phrase></screen>
 </listitem>
 <listitem>
@@ -338,9 +341,6 @@
 </listitem>
 <listitem>
 <para><literal>Robert Stayton: xsl/autolink.index.see.xml</literal></para><screen><phrase role="commit-message">fix issue #99 multiple indexes with <parameter>autolink.index.see</parameter> fails with FOP</phrase></screen>
-</listitem>
-<listitem>
-<para><literal>Robert Stayton: xsl/simplelist.vertical.properties.xml</literal></para><screen><phrase role="commit-message">fix issue #31 missing space after vertical <tag>simplelist</tag></phrase></screen>
 </listitem>
 <listitem>
 <para><literal>Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/abstract.properties.xml; xsl/abstrac⋯</literal></para><screen><phrase role="commit-message">fix issue #31 missing space after vertical <tag>simplelist</tag></phrase></screen>

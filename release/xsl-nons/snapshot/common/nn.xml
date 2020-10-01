@@ -27,42 +27,42 @@
 
 
 <l:gentext key="Abstract" text="Samandrag"/>
-<l:gentext key="abstract" text="Samandrag"/>
-<l:gentext key="Acknowledgements" text="Acknowledgements" lang="en"/>
-<l:gentext key="acknowledgements" text="Acknowledgements" lang="en"/>
-<l:gentext key="Answer" text="Svar"/>
-<l:gentext key="answer" text="svar"/>
+<l:gentext key="abstract" text="samandrag"/>
+<l:gentext key="Acknowledgements" text="Takk til"/>
+<l:gentext key="acknowledgements" text="takk til"/>
+<l:gentext key="Answer" text="Svar:"/>
+<l:gentext key="answer" text="svar:"/>
 <l:gentext key="Appendix" text="Tillegg"/>
 <l:gentext key="appendix" text="tillegg"/>
 <l:gentext key="Article" text="Artikkel"/>
 <l:gentext key="article" text="artikkel"/>
-<l:gentext key="Author" text="Author" lang="en"/>
-<l:gentext key="Bibliography" text="Bibliografi"/>
-<l:gentext key="bibliography" text="bibliografi"/>
+<l:gentext key="Author" text="Forfattar"/>
+<l:gentext key="Bibliography" text="Litteratur"/>
+<l:gentext key="bibliography" text="litteratur"/>
 <l:gentext key="Book" text="Bok"/>
 <l:gentext key="book" text="bok"/>
 <l:gentext key="CAUTION" text="OBS"/>
 <l:gentext key="Caution" text="Obs"/>
-<l:gentext key="caution" text="OBS"/>
+<l:gentext key="caution" text="obs"/>
 <l:gentext key="Chapter" text="Kapittel"/>
 <l:gentext key="chapter" text="kapittel"/>
 <l:gentext key="Colophon" text="Kolofon"/>
 <l:gentext key="colophon" text="kolofon"/>
-<l:gentext key="Copyright" text="Opphavsrett"/>
-<l:gentext key="copyright" text="opphavsrett"/>
+<l:gentext key="Copyright" text=""/>
+<l:gentext key="copyright" text=""/>
 <l:gentext key="Dedication" text="Dedikasjon"/>
 <l:gentext key="dedication" text="dedikasjon"/>
-<l:gentext key="Dialogue" text="Dialogue" lang="en"/>
-<l:gentext key="dialogue" text="Dialogue" lang="en"/>
-<l:gentext key="Drama" text="Drama" lang="en"/>
-<l:gentext key="drama" text="Drama" lang="en"/>
+<l:gentext key="Dialogue" text="Dialog"/>
+<l:gentext key="dialogue" text="dialog"/>
+<l:gentext key="Drama" text="Drama"/>
+<l:gentext key="drama" text="drama"/>
 <l:gentext key="Edition" text="Utgåve"/>
 <l:gentext key="edition" text="utgåve"/>
-<l:gentext key="Editor" text="Editor" lang="en"/>
-<l:gentext key="Equation" text="Formel"/>
-<l:gentext key="equation" text="formel"/>
-<l:gentext key="Example" text="Døme"/>
-<l:gentext key="example" text="døme"/>
+<l:gentext key="Editor" text="Redaktør"/>
+<l:gentext key="Equation" text="Likning"/>
+<l:gentext key="equation" text="likning"/>
+<l:gentext key="Example" text="Eksempel"/>
+<l:gentext key="example" text="eksempel"/>
 <l:gentext key="Figure" text="Figur"/>
 <l:gentext key="figure" text="figur"/>
 <l:gentext key="Glossary" text="Ordliste"/>
@@ -78,75 +78,75 @@
 <l:gentext key="index" text="register"/>
 <l:gentext key="ISBN" text="ISBN"/>
 <l:gentext key="isbn" text="ISBN"/>
-<l:gentext key="LegalNotice" text=""/>
-<l:gentext key="legalnotice" text=""/>
-<l:gentext key="MsgAud" text="Publikum"/>
-<l:gentext key="msgaud" text="publikum"/>
+<l:gentext key="LegalNotice" text="Rettsleg merknad"/>
+<l:gentext key="legalnotice" text="rettsleg merknad"/>
+<l:gentext key="MsgAud" text="Målgruppe"/>
+<l:gentext key="msgaud" text="målgruppe"/>
 <l:gentext key="MsgLevel" text="Nivå"/>
 <l:gentext key="msglevel" text="nivå"/>
-<l:gentext key="MsgOrig" text="Opphav"/>
-<l:gentext key="msgorig" text="Opphav"/>
-<l:gentext key="NOTE" text="NOTAT"/>
-<l:gentext key="Note" text="Notat"/>
-<l:gentext key="note" text="NOTAT"/>
+<l:gentext key="MsgOrig" text="Kilde"/>
+<l:gentext key="msgorig" text="kilde"/>
+<l:gentext key="NOTE" text="MERK"/>
+<l:gentext key="Note" text="Merk"/>
+<l:gentext key="note" text="merk"/>
 <l:gentext key="Part" text="Del"/>
 <l:gentext key="part" text="del"/>
-<l:gentext key="Poetry" text="Poetry" lang="en"/>
-<l:gentext key="poetry" text="Poetry" lang="en"/>
+<l:gentext key="Poetry" text="Poesi"/>
+<l:gentext key="poetry" text="poesi"/>
 <l:gentext key="Preface" text="Forord"/>
 <l:gentext key="preface" text="forord"/>
 <l:gentext key="Procedure" text="Prosedyre"/>
 <l:gentext key="procedure" text="prosedyre"/>
-<l:gentext key="ProductionSet" text="Production"/>
-<l:gentext key="PubDate" text="Publication Date" lang="en"/>
-<l:gentext key="pubdate" text="Publication date" lang="en"/>
-<l:gentext key="Published" text="Utgitt"/>
-<l:gentext key="published" text="utgitt"/>
-<l:gentext key="Publisher" text="Publisher" lang="en"/>
-<l:gentext key="Qandadiv" text="Spørsmål og Svar"/>
-<l:gentext key="qandadiv" text="Spørsmål og Svar"/>
-<l:gentext key="QandASet" text="Frequently Asked Questions" lang="en"/>
-<l:gentext key="Question" text="Spørsmål"/>
-<l:gentext key="question" text="spørsmål"/>
+<l:gentext key="ProductionSet" text="Produksjon"/>
+<l:gentext key="PubDate" text="Utgjevingsdato"/>
+<l:gentext key="pubdate" text="Utgjevingsdato"/>
+<l:gentext key="Published" text="Utgjeven"/>
+<l:gentext key="published" text="utgjeven"/>
+<l:gentext key="Publisher" text="Utgivar"/>
+<l:gentext key="Qandadiv" text="Spørsmål og svar"/>
+<l:gentext key="qandadiv" text="spørsmål og svar"/>
+<l:gentext key="QandASet" text="Ofte stilte spørsmål"/>
+<l:gentext key="Question" text="Spørsmål:"/>
+<l:gentext key="question" text="spørsmål:"/>
 <l:gentext key="RefEntry" text=""/>
 <l:gentext key="refentry" text=""/>
 <l:gentext key="Reference" text="Referanse"/>
 <l:gentext key="reference" text="referanse"/>
-<l:gentext key="References" text="References" lang="en"/>
+<l:gentext key="References" text="Referansar"/>
 <l:gentext key="RefName" text="Namn"/>
 <l:gentext key="refname" text="namn"/>
-<l:gentext key="RefSection" text="Del"/>
-<l:gentext key="refsection" text="del"/>
-<l:gentext key="RefSynopsisDiv" text="Oversyn"/>
-<l:gentext key="refsynopsisdiv" text="oversyn"/>
-<l:gentext key="RevHistory" text="Revisjonshistorie"/>
-<l:gentext key="revhistory" text="revisjonshistorie"/>
+<l:gentext key="RefSection" text=""/>
+<l:gentext key="refsection" text=""/>
+<l:gentext key="RefSynopsisDiv" text="Oversikt"/>
+<l:gentext key="refsynopsisdiv" text="oversikt"/>
+<l:gentext key="RevHistory" text="Revisjonar"/>
+<l:gentext key="revhistory" text="revisjonar"/>
 <l:gentext key="revision" text="revisjon"/>
 <l:gentext key="Revision" text="Revisjon"/>
-<l:gentext key="sect1" text="Section"/>
-<l:gentext key="sect2" text="Section"/>
-<l:gentext key="sect3" text="Section"/>
-<l:gentext key="sect4" text="Section"/>
-<l:gentext key="sect5" text="Section"/>
-<l:gentext key="section" text="del"/>
-<l:gentext key="Section" text="Del"/>
+<l:gentext key="sect1" text="avsnitt"/>
+<l:gentext key="sect2" text="avsnitt"/>
+<l:gentext key="sect3" text="avsnitt"/>
+<l:gentext key="sect4" text="avsnitt"/>
+<l:gentext key="sect5" text="avsnitt"/>
+<l:gentext key="section" text="avsnitt"/>
+<l:gentext key="Section" text="Avsnitt"/>
 <l:gentext key="see" text="sjå"/>
 <l:gentext key="See" text="Sjå"/>
 <l:gentext key="seealso" text="sjå òg"/>
 <l:gentext key="Seealso" text="Sjå òg"/>
 <l:gentext key="SeeAlso" text="Sjå òg"/>
-<l:gentext key="set" text="set"/>
-<l:gentext key="Set" text="Set"/>
-<l:gentext key="setindex" text="Indeks"/>
-<l:gentext key="SetIndex" text="Indeks"/>
-<l:gentext key="Sidebar" text="Sidestolpe"/>
-<l:gentext key="sidebar" text="sidestolpe"/>
+<l:gentext key="set" text="serie"/>
+<l:gentext key="Set" text="Serie"/>
+<l:gentext key="setindex" text="serieregister"/>
+<l:gentext key="SetIndex" text="Serieregister"/>
+<l:gentext key="Sidebar" text="Ytterspalte"/>
+<l:gentext key="sidebar" text="ytterspalte"/>
 <l:gentext key="step" text="steg"/>
 <l:gentext key="Step" text="Steg"/>
 <l:gentext key="table" text="tabell"/>
 <l:gentext key="Table" text="Tabell"/>
-<l:gentext key="task" text="Task" lang="en"/>
-<l:gentext key="Task" text="Task" lang="en"/>
+<l:gentext key="task" text="oppgåve"/>
+<l:gentext key="Task" text="Oppgåve"/>
 <l:gentext key="tip" text="tips"/>
 <l:gentext key="TIP" text="TIPS"/>
 <l:gentext key="Tip" text="Tips"/>
@@ -154,124 +154,124 @@
 <l:gentext key="warning" text="åtvaring"/>
 <l:gentext key="WARNING" text="ÅTVARING"/>
 <l:gentext key="and" text="og"/>
-<l:gentext key="or" text="or" lang="en"/>
+<l:gentext key="or" text="eller"/>
 <l:gentext key="by" text="av"/>
-<l:gentext key="optional-step" text="(Optional) " lang="en"/>
+<l:gentext key="optional-step" text="(Valfritt) "/>
 <l:gentext key="Edited" text="Redigert"/>
 <l:gentext key="edited" text="redigert"/>
 <l:gentext key="Editedby" text="Redigert av"/>
 <l:gentext key="editedby" text="redigert av"/>
 <l:gentext key="in" text="i"/>
-<l:gentext key="In" text="In" lang="en"/>
-<l:gentext key="lastlistcomma" text=","/>
+<l:gentext key="In" text="I"/>
+<l:gentext key="lastlistcomma" text=""/>
 <l:gentext key="listcomma" text=","/>
-<l:gentext key="notes" text="merknader"/>
-<l:gentext key="Notes" text="Merknader"/>
+<l:gentext key="notes" text="merknadar"/>
+<l:gentext key="Notes" text="Merknadar"/>
 <l:gentext key="Pgs" text="Sider"/>
 <l:gentext key="pgs" text="sider"/>
-<l:gentext key="Revisedby" text="Revidert av: "/>
-<l:gentext key="revisedby" text="revidert av: "/>
-<l:gentext key="TableNotes" text="Merknader"/>
-<l:gentext key="tablenotes" text="merknader"/>
+<l:gentext key="Revisedby" text="Revidert av "/>
+<l:gentext key="revisedby" text="revidert av "/>
+<l:gentext key="TableNotes" text="Merknadar"/>
+<l:gentext key="tablenotes" text="merknadar"/>
 <l:gentext key="TableofContents" text="Innhald"/>
-<l:gentext key="tableofcontents" text="Innhald"/>
-<l:gentext key="unexpectedelementname" text="UVENTA-ELEMENTNAVN"/>
+<l:gentext key="tableofcontents" text="innhald"/>
+<l:gentext key="unexpectedelementname" text="Uventa elementnamn"/>
 <l:gentext key="unsupported" text="ikkje støtta"/>
-<l:gentext key="xrefto" text="xref til"/>
-<l:gentext key="video-unsupported" text="Your browser does not support the video tag" lang="en"/>
-<l:gentext key="audio-unsupported" text="Your browser does not support the audio tag" lang="en"/>
-<l:gentext key="Authors" text="Authors" lang="en"/>
-<l:gentext key="copyeditor" text="Copy Editor" lang="en"/>
-<l:gentext key="graphicdesigner" text="Graphic Designer" lang="en"/>
-<l:gentext key="productioneditor" text="Production Editor" lang="en"/>
-<l:gentext key="technicaleditor" text="Technical Editor" lang="en"/>
-<l:gentext key="translator" text="Translator" lang="en"/>
-<l:gentext key="listofequations" text="formeloversikt"/>
-<l:gentext key="ListofEquations" text="Formeloversikt"/>
-<l:gentext key="ListofExamples" text="Dømeoversikt"/>
-<l:gentext key="listofexamples" text="dømeoversikt"/>
-<l:gentext key="ListofFigures" text="Figuroversikt"/>
-<l:gentext key="listoffigures" text="figuroversikt"/>
-<l:gentext key="ListofProcedures" text="List of Procedures" lang="en"/>
-<l:gentext key="listofprocedures" text="List of Procedures" lang="en"/>
-<l:gentext key="listoftables" text="tabelloversikt"/>
-<l:gentext key="ListofTables" text="Tabelloversikt"/>
+<l:gentext key="xrefto" text="kryssreferanse til"/>
+<l:gentext key="video-unsupported" text="Nettlesaren din støttar ikkje «video»-elementet"/>
+<l:gentext key="audio-unsupported" text="Nettlesaren din støttar ikkje «audio»-elementet"/>
+<l:gentext key="Authors" text="Forfattarar"/>
+<l:gentext key="copyeditor" text="Manuskriptredaktør"/>
+<l:gentext key="graphicdesigner" text="Grafisk utformar"/>
+<l:gentext key="productioneditor" text="Produksjonsredaktør"/>
+<l:gentext key="technicaleditor" text="Teknisk redaktør"/>
+<l:gentext key="translator" text="Omsetjar"/>
+<l:gentext key="listofequations" text="likningar"/>
+<l:gentext key="ListofEquations" text="Likningar"/>
+<l:gentext key="ListofExamples" text="Eksempel"/>
+<l:gentext key="listofexamples" text="eksempel"/>
+<l:gentext key="ListofFigures" text="Figurar"/>
+<l:gentext key="listoffigures" text="figurar"/>
+<l:gentext key="ListofProcedures" text="Prosedyrar"/>
+<l:gentext key="listofprocedures" text="prosedyrar"/>
+<l:gentext key="listoftables" text="tabellar"/>
+<l:gentext key="ListofTables" text="Tabellar"/>
 <l:gentext key="ListofUnknown" text="???-oversikt"/>
 <l:gentext key="listofunknown" text="???-oversikt"/>
 <l:gentext key="nav-home" text="Heim"/>
-<l:gentext key="nav-next" text="Fram"/>
-<l:gentext key="nav-next-sibling" text="Raskt framover"/>
-<l:gentext key="nav-prev" text="Att"/>
-<l:gentext key="nav-prev-sibling" text="Raskt bakover"/>
+<l:gentext key="nav-next" text="Neste"/>
+<l:gentext key="nav-next-sibling" text="Neste på same nivå"/>
+<l:gentext key="nav-prev" text="Førre"/>
+<l:gentext key="nav-prev-sibling" text="Førre på same nivå"/>
 <l:gentext key="nav-up" text="Opp"/>
-<l:gentext key="nav-toc" text="ToC" lang="en"/>
-<l:gentext key="Draft" text="Draft"/>
-<l:gentext key="above" text="above"/>
-<l:gentext key="below" text="below"/>
-<l:gentext key="sectioncalled" text="the section called"/>
-<l:gentext key="index symbols" text="Symbols"/>
+<l:gentext key="nav-toc" text="Innhald"/>
+<l:gentext key="Draft" text="Utkast"/>
+<l:gentext key="above" text="ovanfor"/>
+<l:gentext key="below" text="nedanfor"/>
+<l:gentext key="sectioncalled" text="avsnitt"/>
+<l:gentext key="index symbols" text="Symbol"/>
 <l:gentext key="writing-mode" text="lr-tb"/>
-<l:gentext key="lowercase.alpha" text="abcdefghijklmnopqrstuvwxyz"/>
-<l:gentext key="uppercase.alpha" text="ABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+<l:gentext key="lowercase.alpha" text="abcdefghijklmnopqrstuvwxyzæøå"/>
+<l:gentext key="uppercase.alpha" text="ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ"/>
 <l:gentext key="normalize.sort.input" text="AaÀàÁáÂâÃãÄäÅåĀāĂăĄąǍǎǞǟǠǡǺǻȀȁȂȃȦȧḀḁẚẠạẢảẤấẦầẨẩẪẫẬậẮắẰằẲẳẴẵẶặBbƀƁɓƂƃḂḃḄḅḆḇCcÇçĆćĈĉĊċČčƇƈɕḈḉDdĎďĐđƊɗƋƌǅǲȡɖḊḋḌḍḎḏḐḑḒḓEeÈèÉéÊêËëĒēĔĕĖėĘęĚěȄȅȆȇȨȩḔḕḖḗḘḙḚḛḜḝẸẹẺẻẼẽẾếỀềỂểỄễỆệFfƑƒḞḟGgĜĝĞğĠġĢģƓɠǤǥǦǧǴǵḠḡHhĤĥĦħȞȟɦḢḣḤḥḦḧḨḩḪḫẖIiÌìÍíÎîÏïĨĩĪīĬĭĮįİƗɨǏǐȈȉȊȋḬḭḮḯỈỉỊịJjĴĵǰʝKkĶķƘƙǨǩḰḱḲḳḴḵLlĹĺĻļĽľĿŀŁłƚǈȴɫɬɭḶḷḸḹḺḻḼḽMmɱḾḿṀṁṂṃNnÑñŃńŅņŇňƝɲƞȠǋǸǹȵɳṄṅṆṇṈṉṊṋOoÒòÓóÔôÕõÖöØøŌōŎŏŐőƟƠơǑǒǪǫǬǭǾǿȌȍȎȏȪȫȬȭȮȯȰȱṌṍṎṏṐṑṒṓỌọỎỏỐốỒồỔổỖỗỘộỚớỜờỞởỠỡỢợPpƤƥṔṕṖṗQqʠRrŔŕŖŗŘřȐȑȒȓɼɽɾṘṙṚṛṜṝṞṟSsŚśŜŝŞşŠšȘșʂṠṡṢṣṤṥṦṧṨṩTtŢţŤťŦŧƫƬƭƮʈȚțȶṪṫṬṭṮṯṰṱẗUuÙùÚúÛûÜüŨũŪūŬŭŮůŰűŲųƯưǓǔǕǖǗǘǙǚǛǜȔȕȖȗṲṳṴṵṶṷṸṹṺṻỤụỦủỨứỪừỬửỮữỰựVvƲʋṼṽṾṿWwŴŵẀẁẂẃẄẅẆẇẈẉẘXxẊẋẌẍYyÝýÿŸŶŷƳƴȲȳẎẏẙỲỳỴỵỶỷỸỹZzŹźŻżŽžƵƶȤȥʐʑẐẑẒẓẔẕẕ" lang="en"/>
 <l:gentext key="normalize.sort.output" text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEFFFFFFGGGGGGGGGGGGGGGGGGGGHHHHHHHHHHHHHHHHHHHHIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIJJJJJJKKKKKKKKKKKKKKLLLLLLLLLLLLLLLLLLLLLLLLLLMMMMMMMMMNNNNNNNNNNNNNNNNNNNNNNNNNNNOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOPPPPPPPPQQQRRRRRRRRRRRRRRRRRRRRRRRSSSSSSSSSSSSSSSSSSSSSSSTTTTTTTTTTTTTTTTTTTTTTTTTUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUVVVVVVVVWWWWWWWWWWWWWWWXXXXXXYYYYYYYYYYYYYYYYYYYYYYYZZZZZZZZZZZZZZZZZZZZZ" lang="en"/>
 <l:dingbat key="startquote" text="«"/>
 <l:dingbat key="endquote" text="»"/>
-<l:dingbat key="nestedstartquote" text="“"/>
-<l:dingbat key="nestedendquote" text="”"/>
+<l:dingbat key="nestedstartquote" text="‘"/>
+<l:dingbat key="nestedendquote" text="’"/>
 <l:dingbat key="singlestartquote" text="‘"/>
 <l:dingbat key="singleendquote" text="’"/>
-<l:dingbat key="bullet" text="•"/>
-<l:gentext key="hyphenation-character" text="-" lang="en"/>
+<l:dingbat key="bullet" text="–"/>
+<l:gentext key="hyphenation-character" text="-"/>
 <l:gentext key="hyphenation-push-character-count" text="2" lang="en"/>
 <l:gentext key="hyphenation-remain-character-count" text="2" lang="en"/>
-<l:context name="keycap"><l:template name="alt" text="Alt" lang="en"/>
-<l:template name="backspace" text="&lt;—" lang="en"/>
-<l:template name="command" text="⌘" lang="en"/>
-<l:template name="control" text="Ctrl" lang="en"/>
-<l:template name="delete" text="Del" lang="en"/>
-<l:template name="down" text="↓" lang="en"/>
-<l:template name="end" text="End" lang="en"/>
-<l:template name="enter" text="Enter" lang="en"/>
-<l:template name="escape" text="Esc" lang="en"/>
-<l:template name="home" text="Home" lang="en"/>
-<l:template name="insert" text="Ins" lang="en"/>
-<l:template name="left" text="←" lang="en"/>
-<l:template name="meta" text="Meta" lang="en"/>
-<l:template name="option" text="⌥" lang="en"/>
-<l:template name="pagedown" text="Page ↓" lang="en"/>
-<l:template name="pageup" text="Page ↑" lang="en"/>
-<l:template name="right" text="→" lang="en"/>
-<l:template name="shift" text="Shift" lang="en"/>
-<l:template name="space" text="Space" lang="en"/>
-<l:template name="tab" text="→|" lang="en"/>
-<l:template name="up" text="↑" lang="en"/>
+<l:context name="keycap"><l:template name="alt" text="Alt"/>
+<l:template name="backspace" text="⌫"/>
+<l:template name="command" text="⌘"/>
+<l:template name="control" text="Ctrl"/>
+<l:template name="delete" text="Delete"/>
+<l:template name="down" text="↓"/>
+<l:template name="end" text="End"/>
+<l:template name="enter" text="Enter"/>
+<l:template name="escape" text="Escape"/>
+<l:template name="home" text="Home"/>
+<l:template name="insert" text="Insert"/>
+<l:template name="left" text="←"/>
+<l:template name="meta" text="Meta"/>
+<l:template name="option" text="⌥"/>
+<l:template name="pagedown" text="Page Down"/>
+<l:template name="pageup" text="Page Up"/>
+<l:template name="right" text="→"/>
+<l:template name="shift" text="Shift"/>
+<l:template name="space" text="Mellomrom"/>
+<l:template name="tab" text="⭾"/>
+<l:template name="up" text="↑"/>
 </l:context>
-<l:context name="webhelp"><l:template name="Search" text="Search" lang="en"/>
-<l:template name="Enter_a_term_and_click" text="Enter a term and click " lang="en"/>
-<l:template name="Go" text="Go" lang="en"/>
-<l:template name="to_perform_a_search" text=" to perform a search." lang="en"/>
-<l:template name="txt_filesfound" text="Results" lang="en"/>
-<l:template name="txt_enter_at_least_1_char" text="You must enter at least one character." lang="en"/>
-<l:template name="txt_browser_not_supported" text="JavaScript is disabled on your browser. Please enable JavaScript to enjoy all the features of this site." lang="en"/>
-<l:template name="txt_please_wait" text="Please wait. Search in progress..." lang="en"/>
-<l:template name="txt_results_for" text="Results for: " lang="en"/>
-<l:template name="TableofContents" text="Contents" lang="en"/>
-<l:template name="HighlightButton" text="Toggle search result highlighting" lang="en"/>
-<l:template name="Your_search_returned_no_results" text="Your search returned no results." lang="en"/>
+<l:context name="webhelp"><l:template name="Search" text="Søk"/>
+<l:template name="Enter_a_term_and_click" text="Skriv inn søkjetekst og trykk "/>
+<l:template name="Go" text="søk"/>
+<l:template name="to_perform_a_search" text=" for å søkja."/>
+<l:template name="txt_filesfound" text="Resultat"/>
+<l:template name="txt_enter_at_least_1_char" text="Du må skriva inn minst eitt teikn."/>
+<l:template name="txt_browser_not_supported" text="JavaScript er slått av i nettleseren. Slå på JavaScript for å få tilgang til alle funksjonane på nettstaden."/>
+<l:template name="txt_please_wait" text="Søkjer. Vent litt …"/>
+<l:template name="txt_results_for" text="Resultat for: "/>
+<l:template name="TableofContents" text="Innhald"/>
+<l:template name="HighlightButton" text="Slå på/av markering av søkjetreff"/>
+<l:template name="Your_search_returned_no_results" text="Søket gav ingen treff."/>
 </l:context>
 <l:context name="styles"><l:template name="person-name" text="first-last"/>
 </l:context>
 <l:context name="title"><l:template name="abstract" text="%t"/>
-<l:template name="acknowledgements" text="%t" lang="en"/>
+<l:template name="acknowledgements" text="%t"/>
 <l:template name="answer" text="%t"/>
-<l:template name="appendix" text="Tillegg %n. %t"/>
+<l:template name="appendix" text="Tillegg %n: %t"/>
 <l:template name="article" text="%t"/>
 <l:template name="authorblurb" text="%t"/>
 <l:template name="bibliodiv" text="%t"/>
 <l:template name="biblioentry" text="%t"/>
 <l:template name="bibliography" text="%t"/>
-<l:template name="bibliolist" text="%t" lang="en"/>
+<l:template name="bibliolist" text="%t"/>
 <l:template name="bibliomixed" text="%t"/>
 <l:template name="bibliomset" text="%t"/>
 <l:template name="biblioset" text="%t"/>
@@ -279,19 +279,19 @@
 <l:template name="book" text="%t"/>
 <l:template name="calloutlist" text="%t"/>
 <l:template name="caution" text="%t"/>
-<l:template name="chapter" text="Kapittel %n. %t"/>
+<l:template name="chapter" text="Kapittel %n: %t"/>
 <l:template name="colophon" text="%t"/>
 <l:template name="dedication" text="%t"/>
-<l:template name="equation" text="Formel %n. %t"/>
-<l:template name="example" text="Døme %n. %t"/>
-<l:template name="figure" text="Figur %n. %t"/>
-<l:template name="foil" text="%t" lang="en"/>
-<l:template name="foilgroup" text="%t" lang="en"/>
+<l:template name="equation" text="Likning %n: %t"/>
+<l:template name="example" text="Eksempel %n: %t"/>
+<l:template name="figure" text="Figur %n: %t"/>
+<l:template name="foil" text="%t"/>
+<l:template name="foilgroup" text="%t"/>
 <l:template name="formalpara" text="%t"/>
 <l:template name="glossary" text="%t"/>
 <l:template name="glossdiv" text="%t"/>
-<l:template name="glosslist" text="%t" lang="en"/>
-<l:template name="glossentry" text="%t" lang="en"/>
+<l:template name="glosslist" text="%t"/>
+<l:template name="glossentry" text="%t"/>
 <l:template name="important" text="%t"/>
 <l:template name="index" text="%t"/>
 <l:template name="indexdiv" text="%t"/>
@@ -307,13 +307,13 @@
 <l:template name="msgsub" text="%t"/>
 <l:template name="note" text="%t"/>
 <l:template name="orderedlist" text="%t"/>
-<l:template name="part" text="Del %n. %t"/>
+<l:template name="part" text="Del %n: %t"/>
 <l:template name="partintro" text="%t"/>
 <l:template name="preface" text="%t"/>
 <l:template name="procedure" text="%t"/>
-<l:template name="procedure.formal" text="Prosedyre %n. %t"/>
+<l:template name="procedure.formal" text="Prosedyre %n: %t"/>
 <l:template name="productionset" text="%t"/>
-<l:template name="productionset.formal" text="Production %n"/>
+<l:template name="productionset.formal" text="Produksjon %n"/>
 <l:template name="qandadiv" text="%t"/>
 <l:template name="qandaentry" text="%t"/>
 <l:template name="qandaset" text="%t"/>
@@ -326,25 +326,25 @@
 <l:template name="refsect3" text="%t"/>
 <l:template name="refsynopsisdiv" text="%t"/>
 <l:template name="refsynopsisdivinfo" text="%t"/>
-<l:template name="screenshot" text="%t" lang="en"/>
+<l:template name="screenshot" text="%t"/>
 <l:template name="segmentedlist" text="%t"/>
 <l:template name="set" text="%t"/>
 <l:template name="setindex" text="%t"/>
 <l:template name="sidebar" text="%t"/>
 <l:template name="step" text="%t"/>
-<l:template name="table" text="Tabell %n. %t"/>
-<l:template name="task" text="%t" lang="en"/>
-<l:template name="tasksummary" text="%t" lang="en"/>
-<l:template name="taskprerequisites" text="%t" lang="en"/>
-<l:template name="taskrelated" text="%t" lang="en"/>
+<l:template name="table" text="Tabell %n: %t"/>
+<l:template name="task" text="%t"/>
+<l:template name="tasksummary" text="%t"/>
+<l:template name="taskprerequisites" text="%t"/>
+<l:template name="taskrelated" text="%t"/>
 <l:template name="tip" text="%t"/>
 <l:template name="toc" text="%t"/>
 <l:template name="variablelist" text="%t"/>
-<l:template name="varlistentry" text="" lang="en"/>
+<l:template name="varlistentry" text=""/>
 <l:template name="warning" text="%t"/>
 </l:context>
 <l:context name="title-unnumbered"><l:template name="appendix" text="%t"/>
-<l:template name="article/appendix" text="%t" lang="en"/>
+<l:template name="article/appendix" text="%t"/>
 <l:template name="bridgehead" text="%t"/>
 <l:template name="chapter" text="%t"/>
 <l:template name="sect1" text="%t"/>
@@ -354,28 +354,28 @@
 <l:template name="sect5" text="%t"/>
 <l:template name="section" text="%t"/>
 <l:template name="simplesect" text="%t"/>
-<l:template name="topic" text="%t" lang="en"/>
-<l:template name="part" text="%t" lang="en"/>
-<l:template name="dialogue" text="%t" lang="en"/>
-<l:template name="drama" text="%t" lang="en"/>
-<l:template name="poetry" text="%t" lang="en"/>
+<l:template name="topic" text="%t"/>
+<l:template name="part" text="%t"/>
+<l:template name="dialogue" text="%t"/>
+<l:template name="drama" text="%t"/>
+<l:template name="poetry" text="%t"/>
 </l:context>
-<l:context name="title-numbered"><l:template name="appendix" text="Tillegg %n. %t"/>
-<l:template name="article/appendix" text="%n. %t" lang="en"/>
-<l:template name="bridgehead" text="%t"/>
-<l:template name="chapter" text="Kapittel %n. %t"/>
-<l:template name="part" text="Del %n. %t"/>
-<l:template name="sect1" text="%n. %t"/>
-<l:template name="sect2" text="%n. %t"/>
-<l:template name="sect3" text="%n. %t"/>
-<l:template name="sect4" text="%n. %t"/>
-<l:template name="sect5" text="%n. %t"/>
-<l:template name="section" text="%n. %t"/>
-<l:template name="simplesect" text="%n. %t"/>
-<l:template name="topic" text="%t" lang="en"/>
+<l:context name="title-numbered"><l:template name="appendix" text="Tillegg %n: %t"/>
+<l:template name="article/appendix" text="%n: %t"/>
+<l:template name="bridgehead" text="%n: %t"/>
+<l:template name="chapter" text="Kapittel %n: %t"/>
+<l:template name="part" text="Del %n: %t"/>
+<l:template name="sect1" text="%n %t"/>
+<l:template name="sect2" text="%n %t"/>
+<l:template name="sect3" text="%n %t"/>
+<l:template name="sect4" text="%n %t"/>
+<l:template name="sect5" text="%n %t"/>
+<l:template name="section" text="%n %t"/>
+<l:template name="simplesect" text="%t"/>
+<l:template name="topic" text="%t"/>
 </l:context>
 <l:context name="subtitle"><l:template name="appendix" text="%s"/>
-<l:template name="acknowledgements" text="%s" lang="en"/>
+<l:template name="acknowledgements" text="%s"/>
 <l:template name="article" text="%s"/>
 <l:template name="bibliodiv" text="%s"/>
 <l:template name="biblioentry" text="%s"/>
@@ -412,15 +412,15 @@
 <l:template name="setindex" text="%s"/>
 <l:template name="sidebar" text="%s"/>
 <l:template name="simplesect" text="%s"/>
-<l:template name="topic" text="%t" lang="en"/>
+<l:template name="topic" text="%t"/>
 <l:template name="toc" text="%s"/>
-<l:template name="dialogue" text="%s" lang="en"/>
-<l:template name="drama" text="%s" lang="en"/>
-<l:template name="poetry" text="%s" lang="en"/>
+<l:template name="dialogue" text="%s"/>
+<l:template name="drama" text="%s"/>
+<l:template name="poetry" text="%s"/>
 </l:context>
 <l:context name="xref"><l:template name="abstract" text="%t"/>
-<l:template name="acknowledgements" text="%t" lang="en"/>
-<l:template name="answer" text="Svar %n"/>
+<l:template name="acknowledgements" text="%t"/>
+<l:template name="answer" text="Svar: %n"/>
 <l:template name="appendix" text="%t"/>
 <l:template name="article" text="%t"/>
 <l:template name="authorblurb" text="%t"/>
@@ -439,8 +439,8 @@
 <l:template name="equation" text="%t"/>
 <l:template name="example" text="%t"/>
 <l:template name="figure" text="%t"/>
-<l:template name="foil" text="%t" lang="en"/>
-<l:template name="foilgroup" text="%t" lang="en"/>
+<l:template name="foil" text="%t"/>
+<l:template name="foilgroup" text="%t"/>
 <l:template name="formalpara" text="%t"/>
 <l:template name="glossary" text="%t"/>
 <l:template name="glossdiv" text="%t"/>
@@ -465,204 +465,204 @@
 <l:template name="procedure" text="%t"/>
 <l:template name="productionset" text="%t"/>
 <l:template name="qandadiv" text="%t"/>
-<l:template name="qandaentry" text="Spørsmål %n"/>
+<l:template name="qandaentry" text="Spørsmål: %n"/>
 <l:template name="qandaset" text="%t"/>
-<l:template name="question" text="Spørsmål %n"/>
+<l:template name="question" text="Spørsmål: %n"/>
 <l:template name="reference" text="%t"/>
 <l:template name="refsynopsisdiv" text="%t"/>
-<l:template name="screenshot" text="%t" lang="en"/>
+<l:template name="screenshot" text="%t"/>
 <l:template name="segmentedlist" text="%t"/>
 <l:template name="set" text="%t"/>
 <l:template name="setindex" text="%t"/>
 <l:template name="sidebar" text="%t"/>
 <l:template name="table" text="%t"/>
-<l:template name="task" text="%t" lang="en"/>
+<l:template name="task" text="%t"/>
 <l:template name="tip" text="%t"/>
 <l:template name="toc" text="%t"/>
 <l:template name="variablelist" text="%t"/>
 <l:template name="varlistentry" text="%n"/>
 <l:template name="warning" text="%t"/>
-<l:template name="olink.document.citation" text=" in %o" lang="en"/>
-<l:template name="olink.page.citation" text=" (page %p)" lang="en"/>
+<l:template name="olink.document.citation" text=" i %o"/>
+<l:template name="olink.page.citation" text=" (side %p)"/>
 <l:template name="page.citation" text=" [%p]"/>
-<l:template name="page" text="(page %p)" lang="en"/>
-<l:template name="docname" text=" in %o" lang="en"/>
-<l:template name="docnamelong" text=" in the document titled %o" lang="en"/>
-<l:template name="pageabbrev" text="(p. %p)" lang="en"/>
-<l:template name="Page" text="Page %p" lang="en"/>
-<l:template name="topic" text="%t" lang="en"/>
-<l:template name="dialogue" text="%t" lang="en"/>
-<l:template name="drama" text="%t" lang="en"/>
-<l:template name="poetry" text="%t" lang="en"/>
-<l:template name="bridgehead" text="«%t»"/>
-<l:template name="refsection" text="«%t»"/>
-<l:template name="refsect1" text="«%t»"/>
-<l:template name="refsect2" text="«%t»"/>
-<l:template name="refsect3" text="«%t»"/>
-<l:template name="sect1" text="«%t»"/>
-<l:template name="sect2" text="«%t»"/>
-<l:template name="sect3" text="«%t»"/>
-<l:template name="sect4" text="«%t»"/>
-<l:template name="sect5" text="«%t»"/>
-<l:template name="section" text="«%t»"/>
-<l:template name="simplesect" text="«%t»"/>
+<l:template name="page" text="(side %p)"/>
+<l:template name="docname" text=" i %o"/>
+<l:template name="docnamelong" text=" i dokumentet %o"/>
+<l:template name="pageabbrev" text="(s. %p)"/>
+<l:template name="Page" text="Side %p"/>
+<l:template name="topic" text="%t"/>
+<l:template name="dialogue" text="%t"/>
+<l:template name="drama" text="%t"/>
+<l:template name="poetry" text="%t"/>
+<l:template name="bridgehead" text="avsnitt «%t»"/>
+<l:template name="refsection" text="avsnitt «%t»"/>
+<l:template name="refsect1" text="avsnitt «%t»"/>
+<l:template name="refsect2" text="avsnitt «%t»"/>
+<l:template name="refsect3" text="avsnitt «%t»"/>
+<l:template name="sect1" text="avsnitt «%t»"/>
+<l:template name="sect2" text="avsnitt «%t»"/>
+<l:template name="sect3" text="avsnitt «%t»"/>
+<l:template name="sect4" text="avsnitt «%t»"/>
+<l:template name="sect5" text="avsnitt «%t»"/>
+<l:template name="section" text="avsnitt «%t»"/>
+<l:template name="simplesect" text="avsnitt «%t»"/>
 </l:context>
-<l:context name="xref-number"><l:template name="answer" text="Svar %n"/>
-<l:template name="appendix" text="Tillegg %n"/>
-<l:template name="bridgehead" text="Del %n"/>
-<l:template name="chapter" text="Kapittel %n"/>
-<l:template name="equation" text="Formel %n"/>
-<l:template name="example" text="Døme %n"/>
-<l:template name="figure" text="Figur %n"/>
-<l:template name="part" text="Del %n"/>
-<l:template name="procedure" text="Prosedyre %n"/>
-<l:template name="productionset" text="Production %n"/>
-<l:template name="qandadiv" text="Spørsmål og Svar %n"/>
-<l:template name="qandaentry" text="Spørsmål %n"/>
-<l:template name="question" text="Spørsmål %n"/>
-<l:template name="sect1" text="Del %n"/>
-<l:template name="sect2" text="Del %n"/>
-<l:template name="sect3" text="Del %n"/>
-<l:template name="sect4" text="Del %n"/>
-<l:template name="sect5" text="Del %n"/>
-<l:template name="section" text="Del %n"/>
-<l:template name="table" text="Tabell %n"/>
+<l:context name="xref-number"><l:template name="answer" text="svar: %n"/>
+<l:template name="appendix" text="tillegg %n"/>
+<l:template name="bridgehead" text="avsnitt %n"/>
+<l:template name="chapter" text="kapittel %n"/>
+<l:template name="equation" text="likning %n"/>
+<l:template name="example" text="eksempel %n"/>
+<l:template name="figure" text="figur %n"/>
+<l:template name="part" text="del %n"/>
+<l:template name="procedure" text="prosedyre %n"/>
+<l:template name="productionset" text="Produksjon %n"/>
+<l:template name="qandadiv" text="spørsmål og svar %n"/>
+<l:template name="qandaentry" text="spørsmål: %n"/>
+<l:template name="question" text="spørsmål: %n"/>
+<l:template name="sect1" text="avsnitt %n"/>
+<l:template name="sect2" text="avsnitt %n"/>
+<l:template name="sect3" text="avsnitt %n"/>
+<l:template name="sect4" text="avsnitt %n"/>
+<l:template name="sect5" text="avsnitt %n"/>
+<l:template name="section" text="avsnitt %n"/>
+<l:template name="table" text="tabell %n"/>
 </l:context>
-<l:context name="xref-number-and-title"><l:template name="appendix" text="Tillegg %n, %t"/>
-<l:template name="bridgehead" text="Del %n, «%t»"/>
-<l:template name="chapter" text="Kapittel %n, %t"/>
-<l:template name="equation" text="Formel %n, «%t»"/>
-<l:template name="example" text="Døme %n, «%t»"/>
-<l:template name="figure" text="Figur %n, «%t»"/>
-<l:template name="part" text="Del %n, «%t»"/>
-<l:template name="procedure" text="Prosedyre %n, «%t»"/>
-<l:template name="productionset" text="Production %n, «%t»"/>
-<l:template name="qandadiv" text="Spørsmål og Svar %n, «%t»"/>
-<l:template name="refsect1" text="the section called «%t»"/>
-<l:template name="refsect2" text="the section called «%t»"/>
-<l:template name="refsect3" text="the section called «%t»"/>
-<l:template name="refsection" text="the section called «%t»"/>
-<l:template name="sect1" text="Del %n, «%t»"/>
-<l:template name="sect2" text="Del %n, «%t»"/>
-<l:template name="sect3" text="Del %n, «%t»"/>
-<l:template name="sect4" text="Del %n, «%t»"/>
-<l:template name="sect5" text="Del %n, «%t»"/>
-<l:template name="section" text="Del %n, «%t»"/>
-<l:template name="simplesect" text="the section called «%t»"/>
-<l:template name="table" text="Tabell %n, «%t»"/>
+<l:context name="xref-number-and-title"><l:template name="appendix" text="tillegg %n, «%t»"/>
+<l:template name="bridgehead" text="avsnitt %n, «%t»"/>
+<l:template name="chapter" text="kapittel %n, «%t»"/>
+<l:template name="equation" text="likning %n, «%t»"/>
+<l:template name="example" text="eksempel %n, «%t»"/>
+<l:template name="figure" text="figur %n, «%t»"/>
+<l:template name="part" text="del %n, «%t»"/>
+<l:template name="procedure" text="prosedyre %n, «%t»"/>
+<l:template name="productionset" text="Produksjon %n, «%t»"/>
+<l:template name="qandadiv" text="spørsmål og svar %n, «%t»"/>
+<l:template name="refsect1" text="avsnitt «%t»"/>
+<l:template name="refsect2" text="avsnitt «%t»"/>
+<l:template name="refsect3" text="avsnitt «%t»"/>
+<l:template name="refsection" text="avsnitt «%t»"/>
+<l:template name="sect1" text="avsnitt %n, «%t»"/>
+<l:template name="sect2" text="avsnitt %n, «%t»"/>
+<l:template name="sect3" text="avsnitt %n, «%t»"/>
+<l:template name="sect4" text="avsnitt %n, «%t»"/>
+<l:template name="sect5" text="avsnitt %n, «%t»"/>
+<l:template name="section" text="avsnitt %n, «%t»"/>
+<l:template name="simplesect" text="avsnitt «%t»"/>
+<l:template name="table" text="tabell %n, «%t»"/>
 </l:context>
 <l:context name="authorgroup"><l:template name="sep" text=", "/>
 <l:template name="sep2" text=" og "/>
-<l:template name="seplast" text=", og "/>
+<l:template name="seplast" text=" og "/>
 </l:context>
-<l:context name="glossary"><l:template name="see" text="Sjå %t."/>
-<l:template name="seealso" text="Sjå òg %t."/>
+<l:context name="glossary"><l:template name="see" text="Sjå «%t»."/>
+<l:template name="seealso" text="Sjå òg «%t»."/>
 <l:template name="seealso-separator" text=", "/>
 </l:context>
-<l:context name="msgset"><l:template name="MsgAud" text="Publikum: "/>
+<l:context name="msgset"><l:template name="MsgAud" text="Målgruppe: "/>
 <l:template name="MsgLevel" text="Nivå: "/>
-<l:template name="MsgOrig" text="Opphav: "/>
+<l:template name="MsgOrig" text="Kilde: "/>
 </l:context>
-<l:context name="datetime"><l:template name="format" text="m/d/Y" lang="en"/>
+<l:context name="datetime"><l:template name="format" text="Y-m-d"/>
 </l:context>
-<l:context name="termdef"><l:template name="prefix" text="[Definition: " lang="en"/>
-<l:template name="suffix" text="]" lang="en"/>
+<l:context name="termdef"><l:template name="prefix" text="[Definisjon: "/>
+<l:template name="suffix" text="]"/>
 </l:context>
-<l:context name="datetime-full"><l:template name="January" text="January" lang="en"/>
-<l:template name="February" text="February" lang="en"/>
-<l:template name="March" text="March" lang="en"/>
-<l:template name="April" text="April" lang="en"/>
-<l:template name="May" text="May" lang="en"/>
-<l:template name="June" text="June" lang="en"/>
-<l:template name="July" text="July" lang="en"/>
-<l:template name="August" text="August" lang="en"/>
-<l:template name="September" text="September" lang="en"/>
-<l:template name="October" text="October" lang="en"/>
-<l:template name="November" text="November" lang="en"/>
-<l:template name="December" text="December" lang="en"/>
-<l:template name="Monday" text="Monday" lang="en"/>
-<l:template name="Tuesday" text="Tuesday" lang="en"/>
-<l:template name="Wednesday" text="Wednesday" lang="en"/>
-<l:template name="Thursday" text="Thursday" lang="en"/>
-<l:template name="Friday" text="Friday" lang="en"/>
-<l:template name="Saturday" text="Saturday" lang="en"/>
-<l:template name="Sunday" text="Sunday" lang="en"/>
+<l:context name="datetime-full"><l:template name="January" text="Januar"/>
+<l:template name="February" text="Februar"/>
+<l:template name="March" text="Mars"/>
+<l:template name="April" text="April"/>
+<l:template name="May" text="Mai"/>
+<l:template name="June" text="Juni"/>
+<l:template name="July" text="Juli"/>
+<l:template name="August" text="August"/>
+<l:template name="September" text="September"/>
+<l:template name="October" text="Oktober"/>
+<l:template name="November" text="November"/>
+<l:template name="December" text="Desember"/>
+<l:template name="Monday" text="Måndag"/>
+<l:template name="Tuesday" text="Tysdag"/>
+<l:template name="Wednesday" text="Onsdag"/>
+<l:template name="Thursday" text="Torsdag"/>
+<l:template name="Friday" text="Fredag"/>
+<l:template name="Saturday" text="Laurdag"/>
+<l:template name="Sunday" text="Sundag"/>
 </l:context>
-<l:context name="datetime-abbrev"><l:template name="Jan" text="Jan" lang="en"/>
-<l:template name="Feb" text="Feb" lang="en"/>
-<l:template name="Mar" text="Mar" lang="en"/>
-<l:template name="Apr" text="Apr" lang="en"/>
-<l:template name="May" text="May" lang="en"/>
-<l:template name="Jun" text="Jun" lang="en"/>
-<l:template name="Jul" text="Jul" lang="en"/>
-<l:template name="Aug" text="Aug" lang="en"/>
-<l:template name="Sep" text="Sep" lang="en"/>
-<l:template name="Oct" text="Oct" lang="en"/>
-<l:template name="Nov" text="Nov" lang="en"/>
-<l:template name="Dec" text="Dec" lang="en"/>
-<l:template name="Mon" text="Mon" lang="en"/>
-<l:template name="Tue" text="Tue" lang="en"/>
-<l:template name="Wed" text="Wed" lang="en"/>
-<l:template name="Thu" text="Thu" lang="en"/>
-<l:template name="Fri" text="Fri" lang="en"/>
-<l:template name="Sat" text="Sat" lang="en"/>
-<l:template name="Sun" text="Sun" lang="en"/>
+<l:context name="datetime-abbrev"><l:template name="Jan" text="Jan."/>
+<l:template name="Feb" text="Feb."/>
+<l:template name="Mar" text="Mars"/>
+<l:template name="Apr" text="April"/>
+<l:template name="May" text="Mai"/>
+<l:template name="Jun" text="Juni"/>
+<l:template name="Jul" text="Juli"/>
+<l:template name="Aug" text="Aug."/>
+<l:template name="Sep" text="Sep."/>
+<l:template name="Oct" text="Okt."/>
+<l:template name="Nov" text="Nov."/>
+<l:template name="Dec" text="Des."/>
+<l:template name="Mon" text="Må"/>
+<l:template name="Tue" text="Ty."/>
+<l:template name="Wed" text="On."/>
+<l:template name="Thu" text="To."/>
+<l:template name="Fri" text="Fr."/>
+<l:template name="Sat" text="Lø."/>
+<l:template name="Sun" text="Su."/>
 </l:context>
 <l:context name="htmlhelp"><l:template name="langcode" text="0x0814 Norwegian (Nynorsk)"/>
 </l:context>
-<l:context name="index"><l:template name="term-separator" text=", " lang="en"/>
-<l:template name="number-separator" text=", " lang="en"/>
-<l:template name="range-separator" text="-" lang="en"/>
+<l:context name="index"><l:template name="term-separator" text=", "/>
+<l:template name="number-separator" text=", "/>
+<l:template name="range-separator" text="–"/>
 </l:context>
-<l:context name="iso690"><l:template name="lastfirst.sep" text=", " lang="en"/>
-<l:template name="alt.person.two.sep" text=" – " lang="en"/>
-<l:template name="alt.person.last.sep" text=" – " lang="en"/>
-<l:template name="alt.person.more.sep" text=" – " lang="en"/>
-<l:template name="primary.editor" text=" (ed.)" lang="en"/>
-<l:template name="primary.many" text=", et al." lang="en"/>
-<l:template name="primary.sep" text=". " lang="en"/>
-<l:template name="submaintitle.sep" text=": " lang="en"/>
-<l:template name="title.sep" text=". " lang="en"/>
-<l:template name="othertitle.sep" text=", " lang="en"/>
-<l:template name="medium1" text=" [" lang="en"/>
-<l:template name="medium2" text="]" lang="en"/>
-<l:template name="secondary.person.sep" text="; " lang="en"/>
-<l:template name="secondary.sep" text=". " lang="en"/>
-<l:template name="respons.sep" text=". " lang="en"/>
-<l:template name="edition.sep" text=". " lang="en"/>
-<l:template name="edition.serial.sep" text=", " lang="en"/>
-<l:template name="issuing.range" text="-" lang="en"/>
-<l:template name="issuing.div" text=", " lang="en"/>
-<l:template name="issuing.sep" text=". " lang="en"/>
-<l:template name="partnr.sep" text=". " lang="en"/>
-<l:template name="placepubl.sep" text=": " lang="en"/>
-<l:template name="publyear.sep" text=", " lang="en"/>
-<l:template name="pubinfo.sep" text=". " lang="en"/>
-<l:template name="spec.pubinfo.sep" text=", " lang="en"/>
-<l:template name="upd.sep" text=", " lang="en"/>
-<l:template name="datecit1" text=" [cited " lang="en"/>
-<l:template name="datecit2" text="]" lang="en"/>
-<l:template name="extent.sep" text=". " lang="en"/>
-<l:template name="locs.sep" text=", " lang="en"/>
-<l:template name="location.sep" text=". " lang="en"/>
-<l:template name="serie.sep" text=". " lang="en"/>
-<l:template name="notice.sep" text=". " lang="en"/>
-<l:template name="access" text="Available " lang="en"/>
-<l:template name="acctoo" text="Also available " lang="en"/>
-<l:template name="onwww" text="from World Wide Web" lang="en"/>
-<l:template name="oninet" text="from Internet" lang="en"/>
-<l:template name="access.end" text=": " lang="en"/>
-<l:template name="link1" text="&lt;" lang="en"/>
-<l:template name="link2" text="&gt;" lang="en"/>
-<l:template name="access.sep" text=". " lang="en"/>
-<l:template name="isbn" text="ISBN " lang="en"/>
-<l:template name="issn" text="ISSN " lang="en"/>
-<l:template name="stdnum.sep" text=". " lang="en"/>
-<l:template name="patcountry.sep" text=". " lang="en"/>
-<l:template name="pattype.sep" text=", " lang="en"/>
-<l:template name="patnum.sep" text=". " lang="en"/>
-<l:template name="patdate.sep" text=". " lang="en"/>
-</l:context><l:letters lang="en"><l:l i="-1"/>
+<l:context name="iso690"><l:template name="lastfirst.sep" text=", "/>
+<l:template name="alt.person.two.sep" text=" – "/>
+<l:template name="alt.person.last.sep" text=" – "/>
+<l:template name="alt.person.more.sep" text=" – "/>
+<l:template name="primary.editor" text=" (red.)"/>
+<l:template name="primary.many" text=", med flere"/>
+<l:template name="primary.sep" text=". "/>
+<l:template name="submaintitle.sep" text=": "/>
+<l:template name="title.sep" text=". "/>
+<l:template name="othertitle.sep" text=", "/>
+<l:template name="medium1" text=" ["/>
+<l:template name="medium2" text="]"/>
+<l:template name="secondary.person.sep" text="; "/>
+<l:template name="secondary.sep" text=". "/>
+<l:template name="respons.sep" text=". "/>
+<l:template name="edition.sep" text=". "/>
+<l:template name="edition.serial.sep" text=", "/>
+<l:template name="issuing.range" text="–"/>
+<l:template name="issuing.div" text=", "/>
+<l:template name="issuing.sep" text=". "/>
+<l:template name="partnr.sep" text=". "/>
+<l:template name="placepubl.sep" text=": "/>
+<l:template name="publyear.sep" text=", "/>
+<l:template name="pubinfo.sep" text=". "/>
+<l:template name="spec.pubinfo.sep" text=", "/>
+<l:template name="upd.sep" text=", "/>
+<l:template name="datecit1" text=" [sitert "/>
+<l:template name="datecit2" text="]"/>
+<l:template name="extent.sep" text=". "/>
+<l:template name="locs.sep" text=", "/>
+<l:template name="location.sep" text=". "/>
+<l:template name="serie.sep" text=". "/>
+<l:template name="notice.sep" text=". "/>
+<l:template name="access" text="Tilgjengeleg "/>
+<l:template name="acctoo" text="Òg tilgjengeleg "/>
+<l:template name="onwww" text="på verdsveven"/>
+<l:template name="oninet" text="på Internett"/>
+<l:template name="access.end" text=": "/>
+<l:template name="link1" text="&lt;"/>
+<l:template name="link2" text="&gt;"/>
+<l:template name="access.sep" text=". "/>
+<l:template name="isbn" text="ISBN "/>
+<l:template name="issn" text="ISSN "/>
+<l:template name="stdnum.sep" text=". "/>
+<l:template name="patcountry.sep" text=". "/>
+<l:template name="pattype.sep" text=", "/>
+<l:template name="patnum.sep" text=". "/>
+<l:template name="patdate.sep" text=". "/>
+</l:context><l:letters><l:l i="-1"/>
 <l:l i="0">Symbols</l:l>
 <l:l i="10">A</l:l>
 <l:l i="10">a</l:l>
@@ -674,10 +674,6 @@
 <l:l i="10">â</l:l>
 <l:l i="10">Ã</l:l>
 <l:l i="10">ã</l:l>
-<l:l i="10">Ä</l:l>
-<l:l i="10">ä</l:l>
-<l:l i="10">Å</l:l>
-<l:l i="10">å</l:l>
 <l:l i="10">Ā</l:l>
 <l:l i="10">ā</l:l>
 <l:l i="10">Ă</l:l>
@@ -1004,10 +1000,6 @@
 <l:l i="150">ô</l:l>
 <l:l i="150">Õ</l:l>
 <l:l i="150">õ</l:l>
-<l:l i="150">Ö</l:l>
-<l:l i="150">ö</l:l>
-<l:l i="150">Ø</l:l>
-<l:l i="150">ø</l:l>
 <l:l i="150">Ō</l:l>
 <l:l i="150">ō</l:l>
 <l:l i="150">Ŏ</l:l>
@@ -1285,5 +1277,15 @@
 <l:l i="260">ẓ</l:l>
 <l:l i="260">Ẕ</l:l>
 <l:l i="260">ẕ</l:l>
+<l:l i="270">Æ</l:l>
+<l:l i="270">æ</l:l>
+<l:l i="270">Ä</l:l>
+<l:l i="270">ä</l:l>
+<l:l i="280">Ø</l:l>
+<l:l i="280">ø</l:l>
+<l:l i="280">Ö</l:l>
+<l:l i="280">ö</l:l>
+<l:l i="290">Å</l:l>
+<l:l i="290">å</l:l>
 </l:letters>
 </l:l10n>
