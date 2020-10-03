@@ -1,6 +1,6 @@
 Release Notes for the DocBook XSL Stylesheets
 
-2020-10-01
+2020-10-03
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -332,6 +332,10 @@ Gentext
 The following changes have been made to the gentext code since the 1.79.1
 release.
 
+  • Petter Reinholdtsen: locale/README
+
+    Change URLs in locale README from sourceforge to github
+
   • Petter Reinholdtsen: locale/nb.xml; locale/nn.xml
 
     Corrected and updated nb and nn locales
@@ -351,7 +355,7 @@ release.
   • Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/
     l10n.dtd; locale/Auditl⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 Common
 
@@ -370,7 +374,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
     autoidx-kimber.xsl; xsl/a⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 FO
 
@@ -457,7 +461,7 @@ The following changes have been made to the fo code since the 1.79.1 release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 HTML
 
@@ -496,14 +500,10 @@ The following changes have been made to the html code since the 1.79.1 release.
 
     fix issue #40 Add support for RDFalite attributes
 
-  • Robert Stayton: xsl/graphics.xsl
-
-    fix infinite recursion when inlinemediaobject in figure/title
-
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 Manpages
 
@@ -530,7 +530,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
     block.xsl; xsl/b⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 Epub
 
@@ -544,7 +544,7 @@ The following changes have been made to the epub code since the 1.79.1 release.
   • Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/
     bin/spec/.gitign⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 HTMLHelp
 
@@ -554,7 +554,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     htmlhelp-common.xsl; xsl/⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 Eclipse
 
@@ -568,7 +568,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     eclipse.xsl; xsl/eclipse3⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 JavaHelp
 
@@ -582,7 +582,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     javahelp.xsl
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 Roundtrip
 
@@ -597,7 +597,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
     blocks2dbk.dtd; xsl⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 Slides
 
@@ -619,7 +619,7 @@ release.
   • Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html;
     files/s5/index-xox⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 Website
 
@@ -633,7 +633,7 @@ release.
   • Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
     RELEASE-NOTES.xml; T⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 Webhelp
 
@@ -652,7 +652,7 @@ release.
   • Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
     Makefile.sample; xsl/bu⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 Params
 
@@ -696,7 +696,7 @@ release.
   • Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/
     abstract.properties.xml; xsl/abstrac⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 Highlighting
 
@@ -722,7 +722,7 @@ release.
   • Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
     cmake-hl.xml; xsl/common.⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 Profiling
 
@@ -732,7 +732,7 @@ release.
   • Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
     strip-attributes.xsl; xsl/xsl2p⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 Lib
 
@@ -744,7 +744,7 @@ The following changes have been made to the lib code since the 1.79.1 release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 Tools
 
@@ -759,7 +759,7 @@ release.
   • Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
     ant-contrib-1.0b⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 Template
 
@@ -772,7 +772,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 Extensions
 
@@ -781,7 +781,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 XSL-Saxon
 
@@ -795,7 +795,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 XSL-Xalan
 
@@ -805,7 +805,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 XSL-libxslt
 
@@ -815,7 +815,7 @@ release.
   • Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/
     docbook.py; python/xslt.p⋯
 
-    fix issue #31 missing space after vertical simplelist
+    fix infinite recursion when inlinemediaobject in figure/title
 
 Release Notes: 1.79.2
 
