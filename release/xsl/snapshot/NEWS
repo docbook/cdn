@@ -65,12 +65,16 @@ release.
   • Robert Stayton: .gitignore; Makefile; README; dsssl/dsssl.dsl; dtd/
     l10n.dtd; locale/Auditl⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 Common
 
 The following changes have been made to the common code since the 1.79.1
 release.
+
+  • Richard Hamilton: xsl/l10n.xsl
+
+    Update gentext.template and gentext.template.exists to fix a bug that caused gentext.template.exists to return an incorrect negative value if the template had a null string for the returned value.
 
   • Norman Walsh: xsl/autoidx-kimber.xsl; xsl/autoidx-kosek.xsl; xsl/
     charmap.xsl; xsl/common.x⋯
@@ -84,7 +88,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/addns.xsl; xsl/
     autoidx-kimber.xsl; xsl/a⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 FO
 
@@ -164,14 +168,10 @@ The following changes have been made to the fo code since the 1.79.1 release.
 
     fix issue #99 multiple indexes with autolink.index.see fails with FOP
 
-  • Robert Stayton: xsl/graphics.xsl
-
-    fix issue #62 Make use of alternate text set for mediaobject
-
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 HTML
 
@@ -213,7 +213,7 @@ The following changes have been made to the html code since the 1.79.1 release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/admon.xsl; xsl/
     annotations.xsl; xsl/auto⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 Manpages
 
@@ -240,7 +240,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/ChangeLog.20020917; xsl/Makefile; xsl/
     block.xsl; xsl/b⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 Epub
 
@@ -254,7 +254,7 @@ The following changes have been made to the epub code since the 1.79.1 release.
   • Robert Stayton: xsl/README; xsl/bin/dbtoepub; xsl/bin/lib/docbook.rb; xsl/
     bin/spec/.gitign⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 HTMLHelp
 
@@ -264,7 +264,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     htmlhelp-common.xsl; xsl/⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 Eclipse
 
@@ -278,7 +278,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     eclipse.xsl; xsl/eclipse3⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 JavaHelp
 
@@ -292,7 +292,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/
     javahelp.xsl
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 Roundtrip
 
@@ -307,7 +307,7 @@ release.
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/blocks-spec.xml; xsl/
     blocks2dbk.dtd; xsl⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 Slides
 
@@ -329,7 +329,7 @@ release.
   • Robert Stayton: .gitignore; Makefile; VERSION; files/s5/index-osf.html;
     files/s5/index-xox⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 Website
 
@@ -343,7 +343,7 @@ release.
   • Robert Stayton: .gitignore; AUTHORS; BUGS; INSTALL; Makefile; README;
     RELEASE-NOTES.xml; T⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 Webhelp
 
@@ -362,7 +362,7 @@ release.
   • Robert Stayton: xsl/LICENSE; xsl/Makefile; xsl/Makefile.param; xsl/
     Makefile.sample; xsl/bu⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 Params
 
@@ -406,7 +406,7 @@ release.
   • Robert Stayton: xsl/abstract.notitle.enabled.xml; xsl/
     abstract.properties.xml; xsl/abstrac⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 Highlighting
 
@@ -432,7 +432,7 @@ release.
   • Robert Stayton: xsl/README; xsl/bourne-hl.xml; xsl/c-hl.xml; xsl/
     cmake-hl.xml; xsl/common.⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 Profiling
 
@@ -442,7 +442,7 @@ release.
   • Robert Stayton: xsl/profile-mode.xsl; xsl/profile.xsl; xsl/
     strip-attributes.xsl; xsl/xsl2p⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 Lib
 
@@ -454,7 +454,7 @@ The following changes have been made to the lib code since the 1.79.1 release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml; xsl/lib.xweb
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 Tools
 
@@ -469,7 +469,7 @@ release.
   • Robert Stayton: xsl/bin/docbook-xsl-update; xsl/build-shared.xml; xsl/lib/
     ant-contrib-1.0b⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 Template
 
@@ -482,7 +482,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/titlepage.xsl
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 Extensions
 
@@ -491,7 +491,7 @@ release.
 
   • Robert Stayton: xsl/.gitignore; xsl/Makefile; xsl/build.xml
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 XSL-Saxon
 
@@ -505,7 +505,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 XSL-Xalan
 
@@ -515,7 +515,7 @@ release.
   • Robert Stayton: .announcement-text; .gitignore; AUTHORS; BUGS; INSTALL;
     Makefile; README; ⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
 XSL-libxslt
 
@@ -525,5 +525,5 @@ release.
   • Robert Stayton: python/.gitignore; python/README.LIBXSLT; python/
     docbook.py; python/xslt.p⋯
 
-    fix infinite recursion when inlinemediaobject in figure/title
+    fix issue #62 Make use of alternate text set for mediaobject
 
