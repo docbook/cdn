@@ -2,6 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:db="http://docbook.org/ns/docbook"
                 xmlns:ext="http://docbook.org/extensions/xslt"
+                xmlns:f="http://docbook.org/ns/docbook/functions"
                 xmlns:m="http://docbook.org/ns/docbook/modes"
                 xmlns:map="http://www.w3.org/2005/xpath-functions/map"
                 xmlns:mp="http://docbook.org/ns/docbook/modes/private"
@@ -10,14 +11,12 @@
                 xmlns:vp="http://docbook.org/ns/docbook/variables/private"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns="http://www.w3.org/1999/xhtml"
-                exclude-result-prefixes="db ext m map mp t v vp xs"
+                exclude-result-prefixes="db ext f m map mp t v vp xs"
                 version="3.0">
 
-<!-- This will all be in XProc 3.0 eventually, hack for now... -->
-<xsl:import href="param.xsl"/>
-<xsl:variable name="v:debug" select="tokenize($debug, '\s')" static="yes"/>
+<xsl:template name="t:preprocess" as="document-node()">
+  <xsl:param name="source" as="document-node()" select="."/>
 
-<xsl:template match="/">
   <xsl:variable name="source" as="document-node()">
     <xsl:message use-when="'pipeline' = $v:debug"
                  select="'Preprocess: logical structure'"/>
@@ -57,15 +56,22 @@
   </xsl:variable>
 
   <xsl:variable name="source" as="document-node()">
-    <xsl:message use-when="'pipeline' = $v:debug"
-                 select="'Preprocess: transclude'"/>
-    <xsl:sequence select="transform(map {
-      'stylesheet-location': 'transforms/30-transclude.xsl',
-      'source-node': $source,
-      'stylesheet-params': map {
-         QName('', 'psep'): $transclusion-prefix-separator
-        }
-      })?output"/>
+    <xsl:choose>
+      <xsl:when test="f:is-true($docbook-transclusion)">
+        <xsl:message use-when="'pipeline' = $v:debug"
+                     select="'Preprocess: transclude'"/>
+        <xsl:sequence select="transform(map {
+          'stylesheet-location': 'transforms/30-transclude.xsl',
+          'source-node': $source,
+          'stylesheet-params': map {
+             QName('', 'psep'): $transclusion-prefix-separator
+            }
+          })?output"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:sequence select="$source"/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:variable>
 
   <!-- Profiling *isn't* done with an external transform
@@ -147,7 +153,103 @@
     <xsl:message select="'Ignoring validation, extension unavailable'"/>
   </xsl:if>
 
+  <xsl:variable name="source" as="document-node()">
+    <xsl:choose>
+      <xsl:when test="f:is-true(f:pi($source/*/db:info, 'oxy-markup', $oxy-markup))
+                      and exists($source//processing-instruction()
+                                 [starts-with(name(), 'oxy_')])">
+        <xsl:message use-when="'pipeline' = $v:debug"
+                     select="'Preprocess: oxy-markup'"/>
+        <xsl:sequence select="transform(map {
+                          'stylesheet-location': 'transforms/80-oxy-markup.xsl',
+                          'source-node': $source
+                          })?output"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:sequence select="$source"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+  
   <xsl:sequence select="$source"/>
+</xsl:template>
+
+<xsl:template name="t:process" as="document-node()">
+  <xsl:param name="source" as="document-node()" select="."/>
+
+  <xsl:apply-templates select="$source" mode="m:docbook"/>
+</xsl:template>
+
+<xsl:template name="t:chunk-cleanup" as="document-node()">
+  <xsl:param name="source" as="document-node()" select="."/>
+  <xsl:param name="docbook" as="document-node()" required="yes"/>
+
+  <xsl:apply-templates select="$source" mode="m:chunk-cleanup">
+    <xsl:with-param name="docbook" select="$docbook" tunnel="yes"/>
+  </xsl:apply-templates>
+</xsl:template>
+
+<xsl:template name="t:chunk-output" as="map(xs:string, item()*)">
+  <xsl:param name="source" as="document-node()" select="."/>
+  <xsl:param name="docbook" as="document-node()" required="yes"/>
+
+  <xsl:apply-templates select="$source" mode="m:chunk-output">
+    <xsl:with-param name="docbook" select="$docbook" tunnel="yes"/>
+  </xsl:apply-templates>
+</xsl:template>
+
+<xsl:template name="t:postprocess" as="document-node()?">
+  <xsl:param name="source" as="document-node()" select="."/>
+  <xsl:param name="docbook" as="document-node()" required="yes"/>
+
+  <xsl:variable name="result" as="document-node()">
+    <xsl:call-template name="t:chunk-cleanup">
+      <xsl:with-param name="source" select="$source"/>
+      <xsl:with-param name="docbook" select="$docbook"/>
+    </xsl:call-template>
+  </xsl:variable>
+
+  <xsl:variable name="result" as="map(xs:string, item()*)">
+    <xsl:call-template name="t:chunk-output">
+      <xsl:with-param name="docbook" select="$source"/>
+      <xsl:with-param name="source" select="$result"/>
+    </xsl:call-template>
+  </xsl:variable>
+
+  <xsl:for-each select="map:keys($result)">
+    <xsl:if test=". != 'output'">
+      <xsl:result-document href="{.}">
+        <xsl:sequence select="map:get($result, .)"/>
+      </xsl:result-document>
+    </xsl:if>
+  </xsl:for-each>
+
+  <xsl:sequence select="$result?output"/>
+</xsl:template>
+
+<xsl:template name="t:docbook">
+  <xsl:param name="source" as="document-node()" select="."/>
+
+  <xsl:variable name="source" as="document-node()">
+    <xsl:call-template name="t:preprocess">
+      <xsl:with-param name="source" select="$source"/>
+    </xsl:call-template>
+  </xsl:variable>
+
+  <xsl:variable name="result" as="document-node()">
+    <xsl:message use-when="'pipeline' = $v:debug"
+                 select="'Process…'"/>
+    <xsl:call-template name="t:process">
+      <xsl:with-param name="source" select="$source"/>
+    </xsl:call-template>
+  </xsl:variable>
+
+  <xsl:message use-when="'pipeline' = $v:debug"
+               select="'Postprocess…'"/>
+  <xsl:call-template name="t:postprocess">
+    <xsl:with-param name="docbook" select="$source"/>
+    <xsl:with-param name="source" select="$result"/>
+  </xsl:call-template>
 </xsl:template>
 
 </xsl:stylesheet>
