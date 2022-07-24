@@ -1,6 +1,4 @@
-/* Automatically generated, do not edit. */
-
-/* DocBook xslTNG version 1.7.1
+/* DocBook xslTNG version 1.8.0
  *
  * This is docbook.css.
  *
@@ -9,28 +7,112 @@
  */
 
 :root {
+    --symbol-fonts: "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
+    --body-family: "Noto Serif", serif, var(--symbol-fonts);
+    --title-family: "Noto Sans", sans-serif, var(--symbol-fonts);
+    --mono-family: "B612 Mono", monospace, var(--symbol-fonts);
 
     /* The default theme. */
+    --background-color: #fffff8;
+    --surface-color: #fffff8;
+    --primary-color: #7f7f7f;
+    --primary-variant-color: #5f5f5f;
+    --secondary-color: #ffbc42;
+    --error-color: #ffafaf;
+    --error-border-color: #b00020;
+    --on-background-color: #000000;
+    --on-surface-color: #000000;
+    --on-primary-color: #ffffff;
+    --on-primary-variant-color: #ffffff;
+    --on-secondary-color: #000000;
+    --on-error-color: #000000;
+    --enabled-color: rgb(240,240,240);
+    --hovered-color: rgb(235,235,235);
+    --focused-color: rgb(221,221,221);
+    --modal-overlay-color: rgba(255,255,255,0.85);
 
+    --border-color: var(--primary-color);
 
+    --header-color: var(--background-color);
+    --on-header-color: var(--on-background-color);
 
+    --sidebar-color: var(--primary-color);
+    --on-sidebar-color: var(--on-primary-color);
 
+    --table-border-style: 1px solid var(--primary-color);
 
+    --numbered-separator-style: 1px solid var(--primary-color);
+    --numbered-number-color: var(--on-surface-color);
+    --numbered-background-color: var(--focused-color);
+    --verbatim-odd-background-color: var(--hovered-color);
+    --verbatim-even-background-color: var(--enabled-color);
 
+    --verbatim-line-highlight-background-color: var(--primary-color);
+    --verbatim-line-highlight-color: var(--on-primary-color);
 
+    --revadded-background-color: var(--primary-color);
+    --revadded-color: var(--on-primary-color);
+    --revadded-before: "<ins>";
+    --revadded-after: "</ins>";
 
+    --revchanged-background-color: var(--secondary-color);
+    --revchanged-color: var(--on-secondary-color);
+    --revchanged-before: "<chg>";
+    --revchanged-after: "</chg>";
 
+    --revdeleted-background-color: var(--error-color);
+    --revdeleted-color: var(--on-error-color);
+    --revdeleted-before: "<del>";
+    --revdeleted-after: "</del>";
 
+    --note-border-color: var(--primary-color);
+    --note-border-style: 2pt solid var(--note-border-color);
+    --note-color: var(--surface-color);
+    --on-note-color: var(--on-surface-color);
 
+    --tip-border-color: var(--primary-color);
+    --tip-border-style: 2pt solid var(--tip-border-color);
+    --tip-color: var(--surface-color);
+    --on-tip-color: var(--on-surface-color);
 
+    --important-border-color: var(--secondary-color);
+    --important-border-style: 2pt solid var(--important-border-color);
+    --important-color: var(--surface-color);
+    --on-important-color: var(--on-surface-color);
 
+    --caution-border-color: var(--secondary-color);
+    --caution-border-style: 2pt solid var(--caution-border-color);
+    --caution-color: var(--surface-color);
+    --on-caution-color: var(--on-surface-color);
 
+    --warning-border-color: var(--error-border-color);
+    --warning-border-style: 2pt solid var(--warning-border-color);
+    --warning-color: var(--error-color);
+    --on-warning-color: var(--on-error-color);
 
+    --danger-border-color: var(--error-border-color);
+    --danger-border-style: 2pt solid var(--danger-border-color);
+    --danger-color: var(--error-color);
+    --on-danger-color: var(--on-error-color);
 
+    --debug-background-color: var(--error-color);
+    --debug-color: var(--on-error-color);
 
+    --remark-background-color: var(--primary-color);
+    --remark-color: var(--on-primary-color);
+    --remark-border-color: var(--primary-color);
+    --remark-border-style: 1px solid var(--remark-border-color);
 
+    --annotation-separator-border-style: 2px dashed var(--border-color);
 
+    --annotation-header-background-color: var(--surface-color);
+    --annotation-header-color: var(--on-surface-color);
+    --annotation-header-separator-border-style: 1px solid var(--primary-color);
+    --annotation-body-border-style: 1px solid var(--primary-color);
 
+    --nav-background-color: var(--surface-color);
+    --error-border-style: 1px solid var(--error-border-color);
+    --keycap-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
 }
 
 /* These choices are inspired by the material design system. Someone
@@ -39,9 +121,44 @@
 */
 
 html.materials-dark {
+    --background-color: #121212;
+    --surface-color: #121212;
+    --primary-color: #bb86fc;
+    --primary-variant-color: #3700b3;
+    --secondary-color: #03dac6;
+    --error-color: #cf6679;
+    --error-border-color: #b00020;
+    --on-background-color: #ffffff;
+    --on-surface-color: #ffffff;
+    --on-primary-color: #000000;
+    --on-primary-variant-color: #ffffff;
+    --on-secondary-color: #000000;
+    --on-error-color: #000000;
+    --enabled-color: rgb(44,33,56);
+    --hovered-color: rgb(49,38,63);
+    --focused-color: rgb(63,51,74);
+    --modal-overlay-color: rgba(18,18,18,0.85);
+    --keycap-box-shadow: 1px 1px 1px 0px rgba(255,255,255,0.75);
 }
 
 html.materials-light {
+    --background-color: #ffffff;
+    --surface-color: #ffffff;
+    --primary-color: #6200ee;
+    --primary-variant-color: #3700b3;
+    --secondary-color: #03dac6;
+    --error-color: #b00020;
+    --error-border-color: #cf6679;
+    --on-background-color: #000000;
+    --on-surface-color: #000000;
+    --on-primary-color: #ffffff;
+    --on-primary-variant-color: #ffffff;
+    --on-secondary-color: #000000;
+    --on-error-color: #ffffff;
+    --enabled-color: rgb(240,240,240);
+    --hovered-color: rgb(235,235,235);
+    --focused-color: rgb(221,221,221);
+    --modal-overlay-color: rgba(255,255,255,0.85);
 }
 
 html {
@@ -50,7 +167,7 @@ html {
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    font-family: "Noto Serif", serif, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
+    font-family: var(--body-family);
 }
 
 body {
@@ -65,15 +182,15 @@ body {
 }
 
 .error * {
-    background-color: #b00020;
-    color: #ffffff;
+    background-color: var(--error-color);
+    color: var(--on-error-color);
     padding-left: 2px;
     padding-right: 2px;
 }
 
 span.error {
     display: inline-block;
-    border: 1px solid #cf6679;
+    border: var(--error-border-style);
     border-radius: 4px;
     padding: 2px;
     margin-right: 0.5em;
@@ -131,22 +248,22 @@ span.error.broken-link::after {
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1em;
-    background-color: #b00020;
-    color: #ffffff;
+    background-color: var(--debug-background-color);
+    color: var(--debug-color);
 }
 
 .remark {
-    border: 1px solid #6200ee;
+    border: var(--remark-border-style);
     border-radius: 3px;
     padding-left: 4px;
     padding-right: 4px;
-    color: #000000;
+    color: var(--on-surface-color);
     background: repeating-linear-gradient(
         135deg,
-        rgb(221,221,221),
-        rgb(221,221,221) 5px,
-        rgb(240,240,240) 5px,
-        rgb(240,240,240) 10px
+        var(--focused-color),
+        var(--focused-color) 5px,
+        var(--enabled-color) 5px,
+        var(--enabled-color) 10px
     );
 }
 
@@ -156,9 +273,9 @@ span.remark {
 }
 
 .keycap {
-    font-family: "B612 Mono", monospace, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
-    background-color: rgb(235,235,235);
-    border: 1px solid #000000;
+    font-family: var(--mono-family);
+    background-color: var(--verbatim-odd-background-color);
+    border: 1px solid var(--numbered-number-color);
     border-radius: 3px;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
@@ -166,13 +283,13 @@ span.remark {
     padding-right: 0.3em;
     margin: 0;
     font-size: 85%;
-    box-shadow: 1px 1px 1px 0px rgba(255,255,255,0.75);
+    box-shadow: var(--keycap-box-shadow);
 }
 
 code {
-    font-family: "B612 Mono", monospace, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
-    background-color: rgb(235,235,235);
-    border: 1px solid rgb(221,221,221);
+    font-family: var(--mono-family);
+    background-color: var(--verbatim-odd-background-color);
+    border: 1px solid var(--focused-color);
     border-radius: 6px;
     padding-top: 0.1em;
     padding-bottom: 0.1em;
@@ -266,9 +383,9 @@ a.pmuj {
 /* ============================================================ */
 
 h1, h2, h3, h4, h5, h6 {
-    color: #000000;
-    background-color: #ffffff;
-    font-family: "Noto Sans", sans-serif, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
+    color: var(--on-header-color);
+    background-color: var(--header-color);
+    font-family: var(--title-family);
     font-weight: 600;
     font-style: normal;
 }
@@ -316,10 +433,10 @@ h6 { font-weight: 400;
    }
 
 .title {
-    color: #000000;
-    background-color: #ffffff;
+    color: var(--on-header-color);
+    background-color: var(--header-color);
     font-weight: bold;
-    font-family: "Noto Sans", sans-serif, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
+    font-family: var(--title-family);
     margin-bottom: 0.5em;
 }    
 
@@ -338,6 +455,13 @@ header .authorgroup {
 
 /* ============================================================ */
 
+body.draft {
+    background-image: url('draft.svg');
+    background-position: 2% 2%;
+    background-repeat: no-repeat;
+    background-size: 10%;
+}
+
 .article > header {
     text-align: center;
     margin-bottom: 2em;
@@ -347,7 +471,7 @@ header .authorgroup {
     text-align: left;
     margin-left: 5em;
     margin-right: 5em;
-    border: 1px solid #6200ee;
+    border: 1px solid var(--border-color);
     padding-left: 1em;
     padding-right: 1em;
     border-radius: 0.5em;
@@ -360,7 +484,7 @@ header .authorgroup {
     padding-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border: 1px solid #6200ee;
+    border: 1px solid var(--border-color);
     border-radius: 0.5em;
 }
 
@@ -369,7 +493,14 @@ header .authorgroup {
 }
 
 .revhistory .title {
-    border-bottom: 1px solid #6200ee;
+    font-weight: bold;
+    font-family: var(--title-family);
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.revhistory table {
+    width: 100%;
 }
 
 .revhistory table tr th,
@@ -489,22 +620,22 @@ th.empty {
 
 td.btop,
 th.btop {
-    border-top: 1px solid #6200ee;
+    border-top: var(--table-border-style);
 }
 
 td.bleft,
 th.bleft {
-    border-left: 1px solid #6200ee;
+    border-left: var(--table-border-style);
 }
 
 td.colsep,
 th.colsep {
-    border-right: 1px solid #6200ee;
+    border-right: var(--table-border-style);
 }
 
 td.rowsep,
 th.rowsep {
-    border-bottom: 1px solid #6200ee;
+    border-bottom: var(--table-border-style);
 }
 
 td.char,
@@ -575,7 +706,7 @@ th.char {
     text-align: center;
     vertical-align: top;
     font-size: 3rem;
-    color: #6200ee;
+    color: var(--note-border-color);
 }
 
 .admonition .body {
@@ -588,124 +719,124 @@ th.char {
 }
 
 .note {
-    border: 2pt solid #6200ee;
-    background-color: #ffffff;
-    color: #000000;
+    border: var(--note-border-style);
+    background-color: var(--note-color);
+    color: var(--on-note-color);
 } 
 
 .note .icon {
-    color: #6200ee;
+    color: var(--note-border-color);
 }    
 
 .note .title {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--note-color);
+    color: var(--on-note-color);
 }
 
 .note code {
-    border-color: #6200ee;
-    background-color: #ffffff;
+    border-color: var(--note-border-color);
+    background-color: var(--note-color);
 }
 
 .tip {
-    border: 2pt solid #6200ee;
-    background-color: #ffffff;
-    color: #000000;
+    border: var(--tip-border-style);
+    background-color: var(--tip-color);
+    color: var(--on-tip-color);
 } 
 
 .tip .icon {
-    color: #6200ee;
+    color: var(--tip-border-color);
 }    
 
 .tip .title {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--tip-color);
+    color: var(--on-tip-color);
 }
 
 .tip code {
-    border-color: #6200ee;
-    background-color: #ffffff;
+    border-color: var(--tip-border-color);
+    background-color: var(--tip-color);
 }
 
 .important {
-    border: 2pt solid #03dac6;
-    background-color: #ffffff;
-    color: #000000;
+    border: var(--important-border-style);
+    background-color: var(--important-color);
+    color: var(--on-important-color);
 } 
 
 .important .icon {
     padding-top: 2rem;
-    color: #03dac6;
+    color: var(--important-border-color);
 }
 
 .important .title {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--important-color);
+    color: var(--on-important-color);
 }
 
 .important code {
-    background-color: #ffffff;
-    border-color: #03dac6;
+    background-color: var(--important-color);
+    border-color: var(--important-border-color);
 }
 
 .caution {
-    border: 2pt solid #03dac6;
-    background-color: #ffffff;
-    color: #000000;
+    border: var(--caution-border-style);
+    background-color: var(--caution-color);
+    color: var(--on-caution-color);
 } 
 
 .caution .icon {
-    color: #03dac6;
+    color: var(--caution-border-color);
 }
 
 .caution .title {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--caution-color);
+    color: var(--on-caution-color);
 }
 
 .caution code {
-    background-color: #ffffff;
-    border-color: #03dac6;
+    background-color: var(--caution-color);
+    border-color: var(--caution-border-color);
 }
 
 .warning {
-    border: 2pt solid #cf6679;
-    background-color: #b00020;
-    color: #ffffff;
+    border: var(--warning-border-style);
+    background-color: var(--warning-color);
+    color: var(--on-warning-color);
 } 
 
 .warning .icon {
-    color: #cf6679;
+    color: var(--warning-border-color);
 }
 
 .warning .title {
-    background-color: #b00020;
-    color: #ffffff;
+    background-color: var(--warning-color);
+    color: var(--on-warning-color);
 }
 
 .warning code {
-    background-color: #b00020;
-    border-color: #cf6679;
+    background-color: var(--warning-color);
+    border-color: var(--warning-border-color);
 }
 
 .danger {
-    border: 2pt solid #cf6679;
-    background-color: #b00020;
-    color: #ffffff;
+    border: var(--danger-border-style);
+    background-color: var(--danger-color);
+    color: var(--on-danger-color);
 } 
 
 .danger .icon {
-    color: #cf6679;
+    color: var(--danger-border-color);
 }    
 
 .danger .title {
-    background-color: #b00020;
-    color: #ffffff;
+    background-color: var(--danger-color);
+    color: var(--on-danger-color);
 }
 
 .danger code {
-    background-color: #b00020;
-    border-color: #cf6679;
+    background-color: var(--danger-color);
+    border-color: var(--danger-border-color);
 }
 
 /* ============================================================ */
@@ -719,15 +850,17 @@ th.char {
 pre {
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 pre.address,
 pre.literallayout {
-    font-family: "Noto Serif", serif, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
+    font-family: var(--body-family);
 }
 
 pre.monospaced {
-    font-family: "B612 Mono", monospace, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
+    font-family: var(--mono-family);
 }
 
 pre.programlisting,
@@ -738,17 +871,17 @@ pre.screen {
 /* Adapted from https://stackoverflow.com/questions/41306797/html-how-to-add-line-numbers-to-a-source-code-block */
 
 pre.verblines span.line:nth-child(odd) {
-    background-color: rgb(235,235,235);
+    background-color: var(--verbatim-odd-background-color);
 }
 
 pre.verblines span.line:nth-child(even) {
-    background-color: rgb(240,240,240);
+    background-color: var(--verbatim-even-background-color);
 }
 
 /* Make the background of even lines the same as odd lines for
    "monochrome" listings. */
 pre.verblines.monochrome span.line:nth-child(even) {
-    background-color: rgb(235,235,235);
+    background-color: var(--verbatim-odd-background-color);
 }
 
 pre.address span.line:nth-child(odd),
@@ -762,7 +895,7 @@ pre.literallayout span.line:nth-child(even) {
 }
 
 pre.verblines span.ln {
-    font-family: "B612 Mono", monospace, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
+    font-family: var(--mono-family);
     width: 0;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -785,7 +918,7 @@ pre.verblines span.ln {
 }
 
 pre.numbered span.ln {
-    background-color: rgb(221,221,221);
+    background-color: var(--numbered-background-color);
     user-select: none;
 }
 
@@ -801,13 +934,13 @@ pre.verblines span.ld {
 }
 
 pre.verblines.numbered span.ld {
-    border-left: 1px solid #6200ee;
+    border-left: var(--numbered-separator-style);
     padding-left: 0.25em;
 }
 
 pre.verblines span.line.highlight {
-    background-color: #6200ee;
-    color: #ffffff;
+    background-color: var(--verbatim-line-highlight-background-color);
+    color: var(--verbatim-line-highlight-color);
 }
 
 /* ============================================================ */
@@ -825,7 +958,7 @@ pre.verblines span.line.highlight {
 .productionset .productions .production .lhs,
 .productionset .productions .production .rhs,
 .productionset .productions .production .lhssep {
-    font-family: "B612 Mono", monospace, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
+    font-family: var(--mono-family);
 }
 
 .productionset .productions .production .lhs,
@@ -853,7 +986,7 @@ pre.verblines span.line.highlight {
 }
 
 .lineannotation {
-    font-family: "Noto Serif", serif, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
+    font-family: var(--body-family);
     font-style: italic;
 }
 
@@ -866,7 +999,7 @@ pre.verblines span.line.highlight {
 
 .constraintdef .title {
     font-weight: bold;
-    font-family: "Noto Sans", sans-serif, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
+    font-family: var(--title-family);
 }
 
 /* ============================================================ */
@@ -918,15 +1051,15 @@ pre.verblines span.line.highlight {
 
 .funcprototype {
     margin-top: 1em;
-    font-family: "B612 Mono", monospace, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
+    font-family: var(--mono-family);
 }
 
 .funcprototype .paramdef {
-    font-family: "B612 Mono", monospace, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
+    font-family: var(--mono-family);
 }
 
 .funcprototype .parameter {
-    font-family: "Noto Serif", serif, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
+    font-family: var(--body-family);
     font-style: italic;
 }
 
@@ -975,7 +1108,7 @@ blockquote p {
 
 blockquote .title {
     font-weight: bold;
-    font-family: "Noto Sans", sans-serif, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
+    font-family: var(--title-family);
     margin-bottom: 0.25em;
 }
 
@@ -994,14 +1127,6 @@ blockquote p + .attribution {
 
 /* ============================================================ */
 
-.revhistory .title {
-    font-weight: bold;
-    font-family: "Noto Sans", sans-serif, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
-    margin-bottom: 0.5em;
-}
-
-/* ============================================================ */
-
 .figure,
 .example,
 .equation {
@@ -1010,11 +1135,11 @@ blockquote p + .attribution {
 
 .figure,
 .example {
-    border: 1px solid #6200ee;
+    border: 1px solid var(--border-color);
 }
 
 .figure .title {
-    font-family: "Noto Sans", sans-serif, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
+    font-family: var(--title-family);
 }
 
 .figure .media {
@@ -1062,7 +1187,7 @@ blockquote p + .attribution {
 }
 
 .synopfragmentref-number {
-    font-family: "B612 Mono", monospace, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
+    font-family: var(--mono-family);
     font-style: normal;
     font-weight: bold;
     font-size: 10pt;
@@ -1076,7 +1201,7 @@ blockquote p + .attribution {
 .cmdsynopsis .cmdpunct,
 .cmdsynopsis .group,
 .cmdsynopsis .arg {
-    font-family: "B612 Mono", monospace, "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
+    font-family: var(--mono-family);
 }
 
 .calloutlist dl dt {
@@ -1102,42 +1227,42 @@ a.callout-bug:visited {
 /* ============================================================ */
 
 .revadded {
-    background-color: #6200ee;
-    color: #ffffff;
+    background-color: var(--revadded-background-color);
+    color: var(--revadded-color);
 }
 
 .revadded::before {
-    content: "<ins>";
+    content: var(--revadded-before);
 }
 
 .revadded::after {
-    content: "</ins>";
+    content: var(--revadded-after);
 }
 
 .revchanged {
-    background-color: #03dac6;
-    color: #000000;
+    background-color: var(--revchanged-background-color);
+    color: var(--revchanged-color);
 }
 
 .revchanged::before {
-    content: "<chg>";
+    content: var(--revchanged-before);
 }
 
 .revchanged::after {
-    content: "</chg>";
+    content: var(--revchanged-after);
 }
 
 .revdeleted {
-    background-color: #b00020;
-    color: #ffffff;
+    background-color: var(--revdeleted-background-color);
+    color: var(--revdeleted-color);
 }
 
 .revdeleted::before {
-    content: "<del>";
+    content: var(--revdeleted-before);
 }
 
 .revdeleted::after {
-    content: "</del>";
+    content: var(--revdeleted-after);
 }
 
 .revoff .revadded,
@@ -1203,8 +1328,8 @@ li[db-mark='box'] {
 /* ============================================================ */
 
 .sidebar {
-    background-color: #6200ee;
-    color: #ffffff;
+    background-color: var(--sidebar-color);
+    color: var(--on-sidebar-color);
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 1em;
@@ -1213,12 +1338,12 @@ li[db-mark='box'] {
 }
 
 .sidebar .title {
-    background-color: #6200ee;
-    color: #ffffff;
+    background-color: var(--sidebar-color);
+    color: var(--on-sidebar-color);
 }
 
 .sidebar code {
-    background-color: #6200ee;
+    background-color: var(--sidebar-color);
 }
 
 /* ============================================================ */
@@ -1273,7 +1398,7 @@ em em me em em em {
 /* Inline annotations */
 
 .annotations {
-    border-top: 2px dashed #6200ee;
+    border-top: var(--annotation-separator-border-style);
     padding-top: 1em;
     margin-top: 6em;
 }
@@ -1289,18 +1414,18 @@ a.annomark:visited {
 }
 
 .annotation-body {
-    border: 1px solid #6200ee;
+    border: var(--annotation-body-border-style);
     border-bottom-left-radius: 0.25em;
     border-bottom-right-radius: 0.25em;;
 }
 
 .annotation-header {
     height: 2em;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--annotation-header-background-color);
+    color: var(--annotation-header-color);
     padding-left: 1em;
     padding-right: 0.5em;
-    border-bottom: 1px solid #6200ee;
+    border-bottom: var(--annotation-header-separator-border-style);
 }
 
 .annotation-header .annotation-close {
@@ -1345,11 +1470,11 @@ a.annomark:visited {
     margin-left: 4px;
     margin-right: 0;
     padding-bottom: 1em;
-    border: 2px solid #3700b3;
+    border: 2px solid var(--primary-variant-color);
     border-radius: 4px;
     z-index: 2;
-    background-color: #6200ee;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
 }
 
 .nhrefs.js .arc {
@@ -1360,170 +1485,9 @@ a.annomark:visited {
 
 .nhrefs.js .xlink-arc-title {
     display: block;
-    background-color: #3700b3;
-    color: #ffffff;
+    background-color: var(--primary-variant-color);
+    color: var(--on-primary-variant-color);
     margin-left: 0;
     margin-bottom: 0.5em;
     text-align: center;
-}
-/* DocBook xslTNG version 1.7.1
- *
- * This is docbook-paged.css.
- *
- * See https://xsltng.docbook.org/
- *
- * This stylesheet should be followed by the stylesheet for the particular
- * presentation style: paper, book, etc.
- *
- */
-
-@page {
-    size: A4;
-    margin: 1in;
-    counter-reset: footnote;
-}
-
-@page title {
-    @top-center {
-        content: "";
-    }
-    @bottom-right {
-        content: "";
-    }
-    @bottom-left {
-        content: "";
-    }
-}
-
-@page normal-flow {
-    @footnote {
-        float: bottom page;
-        border-top: thin solid black;
-        border-length: 30%;
-        padding-top: 0.5em;
-    }
-}
-
-@page normal-flow:blank {
-    @top-center {
-        content: "";
-    }
-    @bottom-right {
-        content: "";
-    }
-    @bottom-left {
-        content: "";
-    }
-}
-
-html {
-    page: normal-flow;
-}
-
-.book > header {
-    padding: 0;
-    border: inherit;
-}
-
-h1, h2 {
-    string-set: ComponentTitle content()
-}
-
-header {
-    page-break-inside: avoid;
-}
-
-.example header {
-    page-break-before: avoid;
-}
-
-.book .list-of-titles {
-    counter-reset: page;
-}
-
-.book .lot {
-    margin-top: 1em;
-}
-
-.part .list-of-titles {
-    display: none;
-}
-
-/* ============================================================ */
-
-.toc a::after {
-    content: leader(dotted) " " target-counter(attr(href url), page);
-}
-
-/* ============================================================ */
-
-.footnote {
-    float: footnote;
-    margin-left: 0.75rem;
-    font-size: 1rem;
-    font-weight: normal;
-    font-family: "Noto Serif", serif, "Arial Unicode";
-}
-
-/* ============================================================ */
-
-.indexref::before {
-    content: target-counter(attr(href url), page);
-}
-
-/* ============================================================ */
-
-details {
-    display: none;
-}
-
-a, a:visited {
-    text-decoration: none;
-}
-
-.error * {
-    background-color: inherit;
-    color: inherit;
-    padding: inherit;
-}
-
-span.error {
-    display: inline;
-    border: none;
-    padding: inherit;
-    margin: inherit;
-}
-
-span.error::before {
-    content: none;
-}
-
-span.error::after {
-    content: none;
-}
-
-span.error.broken-link::after {
-    content: none;
-}
-
-.annotations {
-    border-top: none;
-    page-break-before: always;
-}
-
-.xlink-arc-list {
-    font-style: normal;
-}
-
-.xlink-arc-delim {
-    display: inline;
-}
-
-.nhrefs .arc a::after {
-    content: " (" attr(href) ")";
-}
-
-/* Work around bug in AntennaHouse V7.0 MR2 for MacOSX */
-span.footnote p {
-    margin-bottom: 0pt;
 }
