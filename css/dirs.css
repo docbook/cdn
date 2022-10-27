@@ -1,0 +1,114 @@
+:root {
+    --head-border: 1px solid #000000;
+    --body-border: 1px solid #e8e8e8;
+    --head-background-color: #e0e0e0;
+    --body-background-color: #f0f0f0;
+}
+
+html {
+    font-size: 14pt;
+    height: 100%;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: stretch;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header, main, footer {
+    flex-shrink: 0;
+}
+
+img.icon {
+    width: 20px;
+    padding-right: 0.5em;
+}
+
+table {
+    width: 100%;
+    overflow-x: scroll;
+    border-spacing: 0;
+}
+
+table tr th,
+table tr td {
+    text-align: left;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+thead tr th {
+    background-color: var(--head-background-color);
+    border-top: var(--head-border);
+    border-bottom: var(--head-border);
+    border-right: var(--head-border);
+}
+
+thead tr th:nth-child(1) {
+    border-left: var(--head-border);
+}
+
+thead tr th:nth-child(2) {
+    text-align: right;
+}
+
+thead tr th:nth-child(3) {
+    text-align: right;
+}
+
+thead tr th:nth-child(4) {
+    text-align: right;
+}
+
+thead tr th:nth-child(5) {
+    text-align: right;
+}
+
+tbody th {
+    font-family: monospace;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--body-background-color);
+}
+
+tbody th, tbody td {
+    border-right: var(--body-border);
+    border-bottom: var(--body-border);
+}
+
+tbody th {
+    border-left: var(--body-border);
+}
+
+td:nth-child(2) {
+    text-align: right;
+}
+
+td:nth-child(3) {
+    text-align: right;
+}
+
+td:nth-child(4) {
+    text-align: right;
+}
+
+td:nth-child(5) {
+    font-family: monospace;
+    text-align: right;
+}
+
+table tr td.unknown {
+    text-align: center;
+}
