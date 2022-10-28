@@ -12,6 +12,7 @@
       <xsl:map>
          <xsl:map-entry key="xs:QName('xspec')" select="$xspec"/>
          <xsl:map-entry key="xs:QName('gentext-language')" select="$gentext-language"/>
+         <xsl:map-entry key="xs:QName('verbatim-table-style')" select="$verbatim-table-style"/>
          <xsl:map-entry key="xs:QName('verbatim-line-style')" select="$verbatim-line-style"/>
          <xsl:map-entry key="xs:QName('verbatim-plain-style')" select="$verbatim-plain-style"/>
          <xsl:map-entry key="xs:QName('verbatim-space')" select="$verbatim-space"/>
@@ -27,6 +28,8 @@
                          select="$verbatim-number-every-nth"/>
          <xsl:map-entry key="xs:QName('verbatim-number-first-line')"
                          select="$verbatim-number-first-line"/>
+         <xsl:map-entry key="xs:QName('verbatim-number-separator')"
+                         select="$verbatim-number-separator"/>
          <xsl:map-entry key="xs:QName('verbatim-callouts')" select="$verbatim-callouts"/>
          <xsl:map-entry key="xs:QName('verbatim-syntax-highlighter')"
                          select="$verbatim-syntax-highlighter"/>
