@@ -1,15 +1,10 @@
 /* DocBook xslTNG version 1.11.0, https://xsltng.docbook.org */
-@import url("https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,400;1,700&display=swap");
+/* No embedded fonts by default. */
 :root {
   --symbol-fonts: "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
-  --body-family: "Noto Serif", serif, var(--symbol-fonts);
-  --title-family: "Noto Sans", sans-serif, var(--symbol-fonts);
-  --mono-family: "B612 Mono", monospace, var(--symbol-fonts);
+  --body-family: serif, var(--symbol-fonts);
+  --title-family: sans-serif, var(--symbol-fonts);
+  --mono-family: monospace, var(--symbol-fonts);
 }
 
 :root {
@@ -2021,4 +2016,15 @@ ol.reveal {
 
 .oxy_delete::after {
   content: var(--revdeleted-after);
+}
+
+/* The background color doesn't work the way I expect in epub;
+   so turn it off for now. */
+:root {
+  --background-color: inherit;
+}
+
+/* The border looks awful in an EPUB */
+.book > header {
+  border: none;
 }
