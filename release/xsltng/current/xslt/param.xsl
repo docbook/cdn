@@ -76,10 +76,7 @@
    <xsl:param name="date-dateTime-format"
                select="'[H01]:[m01] [D01] [MNn,*-3] [Y0001]'"/>
    <xsl:param name="dc-metadata" as="xs:string" select="'true'"/>
-   <xsl:param name="debug"
-               static="yes"
-               as="xs:string"
-               select="'x-objects x-pipeline x-image-markup x-image-properties x-mediaobject-uris'"/>
+   <xsl:param name="debug" static="yes" as="xs:string" select="''"/>
    <xsl:param name="default-float-style" select="'left'"/>
    <xsl:param name="default-language" select="'en'"/>
    <xsl:param name="default-length-magnitude" select="25.0"/>
