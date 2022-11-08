@@ -227,33 +227,7 @@ def index(root):
 
             if "commit" in record:
                 tstamp = datetime.fromisoformat(record['date'])
-                delta = NOW - tstamp
-                seconds = (delta.days * 3600 * 24) + delta.seconds;
-
-                if seconds < 60:
-                    age = "a few seconds ago"
-                elif seconds < 120:
-                    age = "a minute ago"
-                elif seconds < 300:
-                    age = "a few minutes ago"
-                elif seconds < 3600:
-                    age = f"{math.floor(seconds/60)} minutes ago"
-                elif seconds < 3600*2:
-                    age = "an hour ago"
-                elif seconds < 3600*24:
-                    age = f"{math.floor(seconds/3600)} hours ago"
-                elif seconds < 3600*24*2:
-                    age = "yesterday"
-                elif seconds < 3600*24*14:
-                    age = f"{math.floor(seconds/(3600*24))} days ago"
-                elif seconds < 3600*24*7*52:
-                    age = f"{math.floor(seconds/(3600*24*7))} weeks ago"
-                elif seconds < 3600*24*7*52*2:
-                    age = "last year"
-                else:
-                    age = f"{math.floor(seconds/(3600*24*7*52))} years ago"
-
-                print(f"<td><span title='{record['date']}'>{age}</span></td>", file=html)
+                print(f"<td><span title='{record['date']}'>{tstamp.strftime('%d %b %Y at %H:%M')}</span></td>", file=html)
 
                 author = record['author']
                 try:
