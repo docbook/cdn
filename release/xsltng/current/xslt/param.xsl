@@ -96,12 +96,6 @@
    <xsl:param name="funcsynopsis-trailing-punctuation" select="';'"/>
    <xsl:param name="generate-html-page" as="xs:string" select="'true'"/>
    <xsl:param name="generate-index" select="'true'"/>
-   <xsl:param name="generate-nested-toc"
-               as="xs:string"
-               select="'not(f:section(.))&#xA;or (f:section(.) and f:section-depth(.) le $vp:section-toc-depth)'"/>
-   <xsl:param name="generate-toc"
-               as="xs:string"
-               select="'(empty(parent::*) and self::db:article)&#xA;or self::db:set or self::db:book&#xA;or self::db:part or self::db:reference'"/>
    <xsl:param name="generate-trivial-toc" as="xs:string" select="'false'"/>
    <xsl:param name="generated-id-root" select="'R'"/>
    <xsl:param name="generated-id-sep" select="'_'"/>
@@ -235,6 +229,9 @@
    <xsl:param name="dynamic-profile-variables"
                as="map(xs:QName, item()*)?"
                select="()"/>
+   <xsl:param name="warn-about-missing-localizations"
+               as="xs:string"
+               select="'true'"/>
    <xsl:variable name="vp:static-parameters" as="map(xs:QName, item()*)">
       <xsl:map>
          <xsl:map-entry key="QName('', 'debug')" select="$debug"/>
@@ -309,8 +306,6 @@
                          select="$funcsynopsis-trailing-punctuation"/>
          <xsl:map-entry key="QName('', 'generate-html-page')" select="$generate-html-page"/>
          <xsl:map-entry key="QName('', 'generate-index')" select="$generate-index"/>
-         <xsl:map-entry key="QName('', 'generate-nested-toc')" select="$generate-nested-toc"/>
-         <xsl:map-entry key="QName('', 'generate-toc')" select="$generate-toc"/>
          <xsl:map-entry key="QName('', 'generate-trivial-toc')" select="$generate-trivial-toc"/>
          <xsl:map-entry key="QName('', 'generated-id-root')" select="$generated-id-root"/>
          <xsl:map-entry key="QName('', 'generated-id-sep')" select="$generated-id-sep"/>
@@ -454,6 +449,8 @@
          <xsl:map-entry key="QName('', 'transform-after')" select="$transform-after"/>
          <xsl:map-entry key="QName('', 'dynamic-profile-variables')"
                          select="$dynamic-profile-variables"/>
+         <xsl:map-entry key="QName('', 'warn-about-missing-localizations')"
+                         select="$warn-about-missing-localizations"/>
       </xsl:map>
    </xsl:variable>
 </xsl:stylesheet>

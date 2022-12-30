@@ -1,192 +1,1804 @@
 <?xml version="1.0" encoding="utf-8"?>
 <l:l10n xmlns:l="http://docbook.org/ns/docbook/l10n"
-         xmlns:map="http://www.w3.org/2005/xpath-functions/map"
+         xmlns:lt="http://docbook.org/ns/docbook/l10n/templates"
          language="es"
          english-language-name="Spanish">
-   <l:gentext name="title">
-      <l:tokens key="abstract">Resumen</l:tokens>
-      <l:tokens key="acknowledgements">Agradecimientos</l:tokens>
-      <l:tokens key="bibliography">Bibliografía</l:tokens>
-      <l:tokens key="caution">Atención</l:tokens>
-      <l:tokens key="danger">???DANGER???</l:tokens>
-      <l:tokens key="dedication">Dedicatoria</l:tokens>
-      <l:tokens key="glossary">Glosario</l:tokens>
-      <l:tokens key="important">Importante</l:tokens>
-      <l:tokens key="index">Índice</l:tokens>
-      <l:tokens key="legalnotice">Aviso Legal</l:tokens>
-      <l:tokens key="listofequations">Lista de ecuaciones</l:tokens>
-      <l:tokens key="listofexamples">Lista de ejemplos</l:tokens>
-      <l:tokens key="listoffigures">Lista de figuras</l:tokens>
-      <l:tokens key="listofprocedures">Lista de procedimientos</l:tokens>
-      <l:tokens key="listoftables">Lista de tablas</l:tokens>
-      <l:tokens key="listofunknown">Lista de desconocido</l:tokens>
-      <l:tokens key="msgaud">Audiencia</l:tokens>
-      <l:tokens key="msglevel">Nivel</l:tokens>
-      <l:tokens key="msgorig">Origen</l:tokens>
-      <l:tokens key="note">Nota</l:tokens>
-      <l:tokens key="revhistory">Historial de revisiones</l:tokens>
-      <l:tokens key="setindex">Índice del Conjunto</l:tokens>
-      <l:tokens key="tableofcontents">tabla de contenidos</l:tokens>
-      <l:tokens key="tip">Sugerencia</l:tokens>
-      <l:tokens key="warning">Aviso</l:tokens>
+   <l:gentext>
+      <l:token key="above">arriba</l:token>
+      <l:token key="Abstract">Resumen</l:token>
+      <l:token key="abstract">resumen</l:token>
+      <l:token key="Acknowledgements">Agradecimientos</l:token>
+      <l:token key="acknowledgements">agradecimientos</l:token>
+      <l:token key="and">y</l:token>
+      <l:token key="Answer">R:</l:token>
+      <l:token key="answer">r:</l:token>
+      <l:token key="Appendix">Apéndice</l:token>
+      <l:token key="appendix">apéndice</l:token>
+      <l:token key="Article">Artículo</l:token>
+      <l:token key="article">artículo</l:token>
+      <l:token key="Author">Autor</l:token>
+      <l:token key="Authors">Autores</l:token>
+      <l:token key="Authors">Autores</l:token>
+      <l:token key="below">abajo</l:token>
+      <l:token key="Bibliography">Bibliografía</l:token>
+      <l:token key="bibliography">bibliografía</l:token>
+      <l:token key="Book">Libro</l:token>
+      <l:token key="book">libro</l:token>
+      <l:token key="bullet">•</l:token>
+      <l:token key="by">por</l:token>
+      <l:token key="CAUTION">ATENCIÓN</l:token>
+      <l:token key="Caution">Atención</l:token>
+      <l:token key="caution">atención</l:token>
+      <l:token key="Chapter">Capítulo</l:token>
+      <l:token key="chapter">capítulo</l:token>
+      <l:token key="Colophon">Colofón</l:token>
+      <l:token key="colophon">colofón</l:token>
+      <l:token key="copyeditor">Editor de copiado</l:token>
+      <l:token key="Copyright">Copyright</l:token>
+      <l:token key="copyright">copyright</l:token>
+      <l:token key="Dedication">Dedicatoria</l:token>
+      <l:token key="dedication">dedicatoria</l:token>
+      <l:token key="Draft">Borrador</l:token>
+      <l:token key="Edited">Editado</l:token>
+      <l:token key="edited">editado</l:token>
+      <l:token key="Editedby">Editado por</l:token>
+      <l:token key="editedby">editado por</l:token>
+      <l:token key="Edition">Edición</l:token>
+      <l:token key="edition">edición</l:token>
+      <l:token key="endquote">”</l:token>
+      <l:token key="Equation">Ecuación</l:token>
+      <l:token key="equation">ecuación</l:token>
+      <l:token key="Example">Ejemplo</l:token>
+      <l:token key="example">ejemplo</l:token>
+      <l:token key="Figure">Figura</l:token>
+      <l:token key="figure">figura</l:token>
+      <l:token key="Glossary">Glosario</l:token>
+      <l:token key="glossary">glosario</l:token>
+      <l:token key="GlossSee">Ver</l:token>
+      <l:token key="glosssee">ver</l:token>
+      <l:token key="GlossSeeAlso">Ver también</l:token>
+      <l:token key="glossseealso">ver también</l:token>
+      <l:token key="graphicdesigner">Diseñador gráfico</l:token>
+      <l:token key="IMPORTANT">IMPORTANTE</l:token>
+      <l:token key="Important">Importante</l:token>
+      <l:token key="important">importante</l:token>
+      <l:token key="in">en</l:token>
+      <l:token key="Index">Índice</l:token>
+      <l:token key="index">índice</l:token>
+      <l:token key="index symbols">Símbolos</l:token>
+      <l:token key="ISBN">ISBN</l:token>
+      <l:token key="isbn">isbn</l:token>
+      <l:token key="lastlistcomma">,</l:token>
+      <l:token key="LegalNotice">Aviso Legal</l:token>
+      <l:token key="legalnotice">aviso legal</l:token>
+      <l:token key="listcomma">,</l:token>
+      <l:token key="listofequations">lista de ecuaciones</l:token>
+      <l:token key="ListofEquations">Lista de ecuaciones</l:token>
+      <l:token key="ListofExamples">Lista de ejemplos</l:token>
+      <l:token key="listofexamples">lista de ejemplos</l:token>
+      <l:token key="ListofFigures">Lista de figuras</l:token>
+      <l:token key="listoffigures">lista de figuras</l:token>
+      <l:token key="ListofProcedures">Lista de procedimientos</l:token>
+      <l:token key="listofprocedures">lista de procedimientos</l:token>
+      <l:token key="listoftables">lista de tablas</l:token>
+      <l:token key="ListofTables">Lista de tablas</l:token>
+      <l:token key="ListofUnknown">Lista de desconocido</l:token>
+      <l:token key="listofunknown">lista de desconocido</l:token>
+      <l:token key="MsgAud">Audiencia</l:token>
+      <l:token key="msgaud">audiencia</l:token>
+      <l:token key="MsgLevel">Nivel</l:token>
+      <l:token key="msglevel">nivel</l:token>
+      <l:token key="MsgOrig">Origen</l:token>
+      <l:token key="msgorig">origen</l:token>
+      <l:token key="nav-home">Inicio</l:token>
+      <l:token key="nav-next">Siguiente</l:token>
+      <l:token key="nav-next-sibling">Avanzar</l:token>
+      <l:token key="nav-prev">Anterior</l:token>
+      <l:token key="nav-prev-sibling">Retroceder</l:token>
+      <l:token key="nav-toc">TdC</l:token>
+      <l:token key="nav-up">Subir</l:token>
+      <l:token key="nestedendquote">’</l:token>
+      <l:token key="nestedstartquote">‘</l:token>
+      <l:token key="NOTE">NOTA</l:token>
+      <l:token key="Note">Nota</l:token>
+      <l:token key="note">nota</l:token>
+      <l:token key="notes">notas</l:token>
+      <l:token key="Notes">Notas</l:token>
+      <l:token key="or">o</l:token>
+      <l:token key="Part">Parte</l:token>
+      <l:token key="part">parte</l:token>
+      <l:token key="Pgs">Págs.</l:token>
+      <l:token key="pgs">págs.</l:token>
+      <l:token key="Preface">Prefacio</l:token>
+      <l:token key="preface">prefacio</l:token>
+      <l:token key="Procedure">Procedimiento</l:token>
+      <l:token key="procedure">procedimiento</l:token>
+      <l:token key="productioneditor">Editor de producción</l:token>
+      <l:token key="ProductionSet">Producción</l:token>
+      <l:token key="PubDate">Fecha de publicación</l:token>
+      <l:token key="pubdate">fecha de publicación</l:token>
+      <l:token key="Published">Publicado</l:token>
+      <l:token key="published">publicado</l:token>
+      <l:token key="Publisher">Editor</l:token>
+      <l:token key="Qandadiv">P y R</l:token>
+      <l:token key="qandadiv">P y R</l:token>
+      <l:token key="QandASet">Preguntas más frecuentes</l:token>
+      <l:token key="Question">P:</l:token>
+      <l:token key="question">p:</l:token>
+      <l:token key="RefEntry">Página</l:token>
+      <l:token key="refentry">página</l:token>
+      <l:token key="Reference">Referencia</l:token>
+      <l:token key="reference">referencia</l:token>
+      <l:token key="References">Referencias</l:token>
+      <l:token key="RefName">Nombre</l:token>
+      <l:token key="refname">nombre</l:token>
+      <l:token key="RefSection">Sección de referencia</l:token>
+      <l:token key="refsection">sección de referencia</l:token>
+      <l:token key="RefSynopsisDiv">Sinopsis</l:token>
+      <l:token key="refsynopsisdiv">sinopsis</l:token>
+      <l:token key="RevHistory">Historial de revisiones</l:token>
+      <l:token key="revhistory">Historial de revisiones</l:token>
+      <l:token key="Revisedby">Revisado por: </l:token>
+      <l:token key="revisedby">revisado por: </l:token>
+      <l:token key="Revision">Revisión</l:token>
+      <l:token key="revision">revisión</l:token>
+      <l:token key="sect1">Sección</l:token>
+      <l:token key="sect2">Sección</l:token>
+      <l:token key="sect3">Sección</l:token>
+      <l:token key="sect4">Sección</l:token>
+      <l:token key="sect5">Sección</l:token>
+      <l:token key="Section">Sección</l:token>
+      <l:token key="section">sección</l:token>
+      <l:token key="sectioncalled">sección llamada</l:token>
+      <l:token key="See">Ver</l:token>
+      <l:token key="see">ver</l:token>
+      <l:token key="SeeAlso">Ver También</l:token>
+      <l:token key="Seealso">Ver también</l:token>
+      <l:token key="seealso">ver también</l:token>
+      <l:token key="Set">Conjunto</l:token>
+      <l:token key="set">conjunto</l:token>
+      <l:token key="SetIndex">Índice del Conjunto</l:token>
+      <l:token key="setindex">índice del conjunto</l:token>
+      <l:token key="Sidebar">Barra lateral</l:token>
+      <l:token key="sidebar">barra lateral</l:token>
+      <l:token key="startquote">“</l:token>
+      <l:token key="Step">Paso</l:token>
+      <l:token key="step">paso</l:token>
+      <l:token key="Table">Tabla</l:token>
+      <l:token key="table">tabla</l:token>
+      <l:token key="TableNotes">Notas de tabla</l:token>
+      <l:token key="tablenotes">notas de tabla</l:token>
+      <l:token key="TableofContents">Tabla de contenidos</l:token>
+      <l:token key="tableofcontents">tabla de contenidos</l:token>
+      <l:token key="task">tarea</l:token>
+      <l:token key="Task">Tarea</l:token>
+      <l:token key="technicaleditor">Editor técnico</l:token>
+      <l:token key="TIP">SUGERENCIA</l:token>
+      <l:token key="Tip">Sugerencia</l:token>
+      <l:token key="tip">sugerencia</l:token>
+      <l:token key="translator">Traductor</l:token>
+      <l:token key="unexpectedelementname">nombre de elemento inesperado</l:token>
+      <l:token key="unsupported">no soportado</l:token>
+      <l:token key="WARNING">AVISO</l:token>
+      <l:token key="Warning">Aviso</l:token>
+      <l:token key="warning">aviso</l:token>
+      <l:token key="xrefto">referencia a</l:token>
    </l:gentext>
-   <l:gentext name="label">
-      <l:tokens key="abstract">Resumen</l:tokens>
-      <l:tokens key="appendix">Apéndice</l:tokens>
-      <l:tokens key="chapter">Capítulo</l:tokens>
-      <l:tokens key="equation">Ecuación</l:tokens>
-      <l:tokens key="example">Ejemplo</l:tokens>
-      <l:tokens key="figure">Figura</l:tokens>
-      <l:tokens key="glossary">Glosario</l:tokens>
-      <l:tokens key="glosssee">Ver</l:tokens>
-      <l:tokens key="glossseealso">Ver también</l:tokens>
-      <l:tokens key="index">Índice</l:tokens>
-      <l:tokens key="legalnotice">Aviso Legal</l:tokens>
-      <l:tokens key="part">Parte</l:tokens>
-      <l:tokens key="procedure">Procedimiento</l:tokens>
-      <l:tokens key="reference">Referencia</l:tokens>
-      <l:tokens key="refname">Nombre</l:tokens>
-      <l:tokens key="section">Sección</l:tokens>
-      <l:tokens key="see">Ver</l:tokens>
-      <l:tokens key="seealso">Ver También</l:tokens>
-      <l:tokens key="step">Paso</l:tokens>
-      <l:tokens key="subfigure">???SUBFIGURE???</l:tokens>
-      <l:tokens key="subtable">???SUBTABLE???</l:tokens>
-      <l:tokens key="subequation">???SUBEQUATION???</l:tokens>
-      <l:tokens key="subexample">???SUBEXAMPLE???</l:tokens>
-      <l:tokens key="table">Tabla</l:tokens>
-      <l:tokens key="edited-by">Editado por</l:tokens>
-   </l:gentext>
-   <l:gentext name="xref">
-      <l:tokens key="abstract">Resumen</l:tokens>
-      <l:tokens key="appendix">Apéndice</l:tokens>
-      <l:tokens key="chapter">Capítulo</l:tokens>
-      <l:tokens key="equation">Ecuación</l:tokens>
-      <l:tokens key="example">Ejemplo</l:tokens>
-      <l:tokens key="figure">Figura</l:tokens>
-      <l:tokens key="glossary">Glosario</l:tokens>
-      <l:tokens key="glosssee">Ver</l:tokens>
-      <l:tokens key="glossseealso">Ver también</l:tokens>
-      <l:tokens key="index">Índice</l:tokens>
-      <l:tokens key="legalnotice">Aviso Legal</l:tokens>
-      <l:tokens key="part">Parte</l:tokens>
-      <l:tokens key="procedure">Procedimiento</l:tokens>
-      <l:tokens key="reference">Referencia</l:tokens>
-      <l:tokens key="refname">Nombre</l:tokens>
-      <l:tokens key="section">Sección</l:tokens>
-      <l:tokens key="see">ver</l:tokens>
-      <l:tokens key="seealso">ver también</l:tokens>
-      <l:tokens key="sectioncalled">sección llamada</l:tokens>
-      <l:tokens key="step">paso</l:tokens>
-      <l:tokens key="table">Tabla</l:tokens>
-      <l:tokens key="edited-by">Editado por</l:tokens>
-   </l:gentext>
-   <l:gentext name="iso690">
-      <l:tokens key="lastfirst.sep">, </l:tokens>
-      <l:tokens key="alt.person.two.sep"> – </l:tokens>
-      <l:tokens key="alt.person.last.sep"> – </l:tokens>
-      <l:tokens key="alt.person.more.sep"> – </l:tokens>
-      <l:tokens key="primary.editor"> (ed.)</l:tokens>
-      <l:tokens key="primary.many">, et al.</l:tokens>
-      <l:tokens key="primary.sep">. </l:tokens>
-      <l:tokens key="submaintitle.sep">: </l:tokens>
-      <l:tokens key="title.sep">. </l:tokens>
-      <l:tokens key="othertitle.sep">, </l:tokens>
-      <l:tokens key="medium1"> [</l:tokens>
-      <l:tokens key="medium2">]</l:tokens>
-      <l:tokens key="secondary.person.sep">; </l:tokens>
-      <l:tokens key="secondary.sep">. </l:tokens>
-      <l:tokens key="respons.sep">. </l:tokens>
-      <l:tokens key="edition.sep">. </l:tokens>
-      <l:tokens key="edition.serial.sep">, </l:tokens>
-      <l:tokens key="issuing.range">-</l:tokens>
-      <l:tokens key="issuing.div">, </l:tokens>
-      <l:tokens key="issuing.sep">. </l:tokens>
-      <l:tokens key="partnr.sep">. </l:tokens>
-      <l:tokens key="placepubl.sep">: </l:tokens>
-      <l:tokens key="publyear.sep">, </l:tokens>
-      <l:tokens key="pubinfo.sep">. </l:tokens>
-      <l:tokens key="spec.pubinfo.sep">, </l:tokens>
-      <l:tokens key="upd.sep">, </l:tokens>
-      <l:tokens key="datecit1"> [citado </l:tokens>
-      <l:tokens key="datecit2">]</l:tokens>
-      <l:tokens key="extent.sep">. </l:tokens>
-      <l:tokens key="locs.sep">, </l:tokens>
-      <l:tokens key="location.sep">. </l:tokens>
-      <l:tokens key="serie.sep">. </l:tokens>
-      <l:tokens key="notice.sep">. </l:tokens>
-      <l:tokens key="access">Disponible </l:tokens>
-      <l:tokens key="acctoo">También disponible </l:tokens>
-      <l:tokens key="onwww">de World Wide Web</l:tokens>
-      <l:tokens key="oninet">de Internet</l:tokens>
-      <l:tokens key="access.end">: </l:tokens>
-      <l:tokens key="link1">&lt;</l:tokens>
-      <l:tokens key="link2">&gt;</l:tokens>
-      <l:tokens key="access.sep">. </l:tokens>
-      <l:tokens key="isbn">ISBN </l:tokens>
-      <l:tokens key="issn">ISSN </l:tokens>
-      <l:tokens key="stdnum.sep">. </l:tokens>
-      <l:tokens key="patcountry.sep">. </l:tokens>
-      <l:tokens key="pattype.sep">, </l:tokens>
-      <l:tokens key="patnum.sep">. </l:tokens>
-      <l:tokens key="patdate.sep">. </l:tokens>
-   </l:gentext>
-   <l:gentext name="label-separator">
-      <l:tokens key="_default"> </l:tokens>
-   </l:gentext>
-   <l:gentext name="number-separator">
-      <l:tokens key="_default">. </l:tokens>
-   </l:gentext>
-   <l:gentext name="intra-number-separator">
-      <l:tokens key="_default">.</l:tokens>
-   </l:gentext>
-   <l:gentext name="number-format">
-      <l:tokens key="_default">1</l:tokens>
-      <l:tokens key="appendix">A</l:tokens>
-      <l:tokens key="part">I</l:tokens>
-      <l:tokens key="reference">I</l:tokens>
-   </l:gentext>
-   <l:gentext name="separator">
-      <l:tokens key="author-sep">, </l:tokens>
-      <l:tokens key="author-sep2"> y </l:tokens>
-      <l:tokens key="author-seplast">, y </l:tokens>
-      <l:tokens key="refname-sep">, </l:tokens>
-      <l:tokens key="refpurpose-sep"> — </l:tokens>
-      <l:tokens key="term-sep">, </l:tokens>
-      <l:tokens key="term-sep2">, </l:tokens>
-      <l:tokens key="term-seplast">, </l:tokens>
-      <l:tokens key="glossterm-sep">, </l:tokens>
-      <l:tokens key="xlink-arclist-before"> [</l:tokens>
-      <l:tokens key="xlink-arclist-after">] </l:tokens>
-      <l:tokens key="xlink-arclist-titlesep">: </l:tokens>
-      <l:tokens key="xlink-arclist-sep">, </l:tokens>
-   </l:gentext>
-   <l:gentext name="style">
-      <l:tokens key="personname">first-last</l:tokens>
-   </l:gentext>
-   <l:gentext name="keycap">
-      <l:tokens key="alt">Alt</l:tokens>
-      <l:tokens key="backspace">&lt;—</l:tokens>
-      <l:tokens key="command">⌘</l:tokens>
-      <l:tokens key="control">Ctrl</l:tokens>
-      <l:tokens key="delete">Supr</l:tokens>
-      <l:tokens key="down">↓</l:tokens>
-      <l:tokens key="end">Fin</l:tokens>
-      <l:tokens key="enter">Enter</l:tokens>
-      <l:tokens key="escape">Esc</l:tokens>
-      <l:tokens key="home">Inicio</l:tokens>
-      <l:tokens key="insert">Insert</l:tokens>
-      <l:tokens key="left">←</l:tokens>
-      <l:tokens key="meta">Meta</l:tokens>
-      <l:tokens key="option">⌥</l:tokens>
-      <l:tokens key="pagedown">Av Pág</l:tokens>
-      <l:tokens key="pageup">Re Pág</l:tokens>
-      <l:tokens key="right">→</l:tokens>
-      <l:tokens key="shift">⇧</l:tokens>
-      <l:tokens key="space">Espacio</l:tokens>
-      <l:tokens key="tab">↹</l:tokens>
-      <l:tokens key="up">↑</l:tokens>
-   </l:gentext>
+   <l:properties name="language">
+      <l:property name="writing-mode" value="lr-tb"/>
+   </l:properties>
+   <l:properties name="number-format">
+      <l:property name="part" value="I"/>
+      <l:property name="reference" value="I"/>
+      <l:property name="appendix" value="A"/>
+      <l:property name="_default" value="1"/>
+   </l:properties>
+   <l:properties name="datetime">
+      <l:property name="format" value="d/m/Y"/>
+   </l:properties>
+   <l:properties name="number-separator">
+      <l:property name="_default" value="."/>
+   </l:properties>
+   <l:group name="refentry">
+      <l:template key="refname-sep">
+         <lt:text>, </lt:text>
+      </l:template>
+      <l:template key="refpurpose-sep">
+         <lt:text> — </lt:text>
+      </l:template>
+   </l:group>
+   <l:group name="variablelist">
+      <l:template key="sep">
+         <lt:text>, </lt:text>
+      </l:template>
+      <l:template key="sep2">
+         <lt:text>, </lt:text>
+      </l:template>
+      <l:template key="seplast">
+         <lt:text>, </lt:text>
+      </l:template>
+   </l:group>
+   <l:group name="refentry">
+      <l:template key="refname-sep">
+         <lt:text>, </lt:text>
+      </l:template>
+      <l:template key="refpurpose-sep">
+         <lt:text> — </lt:text>
+      </l:template>
+   </l:group>
+   <l:group name="xlink">
+      <l:template key="xlink-arclist-before">
+         <lt:text> [</lt:text>
+      </l:template>
+      <l:template key="xlink-arclist-after">
+         <lt:text>] </lt:text>
+      </l:template>
+      <l:template key="xlink-arclist-titlesep">
+         <lt:text>: </lt:text>
+      </l:template>
+      <l:template key="xlink-arclist-sep">
+         <lt:text>, </lt:text>
+      </l:template>
+   </l:group>
+   <l:group name="keycap">
+      <l:template key="alt">
+         <lt:text>Alt</lt:text>
+      </l:template>
+      <l:template key="backspace">
+         <lt:text>&lt;—</lt:text>
+      </l:template>
+      <l:template key="command">
+         <lt:text>⌘</lt:text>
+      </l:template>
+      <l:template key="control">
+         <lt:text>Ctrl</lt:text>
+      </l:template>
+      <l:template key="delete">
+         <lt:text>Supr</lt:text>
+      </l:template>
+      <l:template key="down">
+         <lt:text>↓</lt:text>
+      </l:template>
+      <l:template key="end">
+         <lt:text>Fin</lt:text>
+      </l:template>
+      <l:template key="enter">
+         <lt:text>Enter</lt:text>
+      </l:template>
+      <l:template key="escape">
+         <lt:text>Esc</lt:text>
+      </l:template>
+      <l:template key="home">
+         <lt:text>Inicio</lt:text>
+      </l:template>
+      <l:template key="insert">
+         <lt:text>Insert</lt:text>
+      </l:template>
+      <l:template key="left">
+         <lt:text>←</lt:text>
+      </l:template>
+      <l:template key="meta">
+         <lt:text>Meta</lt:text>
+      </l:template>
+      <l:template key="option">
+         <lt:text>⌥</lt:text>
+      </l:template>
+      <l:template key="pagedown">
+         <lt:text>Av Pág</lt:text>
+      </l:template>
+      <l:template key="pageup">
+         <lt:text>Re Pág</lt:text>
+      </l:template>
+      <l:template key="right">
+         <lt:text>→</lt:text>
+      </l:template>
+      <l:template key="shift">
+         <lt:text>⇧</lt:text>
+      </l:template>
+      <l:template key="space">
+         <lt:text>Espacio</lt:text>
+      </l:template>
+      <l:template key="tab">
+         <lt:text>↹</lt:text>
+      </l:template>
+      <l:template key="up">
+         <lt:text>↑</lt:text>
+      </l:template>
+   </l:group>
+   <l:property name="styles" value=""/>
+   <l:group name="label">
+      <l:template key="refname">
+         <lt:token key="RefName"/>
+      </l:template>
+      <l:template key="see">
+         <lt:token key="See"/>
+         <lt:text> </lt:text>
+      </l:template>
+      <l:template key="seealso">
+         <lt:token key="Seealso"/>
+         <lt:text> </lt:text>
+      </l:template>
+      <l:template key="edited-by">
+         <lt:token key="Editedby"/>
+         <lt:text> </lt:text>
+      </l:template>
+   </l:group>
+   <l:group name="label-separator">
+      <l:template key="_default">
+         <lt:text>. </lt:text>
+      </l:template>
+   </l:group>
+   <l:group name="title">
+      <l:template key="abstract">
+         <lt:content/>
+      </l:template>
+      <l:template key="answer">
+         <lt:content/>
+      </l:template>
+      <l:template key="appendix">
+         <lt:token key="Appendix"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="article">
+         <lt:content/>
+      </l:template>
+      <l:template key="authorblurb">
+         <lt:content/>
+      </l:template>
+      <l:template key="bibliodiv">
+         <lt:content/>
+      </l:template>
+      <l:template key="biblioentry">
+         <lt:content/>
+      </l:template>
+      <l:template key="bibliography">
+         <lt:content/>
+      </l:template>
+      <l:template key="bibliomixed">
+         <lt:content/>
+      </l:template>
+      <l:template key="bibliomset">
+         <lt:content/>
+      </l:template>
+      <l:template key="biblioset">
+         <lt:content/>
+      </l:template>
+      <l:template key="blockquote">
+         <lt:content/>
+      </l:template>
+      <l:template key="book">
+         <lt:content/>
+      </l:template>
+      <l:template key="calloutlist">
+         <lt:content/>
+      </l:template>
+      <l:template key="caution">
+         <lt:content/>
+      </l:template>
+      <l:template key="chapter">
+         <lt:token key="Chapter"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="colophon">
+         <lt:content/>
+      </l:template>
+      <l:template key="dedication">
+         <lt:content/>
+      </l:template>
+      <l:template key="equation">
+         <lt:token key="Equation"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="example">
+         <lt:token key="Example"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="figure">
+         <lt:token key="Figure"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="formalpara">
+         <lt:content/>
+      </l:template>
+      <l:template key="glossary">
+         <lt:content/>
+      </l:template>
+      <l:template key="glossdiv">
+         <lt:content/>
+      </l:template>
+      <l:template key="important">
+         <lt:content/>
+      </l:template>
+      <l:template key="index">
+         <lt:content/>
+      </l:template>
+      <l:template key="indexdiv">
+         <lt:content/>
+      </l:template>
+      <l:template key="itemizedlist">
+         <lt:content/>
+      </l:template>
+      <l:template key="legalnotice">
+         <lt:content/>
+      </l:template>
+      <l:template key="listitem"/>
+      <l:template key="lot">
+         <lt:content/>
+      </l:template>
+      <l:template key="msg">
+         <lt:content/>
+      </l:template>
+      <l:template key="msgexplan">
+         <lt:content/>
+      </l:template>
+      <l:template key="msgmain">
+         <lt:content/>
+      </l:template>
+      <l:template key="msgrel">
+         <lt:content/>
+      </l:template>
+      <l:template key="msgset">
+         <lt:content/>
+      </l:template>
+      <l:template key="msgsub">
+         <lt:content/>
+      </l:template>
+      <l:template key="note">
+         <lt:content/>
+      </l:template>
+      <l:template key="orderedlist">
+         <lt:content/>
+      </l:template>
+      <l:template key="part">
+         <lt:token key="Part"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="partintro">
+         <lt:content/>
+      </l:template>
+      <l:template key="preface">
+         <lt:content/>
+      </l:template>
+      <l:template key="procedure">
+         <lt:content/>
+      </l:template>
+      <l:template key="procedure.formal">
+         <lt:token key="Procedure"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="productionset">
+         <lt:content/>
+      </l:template>
+      <l:template key="productionset.formal">
+         <lt:token key="ProductionSet"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="qandadiv">
+         <lt:content/>
+      </l:template>
+      <l:template key="qandaentry">
+         <lt:content/>
+      </l:template>
+      <l:template key="qandaset">
+         <lt:content/>
+      </l:template>
+      <l:template key="question">
+         <lt:content/>
+      </l:template>
+      <l:template key="refentry">
+         <lt:content/>
+      </l:template>
+      <l:template key="reference">
+         <lt:content/>
+      </l:template>
+      <l:template key="refsection">
+         <lt:content/>
+      </l:template>
+      <l:template key="refsect1">
+         <lt:content/>
+      </l:template>
+      <l:template key="refsect2">
+         <lt:content/>
+      </l:template>
+      <l:template key="refsect3">
+         <lt:content/>
+      </l:template>
+      <l:template key="refsynopsisdiv">
+         <lt:content/>
+      </l:template>
+      <l:template key="refsynopsisdivinfo">
+         <lt:content/>
+      </l:template>
+      <l:template key="segmentedlist">
+         <lt:content/>
+      </l:template>
+      <l:template key="set">
+         <lt:content/>
+      </l:template>
+      <l:template key="setindex">
+         <lt:content/>
+      </l:template>
+      <l:template key="sidebar">
+         <lt:content/>
+      </l:template>
+      <l:template key="step">
+         <lt:content/>
+      </l:template>
+      <l:template key="table">
+         <lt:token key="Table"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="tip">
+         <lt:content/>
+      </l:template>
+      <l:template key="toc">
+         <lt:content/>
+      </l:template>
+      <l:template key="variablelist">
+         <lt:content/>
+      </l:template>
+      <l:template key="warning">
+         <lt:content/>
+      </l:template>
+      <l:template key="TableofContents">
+         <lt:token key="TableofContents"/>
+      </l:template>
+      <l:template key="ListofFigures">
+         <lt:token key="ListofFigures"/>
+      </l:template>
+      <l:template key="ListofTables">
+         <lt:token key="ListofTables"/>
+      </l:template>
+      <l:template key="ListofEquations">
+         <lt:token key="ListofEquations"/>
+      </l:template>
+      <l:template key="ListofProcedures">
+         <lt:token key="ListofProcedures"/>
+      </l:template>
+      <l:template key="ListofExamples">
+         <lt:token key="ListofExamples"/>
+      </l:template>
+      <l:template key="ListofUnknown">
+         <lt:token key="ListofUnknown"/>
+      </l:template>
+      <l:template key="_default">
+         <lt:content/>
+      </l:template>
+   </l:group>
+   <l:group name="list-of-titles">
+      <l:template key="acknowledgements">
+         <lt:content/>
+      </l:template>
+      <l:template key="article">
+         <lt:content/>
+      </l:template>
+      <l:template key="bibliography">
+         <lt:content/>
+      </l:template>
+      <l:template key="book">
+         <lt:content/>
+      </l:template>
+      <l:template key="colophon">
+         <lt:content/>
+      </l:template>
+      <l:template key="dedication">
+         <lt:content/>
+      </l:template>
+      <l:template key="formalgroup">
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="forward">
+         <lt:content/>
+      </l:template>
+      <l:template key="glossary">
+         <lt:content/>
+      </l:template>
+      <l:template key="index">
+         <lt:content/>
+      </l:template>
+      <l:template key="preface">
+         <lt:content/>
+      </l:template>
+      <l:template key="setindex">
+         <lt:content/>
+      </l:template>
+      <l:template key="topic">
+         <lt:content/>
+      </l:template>
+      <l:template key="book/part">
+         <lt:token key="Part"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="book/reference">
+         <lt:token key="Reference"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="_default">
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+   </l:group>
+   <l:group name="title-unnumbered">
+      <l:template key="_default">
+         <lt:content/>
+      </l:template>
+   </l:group>
+   <l:group name="title-numbered">
+      <l:template key="appendix">
+         <lt:token key="Appendix"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="bridgehead">
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="chapter">
+         <lt:token key="Chapter"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="part">
+         <lt:token key="Part"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="sect1">
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="sect2">
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="sect3">
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="sect4">
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="sect5">
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="section">
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="simplesect">
+         <lt:content/>
+      </l:template>
+      <l:template key="refsect1">
+         <lt:content/>
+      </l:template>
+      <l:template key="refsect2">
+         <lt:content/>
+      </l:template>
+      <l:template key="refsect3">
+         <lt:content/>
+      </l:template>
+      <l:template key="refsection">
+         <lt:content/>
+      </l:template>
+      <l:template key="_default">
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+   </l:group>
+   <l:group name="subfigure-title">
+      <l:template key="figure">
+         <lt:token key="subfigure"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="table">
+         <lt:token key="subtable"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="equation">
+         <lt:token key="subequation"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template key="example">
+         <lt:token key="subexample"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+   </l:group>
+   <l:group name="title-generated">
+      <l:template key="abstract">
+         <lt:token key="Abstract"/>
+      </l:template>
+      <l:template key="acknowledgements">
+         <lt:token key="Acknowledgements"/>
+      </l:template>
+      <l:template key="bibliography">
+         <lt:token key="Bibliography"/>
+      </l:template>
+      <l:template key="caution">
+         <lt:token key="Caution"/>
+      </l:template>
+      <l:template key="danger">
+         <lt:token key="Danger"/>
+      </l:template>
+      <l:template key="dedication">
+         <lt:token key="Dedication"/>
+      </l:template>
+      <l:template key="glossary">
+         <lt:token key="Glossary"/>
+      </l:template>
+      <l:template key="important">
+         <lt:token key="Important"/>
+      </l:template>
+      <l:template key="index">
+         <lt:token key="Index"/>
+      </l:template>
+      <l:template key="legalnotice">
+         <lt:token key="LegalNotice"/>
+      </l:template>
+      <l:template key="note">
+         <lt:token key="Note"/>
+      </l:template>
+      <l:template key="revhistory">
+         <lt:token key="RevHistory"/>
+      </l:template>
+      <l:template key="setindex">
+         <lt:token key="SetIndex"/>
+      </l:template>
+      <l:template key="tip">
+         <lt:token key="Tip"/>
+      </l:template>
+      <l:template key="warning">
+         <lt:token key="Warning"/>
+      </l:template>
+   </l:group>
+   <l:group name="xref">
+      <l:template key="abstract">
+         <lt:content/>
+      </l:template>
+      <l:template key="answer">
+         <lt:token key="Answer"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="appendix">
+         <lt:content/>
+      </l:template>
+      <l:template key="article">
+         <lt:content/>
+      </l:template>
+      <l:template key="authorblurb">
+         <lt:content/>
+      </l:template>
+      <l:template key="bibliodiv">
+         <lt:content/>
+      </l:template>
+      <l:template key="bibliography">
+         <lt:content/>
+      </l:template>
+      <l:template key="bibliomset">
+         <lt:content/>
+      </l:template>
+      <l:template key="biblioset">
+         <lt:content/>
+      </l:template>
+      <l:template key="blockquote">
+         <lt:content/>
+      </l:template>
+      <l:template key="book">
+         <lt:content/>
+      </l:template>
+      <l:template key="calloutlist">
+         <lt:content/>
+      </l:template>
+      <l:template key="caution">
+         <lt:content/>
+      </l:template>
+      <l:template key="chapter">
+         <lt:content/>
+      </l:template>
+      <l:template key="colophon">
+         <lt:content/>
+      </l:template>
+      <l:template key="constraintdef">
+         <lt:content/>
+      </l:template>
+      <l:template key="dedication">
+         <lt:content/>
+      </l:template>
+      <l:template key="equation">
+         <lt:content/>
+      </l:template>
+      <l:template key="example">
+         <lt:content/>
+      </l:template>
+      <l:template key="figure">
+         <lt:content/>
+      </l:template>
+      <l:template key="formalpara">
+         <lt:content/>
+      </l:template>
+      <l:template key="glossary">
+         <lt:content/>
+      </l:template>
+      <l:template key="glossdiv">
+         <lt:content/>
+      </l:template>
+      <l:template key="important">
+         <lt:content/>
+      </l:template>
+      <l:template key="index">
+         <lt:content/>
+      </l:template>
+      <l:template key="indexdiv">
+         <lt:content/>
+      </l:template>
+      <l:template key="itemizedlist">
+         <lt:content/>
+      </l:template>
+      <l:template key="legalnotice">
+         <lt:content/>
+      </l:template>
+      <l:template key="lot">
+         <lt:content/>
+      </l:template>
+      <l:template key="msg">
+         <lt:content/>
+      </l:template>
+      <l:template key="msgexplan">
+         <lt:content/>
+      </l:template>
+      <l:template key="msgmain">
+         <lt:content/>
+      </l:template>
+      <l:template key="msgrel">
+         <lt:content/>
+      </l:template>
+      <l:template key="msgset">
+         <lt:content/>
+      </l:template>
+      <l:template key="msgsub">
+         <lt:content/>
+      </l:template>
+      <l:template key="note">
+         <lt:content/>
+      </l:template>
+      <l:template key="orderedlist">
+         <lt:content/>
+      </l:template>
+      <l:template key="part">
+         <lt:content/>
+      </l:template>
+      <l:template key="partintro">
+         <lt:content/>
+      </l:template>
+      <l:template key="preface">
+         <lt:content/>
+      </l:template>
+      <l:template key="procedure">
+         <lt:content/>
+      </l:template>
+      <l:template key="productionset">
+         <lt:content/>
+      </l:template>
+      <l:template key="qandadiv">
+         <lt:content/>
+      </l:template>
+      <l:template key="qandaentry">
+         <lt:token key="Question"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="qandaset">
+         <lt:content/>
+      </l:template>
+      <l:template key="question">
+         <lt:token key="Question"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="reference">
+         <lt:content/>
+      </l:template>
+      <l:template key="refsynopsisdiv">
+         <lt:content/>
+      </l:template>
+      <l:template key="segmentedlist">
+         <lt:content/>
+      </l:template>
+      <l:template key="set">
+         <lt:content/>
+      </l:template>
+      <l:template key="setindex">
+         <lt:content/>
+      </l:template>
+      <l:template key="sidebar">
+         <lt:content/>
+      </l:template>
+      <l:template key="table">
+         <lt:content/>
+      </l:template>
+      <l:template key="tip">
+         <lt:content/>
+      </l:template>
+      <l:template key="toc">
+         <lt:content/>
+      </l:template>
+      <l:template key="variablelist">
+         <lt:content/>
+      </l:template>
+      <l:template key="warning">
+         <lt:content/>
+      </l:template>
+      <l:template key="page.citation">
+         <lt:text> [</lt:text>
+         <lt:page/>
+         <lt:text>]</lt:text>
+      </l:template>
+      <l:template key="bridgehead">
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="refsection">
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="refsect1">
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="refsect2">
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="refsect3">
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="sect1">
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="sect2">
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="sect3">
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="sect4">
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="sect5">
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="section">
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="simplesect">
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="step">
+         <lt:token key="step"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="refnamediv">
+         <lt:content/>
+      </l:template>
+      <l:template key="_default">
+         <lt:label/>
+      </l:template>
+   </l:group>
+   <l:group name="xref-number">
+      <l:template key="answer">
+         <lt:token key="Answer"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="appendix">
+         <lt:token key="Appendix"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="bridgehead">
+         <lt:token key="Section"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="chapter">
+         <lt:token key="Chapter"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="equation">
+         <lt:token key="Equation"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="example">
+         <lt:token key="Example"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="figure">
+         <lt:token key="Figure"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="part">
+         <lt:token key="Part"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="procedure">
+         <lt:token key="Procedure"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="productionset">
+         <lt:token key="ProductionSet"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="qandadiv">
+         <lt:token key="Qandadiv"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="qandaentry">
+         <lt:token key="Question"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="question">
+         <lt:token key="Question"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="sect1">
+         <lt:token key="Section"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="sect2">
+         <lt:token key="Section"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="sect3">
+         <lt:token key="Section"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="sect4">
+         <lt:token key="Section"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="sect5">
+         <lt:token key="Section"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="section">
+         <lt:token key="Section"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+      <l:template key="table">
+         <lt:token key="Table"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+      </l:template>
+   </l:group>
+   <l:group name="xref-number-and-title">
+      <l:template key="appendix">
+         <lt:token key="Appendix"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:text>, </lt:text>
+         <lt:content/>
+      </l:template>
+      <l:template key="bridgehead">
+         <lt:token key="Section"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:text>, </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="chapter">
+         <lt:token key="Chapter"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:text>, </lt:text>
+         <lt:content/>
+      </l:template>
+      <l:template key="equation">
+         <lt:token key="Equation"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:text>, </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="example">
+         <lt:token key="Example"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:text>, </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="figure">
+         <lt:token key="Figure"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:text>, </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="part">
+         <lt:token key="Part"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:text>, </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="procedure">
+         <lt:token key="Procedure"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:text>, </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="productionset">
+         <lt:token key="ProductionSet"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:text>, </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="qandadiv">
+         <lt:token key="Qandadiv"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:text>, </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="refsect1">
+         <lt:token key="sectioncalled"/>
+         <lt:text> </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="refsect2">
+         <lt:token key="sectioncalled"/>
+         <lt:text> </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="refsect3">
+         <lt:token key="sectioncalled"/>
+         <lt:text> </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="refsection">
+         <lt:token key="sectioncalled"/>
+         <lt:text> </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="sect1">
+         <lt:token key="Section"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:text>, </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="sect2">
+         <lt:token key="Section"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:text>, </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="sect3">
+         <lt:token key="Section"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:text>, </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="sect4">
+         <lt:token key="Section"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:text>, </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="sect5">
+         <lt:token key="Section"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:text>, </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="section">
+         <lt:token key="Section"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:text>, </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="simplesect">
+         <lt:token key="sectioncalled"/>
+         <lt:text> </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="table">
+         <lt:token key="Table"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:text>, </lt:text>
+         <lt:token key="startquote"/>
+         <lt:content/>
+         <lt:token key="endquote"/>
+      </l:template>
+      <l:template key="_default">
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+   </l:group>
+   <l:group name="authorgroup">
+      <l:template key="sep">
+         <lt:token key="listcomma"/>
+         <lt:text> </lt:text>
+      </l:template>
+      <l:template key="sep2">
+         <lt:text> </lt:text>
+         <lt:token key="and"/>
+         <lt:text> </lt:text>
+      </l:template>
+      <l:template key="seplast">
+         <lt:token key="lastlistcomma"/>
+         <lt:text> </lt:text>
+         <lt:token key="and"/>
+         <lt:text> </lt:text>
+      </l:template>
+   </l:group>
+   <l:list name="index-seealso">
+      <l:items>
+         <lt:text>(</lt:text>
+         <lt:token key="seealso"/>
+         <lt:text> </lt:text>
+         <lt:content/>
+         <lt:text>)</lt:text>
+      </l:items>
+      <l:items>
+         <lt:text>(</lt:text>
+         <lt:token key="seealso"/>
+         <lt:text> </lt:text>
+         <lt:content/>
+         <l:repeat>
+            <lt:text>, </lt:text>
+            <lt:content/>
+         </l:repeat>
+         <lt:text>)</lt:text>
+      </l:items>
+   </l:list>
+   <l:list name="index-seeie">
+      <l:items>
+         <lt:text>(</lt:text>
+         <lt:token key="see"/>
+         <lt:text> </lt:text>
+         <lt:content/>
+         <lt:text>)</lt:text>
+      </l:items>
+      <l:items>
+         <lt:text>(</lt:text>
+         <lt:token key="see"/>
+         <lt:text> </lt:text>
+         <lt:content/>
+         <l:repeat>
+            <lt:text>, </lt:text>
+            <lt:content/>
+         </l:repeat>
+         <lt:text>)</lt:text>
+      </l:items>
+   </l:list>
+   <l:list name="index-seealsoie">
+      <l:items>
+         <lt:text>(</lt:text>
+         <lt:token key="seealso"/>
+         <lt:text> </lt:text>
+         <lt:content/>
+         <lt:text>)</lt:text>
+      </l:items>
+      <l:items>
+         <lt:text>(</lt:text>
+         <lt:token key="seealso"/>
+         <lt:text> </lt:text>
+         <lt:content/>
+         <l:repeat>
+            <lt:text>, </lt:text>
+            <lt:content/>
+         </l:repeat>
+         <lt:text>)</lt:text>
+      </l:items>
+   </l:list>
+   <l:list name="glossary-seealso">
+      <l:items>
+         <lt:token key="Seealso"/>
+         <lt:text> </lt:text>
+         <lt:content/>
+         <lt:text>.</lt:text>
+      </l:items>
+      <l:items>
+         <lt:token key="Seealso"/>
+         <lt:text> </lt:text>
+         <lt:content/>
+         <l:repeat>
+            <lt:text>, </lt:text>
+            <lt:content/>
+         </l:repeat>
+         <lt:text>.</lt:text>
+      </l:items>
+   </l:list>
+   <l:list name="varlistentry">
+      <l:items>
+         <lt:content/>
+      </l:items>
+      <l:items>
+         <lt:content/>
+         <l:repeat>
+            <lt:text>, </lt:text>
+            <lt:content/>
+         </l:repeat>
+         <lt:text>
+      </lt:text>
+      </l:items>
+   </l:list>
+   <l:list name="_default">
+      <l:items>
+         <lt:content/>
+      </l:items>
+      <l:items>
+         <lt:content/>
+         <lt:text> </lt:text>
+         <lt:token key="and"/>
+         <lt:text> </lt:text>
+         <lt:content/>
+      </l:items>
+      <l:items>
+         <lt:content/>
+         <l:repeat>
+            <lt:text>, </lt:text>
+            <lt:content/>
+         </l:repeat>
+         <lt:text>, </lt:text>
+         <lt:token key="and"/>
+         <lt:text> </lt:text>
+         <lt:content/>
+      </l:items>
+   </l:list>
+   <l:group name="glossary">
+      <l:template key="see">
+         <lt:token key="GlossSee"/>
+         <lt:text> </lt:text>
+         <lt:content/>
+         <lt:text>.</lt:text>
+      </l:template>
+      <l:template key="seealso">
+         <lt:token key="GlossSeeAlso"/>
+         <lt:text> </lt:text>
+         <lt:content/>
+         <lt:text>.</lt:text>
+      </l:template>
+      <l:template key="seealso-separator">
+         <lt:text>, </lt:text>
+      </l:template>
+      <l:template key="glossterm-separator">
+         <lt:text>, </lt:text>
+      </l:template>
+   </l:group>
+   <l:group name="index"/>
+   <l:group name="msgset">
+      <l:template key="msgaud">
+         <lt:token key="msgaud"/>
+         <lt:text>: </lt:text>
+      </l:template>
+      <l:template key="msglevel">
+         <lt:token key="msglevel"/>
+         <lt:text>: </lt:text>
+      </l:template>
+      <l:template key="msgorig">
+         <lt:token key="msgorig"/>
+         <lt:text>: </lt:text>
+      </l:template>
+   </l:group>
+   <l:group name="termdef">
+      <l:template key="prefix">
+         <lt:text>[Definición: </lt:text>
+      </l:template>
+      <l:template key="suffix">
+         <lt:text>]</lt:text>
+      </l:template>
+   </l:group>
+   <l:group name="datetime-full">
+      <l:template key="January">
+         <lt:text>Enero</lt:text>
+      </l:template>
+      <l:template key="February">
+         <lt:text>Febrero</lt:text>
+      </l:template>
+      <l:template key="March">
+         <lt:text>Marzo</lt:text>
+      </l:template>
+      <l:template key="April">
+         <lt:text>Abril</lt:text>
+      </l:template>
+      <l:template key="May">
+         <lt:text>Mayo</lt:text>
+      </l:template>
+      <l:template key="June">
+         <lt:text>Junio</lt:text>
+      </l:template>
+      <l:template key="July">
+         <lt:text>Julio</lt:text>
+      </l:template>
+      <l:template key="August">
+         <lt:text>Agosto</lt:text>
+      </l:template>
+      <l:template key="September">
+         <lt:text>Septiembre</lt:text>
+      </l:template>
+      <l:template key="October">
+         <lt:text>Octubre</lt:text>
+      </l:template>
+      <l:template key="November">
+         <lt:text>Noviembre</lt:text>
+      </l:template>
+      <l:template key="December">
+         <lt:text>Diciembre</lt:text>
+      </l:template>
+      <l:template key="Monday">
+         <lt:text>Lunes</lt:text>
+      </l:template>
+      <l:template key="Tuesday">
+         <lt:text>Martes</lt:text>
+      </l:template>
+      <l:template key="Wednesday">
+         <lt:text>Miércoles</lt:text>
+      </l:template>
+      <l:template key="Thursday">
+         <lt:text>Jueves</lt:text>
+      </l:template>
+      <l:template key="Friday">
+         <lt:text>Viernes</lt:text>
+      </l:template>
+      <l:template key="Saturday">
+         <lt:text>Sábado</lt:text>
+      </l:template>
+      <l:template key="Sunday">
+         <lt:text>Domingo</lt:text>
+      </l:template>
+   </l:group>
+   <l:group name="datetime-abbrev">
+      <l:template key="Jan">
+         <lt:text>Ene</lt:text>
+      </l:template>
+      <l:template key="Feb">
+         <lt:text>Feb</lt:text>
+      </l:template>
+      <l:template key="Mar">
+         <lt:text>Mar</lt:text>
+      </l:template>
+      <l:template key="Abr">
+         <lt:text>Apr</lt:text>
+      </l:template>
+      <l:template key="May">
+         <lt:text>May</lt:text>
+      </l:template>
+      <l:template key="Jun">
+         <lt:text>Jun</lt:text>
+      </l:template>
+      <l:template key="Jul">
+         <lt:text>Jul</lt:text>
+      </l:template>
+      <l:template key="Aug">
+         <lt:text>Ago</lt:text>
+      </l:template>
+      <l:template key="Sep">
+         <lt:text>Sep</lt:text>
+      </l:template>
+      <l:template key="Oct">
+         <lt:text>Oct</lt:text>
+      </l:template>
+      <l:template key="Nov">
+         <lt:text>Nov</lt:text>
+      </l:template>
+      <l:template key="Dec">
+         <lt:text>Dic</lt:text>
+      </l:template>
+      <l:template key="Mon">
+         <lt:text>Lun</lt:text>
+      </l:template>
+      <l:template key="Tue">
+         <lt:text>Mar</lt:text>
+      </l:template>
+      <l:template key="Wed">
+         <lt:text>Mie</lt:text>
+      </l:template>
+      <l:template key="Thu">
+         <lt:text>Jue</lt:text>
+      </l:template>
+      <l:template key="Fri">
+         <lt:text>Vie</lt:text>
+      </l:template>
+      <l:template key="Sat">
+         <lt:text>Sab</lt:text>
+      </l:template>
+      <l:template key="Sun">
+         <lt:text>Dom</lt:text>
+      </l:template>
+   </l:group>
+   <l:group name="iso690">
+      <l:template key="lastfirst.sep">
+         <lt:text>, </lt:text>
+      </l:template>
+      <l:template key="alt.person.two.sep">
+         <lt:text> – </lt:text>
+      </l:template>
+      <l:template key="alt.person.last.sep">
+         <lt:text> – </lt:text>
+      </l:template>
+      <l:template key="alt.person.more.sep">
+         <lt:text> – </lt:text>
+      </l:template>
+      <l:template key="primary.editor">
+         <lt:text> (ed.)</lt:text>
+      </l:template>
+      <l:template key="primary.many">
+         <lt:text>, et al.</lt:text>
+      </l:template>
+      <l:template key="primary.sep">
+         <lt:text>. </lt:text>
+      </l:template>
+      <l:template key="submaintitle.sep">
+         <lt:text>: </lt:text>
+      </l:template>
+      <l:template key="title.sep">
+         <lt:text>. </lt:text>
+      </l:template>
+      <l:template key="othertitle.sep">
+         <lt:text>, </lt:text>
+      </l:template>
+      <l:template key="medium1">
+         <lt:text> [</lt:text>
+      </l:template>
+      <l:template key="medium2">
+         <lt:text>]</lt:text>
+      </l:template>
+      <l:template key="secondary.person.sep">
+         <lt:text>; </lt:text>
+      </l:template>
+      <l:template key="secondary.sep">
+         <lt:text>. </lt:text>
+      </l:template>
+      <l:template key="respons.sep">
+         <lt:text>. </lt:text>
+      </l:template>
+      <l:template key="edition.sep">
+         <lt:text>. </lt:text>
+      </l:template>
+      <l:template key="edition.serial.sep">
+         <lt:text>, </lt:text>
+      </l:template>
+      <l:template key="issuing.range">
+         <lt:text>-</lt:text>
+      </l:template>
+      <l:template key="issuing.div">
+         <lt:text>, </lt:text>
+      </l:template>
+      <l:template key="issuing.sep">
+         <lt:text>. </lt:text>
+      </l:template>
+      <l:template key="partnr.sep">
+         <lt:text>. </lt:text>
+      </l:template>
+      <l:template key="placepubl.sep">
+         <lt:text>: </lt:text>
+      </l:template>
+      <l:template key="publyear.sep">
+         <lt:text>, </lt:text>
+      </l:template>
+      <l:template key="pubinfo.sep">
+         <lt:text>. </lt:text>
+      </l:template>
+      <l:template key="spec.pubinfo.sep">
+         <lt:text>, </lt:text>
+      </l:template>
+      <l:template key="upd.sep">
+         <lt:text>, </lt:text>
+      </l:template>
+      <l:template key="datecit1">
+         <lt:text> [citado </lt:text>
+      </l:template>
+      <l:template key="datecit2">
+         <lt:text>]</lt:text>
+      </l:template>
+      <l:template key="extent.sep">
+         <lt:text>. </lt:text>
+      </l:template>
+      <l:template key="locs.sep">
+         <lt:text>, </lt:text>
+      </l:template>
+      <l:template key="location.sep">
+         <lt:text>. </lt:text>
+      </l:template>
+      <l:template key="serie.sep">
+         <lt:text>. </lt:text>
+      </l:template>
+      <l:template key="notice.sep">
+         <lt:text>. </lt:text>
+      </l:template>
+      <l:template key="access">
+         <lt:text>Disponible </lt:text>
+      </l:template>
+      <l:template key="acctoo">
+         <lt:text>También disponible </lt:text>
+      </l:template>
+      <l:template key="onwww">
+         <lt:text>de World Wide Web</lt:text>
+      </l:template>
+      <l:template key="oninet">
+         <lt:text>de Internet</lt:text>
+      </l:template>
+      <l:template key="access.end">
+         <lt:text>: </lt:text>
+      </l:template>
+      <l:template key="link1">
+         <lt:text>&lt;</lt:text>
+      </l:template>
+      <l:template key="link2">
+         <lt:text>&gt;</lt:text>
+      </l:template>
+      <l:template key="access.sep">
+         <lt:text>. </lt:text>
+      </l:template>
+      <l:template key="isbn">
+         <lt:text>ISBN </lt:text>
+      </l:template>
+      <l:template key="issn">
+         <lt:text>ISSN </lt:text>
+      </l:template>
+      <l:template key="stdnum.sep">
+         <lt:text>. </lt:text>
+      </l:template>
+      <l:template key="patcountry.sep">
+         <lt:text>. </lt:text>
+      </l:template>
+      <l:template key="pattype.sep">
+         <lt:text>, </lt:text>
+      </l:template>
+      <l:template key="patnum.sep">
+         <lt:text>. </lt:text>
+      </l:template>
+      <l:template key="patdate.sep">
+         <lt:text>. </lt:text>
+      </l:template>
+   </l:group>
    <l:letters>
       <l:l i="-1"/>
       <l:l i="0">Símbolos</l:l>

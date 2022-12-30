@@ -26,6 +26,7 @@
 <xsl:import href="modules/titles.xsl"/>
 <xsl:import href="modules/units.xsl"/>
 <xsl:import href="modules/gentext.xsl"/>
+<xsl:import href="modules/l10n.xsl"/>
 <xsl:import href="modules/functions.xsl"/>
 <xsl:import href="modules/toc.xsl"/>
 <xsl:import href="modules/divisions.xsl"/>
@@ -58,6 +59,7 @@
 <xsl:import href="modules/chunk.xsl"/>
 <xsl:import href="modules/chunk-cleanup.xsl"/>
 <xsl:import href="modules/chunk-output.xsl"/>
+<xsl:import href="modules/xform-locale.xsl"/>
 
 <xsl:output method="xhtml" encoding="utf-8" indent="no" html-version="5"
             omit-xml-declaration="yes"/>
@@ -71,6 +73,13 @@
     <html>
       <xsl:attribute name="xml:base" select="base-uri(/*)"/>
       <xsl:apply-templates select="(/*/db:info,/*)[1]" mode="m:html-head"/>
+
+      <xsl:if test="f:is-true($persistent-toc)">
+        <div db-persistent-toc="true">
+          <xsl:apply-templates select="*" mode="m:persistent-toc"/>
+        </div>
+      </xsl:if>
+
       <!-- N.B. Any filename specified in a PI is ignored for the root -->
       <div db-chunk="{$chunk}"
            db-xlink="{f:xlink-style(/)}">

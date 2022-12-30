@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 1.11.1, https://xsltng.docbook.org */
+/* DocBook xslTNG version 2.0.0, https://xsltng.docbook.org */
 /* This is used for persistent-tocs. */
 nav.tocopen {
   position: fixed;
@@ -39,6 +39,19 @@ nav.toc.slide {
 
 nav.toc header {
   height: 4rem;
+  font-family: var(--title-family);
+  font-size: 1.25em;
+}
+
+nav.toc ul.nav-title li:first-child {
+  margin-top: 1em;
+  border-top: 1px solid var(--primary-variant-color);
+}
+
+nav.toc li.nav-title {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0.25em;
   font-family: var(--title-family);
   font-size: 1.25em;
 }

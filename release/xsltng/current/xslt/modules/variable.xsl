@@ -5,13 +5,14 @@
                 xmlns:f="http://docbook.org/ns/docbook/functions"
                 xmlns:fp="http://docbook.org/ns/docbook/functions/private"
                 xmlns:h="http://www.w3.org/1999/xhtml"
+                xmlns:ls="http://docbook.org/ns/docbook/l10n/source"
                 xmlns:m="http://docbook.org/ns/docbook/modes"
                 xmlns:v="http://docbook.org/ns/docbook/variables"
                 xmlns:vp="http://docbook.org/ns/docbook/variables/private"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns="http://www.w3.org/1999/xhtml"
                 default-mode="m:docbook"
-                exclude-result-prefixes="db ext f fp h m v vp xs"
+                exclude-result-prefixes="#all"
                 version="3.0">
 
 <!-- Note: These are variables used by the stylesheet. Many are
@@ -24,6 +25,12 @@
 
 <xsl:variable name="v:as-json" select="map {'method':'json','indent':true()}"/>
 <xsl:variable name="v:as-xml" select="map {'method':'xml','indent':true()}"/>
+
+<xsl:variable name="v:custom-localizations" as="document-node()?"
+              select="()"/>
+
+<xsl:variable name="v:localization-base-uri"
+              select="resolve-uri('../locale/', static-base-uri())"/>
 
 <xsl:variable name="v:chunk" as="xs:boolean"
               select="not(normalize-space($chunk) = '')"/>
@@ -142,6 +149,14 @@
   <xsl:namespace name="db" select="'http://docbook.org/ns/docbook'"/>
 </xsl:variable>
 
+<!-- Make sure we've resolved it so that file:///, file://, file:/, etc.
+     get normalized because later on we're going to want to compare
+     the prefix of this base URI with the prefix of another URI. -->
+<xsl:variable name="vp:chunk-output-base-uri" as="xs:anyURI?"
+              select="if (not($v:chunk))
+                      then ()
+                      else resolve-uri($chunk-output-base-uri, static-base-uri())"/>
+
 <!-- I tinkered a bit to find images that would display across
      a variety of devices. YMMV. -->
 <xsl:variable name="v:admonition-icons">
@@ -165,12 +180,16 @@
               select="f:parse-length($image-nominal-height)"/>
 
 <xsl:variable name="v:toc-open" as="element()">
-  <span>[toc]</span>
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAABDklEQVQ4je2UUW3EMAyGv0wDUAhlkDBIyuAYXCEclEJoGZRBUgYOgzJoGHgPW6o7rWq35+2TIkWW9duW7N+oKuM46jiOGGMAaNsW5xzee5xzn8EvRESXZUFEWNcVAFWl73v6vjcGUIAYIyEEANZ1RUSY55lSCo/HA4BhGGiahtvthnOOtm0BSCnRdd1eVAGNMeoR27aptVattbpt22FOjFGrzjsX1I7q/4q3y4xf8i/4FwT3Pcw5Y4zBWvujfQMopZBzJuf8XbCeVyWEgHOO+/2+x0SEaZpIKSEih0X2Wz6jdlxKuezaqL7qpZS0lLKbw/M4ANba3RyapiGE8OJGqOrpizGq916999VATvM/AGFn1sxsVjL5AAAAAElFTkSuQmCC"
+       alt="[toc]"/>
 </xsl:variable>
 
 <xsl:variable name="v:toc-close" as="element()">
-  <span>╳</span>
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAtklEQVQ4jaWT0Q3DIAxEz52AEbyB2cDZhBEY3SNcPyqqBEwqpZaQAHNP5jBCEiJCPAiSIgAeiUe8zoveO9x9e9jd0XtfKwHA1hpHtNY49rO8u59zn4mqMiJSyFkcEVTVFQCAtdYFMotrrXN111JnyA/xCsggN2JeXmGEmaGU8l2XUmBm29fZuh0RW2PTK2SGZcamADPb3nmGmNkKOI7j1rAzJG2kcWhqkstQ1QX+/2ciKU/FJOUN6JFZYWpmK3sAAAAASUVORK5CYII="
+       alt="X"/>
 </xsl:variable>
+
+<xsl:variable name="vp:olinkdb" select="false()"/>
 
 <xsl:variable name="v:olink-databases" as="element(h:targetdb)*">
   <xsl:if test="normalize-space($olink-databases) != ''">
