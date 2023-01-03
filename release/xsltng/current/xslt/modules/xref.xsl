@@ -76,11 +76,11 @@
                 select="($template, $prop/@template/string(), local-name(.))[1]"/>
 
   <xsl:variable name="template"
-                select="fp:localization-template(., $context, $template)"/>
+                select="fp:localization-template(., $context)"/>
 
-<!--
+  <!--
   <xsl:message select="local-name(.), $context, $template"/>
--->
+  -->
 
   <xsl:variable name="label" as="item()*">
     <xsl:if test="$template/lt:label">
@@ -105,37 +105,14 @@
 
 <!-- ============================================================ -->
 
-<xsl:template match="*" mode="m:crossref-prefix">
-  <xsl:param name="label" as="item()*" required="yes"/>
-  <xsl:param name="number" as="item()*" required="yes"/>
-  <xsl:param name="title" as="item()*" required="yes"/>
-
-  <xsl:variable name="properties" select="fp:crossref-properties(.)"/>
-
-  <xsl:choose>
-    <xsl:when test="$properties?prefix-key">
-      <span class="prefix">
-        <xsl:sequence
-            select="fp:localization-template(., 'xref', $properties?prefix-key)"/>
-        <span class="sep"> </span>
-      </span>
-    </xsl:when>
-    <xsl:when test="$properties?prefix">
-      <span class="prefix">
-        <xsl:sequence select="$properties?prefix"/>
-        <span class="sep"> </span>
-      </span>
-    </xsl:when>
-    <xsl:otherwise/>
-  </xsl:choose>
-</xsl:template>
-
-<!-- ============================================================ -->
-
 <xsl:template match="*" mode="m:crossref-label" as="item()*">
   <xsl:apply-templates select="." mode="m:headline-label">
     <xsl:with-param name="purpose" select="'xref'"/>
   </xsl:apply-templates>
+</xsl:template>
+
+<xsl:template match="db:varlistentry" mode="m:crossref-label" as="item()*">
+  <xsl:apply-templates select="db:term[1]"/>
 </xsl:template>
 
 <xsl:template match="db:answer" mode="m:crossref-label" as="item()*">
@@ -267,87 +244,5 @@
 
   <xsl:sequence select="()"/>
 </xsl:template>
-
-<!-- ============================================================ -->
-
-<xsl:template match="*" mode="m:crossref-inherit-separator">
-  <xsl:param name="title" as="item()*" required="yes"/>
-  <xsl:param name="parent" as="item()*" required="yes"/>
-  <xsl:variable name="properties" select="fp:crossref-properties(.)"/>
-  <xsl:choose>
-    <xsl:when test="$properties?inherit-separator-key">
-      <xsl:sequence select="error((), 'bang')"/>
-    </xsl:when>
-    <xsl:when test="$properties?inherit-separator">
-      <span class="sep">
-        <xsl:text> </xsl:text>
-        <xsl:sequence select="$properties?inherit-separator"/>
-        <xsl:text> </xsl:text>
-      </span>
-    </xsl:when>
-    <xsl:otherwise/>
-  </xsl:choose>
-</xsl:template>
-
-<!-- ============================================================ -->
-
-<xsl:function name="fp:document-crossref-properties" as="element()*" cache="yes">
-  <xsl:param name="node" as="element()"/>
-  <xsl:sequence select="root($node)/*/db:info/v:crossref"/>
-</xsl:function>
-
-<xsl:function name="fp:crossref-properties" as="map(*)" cache="yes">
-  <xsl:param name="node" as="element()"/>
-
-  <xsl:variable name="prop" as="element()?">
-    <xsl:iterate select="(fp:document-crossref-properties($node), $v:xref-groups)">
-      <xsl:variable name="test" as="element()*">
-        <xsl:evaluate context-item="$node" xpath="@xpath"/>
-      </xsl:variable>
-
-      <xsl:choose>
-        <xsl:when test="$test">
-          <xsl:sequence select="."/>
-          <xsl:break/>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:next-iteration/>
-        </xsl:otherwise>
-      </xsl:choose>
-    </xsl:iterate>
-  </xsl:variable>
-
-  <xsl:variable name="number" as="xs:boolean"
-                select="(exists($prop/@number-format)
-                         or (exists($prop/@number) and f:is-true($prop/@number)))
-                        and (not(exists($prop/@number)) or f:is-true($prop/@number))"/>
-
-  <xsl:variable name="format" as="xs:string?"
-                select="if ($number)
-                        then ($prop/@number-format, '1')[1]
-                        else ()"/>
-
-  <xsl:variable name="label-toc" as="xs:boolean"
-                select="if ($prop/@label-toc)
-                        then f:is-true($prop/@label-toc)
-                        else f:is-true($prop/@label)"/>
-
-  <xsl:message use-when="false()"
-               select="node-name($node), ' ', f:is-true($prop/@label), ' ', $number"/>
-
-  <xsl:sequence select="map {
-    'prefix': $prop/@prefix/string(),
-    'prefix-key': $prop/@prefix-key/string(),
-    'label': f:is-true($prop/@label),
-    'label-toc': $label-toc,
-    'number': $number,
-    'number-format': $format,
-    'title': f:is-true($prop/@title),
-    'inherit': $prop/@inherit/string(),
-    'inherit-separator': $prop/@inherit-separator/string(),
-    'suffix': $prop/@suffix/string(),
-    'suffix-key': $prop/@suffix-key/string()
-    }"/> 
-</xsl:function>
 
 </xsl:stylesheet>

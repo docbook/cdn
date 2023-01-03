@@ -23,24 +23,22 @@
               xmlns:db="http://docbook.org/ns/docbook">
   <xsl:sequence select="$v:user-title-groups"/>
 
-  <title xpath="self::db:section[ancestor::db:preface]"
-         group="title-unnumbered"/>
-
   <title xpath="self::db:section|self::db:sect1
                 |self::db:sect2|self::db:sect3|self::db:sect4|self::db:sect5
                 |self::db:refsection|self::db:refsect1|self::db:refsect2|self::db:refsect3"
          group="{if (f:is-true($section-numbers))
-                   then 'title-numbered'
-                   else 'title-unnumbered'}"/>
+                 then 'title-numbered'
+                 else 'title-unnumbered'}"/>
 
-  <title xpath="self::db:article"
-         group="title"/>
+  <title xpath="self::db:article|self::db:preface|self::db:chapter|self::db:appendix"
+         group="{if (f:is-true($component-numbers))
+                 then 'title-numbered'
+                 else 'title-unnumbered'}"/>
 
-  <title xpath="self::db:preface"
-         group="title"/>
-
-  <title xpath="self::db:part|self::db:reference|self::db:chapter|self::db:appendix"
-         group="title-numbered"/>
+  <title xpath="self::db:book|self::db:part|self::db:reference"
+         group="{if (f:is-true($division-numbers))
+                 then 'title-numbered'
+                 else 'title-unnumbered'}"/>
 
   <title xpath="self::db:figure[parent::db:formalgroup]
                 |self::db:table[parent::db:formalgroup]
@@ -49,10 +47,10 @@
          group="subfigure-title"/>
 
   <title xpath="self::db:figure|self::db:table|self::db:equation|self::db:example"
-         group="title"/>
+         group="title-numbered"/>
 
   <title xpath="self::db:formalgroup"
-         group="title"/>
+         group="title-numbered"/>
 
   <title xpath="self::db:step|self::db:listitem[parent::db:orderedlist]"
          group="title-unnumbered"/>
@@ -67,7 +65,7 @@
          group="title-numbered"/>
 
   <title xpath="self::*"
-         group="title"/>
+         group="title-unnumbered"/>
 </xsl:variable>
 
 <!-- ============================================================ -->
@@ -99,15 +97,15 @@
                         then fp:localization-template(., 'list-of-titles')
                         else fp:localization-template(., $prop/@group)"/>
 
+  <!--
+  <xsl:message select="local-name(.), $purpose, $template"/>
+  -->
+
   <xsl:variable name="label" as="item()*">
     <xsl:if test="$template/lt:label">
       <xsl:apply-templates select="." mode="m:headline-label"/>
     </xsl:if>
   </xsl:variable>
-
-  <!--
-  <xsl:message select="local-name(.), $prop/@group/string(), $template"/>
-  -->
 
   <xsl:if test="$vp:olinkdb">
     <xsl:attribute name="db-label" select="$label"/>
@@ -145,14 +143,7 @@
 
 <xsl:template match="*" mode="m:headline-label">
   <xsl:param name="purpose" as="xs:string" select="'title'"/>
-  <xsl:choose>
-    <xsl:when test="@xreflabel">
-      <xsl:sequence select="@xreflabel/string()"/>
-    </xsl:when>
-    <xsl:otherwise>
-      <xsl:apply-templates select="." mode="m:headline-number"/>
-    </xsl:otherwise>
-  </xsl:choose>
+  <xsl:apply-templates select="." mode="m:headline-number"/>
 </xsl:template>
 
 <xsl:template match="db:appendix" mode="m:headline-label">
@@ -197,13 +188,13 @@
       <xsl:number from="db:qandaset" level="multiple" select=".."
                   count="db:qandaentry|db:qandadiv"/>
     </xsl:when>
-    <xsl:when test="$label = 'qanda'">
-      <xsl:text>Q:</xsl:text>
-    </xsl:when>
     <xsl:otherwise>
-      <xsl:message
-          select="'Unexpected qandaset label: ' || $label || ', using qanda'"/>
-      <xsl:text>Q:</xsl:text>
+      <xsl:if test="$label != 'qanda'">
+        <xsl:message
+            select="'Unexpected qandaset label: ' || $label || ', using qanda'"/>
+      </xsl:if>
+
+      <xsl:sequence select="f:l10n-token(., 'question')"/>
     </xsl:otherwise>
   </xsl:choose>
 </xsl:template>
@@ -233,6 +224,7 @@
     </xsl:otherwise>
   </xsl:choose>
 </xsl:template>
+
 
 <xsl:template match="db:formalgroup" mode="mp:label-number" as="xs:integer">
   <xsl:variable name="ancestor" select="fp:nearest-relevant-ancestor(.)"/>
@@ -325,6 +317,12 @@
   <xsl:apply-templates select="." mode="m:headline-number"/>
 </xsl:template>
 
+<xsl:template match="db:orderedlist"
+              mode="mp:headline-number-prefix">
+  <xsl:apply-templates select="ancestor::db:listitem[parent::db:orderedlist][1]"
+                       mode="m:headline-number"/>
+</xsl:template>
+
 <xsl:template match="*"
               mode="mp:headline-number-prefix">
   <xsl:sequence select="()"/>
@@ -337,7 +335,7 @@
   </xsl:variable>
 
   <xsl:variable name="number" as="xs:integer"
-                select="f:orderedlist-item-number(.)"/>
+                select="f:orderedlist-item-number(.)[last()]"/>
 
   <xsl:variable name="format"
                 select="f:orderedlist-item-numeration(.)"/>
@@ -350,11 +348,11 @@
 
   <xsl:choose>
     <xsl:when test="exists($prefix) and exists($formatted-number)">
-      <xsl:variable name="sep"
-                    select="fp:localization-property(., 'number-separator', local-name(..))"/>
       <xsl:sequence select="$prefix"/>
       <span class="sep">
-        <xsl:sequence select="$sep"/>
+        <xsl:apply-templates select="." mode="m:gentext">
+          <xsl:with-param name="group" select="'number-separator'"/>
+        </xsl:apply-templates>
       </span>
       <xsl:sequence select="$formatted-number"/>
     </xsl:when>
@@ -383,20 +381,23 @@
     </xsl:iterate>
   </xsl:variable>
 
-  <xsl:variable name="sep"
-                select="fp:localization-property(., 'number-separator', 'step')"/>
+  <xsl:variable name="sep">
+    <xsl:apply-templates select="." mode="m:gentext">
+      <xsl:with-param name="group" select="'number-separator'"/>
+    </xsl:apply-templates>
+  </xsl:variable>
 
   <xsl:variable name="formatted-number" as="xs:string">
-    <xsl:sequence select="string-join(reverse($fnumber), $sep)"/>
+    <xsl:sequence select="string-join(reverse($fnumber), string($sep))"/>
   </xsl:variable>
 
   <xsl:choose>
     <xsl:when test="exists($prefix) and exists($formatted-number)">
-      <xsl:variable name="sep"
-                    select="fp:localization-property(., 'number-separator', local-name(..))"/>
       <xsl:sequence select="$prefix"/>
       <span class="sep">
-        <xsl:sequence select="$sep"/>
+        <xsl:apply-templates select="." mode="m:gentext">
+          <xsl:with-param name="group" select="'number-separator'"/>
+        </xsl:apply-templates>
       </span>
       <xsl:sequence select="$formatted-number"/>
     </xsl:when>
@@ -423,16 +424,15 @@
     </xsl:choose>
   </xsl:variable>
 
-  <!--
-  <xsl:message select="local-name(.), $prefix"/>
-  -->
-
   <xsl:variable name="number" as="xs:integer">
     <xsl:apply-templates select="." mode="mp:label-number"/>
   </xsl:variable>
 
-  <xsl:variable name="format"
-                select="fp:localization-property(., 'number-format', local-name(.))"/>
+  <xsl:variable name="format">
+    <xsl:apply-templates select="." mode="m:gentext">
+      <xsl:with-param name="group" select="'number-format'"/>
+    </xsl:apply-templates>
+  </xsl:variable>
 
   <xsl:variable name="formatted-number" as="xs:string?">
     <xsl:if test="exists($format)">
@@ -442,11 +442,11 @@
 
   <xsl:choose>
     <xsl:when test="exists($prefix) and exists($formatted-number)">
-      <xsl:variable name="sep"
-                    select="fp:localization-property(., 'number-separator', local-name(..))"/>
       <xsl:sequence select="$prefix"/>
       <span class="sep">
-        <xsl:sequence select="$sep"/>
+        <xsl:apply-templates select="." mode="m:gentext">
+          <xsl:with-param name="group" select="'number-separator'"/>
+        </xsl:apply-templates>
       </span>
       <xsl:sequence select="$formatted-number"/>
     </xsl:when>
@@ -556,7 +556,11 @@
 
 <xsl:template match="db:question" mode="m:headline-title">
   <xsl:param name="purpose" as="xs:string" select="'title'"/>
-  <xsl:apply-templates select="*[1]" mode="m:title">
+  <xsl:apply-templates mode="m:title"
+      select="(* except (db:label|db:info|db:tip|db:note|db:danger|db:important
+                         |db:caution|db:sidebar|db:figure|db:example
+                         |db:procedure|db:table|db:equation)
+              )[1]">
     <xsl:with-param name="purpose" select="$purpose"/>
   </xsl:apply-templates>
 </xsl:template>

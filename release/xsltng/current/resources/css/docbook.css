@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 2.0.0, https://xsltng.docbook.org */
+/* DocBook xslTNG version 2.0.1, https://xsltng.docbook.org */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
@@ -511,6 +511,27 @@ ul.toc,
 .bibliolist,
 .glosslist {
   margin-top: 1em;
+}
+
+.iso690 .author {
+  text-transform: uppercase;
+}
+
+.iso690.article .part .firstname,
+.iso690.article .part .givenname {
+  text-transform: none;
+}
+
+.iso690.patent .country, .iso690.patent .patenttype {
+  font-style: italic;
+}
+
+.iso690 .title {
+  font-weight: inherit;
+  font-family: inherit;
+  color: inherit;
+  background-color: inherit;
+  margin-bottom: inherit;
 }
 
 /* ============================================================ */
@@ -1172,6 +1193,10 @@ blockquote p + .attribution {
 }
 
 /* ============================================================ */
+.formalobject + .formalobject {
+  margin-top: 1rem;
+}
+
 .figure,
 .example,
 .equation {

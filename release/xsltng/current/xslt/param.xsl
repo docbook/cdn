@@ -38,6 +38,7 @@
    <xsl:param name="annotation-style" select="'javascript'"/>
    <xsl:param name="annotations-js" select="'js/annotations.js'"/>
    <xsl:param name="bibliography-collection" as="xs:string" select="''"/>
+   <xsl:param name="bibliography-style" as="xs:string" select="'default'"/>
    <xsl:param name="callout-default-column" select="60"/>
    <xsl:param name="callout-unicode-start" select="9311"/>
    <xsl:param name="chunk" as="xs:string?" select="()"/>
@@ -67,6 +68,7 @@
    <xsl:param name="chunk-renumber-footnotes" select="'true'"/>
    <xsl:param name="chunk-section-depth" select="1"/>
    <xsl:param name="classsynopsis-indent" select="'  '"/>
+   <xsl:param name="component-numbers" as="xs:string" select="'1'"/>
    <xsl:param name="component-numbers-inherit" as="xs:string" select="'false'"/>
    <xsl:param name="control-js" as="xs:string" select="'js/controls.js'"/>
    <xsl:param name="copyright-collapse-years" select="true()"/>
@@ -81,8 +83,9 @@
    <xsl:param name="default-language" select="'en'"/>
    <xsl:param name="default-length-magnitude" select="25.0"/>
    <xsl:param name="default-length-unit" select="'%'"/>
-   <xsl:param name="default-personal-name-style" select="'first-last'"/>
+   <xsl:param name="personal-name-style" select="()"/>
    <xsl:param name="default-theme" as="xs:string" select="''"/>
+   <xsl:param name="division-numbers" as="xs:string" select="'1'"/>
    <xsl:param name="division-numbers-inherit" as="xs:string" select="'false'"/>
    <xsl:param name="docbook-transclusion" select="'false'"/>
    <xsl:param name="dynamic-profile-error" select="'ignore'"/>
@@ -96,6 +99,12 @@
    <xsl:param name="funcsynopsis-trailing-punctuation" select="';'"/>
    <xsl:param name="generate-html-page" as="xs:string" select="'true'"/>
    <xsl:param name="generate-index" select="'true'"/>
+   <xsl:param name="generate-nested-toc"
+               as="xs:string"
+               select="'not(f:section(.))&#xA;or (f:section(.) and f:section-depth(.) le $vp:section-toc-depth)'"/>
+   <xsl:param name="generate-toc"
+               as="xs:string"
+               select="'(empty(parent::*) and self::db:article)&#xA;or self::db:set or self::db:book&#xA;or self::db:part or self::db:reference'"/>
    <xsl:param name="generate-trivial-toc" as="xs:string" select="'false'"/>
    <xsl:param name="generated-id-root" select="'R'"/>
    <xsl:param name="generated-id-sep" select="'_'"/>
@@ -217,6 +226,10 @@
                select="'pygments'"/>
    <xsl:param name="verbatim-table-style" select="''"/>
    <xsl:param name="verbatim-trim-trailing-blank-lines" select="'true'"/>
+   <xsl:param name="xlink-arclist-before" select="' ['"/>
+   <xsl:param name="xlink-arclist-after" select="'] '"/>
+   <xsl:param name="xlink-arclist-titlesep" select="': '"/>
+   <xsl:param name="xlink-arclist-sep" select="', '"/>
    <xsl:param name="xlink-icon-closed" select="()"/>
    <xsl:param name="xlink-icon-open" select="()"/>
    <xsl:param name="xlink-js" select="'js/xlink.js'"/>
@@ -253,6 +266,7 @@
          <xsl:map-entry key="QName('', 'annotations-js')" select="$annotations-js"/>
          <xsl:map-entry key="QName('', 'bibliography-collection')"
                          select="$bibliography-collection"/>
+         <xsl:map-entry key="QName('', 'bibliography-style')" select="$bibliography-style"/>
          <xsl:map-entry key="QName('', 'callout-default-column')"
                          select="$callout-default-column"/>
          <xsl:map-entry key="QName('', 'callout-unicode-start')"
@@ -268,6 +282,7 @@
                          select="$chunk-renumber-footnotes"/>
          <xsl:map-entry key="QName('', 'chunk-section-depth')" select="$chunk-section-depth"/>
          <xsl:map-entry key="QName('', 'classsynopsis-indent')" select="$classsynopsis-indent"/>
+         <xsl:map-entry key="QName('', 'component-numbers')" select="$component-numbers"/>
          <xsl:map-entry key="QName('', 'component-numbers-inherit')"
                          select="$component-numbers-inherit"/>
          <xsl:map-entry key="QName('', 'control-js')" select="$control-js"/>
@@ -285,9 +300,9 @@
          <xsl:map-entry key="QName('', 'default-length-magnitude')"
                          select="$default-length-magnitude"/>
          <xsl:map-entry key="QName('', 'default-length-unit')" select="$default-length-unit"/>
-         <xsl:map-entry key="QName('', 'default-personal-name-style')"
-                         select="$default-personal-name-style"/>
+         <xsl:map-entry key="QName('', 'personal-name-style')" select="$personal-name-style"/>
          <xsl:map-entry key="QName('', 'default-theme')" select="$default-theme"/>
+         <xsl:map-entry key="QName('', 'division-numbers')" select="$division-numbers"/>
          <xsl:map-entry key="QName('', 'division-numbers-inherit')"
                          select="$division-numbers-inherit"/>
          <xsl:map-entry key="QName('', 'docbook-transclusion')" select="$docbook-transclusion"/>
@@ -306,6 +321,8 @@
                          select="$funcsynopsis-trailing-punctuation"/>
          <xsl:map-entry key="QName('', 'generate-html-page')" select="$generate-html-page"/>
          <xsl:map-entry key="QName('', 'generate-index')" select="$generate-index"/>
+         <xsl:map-entry key="QName('', 'generate-nested-toc')" select="$generate-nested-toc"/>
+         <xsl:map-entry key="QName('', 'generate-toc')" select="$generate-toc"/>
          <xsl:map-entry key="QName('', 'generate-trivial-toc')" select="$generate-trivial-toc"/>
          <xsl:map-entry key="QName('', 'generated-id-root')" select="$generated-id-root"/>
          <xsl:map-entry key="QName('', 'generated-id-sep')" select="$generated-id-sep"/>
@@ -438,6 +455,11 @@
          <xsl:map-entry key="QName('', 'verbatim-table-style')" select="$verbatim-table-style"/>
          <xsl:map-entry key="QName('', 'verbatim-trim-trailing-blank-lines')"
                          select="$verbatim-trim-trailing-blank-lines"/>
+         <xsl:map-entry key="QName('', 'xlink-arclist-before')" select="$xlink-arclist-before"/>
+         <xsl:map-entry key="QName('', 'xlink-arclist-after')" select="$xlink-arclist-after"/>
+         <xsl:map-entry key="QName('', 'xlink-arclist-titlesep')"
+                         select="$xlink-arclist-titlesep"/>
+         <xsl:map-entry key="QName('', 'xlink-arclist-sep')" select="$xlink-arclist-sep"/>
          <xsl:map-entry key="QName('', 'xlink-icon-closed')" select="$xlink-icon-closed"/>
          <xsl:map-entry key="QName('', 'xlink-icon-open')" select="$xlink-icon-open"/>
          <xsl:map-entry key="QName('', 'xlink-js')" select="$xlink-js"/>
