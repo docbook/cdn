@@ -144,6 +144,7 @@
       <l:token key="ListofTables">List of Tables</l:token>
       <l:token key="ListofUnknown">List of Unknown</l:token>
       <l:token key="listofunknown">List of Unknown</l:token>
+      <l:token key="loading">Loading…</l:token>
       <l:token key="MsgAud">Audience</l:token>
       <l:token key="msgaud">Audience</l:token>
       <l:token key="MsgLevel">Level</l:token>

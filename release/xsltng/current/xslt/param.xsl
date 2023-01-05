@@ -153,6 +153,9 @@
    <xsl:param name="paper-size" as="xs:string?" select="()"/>
    <xsl:param name="persistent-toc" select="'false'"/>
    <xsl:param name="persistent-toc-css" select="'css/docbook-toc.css'"/>
+   <xsl:param name="persistent-toc-filename"
+               as="xs:string?"
+               select="'persistent-toc.html'"/>
    <xsl:param name="persistent-toc-js" select="'js/persistent-toc.js'"/>
    <xsl:param name="persistent-toc-search" select="'true'"/>
    <xsl:param name="pixels-per-inch" select="96.0"/>
@@ -372,6 +375,8 @@
          <xsl:map-entry key="QName('', 'paper-size')" select="$paper-size"/>
          <xsl:map-entry key="QName('', 'persistent-toc')" select="$persistent-toc"/>
          <xsl:map-entry key="QName('', 'persistent-toc-css')" select="$persistent-toc-css"/>
+         <xsl:map-entry key="QName('', 'persistent-toc-filename')"
+                         select="$persistent-toc-filename"/>
          <xsl:map-entry key="QName('', 'persistent-toc-js')" select="$persistent-toc-js"/>
          <xsl:map-entry key="QName('', 'persistent-toc-search')"
                          select="$persistent-toc-search"/>
