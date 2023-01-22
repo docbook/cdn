@@ -57,8 +57,7 @@
             <xsl:sequence select="''"/>
          </xsl:when>
          <xsl:when use-when="function-available('ext:cwd')" test="true()">
-            <xsl:message select="'Default output base uri:',                          resolve-uri(ext:cwd(), static-base-uri())"/>
-            <xsl:sequence select="resolve-uri(ext:cwd(), static-base-uri())"/>
+            <xsl:sequence select="ext:cwd()"/>
          </xsl:when>
          <xsl:otherwise>
             <xsl:message terminate="yes" select="'You must specify the $chunk-output-base-uri'"/>
@@ -136,8 +135,7 @@
                as="xs:string"
                select="&#34;.eps .ps .pdf&#34;"/>
    <xsl:param name="mediaobject-input-base-uri" as="xs:string">
-      <xsl:sequence use-when="function-available('ext:cwd')"
-                     select="resolve-uri(ext:cwd(), static-base-uri())"/>
+      <xsl:sequence use-when="function-available('ext:cwd')" select="ext:cwd()"/>
       <xsl:sequence use-when="not(function-available('ext:cwd'))" select="''"/>
    </xsl:param>
    <xsl:param name="mediaobject-output-base-uri" as="xs:string" select="''"/>
