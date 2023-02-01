@@ -134,11 +134,9 @@
    <xsl:param name="mediaobject-exclude-extensions"
                as="xs:string"
                select="&#34;.eps .ps .pdf&#34;"/>
-   <xsl:param name="mediaobject-input-base-uri" as="xs:string">
-      <xsl:sequence use-when="function-available('ext:cwd')" select="ext:cwd()"/>
-      <xsl:sequence use-when="not(function-available('ext:cwd'))" select="''"/>
-   </xsl:param>
-   <xsl:param name="mediaobject-output-base-uri" as="xs:string" select="''"/>
+   <xsl:param name="mediaobject-input-base-uri" as="xs:string?" select="()"/>
+   <xsl:param name="mediaobject-output-base-uri" as="xs:string?" select="()"/>
+   <xsl:param name="mediaobject-output-paths" as="xs:string" select="'true'"/>
    <xsl:param name="mediaobject-video-element" as="xs:string" select="'video'"/>
    <xsl:param name="nominal-page-width" select="'6in'"/>
    <xsl:param name="number-single-appendix" select="'true'"/>
@@ -358,6 +356,8 @@
                          select="$mediaobject-input-base-uri"/>
          <xsl:map-entry key="QName('', 'mediaobject-output-base-uri')"
                          select="$mediaobject-output-base-uri"/>
+         <xsl:map-entry key="QName('', 'mediaobject-output-paths')"
+                         select="$mediaobject-output-paths"/>
          <xsl:map-entry key="QName('', 'mediaobject-video-element')"
                          select="$mediaobject-video-element"/>
          <xsl:map-entry key="QName('', 'nominal-page-width')" select="$nominal-page-width"/>
