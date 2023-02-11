@@ -135,6 +135,7 @@
                as="xs:string"
                select="&#34;.eps .ps .pdf&#34;"/>
    <xsl:param name="mediaobject-input-base-uri" as="xs:string?" select="()"/>
+   <xsl:param name="mediaobject-grouped-by-type" as="xs:string" select="'false'"/>
    <xsl:param name="mediaobject-output-base-uri" as="xs:string?" select="()"/>
    <xsl:param name="mediaobject-output-paths" as="xs:string" select="'true'"/>
    <xsl:param name="mediaobject-video-element" as="xs:string" select="'video'"/>
@@ -354,6 +355,8 @@
                          select="$mediaobject-exclude-extensions"/>
          <xsl:map-entry key="QName('', 'mediaobject-input-base-uri')"
                          select="$mediaobject-input-base-uri"/>
+         <xsl:map-entry key="QName('', 'mediaobject-grouped-by-type')"
+                         select="$mediaobject-grouped-by-type"/>
          <xsl:map-entry key="QName('', 'mediaobject-output-base-uri')"
                          select="$mediaobject-output-base-uri"/>
          <xsl:map-entry key="QName('', 'mediaobject-output-paths')"
