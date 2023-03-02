@@ -37,6 +37,7 @@
    <xsl:param name="annotation-placement" select="'after'"/>
    <xsl:param name="annotation-style" select="'javascript'"/>
    <xsl:param name="annotations-js" select="'js/annotations.js'"/>
+   <xsl:param name="auto-toc" as="xs:string" select="'true'"/>
    <xsl:param name="bibliography-collection" as="xs:string" select="''"/>
    <xsl:param name="bibliography-style" as="xs:string" select="'default'"/>
    <xsl:param name="callout-default-column" select="60"/>
@@ -264,6 +265,7 @@
          <xsl:map-entry key="QName('', 'annotation-placement')" select="$annotation-placement"/>
          <xsl:map-entry key="QName('', 'annotation-style')" select="$annotation-style"/>
          <xsl:map-entry key="QName('', 'annotations-js')" select="$annotations-js"/>
+         <xsl:map-entry key="QName('', 'auto-toc')" select="$auto-toc"/>
          <xsl:map-entry key="QName('', 'bibliography-collection')"
                          select="$bibliography-collection"/>
          <xsl:map-entry key="QName('', 'bibliography-style')" select="$bibliography-style"/>
