@@ -147,6 +147,9 @@
    <xsl:param name="othername-in-middle" select="'true'"/>
    <xsl:param name="output-media" select="'screen'"/>
    <xsl:param name="oxy-markup" select="'false'"/>
+   <xsl:param name="pagetoc-elements" select="''"/>
+   <xsl:param name="pagetoc-dynamic" select="'true'"/>
+   <xsl:param name="pagetoc-js" select="'js/pagetoc.js'"/>
    <xsl:param name="page-style" as="xs:string" select="'article'"/>
    <xsl:param name="paper-size" as="xs:string?" select="()"/>
    <xsl:param name="persistent-toc" select="'false'"/>
@@ -374,6 +377,9 @@
          <xsl:map-entry key="QName('', 'othername-in-middle')" select="$othername-in-middle"/>
          <xsl:map-entry key="QName('', 'output-media')" select="$output-media"/>
          <xsl:map-entry key="QName('', 'oxy-markup')" select="$oxy-markup"/>
+         <xsl:map-entry key="QName('', 'pagetoc-elements')" select="$pagetoc-elements"/>
+         <xsl:map-entry key="QName('', 'pagetoc-dynamic')" select="$pagetoc-dynamic"/>
+         <xsl:map-entry key="QName('', 'pagetoc-js')" select="$pagetoc-js"/>
          <xsl:map-entry key="QName('', 'page-style')" select="$page-style"/>
          <xsl:map-entry key="QName('', 'paper-size')" select="$paper-size"/>
          <xsl:map-entry key="QName('', 'persistent-toc')" select="$persistent-toc"/>

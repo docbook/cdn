@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 2.0.11, https://xsltng.docbook.org */
+/* DocBook xslTNG version 2.0.12, https://xsltng.docbook.org */
 /* No embedded fonts by default. */
 :root {
   --symbol-fonts: "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
@@ -1600,21 +1600,16 @@ body.draft {
   background-attachment: fixed;
 }
 
-main,
-footer {
+main {
   max-width: 50rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* If the screen is wide, center. If you do this unconditionally,
-   strange things happen when the screen is narrow. */
-@media screen and (min-width: 58rem) {
-  main,
-  footer {
-    width: 50rem;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (max-width: 60rem) {
+  main {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 main {
