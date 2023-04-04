@@ -115,6 +115,14 @@
               select="fp:parse-key-value-pairs(
                         tokenize($formal-object-title-placement, '\s+'))"/>
 
+<xsl:variable name="v:formalgroup-nested-object-title-placement" as="map(xs:string,xs:string)"
+              select="fp:parse-key-value-pairs(
+                        tokenize($formal-object-title-placement, '\s+'))"/>
+
+<xsl:variable name="v:mediaobject-details-placement" as="map(xs:string,xs:string)"
+              select="fp:parse-key-value-pairs(
+                        tokenize($mediaobject-details-placement, '\s+'))"/>
+
 <xsl:variable name="v:arg-choice-opt-open-str"><span class="cmdpunct">[</span></xsl:variable>
 <xsl:variable name="v:arg-choice-opt-close-str"><span class="cmdpunct">]</span></xsl:variable>
 <xsl:variable name="v:arg-choice-req-open-str"><span class="cmdpunct">{</span></xsl:variable>
@@ -223,11 +231,14 @@
   <theme name="Materials light" id="materials-light" dark="false"/>
 </xsl:variable>
 
-<xsl:variable name="vp:js-controls" as="element()*">
+<xsl:variable name="vp:random-prefix" as="xs:string">
   <xsl:variable name="chars"
                 select="('a','b','c','d','e','f','_','_','_','1','2','3','4','5','6')"/>
-  <xsl:variable name="random"
-                select="string-join(random-number-generator()?permute($chars), '')"/>
+  <xsl:sequence select="string-join(random-number-generator()?permute($chars), '')"/>
+</xsl:variable>
+
+<xsl:variable name="vp:js-controls" as="element()*">
+  <xsl:variable name="random" select="$vp:random-prefix"/>
   <span class="controls-open">☰</span>
   <div class="js-controls-wrapper">
     <xsl:if test="$v:theme-list[@dark='true']">

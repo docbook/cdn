@@ -409,6 +409,9 @@
       <l:template match="self::db:book">
          <lt:content/>
       </l:template>
+      <l:template match="self::db:set">
+         <lt:content/>
+      </l:template>
       <l:template match="self::db:colophon">
          <lt:content/>
       </l:template>
@@ -591,9 +594,6 @@
          <lt:content/>
       </l:template>
       <l:template match="self::db:procedure">
-         <lt:content/>
-      </l:template>
-      <l:template match="self::db:procedure.formal">
          <lt:token key="Procedure"/>
          <lt:text> </lt:text>
          <lt:label/>
@@ -936,9 +936,6 @@
          <lt:content/>
       </l:template>
       <l:template match="self::db:procedure">
-         <lt:content/>
-      </l:template>
-      <l:template match="self::db:procedure.formal">
          <lt:token key="Procedure"/>
          <lt:text> </lt:text>
          <lt:label/>
@@ -1022,6 +1019,34 @@
       </l:template>
       <l:template match="self::db:varlistentry"/>
       <l:template match="self::db:warning">
+         <lt:content/>
+      </l:template>
+      <l:template match="self::db:formalgroup[db:equation]">
+         <lt:token key="Equation"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template match="self::db:formalgroup[db:example]">
+         <lt:token key="Example"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template match="self::db:formalgroup[db:figure]">
+         <lt:token key="Figure"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
+         <lt:content/>
+      </l:template>
+      <l:template match="self::db:formalgroup[db:table]">
+         <lt:token key="Table"/>
+         <lt:text> </lt:text>
+         <lt:label/>
+         <lt:separator/>
          <lt:content/>
       </l:template>
       <l:template match="true()">

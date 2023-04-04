@@ -28,7 +28,7 @@
    <xsl:param name="align-char-default" as="xs:string" select="'.'"/>
    <xsl:param name="align-char-pad" select="' '"/>
    <xsl:param name="align-char-width" select="2"/>
-   <xsl:param name="allow-eval" as="xs:string" select="'false'"/>
+   <xsl:param name="allow-eval" as="xs:string" select="'true'"/>
    <xsl:param name="annotate-toc" select="'true'"/>
    <xsl:param name="annotation-collection" as="xs:string" select="''"/>
    <xsl:param name="annotation-mark">
@@ -93,7 +93,9 @@
    <xsl:param name="experimental-pmuj" select="'false'"/>
    <xsl:param name="footnote-numeration" select="('1')"/>
    <xsl:param name="formal-object-title-placement"
-               select="'after formalgroup:before'"/>
+               select="'after table:before formalgroup:before'"/>
+   <xsl:param name="mediaobject-details-placement" select="'before'"/>
+   <xsl:param name="formalgroup-nested-object-title-placement" select="'after'"/>
    <xsl:param name="funcsynopsis-default-style" select="'kr'"/>
    <xsl:param name="funcsynopsis-table-threshold" select="40"/>
    <xsl:param name="funcsynopsis-trailing-punctuation" select="';'"/>
@@ -249,6 +251,25 @@
    <xsl:param name="warn-about-missing-localizations"
                as="xs:string"
                select="'true'"/>
+   <xsl:param name="sets-number-from" as="xs:string" select="'set'"/>
+   <xsl:param name="books-number-from" as="xs:string" select="'set'"/>
+   <xsl:param name="divisions-number-from" as="xs:string" select="'book'"/>
+   <xsl:param name="components-number-from" as="xs:string" select="'book'"/>
+   <xsl:param name="sections-number-from" as="xs:string" select="'component'"/>
+   <xsl:param name="formal-objects-number-from"
+               as="xs:string"
+               select="'component'"/>
+   <xsl:param name="sets-inherit-from" as="xs:string" select="''"/>
+   <xsl:param name="books-inherit-from" as="xs:string" select="''"/>
+   <xsl:param name="divisions-inherit-from" as="xs:string" select="''"/>
+   <xsl:param name="components-inherit-from" as="xs:string" select="''"/>
+   <xsl:param name="sections-inherit-from" as="xs:string" select="'section'"/>
+   <xsl:param name="formal-objects-inherit-from"
+               as="xs:string"
+               select="'component'"/>
+   <xsl:param name="unwrap-paragraphs" as="xs:string" select="'false'"/>
+   <xsl:param name="fallback-js" select="'js/fallback.js'"/>
+   <xsl:param name="message-level" as="xs:integer" select="1"/>
    <xsl:variable name="vp:static-parameters" as="map(xs:QName, item()*)">
       <xsl:map>
          <xsl:map-entry key="QName('', 'debug')" select="$debug"/>
@@ -318,6 +339,10 @@
          <xsl:map-entry key="QName('', 'footnote-numeration')" select="$footnote-numeration"/>
          <xsl:map-entry key="QName('', 'formal-object-title-placement')"
                          select="$formal-object-title-placement"/>
+         <xsl:map-entry key="QName('', 'mediaobject-details-placement')"
+                         select="$mediaobject-details-placement"/>
+         <xsl:map-entry key="QName('', 'formalgroup-nested-object-title-placement')"
+                         select="$formalgroup-nested-object-title-placement"/>
          <xsl:map-entry key="QName('', 'funcsynopsis-default-style')"
                          select="$funcsynopsis-default-style"/>
          <xsl:map-entry key="QName('', 'funcsynopsis-table-threshold')"
@@ -487,6 +512,28 @@
                          select="$dynamic-profile-variables"/>
          <xsl:map-entry key="QName('', 'warn-about-missing-localizations')"
                          select="$warn-about-missing-localizations"/>
+         <xsl:map-entry key="QName('', 'sets-number-from')" select="$sets-number-from"/>
+         <xsl:map-entry key="QName('', 'books-number-from')" select="$books-number-from"/>
+         <xsl:map-entry key="QName('', 'divisions-number-from')"
+                         select="$divisions-number-from"/>
+         <xsl:map-entry key="QName('', 'components-number-from')"
+                         select="$components-number-from"/>
+         <xsl:map-entry key="QName('', 'sections-number-from')" select="$sections-number-from"/>
+         <xsl:map-entry key="QName('', 'formal-objects-number-from')"
+                         select="$formal-objects-number-from"/>
+         <xsl:map-entry key="QName('', 'sets-inherit-from')" select="$sets-inherit-from"/>
+         <xsl:map-entry key="QName('', 'books-inherit-from')" select="$books-inherit-from"/>
+         <xsl:map-entry key="QName('', 'divisions-inherit-from')"
+                         select="$divisions-inherit-from"/>
+         <xsl:map-entry key="QName('', 'components-inherit-from')"
+                         select="$components-inherit-from"/>
+         <xsl:map-entry key="QName('', 'sections-inherit-from')"
+                         select="$sections-inherit-from"/>
+         <xsl:map-entry key="QName('', 'formal-objects-inherit-from')"
+                         select="$formal-objects-inherit-from"/>
+         <xsl:map-entry key="QName('', 'unwrap-paragraphs')" select="$unwrap-paragraphs"/>
+         <xsl:map-entry key="QName('', 'fallback-js')" select="$fallback-js"/>
+         <xsl:map-entry key="QName('', 'message-level')" select="$message-level"/>
       </xsl:map>
    </xsl:variable>
 </xsl:stylesheet>

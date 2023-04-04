@@ -137,6 +137,10 @@
       </xsl:apply-templates>
     </xsl:if>
 
+    <xsl:if test="$fallback-js != '' and (.//h:video|.//h:audio)">
+      <script src="{$fallback-js}"/> <!-- not deferred! -->
+    </xsl:if>
+
     <!-- Unconditionally add h:db-script children. -->
     <xsl:apply-templates select="/h:html/h:db-script/*">
       <xsl:with-param name="rootbaseuri" select="$rbu"/>
@@ -411,17 +415,23 @@
   <xsl:if test="$target[1]/@db-chunk and count($target) != 1">
     <xsl:choose>
       <xsl:when test="count($target) = 0">
-        <xsl:message select="'Error: cannot find ' || $id || ' in document'"/>
+        <xsl:if test="$message-level gt 0">
+          <xsl:message select="'Error: cannot find ' || $id || ' in document'"/>
+        </xsl:if>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:message select="'Error: multiple elements match ' || $id || ' in document'"/>
+        <xsl:if test="$message-level gt 0">
+          <xsl:message select="'Error: multiple elements match ' || $id || ' in document'"/>
+        </xsl:if>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:if>
 
   <xsl:choose>
     <xsl:when test="empty($target)">
-      <xsl:message select="'No id for #' || $id"/>
+      <xsl:if test="$message-level gt 0">
+        <xsl:message select="'No id for #' || $id"/>
+      </xsl:if>
       <span class="error broken-link">
         <xsl:copy>
           <xsl:apply-templates select="@*,node()"/>
@@ -473,6 +483,13 @@
       </a>
     </xsl:otherwise>
   </xsl:choose>
+</xsl:template>
+
+<xsl:template match="h:sup[@db-footnote]">
+  <xsl:copy>
+    <xsl:apply-templates select="@* except @db-footnote"/>
+    <xsl:apply-templates/>
+  </xsl:copy>
 </xsl:template>
 
 <!-- If we're renumbering footnotes and this is a text node in an h:a that's
@@ -835,8 +852,10 @@
         <xsl:number format="1" from="db:table" level="any"/>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:message>Error: failed to enumerate footnote:</xsl:message>
-        <xsl:message select="."/>
+        <xsl:if test="$message-level gt 0">
+          <xsl:message>Error: failed to enumerate footnote:</xsl:message>
+          <xsl:message select="."/>
+        </xsl:if>
         <xsl:sequence select="1"/>
       </xsl:otherwise>
     </xsl:choose>
