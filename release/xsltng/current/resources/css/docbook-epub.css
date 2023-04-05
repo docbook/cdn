@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 2.0.15, https://xsltng.docbook.org */
+/* DocBook xslTNG version 2.0.16, https://xsltng.docbook.org */
 /* No embedded fonts by default. */
 :root {
   --symbol-fonts: "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
@@ -1605,8 +1605,6 @@ html {
 body {
   height: 100%;
   min-height: 100%;
-  padding-left: 0;
-  padding-right: 0;
   margin-left: 0;
   margin-right: 0;
   display: grid;
@@ -1634,7 +1632,7 @@ main {
     margin-right: 1rem;
   }
 }
-@media screen and (min-width: 60rem) {
+@media screen and (min-width: 70rem) {
   main {
     min-width: 50rem;
   }
