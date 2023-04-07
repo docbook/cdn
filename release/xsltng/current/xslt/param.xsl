@@ -132,8 +132,8 @@
    <xsl:param name="mathml-js"
                select="'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=MML_CHTML'"/>
    <xsl:param name="mediaobject-accessibility"
-               as="xs:string*"
-               select="('summary', 'details')"/>
+               as="xs:string"
+               select="'summary details'"/>
    <xsl:param name="mediaobject-exclude-extensions"
                as="xs:string"
                select="&#34;.eps .ps .pdf&#34;"/>
@@ -201,8 +201,8 @@
    <xsl:param name="sort-collation"
                select="'http://www.w3.org/2005/xpath-functions/collation/html-ascii-case-insensitive'"/>
    <xsl:param name="table-accessibility"
-               as="xs:string*"
-               select="('summary', 'details')"/>
+               as="xs:string"
+               select="'summary details'"/>
    <xsl:param name="table-footnote-numeration" select="('a')"/>
    <xsl:param name="use-docbook-css" as="xs:string" select="'true'"/>
    <xsl:param name="use-minified-css" as="xs:string" select="'false'"/>

@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 2.0.16
+/* DocBook xslTNG version 2.1.0
  *
  * This is pagetoc.js providing support for on-page ToCs.
  *
@@ -42,6 +42,7 @@
   let hidden_section = false;
   let nothing_to_reveal = HIDDEN;
   let idcount = 0;
+  let onscreen = false;
 
   const randomId = function() {
     idcount++;
@@ -180,8 +181,17 @@
   const centerMain = function() {
     // If the pagetoc is not displayed, just leave everything alone
     if (getComputedStyle(pagetoc).display == "none") {
+      if (onscreen) {
+        main.style.marginLeft = "auto";
+        main.style.marginRight = "auto";
+        main.style.paddingLeft = "0";
+        main.style.minWidth = mainMinWidthStyle;
+        main.style.maxWidth = mainMaxWidthStyle;
+      }
+      onscreen = false;
       return;
     }
+    onscreen = true;
 
     // Some padding
     const pad = 4*onerem;
