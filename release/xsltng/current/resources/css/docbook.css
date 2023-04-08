@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 2.1.0, https://xsltng.docbook.org */
+/* DocBook xslTNG version 2.1.1, https://xsltng.docbook.org */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
@@ -1740,6 +1740,10 @@ main {
   grid-column-start: 2;
 }
 
+.callout-bug {
+  user-select: none;
+}
+
 /* ============================================================ */
 nav table td.previous {
   text-align: left;
@@ -1787,6 +1791,18 @@ nav.top div {
   border-bottom: 1px solid var(--border-color);
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+/* ============================================================ */
+/* Javascript annotations */
+.copyVerbIcon {
+  border: 1px solid var(--hovered-color);
+  border-radius: 0.2rem;
+}
+
+.copyVerbIcon:hover {
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
 }
 
 /* ============================================================ */

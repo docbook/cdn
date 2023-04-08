@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 2.1.0, https://xsltng.docbook.org */
+/* DocBook xslTNG version 2.1.1, https://xsltng.docbook.org */
 /* No embedded fonts by default. */
 :root {
   --symbol-fonts: "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
@@ -1735,6 +1735,10 @@ main {
   grid-column-start: 2;
 }
 
+.callout-bug {
+  user-select: none;
+}
+
 /* ============================================================ */
 nav table td.previous {
   text-align: left;
@@ -1782,6 +1786,18 @@ nav.top div {
   border-bottom: 1px solid var(--border-color);
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+/* ============================================================ */
+/* Javascript annotations */
+.copyVerbIcon {
+  border: 1px solid var(--hovered-color);
+  border-radius: 0.2rem;
+}
+
+.copyVerbIcon:hover {
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
 }
 
 /* ============================================================ */

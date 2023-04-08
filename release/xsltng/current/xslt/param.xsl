@@ -270,6 +270,7 @@
    <xsl:param name="unwrap-paragraphs" as="xs:string" select="'false'"/>
    <xsl:param name="fallback-js" select="'js/fallback.js'"/>
    <xsl:param name="message-level" as="xs:integer" select="1"/>
+   <xsl:param name="copy-verbatim-js" select="'js/copy-verbatim.js'"/>
    <xsl:variable name="vp:static-parameters" as="map(xs:QName, item()*)">
       <xsl:map>
          <xsl:map-entry key="QName('', 'debug')" select="$debug"/>
@@ -534,6 +535,7 @@
          <xsl:map-entry key="QName('', 'unwrap-paragraphs')" select="$unwrap-paragraphs"/>
          <xsl:map-entry key="QName('', 'fallback-js')" select="$fallback-js"/>
          <xsl:map-entry key="QName('', 'message-level')" select="$message-level"/>
+         <xsl:map-entry key="QName('', 'copy-verbatim-js')" select="$copy-verbatim-js"/>
       </xsl:map>
    </xsl:variable>
 </xsl:stylesheet>
