@@ -231,6 +231,7 @@
                as="xs:string"
                select="'pygments'"/>
    <xsl:param name="verbatim-table-style" select="''"/>
+   <xsl:param name="verbatim-trim-leading-blank-lines" select="'false'"/>
    <xsl:param name="verbatim-trim-trailing-blank-lines" select="'true'"/>
    <xsl:param name="xlink-arclist-before" select="' ['"/>
    <xsl:param name="xlink-arclist-after" select="'] '"/>
@@ -493,6 +494,8 @@
          <xsl:map-entry key="QName('', 'verbatim-syntax-highlighter')"
                          select="$verbatim-syntax-highlighter"/>
          <xsl:map-entry key="QName('', 'verbatim-table-style')" select="$verbatim-table-style"/>
+         <xsl:map-entry key="QName('', 'verbatim-trim-leading-blank-lines')"
+                         select="$verbatim-trim-leading-blank-lines"/>
          <xsl:map-entry key="QName('', 'verbatim-trim-trailing-blank-lines')"
                          select="$verbatim-trim-trailing-blank-lines"/>
          <xsl:map-entry key="QName('', 'xlink-arclist-before')" select="$xlink-arclist-before"/>
