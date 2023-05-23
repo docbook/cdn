@@ -19,6 +19,16 @@
 <xsl:key name="id" match="*" use="@xml:id"/>
 <xsl:key name="genid" match="*" use="generate-id(.)"/>
 
+<xsl:variable name="vp:translate-suppress-elements"
+              select="tokenize($translate-suppress-elements, '\s+')"/>
+
+<xsl:function name="f:translate-attribute" as="xs:boolean?">
+  <xsl:param name="node" as="element()"/>
+  <xsl:if test="local-name($node) = $vp:translate-suppress-elements">
+    <xsl:sequence select="false()"/>
+  </xsl:if>
+</xsl:function>
+
 <xsl:function name="f:attributes" as="attribute()*">
   <xsl:param name="node" as="element()"/>
   <xsl:param name="attributes" as="attribute()*"/>
@@ -81,6 +91,11 @@
     <xsl:if test="exists($classes)">
       <xsl:attribute name="class" select="string-join($classes, ' ')"/>
     </xsl:if>
+  </xsl:if>
+
+  <xsl:variable name="translate" select="f:translate-attribute($node)"/>
+  <xsl:if test="exists($translate)">
+    <xsl:attribute name="translate" select="if ($translate) then 'yes' else 'no'"/>
   </xsl:if>
 </xsl:function>
 
@@ -750,8 +765,13 @@
       <xsl:sequence select="$path"/>
     </xsl:when>
     <xsl:otherwise>
-      <xsl:variable name="base-parts" select="tokenize($base, '/')[position() lt last()]"/>
-      <xsl:variable name="path-parts" select="tokenize($path, '/')"/>
+      <!-- Strip away variant forms of file: (file:/, file://, file:///, ...) -->
+      <!-- In particular, file:/C:/path vs. file:///C:/path on Windows -->
+      <xsl:variable name="bpath" select="replace($base, '^file:/+', '')"/>
+      <xsl:variable name="ppath" select="replace($path, '^file:/+', '')"/>
+
+      <xsl:variable name="base-parts" select="tokenize($bpath, '/')[position() lt last()]"/>
+      <xsl:variable name="path-parts" select="tokenize($ppath, '/')"/>
 
       <!--
           <xsl:message select="'BP:', $base-parts"/>
