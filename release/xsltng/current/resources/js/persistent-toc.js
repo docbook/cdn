@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 2.1.3
+/* DocBook xslTNG version 2.1.4
  *
  * This is persistent-toc.js providing support for the ToC popup
  *
@@ -14,7 +14,7 @@
   let borderLeftColor = "white";
   let curpress = null;
   let searchListener = false;
-  let VERSION = "2.1.3";
+  let VERSION = "2.1.4";
   let PTOCID = "ptoc-data-file";
 
   const showToC = function(event) {
@@ -305,6 +305,9 @@
   toc.innerHTML = tocScript.innerHTML;
 
   tocOpen.style.display = "inline";
+  tocOpen.style.zIndex = 3;
+
+  toc.style.zIndex = 4;
 
   if (window.location.search === "?toc") {
     showToC(null);

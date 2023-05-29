@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 2.1.3
+/* DocBook xslTNG version 2.1.4
  *
  * This is controls.js providing JavaScript controls.
  *
