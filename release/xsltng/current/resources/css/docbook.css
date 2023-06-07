@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 2.1.4, https://xsltng.docbook.org */
+/* DocBook xslTNG version 2.1.5, https://xsltng.docbook.org */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
@@ -235,7 +235,6 @@ span.error.broken-link::after {
 }
 
 .remark {
-  page-break-inside: avoid;
   border: var(--remark-border-style);
   border-radius: 3px;
   padding-left: 4px;
@@ -442,7 +441,6 @@ cite.title {
 
 header {
   page-break-after: avoid;
-  page-break-inside: avoid;
 }
 
 header .authorgroup {
@@ -724,7 +722,6 @@ span > .viewport-table {
 }
 
 .admonition {
-  page-break-inside: avoid;
   border-radius: 0.5rem;
   min-height: 3rem;
   padding-top: 0;
@@ -1225,7 +1222,6 @@ blockquote p + .attribution {
 .figure,
 .example,
 .equation {
-  page-break-inside: avoid;
   padding-top: 1em;
 }
 
@@ -1971,54 +1967,6 @@ nav.top div {
   border: solid 2px var(--error-color);
   padding: 1rem;
   border-radius: 4px;
-}
-
-/* ============================================================ */
-/* For progressive reveals in chunked content. */
-.reveal {
-  display: none;
-}
-
-ul.reveal,
-ol.reveal {
-  display: block;
-}
-
-.reveal > li {
-  display: none;
-}
-
-.reveal > li:first-child {
-  display: list-item;
-}
-
-.noreveal {
-  display: inherit;
-}
-
-.speaker-notes .reveal {
-  display: inherit;
-  background-color: #ffeeee;
-}
-
-.speaker-notes ul.reveal,
-.speaker-notes ol.reveal {
-  display: block;
-  background-color: #ffeeee;
-}
-
-.speaker-notes .reveal > li {
-  display: list-item;
-  background-color: #ffeeee;
-}
-
-.speaker-notes li.reveal {
-  display: list-item;
-  background-color: #ffeeee;
-}
-
-.speaker-notes .transitory {
-  display: none;
 }
 
 /* ============================================================ */

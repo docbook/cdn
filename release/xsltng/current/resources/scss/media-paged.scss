@@ -1,5 +1,11 @@
 :root {
     --background-color: inherit;
+    hyphens: auto;
+}
+
+body {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .book > header {
@@ -38,6 +44,10 @@
     string-set: SectionTitle content();
 }
 
+.page-break-avoid {
+    page-break-inside: avoid;
+}
+
 h1 {
     bookmark-level: 1;
     bookmark-state: closed;
@@ -53,7 +63,10 @@ h2 {
 }
 
 header {
-    page-break-inside: avoid;
+}
+
+.verbatim {
+    hyphens: none;
 }
 
 .example header {
@@ -146,7 +159,6 @@ span.error.broken-link::after {
 
 .admonition {
     background-color: inherit;
-    page-break-inside: avoid;
 } 
 
 .admonition .icon {
@@ -157,7 +169,7 @@ span.error.broken-link::after {
     padding-top: 3.5rem;
 }
 
-body > header .copyright {
+.division body > header .copyright {
     float: bottom;
 }
 

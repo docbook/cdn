@@ -226,7 +226,7 @@
    <xsl:param name="verbatim-style-default" select="'lines'"/>
    <xsl:param name="verbatim-syntax-highlight-css" select="'css/pygments.css'"/>
    <xsl:param name="verbatim-syntax-highlight-languages"
-               select="'python perl html xml xslt xquery javascript json'"/>
+               select="'python perl html xml xslt xquery javascript json css'"/>
    <xsl:param name="verbatim-syntax-highlighter"
                as="xs:string"
                select="'pygments'"/>
@@ -273,6 +273,10 @@
    <xsl:param name="message-level" as="xs:integer" select="1"/>
    <xsl:param name="copy-verbatim-js" select="'js/copy-verbatim.js'"/>
    <xsl:param name="translate-suppress-elements" select="''"/>
+   <xsl:param name="varlistentry-separate-terms" select="'false'"/>
+   <xsl:param name="presentation-mode" select="'false'"/>
+   <xsl:param name="presentation-js" select="'js/presentation.js'"/>
+   <xsl:param name="presentation-css" select="'css/presentation.css'"/>
    <xsl:variable name="vp:static-parameters" as="map(xs:QName, item()*)">
       <xsl:map>
          <xsl:map-entry key="QName('', 'debug')" select="$debug"/>
@@ -542,6 +546,11 @@
          <xsl:map-entry key="QName('', 'copy-verbatim-js')" select="$copy-verbatim-js"/>
          <xsl:map-entry key="QName('', 'translate-suppress-elements')"
                          select="$translate-suppress-elements"/>
+         <xsl:map-entry key="QName('', 'varlistentry-separate-terms')"
+                         select="$varlistentry-separate-terms"/>
+         <xsl:map-entry key="QName('', 'presentation-mode')" select="$presentation-mode"/>
+         <xsl:map-entry key="QName('', 'presentation-js')" select="$presentation-js"/>
+         <xsl:map-entry key="QName('', 'presentation-css')" select="$presentation-css"/>
       </xsl:map>
    </xsl:variable>
 </xsl:stylesheet>
