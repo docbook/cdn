@@ -313,6 +313,11 @@
          <lt:token key="ListofUnknown"/>
       </l:template>
    </l:group>
+   <l:group name="list-of-titles-unnumbered">
+      <l:template match="true()">
+         <lt:content/>
+      </l:template>
+   </l:group>
    <l:group name="list-of-titles">
       <l:template match="self::db:part[parent::db:book]">
          <lt:token key="Part"/>

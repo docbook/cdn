@@ -68,7 +68,7 @@
    <xsl:param name="chunk-renumber-footnotes" select="'true'"/>
    <xsl:param name="chunk-section-depth" select="1"/>
    <xsl:param name="classsynopsis-indent" select="'  '"/>
-   <xsl:param name="component-numbers" as="xs:string" select="'1'"/>
+   <xsl:param name="component-numbers" as="xs:string" select="'true'"/>
    <xsl:param name="component-numbers-inherit" as="xs:string" select="'false'"/>
    <xsl:param name="control-js" as="xs:string" select="'js/controls.js'"/>
    <xsl:param name="copyright-collapse-years" select="true()"/>
@@ -85,7 +85,7 @@
    <xsl:param name="default-length-unit" select="'%'"/>
    <xsl:param name="personal-name-style" select="()"/>
    <xsl:param name="default-theme" as="xs:string" select="''"/>
-   <xsl:param name="division-numbers" as="xs:string" select="'1'"/>
+   <xsl:param name="division-numbers" as="xs:string" select="'true'"/>
    <xsl:param name="division-numbers-inherit" as="xs:string" select="'false'"/>
    <xsl:param name="docbook-transclusion" select="'false'"/>
    <xsl:param name="dynamic-profile-error" select="'ignore'"/>
@@ -192,7 +192,7 @@
    <xsl:param name="refentry-generate-title" select="true()"/>
    <xsl:param name="resource-base-uri" select="'./'"/>
    <xsl:param name="revhistory-style" select="'table'"/>
-   <xsl:param name="section-numbers" as="xs:string" select="'1'"/>
+   <xsl:param name="section-numbers" as="xs:string" select="'true'"/>
    <xsl:param name="section-numbers-inherit" select="'true'"/>
    <xsl:param name="section-toc-depth" select="'unbounded'"/>
    <xsl:param name="segmentedlist-style" select="'table'"/>
