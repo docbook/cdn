@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 2.1.7, https://xsltng.docbook.org */
+/* DocBook xslTNG version 2.1.8, https://xsltng.docbook.org */
 /* No embedded fonts by default. */
 :root {
   --symbol-fonts: "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
@@ -425,6 +425,7 @@ cite.title {
   font-family: inherit;
 }
 
+.set > .list-of-titles > .lot > .title,
 .book > .list-of-titles > .lot > .title,
 .part > .list-of-titles > .lot > .title {
   font-weight: 400;
@@ -458,6 +459,7 @@ header .authorgroup {
   border-radius: 0.5em;
 }
 
+.set > header,
 .book > header {
   margin-bottom: 2rem;
   margin-top: 1rem;
@@ -469,6 +471,7 @@ header .authorgroup {
   border-radius: 0.5em;
 }
 
+.set > header h1,
 .book > header h1 {
   margin-top: 0;
 }

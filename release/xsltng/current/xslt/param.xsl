@@ -277,6 +277,7 @@
    <xsl:param name="presentation-mode" select="'false'"/>
    <xsl:param name="presentation-js" select="'js/presentation.js'"/>
    <xsl:param name="presentation-css" select="'css/presentation.css'"/>
+   <xsl:param name="inline-xlink-href" as="xs:string" select="'false'"/>
    <xsl:variable name="vp:static-parameters" as="map(xs:QName, item()*)">
       <xsl:map>
          <xsl:map-entry key="QName('', 'debug')" select="$debug"/>
@@ -551,6 +552,7 @@
          <xsl:map-entry key="QName('', 'presentation-mode')" select="$presentation-mode"/>
          <xsl:map-entry key="QName('', 'presentation-js')" select="$presentation-js"/>
          <xsl:map-entry key="QName('', 'presentation-css')" select="$presentation-css"/>
+         <xsl:map-entry key="QName('', 'inline-xlink-href')" select="$inline-xlink-href"/>
       </xsl:map>
    </xsl:variable>
 </xsl:stylesheet>

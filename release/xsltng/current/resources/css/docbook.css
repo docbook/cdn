@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 2.1.7, https://xsltng.docbook.org */
+/* DocBook xslTNG version 2.1.8, https://xsltng.docbook.org */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
@@ -430,6 +430,7 @@ cite.title {
   font-family: inherit;
 }
 
+.set > .list-of-titles > .lot > .title,
 .book > .list-of-titles > .lot > .title,
 .part > .list-of-titles > .lot > .title {
   font-weight: 400;
@@ -463,6 +464,7 @@ header .authorgroup {
   border-radius: 0.5em;
 }
 
+.set > header,
 .book > header {
   margin-bottom: 2rem;
   margin-top: 1rem;
@@ -474,6 +476,7 @@ header .authorgroup {
   border-radius: 0.5em;
 }
 
+.set > header h1,
 .book > header h1 {
   margin-top: 0;
 }
