@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 2.1.8
+/* DocBook xslTNG version 2.1.9
  *
  * This is pagetoc.js providing support for on-page ToCs.
  *
