@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 2.1.9
+/* DocBook xslTNG version 2.2.0
  *
  * This is persistent-toc.js providing support for the ToC popup
  *
@@ -14,7 +14,7 @@
   let borderLeftColor = "white";
   let curpress = null;
   let searchListener = false;
-  let VERSION = "2.1.9";
+  let VERSION = "2.2.0";
   let PTOCID = "ptoc-data-file";
 
   const showToC = function(event) {
@@ -134,12 +134,26 @@
                                     + window.location.hash);
       }
 
-      let path = window.location.pathname.substring(1) + window.location.hash;
+      // Try path#hash
+      let path = url.substring(1) + hash;
       let target = document.querySelector("nav.toc div a[rel-path='"+path+"']");
       if (target) {
         target.scrollIntoView();
       } else {
-        console.log(`ToC scroll, no match: ${path}`);
+        // Try #hash
+        target = document.querySelector("nav.toc div a[rel-path='"+hash+"']");
+        if (target) {
+          target.scrollIntoView();
+        } else {
+          // Try path
+          target = document.querySelector("nav.toc div a[rel-path='"+url.substring(1)+"']");
+          if (target) {
+            target.scrollIntoView();
+          } else {
+            // ???
+            console.log(`ToC scroll, no match: ${path}`);
+          }
+        }
       }
 
       if (!searchListener) {

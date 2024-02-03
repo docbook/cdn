@@ -358,6 +358,11 @@ a.pmuj {
     font-style: italic;
 }
 
+.xref-pagenum {
+    content: target-counter(attr(href), page);
+    font-style:normal;
+}
+
 .xref-area,
 .xref-areaset,
 .xref-co,
@@ -1501,9 +1506,12 @@ li[db-mark='box'] {
 
 /* ============================================================ */
 
-
 .glossdiv {
     margin-top: 1em;
+}
+
+.glossdiv dl dt {
+    padding-left: 1em;
 }
 
 /* ============================================================ */

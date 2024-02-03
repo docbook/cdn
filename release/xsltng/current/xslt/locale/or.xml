@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <l:l10n xmlns="http://docbook.org/ns/docbook"
-         xmlns:db="http://docbook.org/ns/docbook"
-         xmlns:l="http://docbook.org/ns/docbook/l10n"
-         xmlns:lt="http://docbook.org/ns/docbook/l10n/templates"
-         language="or"
-         english-language-name="Oriya">
+        xmlns:db="http://docbook.org/ns/docbook"
+        xmlns:l="http://docbook.org/ns/docbook/l10n"
+        xmlns:lt="http://docbook.org/ns/docbook/l10n/templates"
+        language="or"
+        english-language-name="Oriya">
    <l:gentext>
       <l:token key="above">ଉପରେ</l:token>
       <l:token key="Abstract">ସାରାଂଶ</l:token>

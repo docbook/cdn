@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <l:l10n xmlns="http://docbook.org/ns/docbook"
-         xmlns:db="http://docbook.org/ns/docbook"
-         xmlns:l="http://docbook.org/ns/docbook/l10n"
-         xmlns:lt="http://docbook.org/ns/docbook/l10n/templates"
-         language="is"
-         english-language-name="Icelandic">
+        xmlns:db="http://docbook.org/ns/docbook"
+        xmlns:l="http://docbook.org/ns/docbook/l10n"
+        xmlns:lt="http://docbook.org/ns/docbook/l10n/templates"
+        language="is"
+        english-language-name="Icelandic">
    <l:gentext>
       <l:token key="above">ofan</l:token>
       <l:token key="Abstract">Ágrip</l:token>

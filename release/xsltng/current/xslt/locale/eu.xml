@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <l:l10n xmlns="http://docbook.org/ns/docbook"
-         xmlns:db="http://docbook.org/ns/docbook"
-         xmlns:l="http://docbook.org/ns/docbook/l10n"
-         xmlns:lt="http://docbook.org/ns/docbook/l10n/templates"
-         language="eu"
-         english-language-name="Basque">
+        xmlns:db="http://docbook.org/ns/docbook"
+        xmlns:l="http://docbook.org/ns/docbook/l10n"
+        xmlns:lt="http://docbook.org/ns/docbook/l10n/templates"
+        language="eu"
+        english-language-name="Basque">
    <l:gentext>
       <l:token key="above">goian</l:token>
       <l:token key="Abstract">Laburpena</l:token>

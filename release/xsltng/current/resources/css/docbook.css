@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 2.1.9, https://xsltng.docbook.org */
+/* DocBook xslTNG version 2.2.0, https://xsltng.docbook.org */
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
@@ -338,6 +338,11 @@ a.pmuj {
 
 .xref {
   font-style: italic;
+}
+
+.xref-pagenum {
+  content: target-counter(attr(href), page);
+  font-style: normal;
 }
 
 .xref-area,
@@ -1429,6 +1434,10 @@ li[db-mark=box] {
   margin-top: 1em;
 }
 
+.glossdiv dl dt {
+  padding-left: 1em;
+}
+
 /* ============================================================ */
 .sidebar {
   background-color: var(--sidebar-color);
@@ -1798,7 +1807,7 @@ nav.top {
   width: 100%;
   background-color: var(--nav-background-color);
   opacity: 1;
-  z-index: 2; /* make sure floating elements go under it! */
+  z-index: 100; /* make sure floating elements go under it! */
 }
 
 body.home nav.top {

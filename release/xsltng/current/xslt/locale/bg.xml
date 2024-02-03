@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <l:l10n xmlns="http://docbook.org/ns/docbook"
-         xmlns:db="http://docbook.org/ns/docbook"
-         xmlns:l="http://docbook.org/ns/docbook/l10n"
-         xmlns:lt="http://docbook.org/ns/docbook/l10n/templates"
-         language="bg"
-         english-language-name="Bulgarian">
+        xmlns:db="http://docbook.org/ns/docbook"
+        xmlns:l="http://docbook.org/ns/docbook/l10n"
+        xmlns:lt="http://docbook.org/ns/docbook/l10n/templates"
+        language="bg"
+        english-language-name="Bulgarian">
    <l:gentext>
       <l:token key="above">по-горе</l:token>
       <l:token key="Abstract">Анотация</l:token>

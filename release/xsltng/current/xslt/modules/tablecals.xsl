@@ -390,7 +390,7 @@
   <xsl:variable name="absolute-remainder"
                 select="f:absolute-length($v:nominal-page-width) - $absolute-width"/>
 
-  <xsl:if test="$absolute-remainder le 0">
+  <xsl:if test="$absolute-remainder lt 0">
     <xsl:message>Table width exceeds nominal width, ignoring relative width</xsl:message>
   </xsl:if>
 
@@ -427,7 +427,7 @@
     <xsl:otherwise>
       <colgroup>
         <xsl:for-each select="$widths">
-          <col style="width: {f:absolute-length(.)}"/>
+          <col style="width: {f:absolute-length(.)}px"/>
         </xsl:for-each>
       </colgroup>
     </xsl:otherwise>

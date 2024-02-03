@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <l:l10n xmlns="http://docbook.org/ns/docbook"
-         xmlns:db="http://docbook.org/ns/docbook"
-         xmlns:l="http://docbook.org/ns/docbook/l10n"
-         xmlns:lt="http://docbook.org/ns/docbook/l10n/templates"
-         language="de"
-         english-language-name="German">
+        xmlns:db="http://docbook.org/ns/docbook"
+        xmlns:l="http://docbook.org/ns/docbook/l10n"
+        xmlns:lt="http://docbook.org/ns/docbook/l10n/templates"
+        language="de"
+        english-language-name="German">
    <l:gentext>
       <l:token key="above">oben</l:token>
       <l:token key="Abstract">Zusammenfassung</l:token>
@@ -35,7 +35,7 @@
       <l:token key="chapter">Kapitel</l:token>
       <l:token key="Colophon">Kolophon</l:token>
       <l:token key="colophon">Kolophon</l:token>
-      <l:token key="copyeditor">Korrekteur</l:token>
+      <l:token key="copyeditor">Korrektor</l:token>
       <l:token key="Copyright">Copyright</l:token>
       <l:token key="copyright">Copyright</l:token>
       <l:token key="Dedication">Widmung</l:token>

@@ -5,17 +5,21 @@
                 xmlns:ghost="http://docbook.org/ns/docbook/ghost"
                 xmlns:m="http://docbook.org/ns/docbook/modes"
                 xmlns:mp="http://docbook.org/ns/docbook/modes/private"
+                xmlns:t="http://docbook.org/ns/docbook/templates"
                 xmlns:tp="http://docbook.org/ns/docbook/templates/private"
                 xmlns:vp="http://docbook.org/ns/docbook/variables/private"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 exclude-result-prefixes="#all"
                 version="3.0">
 
-<xsl:import href="../environment.xsl"/>
+<xsl:import href="../environment.xsl"/>  
 
 <!-- ============================================================ -->
 
+<xsl:variable name="this" select="/"/>
+
 <xsl:key name="id" match="*" use="@xml:id"/>
+<xsl:key name="linked-to" match="*" use="tokenize(@linkend|@linkends, '\s+')"/>
 
 <xsl:variable name="vp:docbook-namespace" select="'http://docbook.org/ns/docbook'"/>
 <xsl:variable name="vp:unify-table-titles" select="false()"/>
@@ -39,41 +43,8 @@
 <!-- ============================================================ -->
 <!-- normalize content -->
 
-<xsl:variable name="vp:external-glossary">
-  <xsl:choose>
-    <xsl:when test="$glossary-collection = ''">
-      <xsl:sequence select="()"/>
-    </xsl:when>
-    <xsl:otherwise>
-      <xsl:try select="document($glossary-collection)">
-        <xsl:catch>
-          <xsl:message>Failed to load $glossary-collection:</xsl:message>
-          <xsl:message select="'    ' || $glossary-collection"/>
-          <xsl:message select="'    ('||resolve-uri($glossary-collection)||')'"/>
-          <xsl:sequence select="()"/>
-        </xsl:catch>
-      </xsl:try>
-    </xsl:otherwise>
-  </xsl:choose>
-</xsl:variable>
-
-<xsl:variable name="vp:external-bibliography">
-  <xsl:choose>
-    <xsl:when test="$bibliography-collection = ''">
-      <xsl:sequence select="()"/>
-    </xsl:when>
-    <xsl:otherwise>
-      <xsl:try select="document($bibliography-collection)">
-        <xsl:catch>
-          <xsl:message>Failed to load $bibliography.collection:</xsl:message>
-          <xsl:message select="'    ' || $bibliography-collection"/>
-          <xsl:message select="'    ('||resolve-uri($bibliography-collection)||')'"/>
-          <xsl:sequence select="()"/>
-        </xsl:catch>
-      </xsl:try>
-    </xsl:otherwise>
-  </xsl:choose>
-</xsl:variable>
+<xsl:variable name="vp:external-bibliography"
+              select="f:available-bibliographies(/*, $bibliography-collection)"/>
 
 <xsl:variable name="vp:external-annotations">
   <xsl:choose>
@@ -130,28 +101,56 @@
   </xsl:if>
 </xsl:template>
 
-<xsl:template match="db:bibliography|db:revhistory">
+<xsl:template match="db:revhistory">
   <xsl:call-template name="tp:normalize-generated-title">
     <xsl:with-param name="title-key" select="local-name(.)"/>
   </xsl:call-template>
 </xsl:template>
 
+<xsl:function name="fp:cited" as="xs:boolean">
+  <xsl:param name="entry" as="element()"/>
+  <xsl:choose>
+    <xsl:when test="$entry/@xml:id and exists(key('linked-to', $entry/@xml:id, $this))">
+      <!-- There's an id/idref link to it... -->
+      <xsl:sequence select="true()"/>
+    </xsl:when>
+    <xsl:when test="$entry/db:abbrev">
+      <!-- Return true iff there's a citation to it -->
+      <xsl:sequence select="exists($entry/db:abbrev ! f:citations(., $this))"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <!-- no, this one isn't used ... -->
+      <xsl:sequence select="false()"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:function>
+
+<xsl:template match="db:bibliomixed[ancestor::db:bibliography[contains-token(@role, 'auto')]]
+                     |db:biblioentry[ancestor::db:bibliography[contains-token(@role, 'auto')]]"
+              priority="10">
+  <xsl:if test="fp:cited(.)">
+    <xsl:next-match/>
+  </xsl:if>
+</xsl:template>
+
 <xsl:template match="db:bibliomixed|db:biblioentry">
   <xsl:choose>
-    <xsl:when test="empty(node())"> <!-- totally empty -->
+    <xsl:when test="empty(node()) and not(@xml:id)">
+      <!-- totally empty, without an id -->
+      <xsl:message>
+        <xsl:text>Error: </xsl:text>
+        <xsl:text>empty </xsl:text>
+        <xsl:value-of select="local-name(.)"/>
+        <xsl:text> with no id.</xsl:text>
+      </xsl:message>
+    </xsl:when>
+
+    <xsl:when test="empty(node() except db:abbrev) and @xml:id">
+      <!-- effectively empty, with an id; the ID wins for looking up the external entry -->
       <xsl:variable name="id" select="@xml:id"/>
       <xsl:choose>
-        <xsl:when test="not($id)">
-          <xsl:message>
-            <xsl:text>Error: </xsl:text>
-            <xsl:text>empty </xsl:text>
-            <xsl:value-of select="local-name(.)"/>
-            <xsl:text> with no id.</xsl:text>
-          </xsl:message>
-        </xsl:when>
         <xsl:when test="$vp:external-bibliography/key('id', $id)">
-          <xsl:apply-templates select="$vp:external-bibliography/key('id', $id)"
-                              />
+          <xsl:apply-templates select="$vp:external-bibliography/key('id', $id)[1]"/>
         </xsl:when>
         <xsl:otherwise>
           <xsl:message>
@@ -160,15 +159,51 @@
             <xsl:value-of select="$id"/>
           </xsl:message>
           <xsl:copy>
-            <xsl:copy-of select="@*"/>
+            <xsl:sequence select="@*"/>
             <xsl:text>???</xsl:text>
           </xsl:copy>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:when>
+
+    <xsl:when test="empty(node() except db:abbrev)">
+      <!-- effectively empty, without an id -->
+      <xsl:variable name="match"
+                    select="(db:abbrev ! f:biblioentries(., $bibliography-collection))[1]"/>
+      <xsl:choose>
+        <xsl:when test="exists($match)">
+          <xsl:element namespace="http://docbook.org/ns/docbook"
+                       name="{local-name($match)}">
+            <xsl:sequence select="$match/@*"/>
+            <xsl:if test="fp:cited($match)">
+              <xsl:attribute name="xml:id" select="f:id($match)"/>
+            </xsl:if>
+            <xsl:apply-templates select="$match/node()"/>
+          </xsl:element>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:message>
+            <xsl:text>Error: </xsl:text>
+            <xsl:text>$bibliography-collection doesn't contain </xsl:text>
+            <xsl:value-of select="string-join(db:abbrev, '|')"/>
+          </xsl:message>
+          <xsl:copy>
+            <xsl:sequence select="@*"/>
+            <xsl:if test="fp:cited(.)">
+              <xsl:attribute name="xml:id" select="f:id(.)"/>
+            </xsl:if>
+            <xsl:text>???</xsl:text>
+          </xsl:copy>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:when>
+
     <xsl:otherwise>
       <xsl:copy>
-        <xsl:copy-of select="@*"/>
+        <xsl:sequence select="@*"/>
+        <xsl:if test="empty(@xml:id) and fp:cited(.)">
+          <xsl:attribute name="xml:id" select="f:id(.)"/>
+        </xsl:if>
         <xsl:apply-templates/>
       </xsl:copy>
     </xsl:otherwise>
@@ -176,68 +211,137 @@
 </xsl:template>
 
 <xsl:template match="db:glossary">
-  <xsl:variable name="glossary">
+  <xsl:call-template name="tp:normalize-generated-title">
+    <xsl:with-param name="title-key" select="local-name(.)"/>
+  </xsl:call-template>
+</xsl:template>
+
+<xsl:template match="db:glossary[contains-token(@role, 'auto')]">
+  <!-- Locate all the external glossaries -->
+  <xsl:variable name="glossaries"
+                select="f:available-glossaries(., $glossary-collection)"/>
+
+  <xsl:variable name="this" select="root(.)"/>
+
+  <xsl:variable name="unique-entries" as="element(db:glossentry)*">
+    <xsl:iterate select="$glossaries//db:glossentry">
+      <xsl:param name="entries" as="element(db:glossentry)*" select="()"/>
+      <xsl:on-completion select="$entries"/>
+
+      <xsl:variable name="term" select="db:glossterm"/>
+
+      <xsl:choose>
+        <xsl:when test="empty(f:glossrefs($term, $this))">
+          <!-- unreferenced, discard it -->
+          <!--<xsl:message select="'Unreferenced:', $term"/>-->
+          <xsl:next-iteration>
+            <xsl:with-param name="entries" select="$entries"/>
+          </xsl:next-iteration>
+        </xsl:when>
+        <xsl:when test="$entries[fp:baseform(db:glossterm) = fp:baseform($term)]">
+          <!-- duplicate, discard it -->
+          <!--<xsl:message select="'Duplicate:', $term"/>-->
+          <xsl:next-iteration>
+            <xsl:with-param name="entries" select="$entries"/>
+          </xsl:next-iteration>
+        </xsl:when>
+        <xsl:otherwise>
+          <!-- Ooh, we want this one! -->
+          <!--<xsl:message select="'Keep:', $term"/>-->
+          <xsl:next-iteration>
+            <xsl:with-param name="entries" select="($entries, .)"/>
+          </xsl:next-iteration>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:iterate>
+  </xsl:variable>
+
+  <xsl:variable name="glossary" as="element(db:glossary)">
     <xsl:call-template name="tp:normalize-generated-title">
       <xsl:with-param name="title-key" select="local-name(.)"/>
     </xsl:call-template>
   </xsl:variable>
 
-  <xsl:choose>
-    <xsl:when test="$glossary/db:glossary[@role='auto']">
-      <xsl:if test="not($vp:external-glossary)">
-        <xsl:message>
-          <xsl:text>Warning: processing automatic glossary </xsl:text>
-          <xsl:text>without an external glossary.</xsl:text>
-        </xsl:message>
-      </xsl:if>
+  <glossary xmlns="http://docbook.org/ns/docbook">
+    <xsl:sequence select="$glossary/@*, $glossary/node() except $glossary/db:glossentry"/>
+    <xsl:sequence select="$unique-entries"/>
+  </glossary>
+</xsl:template>
 
-      <xsl:element name="glossary" namespace="{$vp:docbook-namespace}">
-        <xsl:for-each select="$glossary/db:glossary/@*">
-          <xsl:if test="name(.) != 'role'">
-            <xsl:copy-of select="."/>
-          </xsl:if>
-        </xsl:for-each>
-        <xsl:copy-of select="$glossary/db:glossary/db:info"/>
+<xsl:template match="db:bibliography">
+  <xsl:call-template name="tp:normalize-generated-title">
+    <xsl:with-param name="title-key" select="local-name(.)"/>
+  </xsl:call-template>
+</xsl:template>
 
-        <xsl:variable name="seealsos" as="element()*">
-          <xsl:for-each select="$vp:external-glossary//db:glossseealso">
-            <xsl:copy-of select="if (key('id', @otherterm))
-                                  then key('id', @otherterm)[1]
-                                  else key('glossterm', string(.))"/>
-          </xsl:for-each>
-        </xsl:variable>
+<xsl:template match="db:bibliography[contains-token(@role, 'auto')]">
+  <!-- Locate all the external glossaries -->
+  <xsl:variable name="bibl-uris" as="xs:string*">
+    <xsl:sequence select="f:pi(root(.)/*, 'bibliography-collection')"/>
+    <xsl:sequence select="$bibliography-collection"/>
+  </xsl:variable>
 
-        <xsl:variable name="divs"
-                      select="$glossary//db:glossary/db:glossdiv"/>
+  <xsl:variable name="bibliography-entries" as="element()*">
+    <xsl:sequence select="root(.)//db:bibliography//(db:biblioentry|db:bibliomixed)"/>
+    <xsl:for-each select="tokenize(normalize-space(string-join($bibl-uris, ' ')), '\s+')">
+      <xsl:try select="document(.)/db:bibliography//(db:biblioentry|db:bibliomixed)">
+        <xsl:catch expand-text="yes">
+          <xsl:message>Failed to load bibliography: {.}</xsl:message>
+          <xsl:sequence select="()"/>
+        </xsl:catch>
+      </xsl:try>
+    </xsl:for-each>
+  </xsl:variable>
 
-        <xsl:choose>
-          <xsl:when test="$divs and $vp:external-glossary//db:glossdiv">
-            <xsl:apply-templates select="$vp:external-glossary//db:glossdiv"
-                                 mode="mp:copy-external-glossary">
-              <xsl:with-param name="terms"
-                              select="//db:glossterm[not(parent::db:glossdef)]
-                                      |//db:firstterm
-                                      |$seealsos"/>
-              <xsl:with-param name="divs" select="$divs"/>
-            </xsl:apply-templates>
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:apply-templates select="$vp:external-glossary//db:glossentry"
-                                 mode="mp:copy-external-glossary">
-              <xsl:with-param name="terms"
-                              select="//db:glossterm[not(parent::db:glossdef)]
-                                      |//db:firstterm
-                                      |$seealsos"/>
-              <xsl:with-param name="divs" select="$divs"/>
-            </xsl:apply-templates>
-          </xsl:otherwise>
-        </xsl:choose>
-      </xsl:element>
-    </xsl:when>
-    <xsl:otherwise>
-      <xsl:copy-of select="$glossary"/>
-    </xsl:otherwise>
-  </xsl:choose>
+  <xsl:variable name="this" select="root(.)"/>
+
+  <xsl:variable name="unique-entries" as="element()*">
+    <xsl:iterate select="$bibliography-entries">
+      <xsl:param name="entries" as="element()*" select="()"/>
+      <xsl:on-completion select="$entries"/>
+      <xsl:variable name="abbrevs" select="db:abbrev ! normalize-space(.)"/>
+
+      <!--
+      <xsl:message select="'ABBR:', $abbrevs ! string(.)"/>
+      -->
+
+      <xsl:choose>
+        <xsl:when test="empty($abbrevs ! key('citation', ., $this))">
+          <!-- unreferenced, discard it -->
+          <!-- <xsl:message select="'Unreferenced:', (@xml:id|db:abbrev)[1]/string()"/> -->
+          <xsl:next-iteration>
+            <xsl:with-param name="entries" select="$entries"/>
+          </xsl:next-iteration>
+        </xsl:when>
+        <xsl:when test="$entries/db:abbrev = $abbrevs">
+          <!-- duplicate, discard it -->
+          <!-- <xsl:message select="'Duplicate:', (@xml:id|db:abbrev)[1]/string()"/> -->
+          <xsl:next-iteration>
+            <xsl:with-param name="entries" select="$entries"/>
+          </xsl:next-iteration>
+        </xsl:when>
+        <xsl:otherwise>
+          <!-- Ooh, we want this one! -->
+          <!-- <xsl:message select="'Keep:', (@xml:id|db:abbrev)[1]/string()"/> -->
+          <xsl:next-iteration>
+            <xsl:with-param name="entries" select="($entries, .)"/>
+          </xsl:next-iteration>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:iterate>
+  </xsl:variable>
+
+  <xsl:variable name="bibliography" as="element(db:bibliography)">
+    <xsl:call-template name="tp:normalize-generated-title">
+      <xsl:with-param name="title-key" select="local-name(.)"/>
+    </xsl:call-template>
+  </xsl:variable>
+
+  <bibliography xmlns="http://docbook.org/ns/docbook">
+    <xsl:variable name="entries" select="$bibliography//(db:biblioentry|db:bibliomixed)"/>
+    <xsl:sequence select="$bibliography/@*, $bibliography/node() except $entries"/>
+    <xsl:apply-templates select="$unique-entries"/>
+  </bibliography>
 </xsl:template>
 
 <xsl:template match="db:index">
@@ -379,6 +483,9 @@
     <xsl:copy-of select="@*"/>
     <xsl:if test="not(db:title)">
       <xsl:copy-of select="preceding-sibling::db:title"/>
+    </xsl:if>
+    <xsl:if test="not(db:subtitle)">
+      <xsl:copy-of select="preceding-sibling::db:subtitle"/>
     </xsl:if>
     <xsl:call-template name="tp:normalize-dbinfo"/>
   </xsl:copy>
