@@ -282,6 +282,7 @@
    <xsl:param name="transformed-docbook-input" as="xs:string?" select="()"/>
    <xsl:param name="transformed-docbook-output" as="xs:string?" select="()"/>
    <xsl:param name="titleabbrev-passthrough" as="xs:string" select="'true'"/>
+   <xsl:param name="variablelist-panelset" as="xs:string" select="'true'"/>
    <xsl:variable name="vp:static-parameters" as="map(xs:QName, item()*)">
       <xsl:map>
          <xsl:map-entry key="QName('', 'debug')" select="$debug"/>
@@ -565,6 +566,8 @@
                         select="$transformed-docbook-output"/>
          <xsl:map-entry key="QName('', 'titleabbrev-passthrough')"
                         select="$titleabbrev-passthrough"/>
+         <xsl:map-entry key="QName('', 'variablelist-panelset')"
+                        select="$variablelist-panelset"/>
       </xsl:map>
    </xsl:variable>
 </xsl:stylesheet>

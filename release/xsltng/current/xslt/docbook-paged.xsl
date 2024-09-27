@@ -18,6 +18,8 @@
 <xsl:param name="annotations" select="'inline'"/>
 <xsl:param name="xlink-style-default" select="'inline'"/>
 <xsl:param name="paper-size" select="'A4'"/>
+<xsl:param name="titleabbrev-passthrough" select="'false'"/>
+<xsl:param name="variablelist-panelset" select="'false'"/>
 
 <!-- ============================================================ -->
 

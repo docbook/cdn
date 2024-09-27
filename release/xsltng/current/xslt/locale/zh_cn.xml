@@ -38,6 +38,9 @@
       <l:token key="copyeditor">版权编辑</l:token>
       <l:token key="Copyright">版权</l:token>
       <l:token key="copyright">版权</l:token>
+      <l:token key="DANGER">危险</l:token>
+      <l:token key="Danger">危险</l:token>
+      <l:token key="danger">危险</l:token>
       <l:token key="Dedication">题词</l:token>
       <l:token key="dedication">题词</l:token>
       <l:token key="Dialogue">对白</l:token>
