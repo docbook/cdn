@@ -6,6 +6,7 @@ import re
 import math
 import hashlib
 from datetime import datetime, timezone
+import dateutil
 import subprocess
 
 VERSION = "0.0.6"
@@ -226,7 +227,7 @@ def index(root):
                 print(f"<td>{'{:,}'.format(os.path.getsize(entry))}</td>", file=html)
 
             if "commit" in record:
-                tstamp = datetime.fromisoformat(record['date'])
+                tstamp = dateutil.parser.isoparse(record['date'])
                 print(f"<td><span title='{record['date']}'>{tstamp.strftime('%d %b %Y at %H:%M')}</span></td>", file=html)
 
                 author = record['author']
