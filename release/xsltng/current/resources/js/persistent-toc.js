@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 2.2.1
+/* DocBook xslTNG version 2.3.0
  *
  * This is persistent-toc.js providing support for the ToC popup
  *
@@ -14,7 +14,7 @@
   let borderLeftColor = "white";
   let curpress = null;
   let searchListener = false;
-  let VERSION = "2.2.1";
+  let VERSION = "2.3.0";
   let PTOCID = "ptoc-data-file";
 
   const showToC = function(event) {
@@ -319,9 +319,13 @@
   toc.innerHTML = tocScript.innerHTML;
 
   tocOpen.style.display = "inline";
-  tocOpen.style.zIndex = 3;
 
-  toc.style.zIndex = 4;
+  /* N.B. these z-index changes "make sure" that the persistent ToC is visible
+     in the nav bar, but they also interact with the z-index of the nav bar. If
+     you're thinking of changing these, think of changing scss/media-screen.scss
+     as well. */
+  tocOpen.style.zIndex = 101;
+  toc.style.zIndex = 102;
 
   if (window.location.search === "?toc") {
     showToC(null);
