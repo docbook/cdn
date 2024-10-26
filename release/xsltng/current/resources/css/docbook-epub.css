@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 2.4.0, https://xsltng.docbook.org */
+/* DocBook xslTNG version 2.4.1, https://xsltng.docbook.org */
 /* No embedded fonts by default. */
 :root {
   --symbol-fonts: "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
@@ -1626,6 +1626,7 @@ a.annomark:visited {
   --js-controls-header-separator-border-style: 1px solid var(--popup-annotation-border-color);
   --js-controls-color: var(--surface-color);
   --on-js-controls-color: var(--on-surface-color);
+  --z-index-on-top-of-the-world: 100;
 }
 
 html {
@@ -1796,7 +1797,7 @@ nav table td.next {
 
 nav.bottom {
   background-color: var(--nav-background-color);
-  z-index: 5;
+  z-index: var(--z-index-on-top-of-the-world);
 }
 
 nav.bottom table {
@@ -1823,7 +1824,7 @@ nav.top {
      but it also interacts with the persistent ToC which must
      go over it. If you're thinking of changing this, think
      of changing js/persistent-toc.js as well. */
-  z-index: 100;
+  z-index: var(--z-index-on-top-of-the-world);
 }
 
 body.home nav.top {
