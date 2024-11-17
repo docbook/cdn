@@ -1,4 +1,4 @@
-/* DocBook xslTNG version 2.4.1, https://xsltng.docbook.org */
+/* DocBook xslTNG version 2.5.0, https://xsltng.docbook.org */
 /* No embedded fonts by default. */
 :root {
   --symbol-fonts: "Arial Unicode", "Apple Symbols", "Symbol", "Symbola_hint";
@@ -334,11 +334,6 @@ a.pmuj {
 
 .xref {
   font-style: italic;
-}
-
-.xref-pagenum {
-  content: target-counter(attr(href), page);
-  font-style: normal;
 }
 
 .xref-area,
@@ -972,6 +967,7 @@ pre.verblines span.ln {
   padding-top: 4px;
   padding-bottom: 4px;
   text-align: right;
+  color: var(--on-background-color);
 }
 
 pre.verblines.numbered span.ln {
@@ -1014,6 +1010,7 @@ pre.verblines span.ld {
   display: table-cell;
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-left: 4px;
 }
 
 pre.address span.ld,
@@ -1054,6 +1051,12 @@ table.verbatim tr td:first-child {
 table.verbatim tr td pre {
   margin-left: 0;
   margin-right: 0;
+}
+
+/* A couple of style tweaks to highlightjs-line-numbers.js line numbers */
+.hljs-ln-n {
+  padding-right: 1em;
+  text-align: right;
 }
 
 /* ============================================================ */
@@ -16890,6 +16893,7 @@ html.book-style.Letter body.landscape.draft .informalobject {
 :root {
   --background-color: inherit;
   hyphens: auto;
+  --default-font-size: 11pt;
 }
 
 /* This comes after the orientation configuration. It establishes
@@ -17119,4 +17123,10 @@ span.footnote p {
 .book-style .component > header h3 {
   padding-top: 0;
   margin-top: 0;
+}
+
+/* xref with pagenumber ====================================== */
+.xref-pagenum::after {
+  content: target-counter(attr(href), page);
+  font-style: normal;
 }

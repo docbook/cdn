@@ -245,7 +245,7 @@
                           group-adjacent=". instance of node() and local-name() = ('pagenum')">
         <xsl:choose>
           <xsl:when test="boolean(current-grouping-key())">
-            <a href="#{f:id($target)}" class="xref xref-{local-name($target)} xref-{local-name(.)}">#</a>
+            <a href="#{f:id($target)}" class="xref xref-{local-name($target)} xref-{local-name(.)}"/>
           </xsl:when>
           <xsl:otherwise>
             <a href="#{f:id($target)}" class="xref xref-{local-name($target)}">
@@ -262,7 +262,7 @@
 </xsl:template>
   
 <xsl:function name="fp:localization-template-from-xrefstyle" as="element(l:template)">
-  <xsl:param name="xref" as="element(db:xref)"/>
+  <xsl:param name="xref" as="element()"/>
   <xsl:param name="target" as="element()"/>
 
   <xsl:variable name="content" as="item()*">

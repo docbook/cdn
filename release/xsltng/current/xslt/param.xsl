@@ -284,6 +284,10 @@
    <xsl:param name="titleabbrev-passthrough" as="xs:string" select="'true'"/>
    <xsl:param name="variablelist-panelset" as="xs:string" select="'true'"/>
    <xsl:param name="vendor-css" as="xs:string*" select="()"/>
+   <xsl:param name="verbatim-embellishments" select="'true'"/>
+   <xsl:param name="verbatim-embellish-linenumbers" select="'true'"/>
+   <xsl:param name="verbatim-default-language" select="'none'"/>
+   <xsl:param name="use-id-as-filename" as="xs:string" select="'false'"/>
    <xsl:variable name="vp:static-parameters" as="map(xs:QName, item()*)">
       <xsl:map>
          <xsl:map-entry key="QName('', 'debug')" select="$debug"/>
@@ -570,6 +574,13 @@
          <xsl:map-entry key="QName('', 'variablelist-panelset')"
                         select="$variablelist-panelset"/>
          <xsl:map-entry key="QName('', 'vendor-css')" select="$vendor-css"/>
+         <xsl:map-entry key="QName('', 'verbatim-embellishments')"
+                        select="$verbatim-embellishments"/>
+         <xsl:map-entry key="QName('', 'verbatim-embellish-linenumbers')"
+                        select="$verbatim-embellish-linenumbers"/>
+         <xsl:map-entry key="QName('', 'verbatim-default-language')"
+                        select="$verbatim-default-language"/>
+         <xsl:map-entry key="QName('', 'use-id-as-filename')" select="$use-id-as-filename"/>
       </xsl:map>
    </xsl:variable>
 </xsl:stylesheet>
