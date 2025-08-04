@@ -1339,23 +1339,23 @@
       </l:template>
       <l:template match="self::db:page.citation">
          <lt:text> [</lt:text>
-         <lt:page/>
+         <lt:pagenum/>
          <lt:text>]</lt:text>
       </l:template>
       <l:template match="self::db:page">
          <lt:text>(Seite </lt:text>
-         <lt:page/>
+         <lt:pagenum/>
          <lt:text>)</lt:text>
       </l:template>
       <l:template match="self::db:pageabbrev">
          <lt:text>(S</lt:text>
          <lt:separator/>
-         <lt:page/>
+         <lt:pagenum/>
          <lt:text>)</lt:text>
       </l:template>
       <l:template match="self::db:Page">
          <lt:text>Seite </lt:text>
-         <lt:page/>
+         <lt:pagenum/>
       </l:template>
       <l:template match="self::db:bridgehead">
          <lt:token key="startquote"/>

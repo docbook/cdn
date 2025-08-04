@@ -201,9 +201,6 @@
     <xsl:otherwise>
       <xsl:copy>
         <xsl:sequence select="@*"/>
-        <xsl:if test="empty(@xml:id) and fp:cited(.)">
-          <xsl:attribute name="xml:id" select="f:id(.)"/>
-        </xsl:if>
         <xsl:apply-templates/>
       </xsl:copy>
     </xsl:otherwise>
@@ -275,7 +272,7 @@
 </xsl:template>
 
 <xsl:template match="db:bibliography[contains-token(@role, 'auto')]">
-  <!-- Locate all the external glossaries -->
+  <!-- Locate all the external bibliographies -->
   <xsl:variable name="bibl-uris" as="xs:string*">
     <xsl:sequence select="f:pi(root(.)/*, 'bibliography-collection')"/>
     <xsl:sequence select="$bibliography-collection"/>
@@ -355,7 +352,8 @@
     <xsl:with-param name="title-key" select="local-name(.)"/>
   </xsl:call-template>
 </xsl:template>
-
+    
+<!-- No default title for abstract and legalnotice. See Issue #587
 <xsl:template match="db:abstract">
   <xsl:call-template name="tp:normalize-generated-title">
     <xsl:with-param name="title-key" select="local-name(.)"/>
@@ -367,7 +365,8 @@
     <xsl:with-param name="title-key" select="local-name(.)"/>
   </xsl:call-template>
 </xsl:template>
-
+-->
+    
 <xsl:template match="db:dedication|db:acknowledgements">
   <xsl:call-template name="tp:normalize-generated-title">
     <xsl:with-param name="title-key" select="local-name(.)"/>

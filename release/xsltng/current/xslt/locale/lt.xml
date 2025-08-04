@@ -1286,17 +1286,17 @@
       </l:template>
       <l:template match="self::db:olink.page.citation">
          <lt:text> (page </lt:text>
-         <lt:page/>
+         <lt:pagenum/>
          <lt:text>)</lt:text>
       </l:template>
       <l:template match="self::db:page.citation">
          <lt:text> [</lt:text>
-         <lt:page/>
+         <lt:pagenum/>
          <lt:text>]</lt:text>
       </l:template>
       <l:template match="self::db:page">
          <lt:text>(</lt:text>
-         <lt:page/>
+         <lt:pagenum/>
          <lt:text> puslapis)</lt:text>
       </l:template>
       <l:template match="self::db:docname">
@@ -1309,11 +1309,11 @@
       </l:template>
       <l:template match="self::db:pageabbrev">
          <lt:text>(</lt:text>
-         <lt:page/>
+         <lt:pagenum/>
          <lt:text> p.)</lt:text>
       </l:template>
       <l:template match="self::db:Page">
-         <lt:page/>
+         <lt:pagenum/>
          <lt:text> puslapis</lt:text>
       </l:template>
       <l:template match="self::db:bridgehead">

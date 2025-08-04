@@ -62,11 +62,12 @@
   <xsl:variable name="names"
                 select="distinct-values($attributes/node-name())"/>
   <xsl:for-each select="$names">
+    <xsl:variable name="namespace" select="namespace-uri-from-QName(.)"/>
     <xsl:variable name="name" select="."/>
     <xsl:variable name="values" as="xs:string*"
                   select="$attributes[node-name()=$name]/string()"/>
     <xsl:if test="exists($values)">
-      <xsl:attribute name="{$name}"
+      <xsl:attribute name="{$name}" namespace="{$namespace}"
                      select="string-join($values, ' ')"/>
     </xsl:if>
   </xsl:for-each>
@@ -202,12 +203,12 @@
   </xsl:choose>
 </xsl:function>
 
-<xsl:function name="f:gentext-letters" as="element(l:letters)">
+<xsl:function name="f:gentext-letters" as="element(l:letters)?">
   <xsl:param name="node" as="element()"/>
   <xsl:sequence select="f:gentext-letters-for-language($node)"/>
 </xsl:function>
 
-<xsl:function name="f:gentext-letters-for-language" as="element(l:letters)">
+<xsl:function name="f:gentext-letters-for-language" as="element(l:letters)?">
   <xsl:param name="node" as="element()"/>
 
   <xsl:variable name="lang" select="f:l10n-language($node)"/>

@@ -1272,7 +1272,7 @@
       </l:template>
       <l:template match="self::db:page.citation">
          <lt:text> [</lt:text>
-         <lt:page/>
+         <lt:pagenum/>
          <lt:text>]</lt:text>
       </l:template>
       <l:template match="self::db:bridgehead">
@@ -1735,4 +1735,48 @@
          <lt:content/>
       </l:items>
    </l:list>
+   <l:letters>
+      <l:l i="-1"/>
+      <l:l i="0">기호</l:l>
+      <l:l i="10">ㄱ</l:l>
+      <l:l i="20">ㄲ</l:l>
+      <l:l i="30">ㄴ</l:l>
+      <l:l i="40">ㄷ</l:l>
+      <l:l i="50">ㄸ</l:l>
+      <l:l i="60">ㄹ</l:l>
+      <l:l i="70">ㅁ</l:l>
+      <l:l i="80">ㅂ</l:l>
+      <l:l i="90">ㅃ</l:l>
+      <l:l i="100">ㅅ</l:l>
+      <l:l i="110">ㅆ</l:l>
+      <l:l i="120">ㅇ</l:l>
+      <l:l i="130">ㅈ</l:l>
+      <l:l i="140">ㅉ</l:l>
+      <l:l i="150">ㅊ</l:l>
+      <l:l i="160">ㅋ</l:l>
+      <l:l i="170">ㅌ</l:l>
+      <l:l i="180">ㅍ</l:l>
+      <l:l i="190">ㅎ</l:l>
+      <l:l i="200">ㅏ</l:l>
+      <l:l i="210">ㅐ</l:l>
+      <l:l i="220">ㅑ</l:l>
+      <l:l i="230">ㅒ</l:l>
+      <l:l i="240">ㅓ</l:l>
+      <l:l i="250">ㅔ</l:l>
+      <l:l i="260">ㅕ</l:l>
+      <l:l i="270">ㅖ</l:l>
+      <l:l i="280">ㅗ</l:l>
+      <l:l i="290">ㅘ</l:l>
+      <l:l i="300">ㅙ</l:l>
+      <l:l i="310">ㅚ</l:l>
+      <l:l i="320">ㅛ</l:l>
+      <l:l i="330">ㅜ</l:l>
+      <l:l i="340">ㅝ</l:l>
+      <l:l i="350">ㅞ</l:l>
+      <l:l i="360">ㅟ</l:l>
+      <l:l i="370">ㅠ</l:l>
+      <l:l i="380">ㅡ</l:l>
+      <l:l i="390">ㅢ</l:l>
+      <l:l i="400">ㅣ</l:l>
+   </l:letters>
 </l:l10n>

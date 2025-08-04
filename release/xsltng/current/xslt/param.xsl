@@ -131,7 +131,10 @@
    <xsl:param name="lists-of-tables" as="xs:string" select="'true'"/>
    <xsl:param name="local-conventions" as="xs:string?" select="()"/>
    <xsl:param name="mathml-js"
-              select="'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=MML_CHTML'"/>
+              as="xs:string"
+              select="'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js'"/>
+   <xsl:param name="mathml-js-config" as="xs:string?" select="()"/>
+   <xsl:param name="mathml-js-role" as="xs:string?" select="'tex'"/>
    <xsl:param name="mediaobject-accessibility"
               as="xs:string"
               select="'summary details'"/>
@@ -180,6 +183,9 @@
    <xsl:param name="profile-userlevel" select="''"/>
    <xsl:param name="profile-vendor" select="''"/>
    <xsl:param name="profile-wordsize" select="''"/>
+   <xsl:param name="default-templates-uri"
+              as="xs:string"
+              select="'templates.xml'"/>
    <xsl:param name="theme-picker" as="xs:string" select="'false'"/>
    <xsl:param name="transclusion-id-fixup" as="xs:string" select="'none'"/>
    <xsl:param name="transclusion-link-scope" as="xs:string" select="'global'"/>
@@ -190,7 +196,7 @@
    <xsl:param name="qandaset-default-toc" select="'true'"/>
    <xsl:param name="relax-ng-grammar" as="xs:string?" select="()"/>
    <xsl:param name="refentry-generate-name" select="true()"/>
-   <xsl:param name="refentry-generate-title" select="true()"/>
+   <xsl:param name="refentry-generate-title" select="false()"/>
    <xsl:param name="resource-base-uri" select="'./'"/>
    <xsl:param name="revhistory-style" select="'table'"/>
    <xsl:param name="section-numbers" as="xs:string" select="'true'"/>
@@ -288,6 +294,7 @@
    <xsl:param name="verbatim-embellish-linenumbers" select="'true'"/>
    <xsl:param name="verbatim-default-language" select="'none'"/>
    <xsl:param name="use-id-as-filename" as="xs:string" select="'false'"/>
+   <xsl:param name="on-unhandled-elements" as="xs:string" select="'fail'"/>
    <xsl:variable name="vp:static-parameters" as="map(xs:QName, item()*)">
       <xsl:map>
          <xsl:map-entry key="QName('', 'debug')" select="$debug"/>
@@ -399,6 +406,8 @@
          <xsl:map-entry key="QName('', 'lists-of-tables')" select="$lists-of-tables"/>
          <xsl:map-entry key="QName('', 'local-conventions')" select="$local-conventions"/>
          <xsl:map-entry key="QName('', 'mathml-js')" select="$mathml-js"/>
+         <xsl:map-entry key="QName('', 'mathml-js-config')" select="$mathml-js-config"/>
+         <xsl:map-entry key="QName('', 'mathml-js-role')" select="$mathml-js-role"/>
          <xsl:map-entry key="QName('', 'mediaobject-accessibility')"
                         select="$mediaobject-accessibility"/>
          <xsl:map-entry key="QName('', 'mediaobject-exclude-extensions')"
@@ -454,6 +463,8 @@
          <xsl:map-entry key="QName('', 'profile-userlevel')" select="$profile-userlevel"/>
          <xsl:map-entry key="QName('', 'profile-vendor')" select="$profile-vendor"/>
          <xsl:map-entry key="QName('', 'profile-wordsize')" select="$profile-wordsize"/>
+         <xsl:map-entry key="QName('', 'default-templates-uri')"
+                        select="$default-templates-uri"/>
          <xsl:map-entry key="QName('', 'theme-picker')" select="$theme-picker"/>
          <xsl:map-entry key="QName('', 'transclusion-id-fixup')"
                         select="$transclusion-id-fixup"/>
@@ -581,6 +592,8 @@
          <xsl:map-entry key="QName('', 'verbatim-default-language')"
                         select="$verbatim-default-language"/>
          <xsl:map-entry key="QName('', 'use-id-as-filename')" select="$use-id-as-filename"/>
+         <xsl:map-entry key="QName('', 'on-unhandled-elements')"
+                        select="$on-unhandled-elements"/>
       </xsl:map>
    </xsl:variable>
 </xsl:stylesheet>
