@@ -295,6 +295,8 @@
    <xsl:param name="verbatim-default-language" select="'none'"/>
    <xsl:param name="use-id-as-filename" as="xs:string" select="'false'"/>
    <xsl:param name="on-unhandled-elements" as="xs:string" select="'fail'"/>
+   <xsl:param name="user-document-class" as="xs:string" select="''"/>
+   <xsl:param name="cals-table-width-threshold" as="xs:integer" select="1"/>
    <xsl:variable name="vp:static-parameters" as="map(xs:QName, item()*)">
       <xsl:map>
          <xsl:map-entry key="QName('', 'debug')" select="$debug"/>
@@ -594,6 +596,9 @@
          <xsl:map-entry key="QName('', 'use-id-as-filename')" select="$use-id-as-filename"/>
          <xsl:map-entry key="QName('', 'on-unhandled-elements')"
                         select="$on-unhandled-elements"/>
+         <xsl:map-entry key="QName('', 'user-document-class')" select="$user-document-class"/>
+         <xsl:map-entry key="QName('', 'cals-table-width-threshold')"
+                        select="$cals-table-width-threshold"/>
       </xsl:map>
    </xsl:variable>
 </xsl:stylesheet>
