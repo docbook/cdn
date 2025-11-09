@@ -107,8 +107,13 @@
          last alternative -->
     <xsl:variable name="last-data"
                   select="array:flatten($object-info?datas)[last()]"/>
-    <xsl:variable name="viewport"
-                  select="$last-data ! f:mediaobject-viewport(.)"/>
+    <xsl:variable name="viewport" as="map(*)?">
+      <xsl:if test="exists($last-data)">
+        <xsl:call-template name="t:mediaobject-viewport">
+          <xsl:with-param name="info" select="$last-data"/>
+        </xsl:call-template>
+      </xsl:if>
+    </xsl:variable>
 
     <xsl:variable name="display-width"
                   select="if (exists($last-data?contentwidth))
@@ -518,8 +523,12 @@
 
 <!-- ============================================================ -->
 
-<xsl:function name="f:mediaobject-viewport" as="map(*)">
+<xsl:template name="t:mediaobject-viewport" as="map(*)">
   <xsl:param name="info" as="map(*)"/>
+  <xsl:param name="inherited-nominal-width" tunnel="yes" as="map(*)"/>
+
+  <xsl:message use-when="'image-properties' = $v:debug"
+               select="'Info:', serialize($info, map{'method':'json','indent':true()})"/>
 
   <xsl:variable name="imageproperties" select="$info?properties"/>
 
@@ -538,26 +547,51 @@
   <xsl:variable name="width" select="f:object-width($info)"/>
   <xsl:variable name="height" select="f:object-height($info)"/>
 
+  <xsl:message use-when="'image-properties' = $v:debug"
+               select="'Nominal width:',
+                       serialize($v:image-nominal-width, map{'method':'json','indent':true()})"/>
+  <xsl:message use-when="'image-properties' = $v:debug"
+               select="'Nominal height:',
+                       serialize($v:image-nominal-height, map{'method':'json','indent':true()})"/>
+
   <!-- Convert % widths into absolute widths if we can -->
+
+  <xsl:variable name="perc-width"
+                select="if (f:is-true($mediaobject-percentage-of-intrinsic-size))
+                        then $intrinsicwidth
+                        else $inherited-nominal-width"/>
+
+  <xsl:variable name="perc-height"
+                select="if (f:is-true($mediaobject-percentage-of-intrinsic-size))
+                        then $intrinsicheight
+                        else $v:image-nominal-height"/>
 
   <xsl:variable
       name="width"
-      select="if ($width?unit = '%' and not(f:is-empty-length($intrinsicwidth)))
-              then f:make-length($intrinsicwidth?magnitude
+      select="if ($width?unit = '%' and not(f:is-empty-length($perc-width)))
+              then f:make-length($perc-width?magnitude
                                  * $width?magnitude
                                  div 100.0,
-                                 $intrinsicwidth?unit)
-              else $width"/>
+                                 $perc-width?unit)
+              else
+                $width"/>
 
   <xsl:variable
       name="height"
-      select="if ($height?unit = '%' and not(f:is-empty-length($intrinsicheight)))
-              then f:make-length($intrinsicheight?magnitude
+      select="if ($height?unit = '%' and not(f:is-empty-length($perc-height)))
+              then f:make-length($perc-height?magnitude
                                  * $height?magnitude
                                  div 100.0,
-                                 $intrinsicheight?unit)
+                                 $perc-height?unit)
               else
                 $height"/>
+
+  <xsl:message use-when="'image-properties' = $v:debug"
+               select="'Width:',
+                       serialize($width, map{'method':'json','indent':true()})"/>
+  <xsl:message use-when="'image-properties' = $v:debug"
+               select="'Height:',
+                       serialize($height, map{'method':'json','indent':true()})"/>
 
   <xsl:variable name="scalefit" select="f:object-scalefit($info)"/>
   <xsl:variable name="scale" select="f:object-scale($info)"/>
@@ -651,7 +685,7 @@
                select="serialize($result, $v:as-json)"/>
 
   <xsl:sequence select="$result"/>
-</xsl:function>
+</xsl:template>
 
 <!-- ============================================================ -->
 
@@ -1108,9 +1142,9 @@
        the current node. But that's going to be wrong sometimes... -->
 
   <xsl:variable name="base"
-                select="if (base-uri($node/root()/*) = '')
+                select="if (base-uri(($node/root()/*)[1]) = '')
                         then base-uri($node)
-                        else base-uri($node/root()/*)"/> 
+                        else base-uri(($node/root()/*)[1])"/> 
 
 <!--
   <xsl:message use-when="'mediaobject-uris' = $v:debug"

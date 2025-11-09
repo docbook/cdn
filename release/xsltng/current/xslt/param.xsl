@@ -297,6 +297,9 @@
    <xsl:param name="on-unhandled-elements" as="xs:string" select="'fail'"/>
    <xsl:param name="user-document-class" as="xs:string" select="''"/>
    <xsl:param name="cals-table-width-threshold" as="xs:integer" select="1"/>
+   <xsl:param name="mediaobject-percentage-of-intrinsic-size"
+              as="xs:string"
+              select="'false'"/>
    <xsl:variable name="vp:static-parameters" as="map(xs:QName, item()*)">
       <xsl:map>
          <xsl:map-entry key="QName('', 'debug')" select="$debug"/>
@@ -599,6 +602,8 @@
          <xsl:map-entry key="QName('', 'user-document-class')" select="$user-document-class"/>
          <xsl:map-entry key="QName('', 'cals-table-width-threshold')"
                         select="$cals-table-width-threshold"/>
+         <xsl:map-entry key="QName('', 'mediaobject-percentage-of-intrinsic-size')"
+                        select="$mediaobject-percentage-of-intrinsic-size"/>
       </xsl:map>
    </xsl:variable>
 </xsl:stylesheet>
