@@ -1,8 +1,8 @@
 # DocBook Content Delivey Network repository
 
-This repository contains all the content published via
-cdn.docbook.org, i.e. stylesheets and schema files.
+This project has moved to [Codeberg](https://codeberg.org/DocBook/cdn).
 
-The repository is (mostly) populated automatically via
-Travis CI from other repositories in the
-[DocBook](https://github.com/docbook) organization.
+Please [open issues](https://codeberg.org/DocBook/cdn/issues) there.
+
+I’ll be migrating the current issues over as time permits. There will be no more
+releases from here.
